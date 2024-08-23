@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-20 .. 2024-08-22)
+# Latest Repositories (2024-08-21 .. 2024-08-23)
 
-- [honmashironeko/ProxyCat](https://github.com/honmashironeko/ProxyCat) (225)
-- [andrey-new-del/Ad0be-Creat1ve-Cl0ud-2024](https://github.com/andrey-new-del/Ad0be-Creat1ve-Cl0ud-2024) (141)
-- [HappyCe/f0rtn1t3-h4ck-fr33](https://github.com/HappyCe/f0rtn1t3-h4ck-fr33) (141)
-- [Callymanjarvis/Boris-FX-MOCHA-PRO](https://github.com/Callymanjarvis/Boris-FX-MOCHA-PRO) (141)
-- [xiao20041105/ProtonVPN-Activated](https://github.com/xiao20041105/ProtonVPN-Activated) (141)
+- [rail-berkeley/crossformer](https://github.com/rail-berkeley/crossformer) (64)
+- [Jannkar/turtle_nest](https://github.com/Jannkar/turtle_nest) (50)
+- [apxutekror501qbg/1av-TheSims4v](https://github.com/apxutekror501qbg/1av-TheSims4v) (46)
+- [bamp83rwx0/1ak-GuildWars2k](https://github.com/bamp83rwx0/1ak-GuildWars2k) (46)
+- [alximik454oca1/1at-DeadbyDaylightt](https://github.com/alximik454oca1/1at-DeadbyDaylightt) (46)
