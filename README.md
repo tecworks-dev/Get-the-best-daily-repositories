@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-23 .. 2024-08-25)
+# Latest Repositories (2024-08-25 .. 2024-08-27)
 
-- [pontusab/cursor.directory](https://github.com/pontusab/cursor.directory) (84)
-- [arturbien/balloons-js](https://github.com/arturbien/balloons-js) (68)
-- [AabyssZG/Chrome-RCE-Poc](https://github.com/AabyssZG/Chrome-RCE-Poc) (44)
-- [sf7293/task-manager](https://github.com/sf7293/task-manager) (31)
-- [robertoswiss/tron-sunpump-sniper](https://github.com/robertoswiss/tron-sunpump-sniper) (26)
+- [NousResearch/DisTrO](https://github.com/NousResearch/DisTrO) (250)
+- [Aabyss-Team/Antivirus-Scan](https://github.com/Aabyss-Team/Antivirus-Scan) (111)
+- [urboifox/frontend-roadmap](https://github.com/urboifox/frontend-roadmap) (63)
+- [meFaijan/telegramcryptofarmbot](https://github.com/meFaijan/telegramcryptofarmbot) (63)
+- [apple/ml-slowfast-llava](https://github.com/apple/ml-slowfast-llava) (33)
