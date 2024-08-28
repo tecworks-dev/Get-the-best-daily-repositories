@@ -1,32 +1,32 @@
 [
   {
-    "name": "NousResearch/DisTrO",
-    "clone_url": "https://github.com/NousResearch/DisTrO.git",
-    "stars": 250,
-    "size": 1008
-  },
-  {
-    "name": "Aabyss-Team/Antivirus-Scan",
-    "clone_url": "https://github.com/Aabyss-Team/Antivirus-Scan.git",
-    "stars": 111,
-    "size": 335
-  },
-  {
     "name": "urboifox/frontend-roadmap",
     "clone_url": "https://github.com/urboifox/frontend-roadmap.git",
-    "stars": 63,
+    "stars": 91,
     "size": 143
   },
   {
-    "name": "meFaijan/telegramcryptofarmbot",
-    "clone_url": "https://github.com/meFaijan/telegramcryptofarmbot.git",
-    "stars": 63,
-    "size": 1172
+    "name": "cartesia-ai/edge",
+    "clone_url": "https://github.com/cartesia-ai/edge.git",
+    "stars": 73,
+    "size": 3173
   },
   {
-    "name": "apple/ml-slowfast-llava",
-    "clone_url": "https://github.com/apple/ml-slowfast-llava.git",
+    "name": "uxiaohan/CloudflareIP-dnspod-ddns",
+    "clone_url": "https://github.com/uxiaohan/CloudflareIP-dnspod-ddns.git",
+    "stars": 36,
+    "size": 99
+  },
+  {
+    "name": "pablogila/TileMapDual_godot_node",
+    "clone_url": "https://github.com/pablogila/TileMapDual_godot_node.git",
     "stars": 33,
-    "size": 383
+    "size": 4077
+  },
+  {
+    "name": "Yanfeng-Zhou/XNetv2",
+    "clone_url": "https://github.com/Yanfeng-Zhou/XNetv2.git",
+    "stars": 28,
+    "size": 3502
   }
 ]
