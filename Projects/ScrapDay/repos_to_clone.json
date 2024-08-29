@@ -1,32 +1,32 @@
 [
   {
-    "name": "urboifox/frontend-roadmap",
-    "clone_url": "https://github.com/urboifox/frontend-roadmap.git",
-    "stars": 91,
-    "size": 143
+    "name": "vercel-labs/ai-sdk-preview-rsc-genui",
+    "clone_url": "https://github.com/vercel-labs/ai-sdk-preview-rsc-genui.git",
+    "stars": 80,
+    "size": 948
   },
   {
-    "name": "cartesia-ai/edge",
-    "clone_url": "https://github.com/cartesia-ai/edge.git",
-    "stars": 73,
-    "size": 3173
-  },
-  {
-    "name": "uxiaohan/CloudflareIP-dnspod-ddns",
-    "clone_url": "https://github.com/uxiaohan/CloudflareIP-dnspod-ddns.git",
-    "stars": 36,
-    "size": 99
-  },
-  {
-    "name": "pablogila/TileMapDual_godot_node",
-    "clone_url": "https://github.com/pablogila/TileMapDual_godot_node.git",
-    "stars": 33,
-    "size": 4077
+    "name": "code100x/muzer",
+    "clone_url": "https://github.com/code100x/muzer.git",
+    "stars": 62,
+    "size": 77
   },
   {
     "name": "Yanfeng-Zhou/XNetv2",
     "clone_url": "https://github.com/Yanfeng-Zhou/XNetv2.git",
     "stars": 28,
     "size": 3502
+  },
+  {
+    "name": "dh1011/llm-term",
+    "clone_url": "https://github.com/dh1011/llm-term.git",
+    "stars": 25,
+    "size": 1206
+  },
+  {
+    "name": "madhanl6/ML-Template",
+    "clone_url": "https://github.com/madhanl6/ML-Template.git",
+    "stars": 21,
+    "size": 551
   }
 ]
