@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-26 .. 2024-08-28)
+# Latest Repositories (2024-08-27 .. 2024-08-29)
 
-- [urboifox/frontend-roadmap](https://github.com/urboifox/frontend-roadmap) (91)
-- [cartesia-ai/edge](https://github.com/cartesia-ai/edge) (73)
-- [uxiaohan/CloudflareIP-dnspod-ddns](https://github.com/uxiaohan/CloudflareIP-dnspod-ddns) (36)
-- [pablogila/TileMapDual_godot_node](https://github.com/pablogila/TileMapDual_godot_node) (33)
+- [vercel-labs/ai-sdk-preview-rsc-genui](https://github.com/vercel-labs/ai-sdk-preview-rsc-genui) (80)
+- [code100x/muzer](https://github.com/code100x/muzer) (62)
 - [Yanfeng-Zhou/XNetv2](https://github.com/Yanfeng-Zhou/XNetv2) (28)
+- [dh1011/llm-term](https://github.com/dh1011/llm-term) (25)
+- [madhanl6/ML-Template](https://github.com/madhanl6/ML-Template) (21)
