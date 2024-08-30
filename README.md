@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-27 .. 2024-08-29)
+# Latest Repositories (2024-08-28 .. 2024-08-30)
 
-- [vercel-labs/ai-sdk-preview-rsc-genui](https://github.com/vercel-labs/ai-sdk-preview-rsc-genui) (80)
-- [code100x/muzer](https://github.com/code100x/muzer) (62)
-- [Yanfeng-Zhou/XNetv2](https://github.com/Yanfeng-Zhou/XNetv2) (28)
-- [dh1011/llm-term](https://github.com/dh1011/llm-term) (25)
-- [madhanl6/ML-Template](https://github.com/madhanl6/ML-Template) (21)
+- [QwenLM/Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (666)
+- [jishengpeng/WavTokenizer](https://github.com/jishengpeng/WavTokenizer) (172)
+- [ziyc/drivestudio](https://github.com/ziyc/drivestudio) (164)
+- [liuff19/ReconX](https://github.com/liuff19/ReconX) (147)
+- [code100x/muzer](https://github.com/code100x/muzer) (92)
