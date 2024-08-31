@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-28 .. 2024-08-30)
+# Latest Repositories (2024-08-29 .. 2024-08-31)
 
-- [QwenLM/Qwen2-VL](https://github.com/QwenLM/Qwen2-VL) (666)
-- [jishengpeng/WavTokenizer](https://github.com/jishengpeng/WavTokenizer) (172)
-- [ziyc/drivestudio](https://github.com/ziyc/drivestudio) (164)
-- [liuff19/ReconX](https://github.com/liuff19/ReconX) (147)
-- [code100x/muzer](https://github.com/code100x/muzer) (92)
+- [antfu/oniguruma-to-js](https://github.com/antfu/oniguruma-to-js) (36)
+- [JakeWharton/finalization-hook](https://github.com/JakeWharton/finalization-hook) (25)
+- [skydive1221/Wave-Executor](https://github.com/skydive1221/Wave-Executor) (20)
+- [napkinninjanate/Executor-Script-Roblox](https://github.com/napkinninjanate/Executor-Script-Roblox) (19)
+- [VurB/Roblox-Frostware](https://github.com/VurB/Roblox-Frostware) (19)
