@@ -1,0 +1,66 @@
+{
+  "name": "@wechatferry/nuxt",
+  "type": "module",
+  "version": "0.0.4",
+  "description": "nuxt module for wechatferry",
+  "author": "mrrhq <sanhua@himrr.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/mrrhq",
+  "homepage": "https://github.com/wechatferry/wechatferry#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wechatferry/wechatferry"
+  },
+  "bugs": "https://github.com/wechatferry/wechatferry/issues",
+  "keywords": [
+    "wechat",
+    "wcferry",
+    "robot",
+    "nuxt",
+    "nuxt-module"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build build && npm run client:build",
+    "client:build": "nuxi generate client",
+    "client:dev": "nuxi dev client --port 3300",
+    "dev": "npm run play:dev",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare client",
+    "prepare": "nuxi prepare client",
+    "play:dev": "nuxi dev playground",
+    "play:prod": "npm run prepack && nuxi dev playground"
+  },
+  "dependencies": {
+    "@nuxt/devtools-kit": "^1.3.14",
+    "@nuxt/kit": "^3.13.0",
+    "@wechatferry/puppet": "workspace:*",
+    "fast-glob": "^3.3.2",
+    "pathe": "^1.1.2",
+    "scule": "^1.3.0",
+    "sirv": "^2.0.4",
+    "wechaty": "^1.20.2"
+  },
+  "devDependencies": {
+    "@iconify-json/carbon": "^1.1.37",
+    "@nuxt/devtools": "^1.3.14",
+    "@nuxt/devtools-ui-kit": "^1.3.14",
+    "@nuxt/eslint-config": "^0.5.2",
+    "@nuxt/module-builder": "^0.8.3",
+    "@nuxt/schema": "^3.13.0",
+    "@nuxt/test-utils": "^3.14.1",
+    "eslint": "^9.9.1",
+    "nuxt": "^3.12.4",
+    "vitest": "^2.0.5"
+  }
+}

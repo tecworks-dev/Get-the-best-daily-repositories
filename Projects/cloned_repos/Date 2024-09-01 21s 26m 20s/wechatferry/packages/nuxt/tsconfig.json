@@ -1,0 +1,7 @@
+{
+  "extends": "./client/.nuxt/tsconfig.json",
+  "exclude": [
+    "client",
+    "playground"
+  ]
+}
