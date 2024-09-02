@@ -1,7 +1,7 @@
-# Latest Repositories (2024-08-30 .. 2024-09-01)
+# Latest Repositories (2024-08-31 .. 2024-09-02)
 
-- [tookoo31kami/Market-Making-Dev-Bot](https://github.com/tookoo31kami/Market-Making-Dev-Bot) (116)
-- [wechatferry/wechatferry](https://github.com/wechatferry/wechatferry) (52)
-- [SandroMaglione/pglite-client-server](https://github.com/SandroMaglione/pglite-client-server) (40)
-- [Octoberfest7/enumhandles_BOF](https://github.com/Octoberfest7/enumhandles_BOF) (33)
-- [xero/evangelion.nvim](https://github.com/xero/evangelion.nvim) (31)
+- [jasonxtn/Kraken](https://github.com/jasonxtn/Kraken) (82)
+- [pythops/oryx](https://github.com/pythops/oryx) (68)
+- [Octoberfest7/enumhandles_BOF](https://github.com/Octoberfest7/enumhandles_BOF) (64)
+- [unplugin/unplugin-unused](https://github.com/unplugin/unplugin-unused) (52)
+- [Hipxel-dev/HIT-ZONE-menu](https://github.com/Hipxel-dev/HIT-ZONE-menu) (45)
