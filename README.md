@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-08 .. 2024-09-10)
+# Latest Repositories (2024-09-09 .. 2024-09-11)
 
-- [chaidiscovery/chai-lab](https://github.com/chaidiscovery/chai-lab) (263)
-- [Nyctalophian/H4mster-4ut0-b0T](https://github.com/Nyctalophian/H4mster-4ut0-b0T) (84)
-- [kubas10000/ex1t-l4g-fr33](https://github.com/kubas10000/ex1t-l4g-fr33) (81)
-- [SHARKREGEDITS/hw1d-sp00f3r-fr33](https://github.com/SHARKREGEDITS/hw1d-sp00f3r-fr33) (80)
-- [AvuxDemons/vcm0d-fr33](https://github.com/AvuxDemons/vcm0d-fr33) (76)
+- [ictnlp/LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni) (162)
+- [CATProtocol/cat-token-box](https://github.com/CATProtocol/cat-token-box) (79)
+- [leerob/next-saas-starter](https://github.com/leerob/next-saas-starter) (38)
+- [AzwarKusumah/imphnen-certificate](https://github.com/AzwarKusumah/imphnen-certificate) (30)
+- [mar-antaya/predict_nvda](https://github.com/mar-antaya/predict_nvda) (22)
