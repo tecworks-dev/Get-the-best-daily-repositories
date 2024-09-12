@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-09 .. 2024-09-11)
+# Latest Repositories (2024-09-10 .. 2024-09-12)
 
-- [ictnlp/LLaMA-Omni](https://github.com/ictnlp/LLaMA-Omni) (162)
-- [CATProtocol/cat-token-box](https://github.com/CATProtocol/cat-token-box) (79)
-- [leerob/next-saas-starter](https://github.com/leerob/next-saas-starter) (38)
-- [AzwarKusumah/imphnen-certificate](https://github.com/AzwarKusumah/imphnen-certificate) (30)
-- [mar-antaya/predict_nvda](https://github.com/mar-antaya/predict_nvda) (22)
+- [tonyljx/TextWordExplain](https://github.com/tonyljx/TextWordExplain) (36)
+- [AARG-FAN/Yolo_for_Wukong](https://github.com/AARG-FAN/Yolo_for_Wukong) (31)
+- [Hessen01/Lunar-Executor](https://github.com/Hessen01/Lunar-Executor) (28)
+- [0xhav0c/FastVulnVerify](https://github.com/0xhav0c/FastVulnVerify) (24)
+- [6Kmfi6HP/EDtunnel](https://github.com/6Kmfi6HP/EDtunnel) (23)
