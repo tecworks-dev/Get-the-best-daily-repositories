@@ -1,32 +1,32 @@
 [
   {
-    "name": "antibitcoin/ReflectionAnyLLM",
-    "clone_url": "https://github.com/antibitcoin/ReflectionAnyLLM.git",
-    "stars": 195,
-    "size": 423
-  },
-  {
     "name": "hijkzzz/Awesome-LLM-Strawberry",
     "clone_url": "https://github.com/hijkzzz/Awesome-LLM-Strawberry.git",
-    "stars": 131,
-    "size": 74
+    "stars": 795,
+    "size": 84
   },
   {
-    "name": "An-anonymous-coder/Open-Source-Everything",
-    "clone_url": "https://github.com/An-anonymous-coder/Open-Source-Everything.git",
-    "stars": 70,
-    "size": 62
+    "name": "remvze/nothing",
+    "clone_url": "https://github.com/remvze/nothing.git",
+    "stars": 122,
+    "size": 1420
   },
   {
-    "name": "leerob/next-music-player",
-    "clone_url": "https://github.com/leerob/next-music-player.git",
-    "stars": 69,
-    "size": 53
+    "name": "bones-ai/odin-mnist-nn",
+    "clone_url": "https://github.com/bones-ai/odin-mnist-nn.git",
+    "stars": 104,
+    "size": 155
   },
   {
-    "name": "crazylady49dorotea12xi/1at-DeadbyDaylightt",
-    "clone_url": "https://github.com/crazylady49dorotea12xi/1at-DeadbyDaylightt.git",
-    "stars": 46,
-    "size": 50
+    "name": "gaoglun/fatality-CS2",
+    "clone_url": "https://github.com/gaoglun/fatality-CS2.git",
+    "stars": 98,
+    "size": 4857
+  },
+  {
+    "name": "PatrickJS/awesome-cursorrules",
+    "clone_url": "https://github.com/PatrickJS/awesome-cursorrules.git",
+    "stars": 65,
+    "size": 516
   }
 ]
