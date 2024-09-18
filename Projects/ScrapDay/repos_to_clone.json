@@ -1,32 +1,32 @@
 [
   {
-    "name": "hijkzzz/Awesome-LLM-Strawberry",
-    "clone_url": "https://github.com/hijkzzz/Awesome-LLM-Strawberry.git",
-    "stars": 795,
-    "size": 84
+    "name": "zml/zml",
+    "clone_url": "https://github.com/zml/zml.git",
+    "stars": 850,
+    "size": 447
   },
   {
-    "name": "remvze/nothing",
-    "clone_url": "https://github.com/remvze/nothing.git",
-    "stars": 122,
-    "size": 1420
+    "name": "zlwaterfield/scramble",
+    "clone_url": "https://github.com/zlwaterfield/scramble.git",
+    "stars": 715,
+    "size": 77
   },
   {
-    "name": "bones-ai/odin-mnist-nn",
-    "clone_url": "https://github.com/bones-ai/odin-mnist-nn.git",
-    "stars": 104,
-    "size": 155
-  },
-  {
-    "name": "gaoglun/fatality-CS2",
-    "clone_url": "https://github.com/gaoglun/fatality-CS2.git",
+    "name": "punnerud/Local_Knowledge_Graph",
+    "clone_url": "https://github.com/punnerud/Local_Knowledge_Graph.git",
     "stars": 98,
-    "size": 4857
+    "size": 400
   },
   {
-    "name": "PatrickJS/awesome-cursorrules",
-    "clone_url": "https://github.com/PatrickJS/awesome-cursorrules.git",
-    "stars": 65,
-    "size": 516
+    "name": "atinux/npm-chart",
+    "clone_url": "https://github.com/atinux/npm-chart.git",
+    "stars": 79,
+    "size": 789
+  },
+  {
+    "name": "BradyMeighan/WLED-Studio",
+    "clone_url": "https://github.com/BradyMeighan/WLED-Studio.git",
+    "stars": 59,
+    "size": 514
   }
 ]

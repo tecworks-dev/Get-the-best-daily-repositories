@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-14 .. 2024-09-16)
+# Latest Repositories (2024-09-16 .. 2024-09-18)
 
-- [hijkzzz/Awesome-LLM-Strawberry](https://github.com/hijkzzz/Awesome-LLM-Strawberry) (795)
-- [remvze/nothing](https://github.com/remvze/nothing) (122)
-- [bones-ai/odin-mnist-nn](https://github.com/bones-ai/odin-mnist-nn) (104)
-- [gaoglun/fatality-CS2](https://github.com/gaoglun/fatality-CS2) (98)
-- [PatrickJS/awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) (65)
+- [zml/zml](https://github.com/zml/zml) (850)
+- [zlwaterfield/scramble](https://github.com/zlwaterfield/scramble) (715)
+- [punnerud/Local_Knowledge_Graph](https://github.com/punnerud/Local_Knowledge_Graph) (98)
+- [atinux/npm-chart](https://github.com/atinux/npm-chart) (79)
+- [BradyMeighan/WLED-Studio](https://github.com/BradyMeighan/WLED-Studio) (59)
