@@ -1,0 +1,10 @@
+{
+	"fileSizeLimitMB":  100,
+	"textSizeLimitMB": 10,
+	"streamSizeLimitKB": 1024,
+	"streamThrottleMS": 25,
+
+	"pbkdf2Iterations": 10000,
+	
+	"cmdUploadDefaultDurationMinute" : 10
+}

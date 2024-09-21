@@ -1,0 +1,65 @@
+<!--
+This file is part of GigaPaste.
+
+GigaPaste is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+GigaPaste is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with GigaPaste. If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="theme.css">
+	<link rel="stylesheet" href="style.css"></link>
+	<script src="helper.js"></script>
+
+	<script>
+
+		function copy(){
+
+			copyToClipboard(document.getElementById("text").innerHTML)
+
+		}
+
+		function getRawLink(){
+
+			if(new URL(window.location.href).search.length > 0){
+				copyToClipboard(window.location.href + "&raw=1")
+			}else{
+				copyToClipboard(window.location.href + "?raw=1")
+			}
+
+		}
+
+	</script>
+
+</head>
+<body>
+	
+	<div style="display: flex; flex-direction: column; align-items: center; gap: 10px; height: 100%; padding: 10px; box-sizing: border-box;">
+
+		<div style="justify-content: center; width: calc(100% - 20px); flex: 1; overflow: auto;">
+			
+			<pre id="text" style="word-break: normal; white-space: pre-wrap; width: 100%; height: 100%; margin: 0">{{ .Text }}</pre>
+		
+		</div>
+
+		<div style="display: flex; gap: 10px;">
+
+			<button onclick="copy()" style="width: 200px;">Copy all</button>
+			{{ if ne .Burn "1" }}
+			<button onclick="getRawLink()" style="width: 200px;">Copy raw link</button>
+			{{ end }}
+		</div>
+
+		<button onclick="window.location.href = '/'" style="width: 200px">New</button>
+
+	</div>
+	
+</body>
+
+</html>
