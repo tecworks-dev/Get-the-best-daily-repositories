@@ -1,0 +1,13 @@
+{
+    "appVersion":"1.0.1",
+    "updateContentUrl":"",
+    "updateConfig":{
+        "url":"",
+        "forceUpdate":false,
+        "autoUpdate":false
+    },
+    "isOpen":{
+        "open":true,
+        "description":""
+    }
+}

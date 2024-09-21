@@ -1,0 +1,98 @@
+<!--
+This file is part of GigaPaste.
+
+GigaPaste is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+
+GigaPaste is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with GigaPaste. If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="theme.css">
+	<link rel="stylesheet" href="style.css"></link>
+	<script src="qrcode.js"></script>
+	<script src="script.js"></script>
+	<script src="helper.js"></script>
+
+</head>
+<body>
+	
+	<!-- MAIN CONTAINER -->
+	<div style="width: 100%; height: 100%;">
+
+		<!-- need nested container because on smaller screen padding creates scroll -->
+		<div style="display: flex; flex-direction: column; width: 100%; height: 100%; gap: 10px; padding: 10px; box-sizing: border-box">
+
+			<!-- BIG BUTTON -->
+			<div style="display: flex; justify-content: center;"> 
+				<button id="customUpload" for="fileInput" class="rspText">
+					Click here, drag &amp; drop, or Ctrl + v anywhere to select file
+				</button>
+				<input multiple id="fileInput" type="file" style="display: none"/>
+			</div>
+			
+			<!-- OPTIONS -->
+			<div style="display: flex; justify-content: center;">
+				<div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 10px 10px;">
+					<input id="password" placeholder="password" type="password" class="rspText" style="width: 150px">
+					<div style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+						<input id="duration" placeholder="duration" type="number" class="rspText" style="width: 100px">
+						<!--Need to use auto because with current theme it breaks the select width-->
+						<select id="durationModifiers" name="options" class="rspText" style="width: 100px;">
+							<option value="minutes">minutes</option>
+							<option value="hours">hours</option>
+							<option value="days">days</option>
+							<option value="months">months</option>
+							<option value="years">years</option>
+						</select>
+					</div>
+					<div style="display: flex; gap: 10px">
+						<input id="burn" type="checkbox"></input>
+						<label for="burn">Burn after open</label>
+					</div>
+				</div>
+			</div>
+
+			<!-- TEXT INPUT -->
+			<div style="display: flex; justify-content: center; flex-grow: 1">
+				<textarea id="textarea" style="font-size: 1em"></textarea>
+			</div>
+
+			<!-- UPLOAD -->
+			<div style="display: flex; justify-content: center;">
+				<button id="upload" onclick="upload()" class="rspText">Upload text (Ctrl + Enter)</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- UPLOAD PROGRESS OVERLAY -->
+	<div id="progressPage" class="progress">
+
+		<div id="qrcode"></div>
+		<div>
+			<label id="uploadPercent">0%</label>
+		</div>
+		<div id="uploadInfo" style="display: none; align-items: center; flex-direction: column; gap: 10px">
+			<div>
+				<label id="link"></label>
+			</div>
+			<div>
+				<button id="copyLinkButton" onclick="copyLink()">Copy link</button>
+			</div>
+			<div>
+				<button onclick="location.reload()">New</button>
+			</div>
+		</div>
+
+	</div>
+
+	</body>
+
+</html>

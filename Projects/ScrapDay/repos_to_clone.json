@@ -1,32 +1,32 @@
 [
   {
-    "name": "HiveSpaceAI/HiveSpace",
-    "clone_url": "https://github.com/HiveSpaceAI/HiveSpace.git",
-    "stars": 203,
-    "size": 1637
+    "name": "querylab/lazywarden",
+    "clone_url": "https://github.com/querylab/lazywarden.git",
+    "stars": 241,
+    "size": 52
   },
   {
-    "name": "angpao1025/Free-Snap-Tap_",
-    "clone_url": "https://github.com/angpao1025/Free-Snap-Tap_.git",
-    "stars": 99,
-    "size": 400
-  },
-  {
-    "name": "lumalabs/ComfyUI-LumaAI-API",
-    "clone_url": "https://github.com/lumalabs/ComfyUI-LumaAI-API.git",
-    "stars": 82,
-    "size": 168
+    "name": "yangdongchao/Open-Training-Moshi",
+    "clone_url": "https://github.com/yangdongchao/Open-Training-Moshi.git",
+    "stars": 48,
+    "size": 576
   },
   {
     "name": "jiwangyihao/Saturn-docs",
     "clone_url": "https://github.com/jiwangyihao/Saturn-docs.git",
-    "stars": 45,
-    "size": 2479
+    "stars": 47,
+    "size": 4749
   },
   {
-    "name": "Lakr233/NotchNotification",
-    "clone_url": "https://github.com/Lakr233/NotchNotification.git",
-    "stars": 37,
-    "size": 490
+    "name": "kiko-love/your-music-station-v1",
+    "clone_url": "https://github.com/kiko-love/your-music-station-v1.git",
+    "stars": 33,
+    "size": 838
+  },
+  {
+    "name": "NRicode/GigaPaste",
+    "clone_url": "https://github.com/NRicode/GigaPaste.git",
+    "stars": 31,
+    "size": 115
   }
 ]

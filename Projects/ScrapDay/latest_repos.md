@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-18 .. 2024-09-20)
+# Latest Repositories (2024-09-19 .. 2024-09-21)
 
-- [HiveSpaceAI/HiveSpace](https://github.com/HiveSpaceAI/HiveSpace) (203)
-- [angpao1025/Free-Snap-Tap_](https://github.com/angpao1025/Free-Snap-Tap_) (99)
-- [lumalabs/ComfyUI-LumaAI-API](https://github.com/lumalabs/ComfyUI-LumaAI-API) (82)
-- [jiwangyihao/Saturn-docs](https://github.com/jiwangyihao/Saturn-docs) (45)
-- [Lakr233/NotchNotification](https://github.com/Lakr233/NotchNotification) (37)
+- [querylab/lazywarden](https://github.com/querylab/lazywarden) (241)
+- [yangdongchao/Open-Training-Moshi](https://github.com/yangdongchao/Open-Training-Moshi) (48)
+- [jiwangyihao/Saturn-docs](https://github.com/jiwangyihao/Saturn-docs) (47)
+- [kiko-love/your-music-station-v1](https://github.com/kiko-love/your-music-station-v1) (33)
+- [NRicode/GigaPaste](https://github.com/NRicode/GigaPaste) (31)
