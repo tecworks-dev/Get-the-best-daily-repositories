@@ -1,32 +1,32 @@
 [
   {
-    "name": "querylab/lazywarden",
-    "clone_url": "https://github.com/querylab/lazywarden.git",
-    "stars": 241,
-    "size": 52
+    "name": "safak/full-stack-school",
+    "clone_url": "https://github.com/safak/full-stack-school.git",
+    "stars": 38,
+    "size": 216
   },
   {
-    "name": "yangdongchao/Open-Training-Moshi",
-    "clone_url": "https://github.com/yangdongchao/Open-Training-Moshi.git",
-    "stars": 48,
-    "size": 576
+    "name": "reecdeep/segugio",
+    "clone_url": "https://github.com/reecdeep/segugio.git",
+    "stars": 36,
+    "size": 3140
   },
   {
-    "name": "jiwangyihao/Saturn-docs",
-    "clone_url": "https://github.com/jiwangyihao/Saturn-docs.git",
-    "stars": 47,
-    "size": 4749
-  },
-  {
-    "name": "kiko-love/your-music-station-v1",
-    "clone_url": "https://github.com/kiko-love/your-music-station-v1.git",
-    "stars": 33,
-    "size": 838
-  },
-  {
-    "name": "NRicode/GigaPaste",
-    "clone_url": "https://github.com/NRicode/GigaPaste.git",
+    "name": "vanhbakaa/moonbix-bot",
+    "clone_url": "https://github.com/vanhbakaa/moonbix-bot.git",
     "stars": 31,
-    "size": 115
+    "size": 112
+  },
+  {
+    "name": "discus0434/comfyui-flux-accelerator",
+    "clone_url": "https://github.com/discus0434/comfyui-flux-accelerator.git",
+    "stars": 27,
+    "size": 1213
+  },
+  {
+    "name": "leerob/vim-for-react-devs",
+    "clone_url": "https://github.com/leerob/vim-for-react-devs.git",
+    "stars": 27,
+    "size": 61
   }
 ]
