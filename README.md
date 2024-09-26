@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-21 .. 2024-09-23)
+# Latest Repositories (2024-09-24 .. 2024-09-26)
 
-- [InterrobangInterrogated/fortniteh4ck](https://github.com/InterrobangInterrogated/fortniteh4ck) (265)
-- [xlmnxp/Qocker](https://github.com/xlmnxp/Qocker) (126)
-- [discus0434/comfyui-flux-accelerator](https://github.com/discus0434/comfyui-flux-accelerator) (56)
-- [leerob/vim-for-react-devs](https://github.com/leerob/vim-for-react-devs) (56)
-- [AimRT/AimRT](https://github.com/AimRT/AimRT) (46)
+- [frostming/fxzhihu](https://github.com/frostming/fxzhihu) (127)
+- [regolith-labs/steel](https://github.com/regolith-labs/steel) (69)
+- [raysan5/raylib_project_creator](https://github.com/raysan5/raylib_project_creator) (53)
+- [okaris/omni-zero-couples](https://github.com/okaris/omni-zero-couples) (45)
+- [alibaba/TorchEasyRec](https://github.com/alibaba/TorchEasyRec) (33)
