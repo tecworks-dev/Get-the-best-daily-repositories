@@ -1,0 +1,10 @@
+.env
+__pycache__/
+.venv
+venv
+/instance/*
+!/instance/
+uploads/
+processed/
+pandaetl.log
+*.db

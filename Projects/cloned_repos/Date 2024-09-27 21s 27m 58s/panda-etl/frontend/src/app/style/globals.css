@@ -1,0 +1,265 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+.modal-container {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.collapsible-content.expanded {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.chevron-icon {
+  transition: transform 0.3s ease-in-out;
+}
+
+.chevron-icon.up {
+  transform: rotate(180deg);
+}
+
+/* chat loader css */
+
+.chat-bubble {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+.circle-wrapper {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+.circle {
+  position: relative;
+  height: 10px;
+  width: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+  top: 0px;
+  background: white;
+  display: inline-block;
+  border-radius: 50%;
+}
+.circle {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+#circle1 {
+  animation-name: circle1;
+  background: #f43c86;
+}
+#circle2 {
+  animation-name: circle2;
+  background: rgba(244, 60, 134, 0.5);
+}
+#circle3 {
+  animation-name: circle3;
+  background: rgba(244, 60, 134, 0.21);
+}
+@keyframes circle1 {
+  0% {
+    top: 0px;
+  }
+  15% {
+    top: -10px;
+  }
+  25% {
+    top: 0px;
+  }
+}
+@keyframes circle2 {
+  10% {
+    top: 0px;
+  }
+  25% {
+    top: -10px;
+  }
+  35% {
+    top: 0px;
+  }
+}
+
+@keyframes circle3 {
+  15% {
+    top: 0px;
+  }
+  30% {
+    top: -10px;
+  }
+  40% {
+    top: 0px;
+  }
+}
+
+/* toggle mode css */
+
+/* Table actions */
+tr .action-icons {
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  display: flex;
+  justify-content: flex-end;
+}
+tr:hover .action-icons {
+  opacity: 1;
+}
+
+/* React-Data-Grid styles */
+.rdg {
+  border: none;
+  border-radius: 0;
+}
+
+.rdg-header-row {
+  background-color: #f3f4f6;
+}
+
+.rdg-cell {
+  border-right: none;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.rdg-header-cell {
+  border-right: none;
+  border-bottom: 1px solid #e5e7eb;
+  font-weight: 600;
+}
+
+.rdg-row:hover {
+  background-color: #f9fafb;
+}
+
+.rdg-cell:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: -2px;
+}
+
+.rdg-line-number-cell {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.rdg-line-number-cell:hover {
+  background-color: #e0e0e0;
+}
+
+.rdg-row-selected {
+  background-color: rgba(0, 0, 255, 0.1) !important;
+}
+
+.rdg-row-selected .rdg-cell {
+  background-color: rgba(0, 0, 255, 0.1) !important;
+}
+
+.rdg-row .rdg-cell:first-child {
+  cursor: pointer;
+}
+
+.rdg-row-index-column {
+  background-color: #f9f9f9;
+  border-right: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Add these new styles for the animated gradient */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animated-gradient {
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: gradientAnimation 1.5s ease infinite;
+}
+
+.group:hover .animated-gradient {
+  animation-play-state: running;
+}
+
+/* Add these new styles for the gradient animation */
+@keyframes fadeInGradient {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.group:hover .bg-gradient-to-l {
+  animation: fadeInGradient 0.3s ease-in-out forwards;
+}
+
+.rdg-cell,
+.rdg-header-cell {
+  width: auto !important; /* Ensure the header spans full width */
+  border-right: none;
+  border-bottom: 1px solid #e5e7eb;
+  color: black;
+  height: auto;
+}
+
+.rdg-editor-container {
+  height: 35px;
+  width: auto;
+  display: flex;
+  align-items: flex-start;
+}

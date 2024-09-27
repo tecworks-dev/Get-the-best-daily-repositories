@@ -1,0 +1,100 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+
+    env:
+      SQLALCHEMY_DATABASE_URL: "sqlite:///instance/test.db"
+      OPENAI_API_KEY: "dump"
+      PANDAETL_SERVER_URL: "http://127.0.0.1:9000"
+
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+        python-version: ["3.11"]
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Install Poetry (Unix)
+        if: matrix.os != 'windows-latest'
+        run: |
+          curl -sSL https://install.python-poetry.org | python3 -
+          echo 'export PATH="$HOME/.local/bin:$PATH"' >> $GITHUB_ENV
+
+      - name: Install Poetry (Windows)
+        if: matrix.os == 'windows-latest'
+        run: |
+          (Invoke-WebRequest -Uri https://install.python-poetry.org -UseBasicParsing).Content | python -
+          echo "C:\\Users\\runneradmin\\AppData\\Roaming\\Python\\Scripts" | Out-File -FilePath $env:GITHUB_PATH -Encoding utf8 -Append
+
+      - name: Verify Poetry Installation
+        run: poetry --version
+
+      - name: Clear Poetry Cache
+        run: poetry cache clear pypi --all
+
+      - name: Install Meson and Ninja (Windows)
+        if: matrix.os == 'windows-latest'
+        run: |
+          pip install meson ninja
+
+      - name: Install dependencies
+        run: |
+          cd backend
+          poetry install --all-extras --with dev --verbose
+
+      - name: Run python tests
+        run: |
+          cd backend
+          poetry run pytest
+
+      - name: Install frontend dependencies
+        run: |
+          cd frontend
+          npm i --legacy-peer-deps
+
+      - name: Build frontend
+        run: |
+          cd frontend
+          npm run build
+
+  frontend-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Use Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: |
+          cd frontend
+          npm i --legacy-peer-deps
+
+      - name: Run ESLint
+        run: |
+          cd frontend
+          npm run lint
+
+      - name: Check Prettier formatting
+        run: |
+          cd frontend
+          npx prettier --check .
