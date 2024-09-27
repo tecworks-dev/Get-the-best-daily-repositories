@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-24 .. 2024-09-26)
+# Latest Repositories (2024-09-25 .. 2024-09-27)
 
-- [frostming/fxzhihu](https://github.com/frostming/fxzhihu) (127)
-- [regolith-labs/steel](https://github.com/regolith-labs/steel) (69)
-- [raysan5/raylib_project_creator](https://github.com/raysan5/raylib_project_creator) (53)
-- [okaris/omni-zero-couples](https://github.com/okaris/omni-zero-couples) (45)
-- [alibaba/TorchEasyRec](https://github.com/alibaba/TorchEasyRec) (33)
+- [baaivision/Emu3](https://github.com/baaivision/Emu3) (290)
+- [raysan5/raylib_project_creator](https://github.com/raysan5/raylib_project_creator) (87)
+- [trickster0/NamelessC2](https://github.com/trickster0/NamelessC2) (77)
+- [teorth/equational_theories](https://github.com/teorth/equational_theories) (66)
+- [Sinaptik-AI/panda-etl](https://github.com/Sinaptik-AI/panda-etl) (56)

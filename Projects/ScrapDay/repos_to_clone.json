@@ -1,32 +1,32 @@
 [
   {
-    "name": "frostming/fxzhihu",
-    "clone_url": "https://github.com/frostming/fxzhihu.git",
-    "stars": 127,
-    "size": 588
-  },
-  {
-    "name": "regolith-labs/steel",
-    "clone_url": "https://github.com/regolith-labs/steel.git",
-    "stars": 69,
-    "size": 59
+    "name": "baaivision/Emu3",
+    "clone_url": "https://github.com/baaivision/Emu3.git",
+    "stars": 290,
+    "size": 764
   },
   {
     "name": "raysan5/raylib_project_creator",
     "clone_url": "https://github.com/raysan5/raylib_project_creator.git",
-    "stars": 53,
-    "size": 2937
+    "stars": 87,
+    "size": 2939
   },
   {
-    "name": "okaris/omni-zero-couples",
-    "clone_url": "https://github.com/okaris/omni-zero-couples.git",
-    "stars": 45,
-    "size": 51
+    "name": "trickster0/NamelessC2",
+    "clone_url": "https://github.com/trickster0/NamelessC2.git",
+    "stars": 77,
+    "size": 80
   },
   {
-    "name": "alibaba/TorchEasyRec",
-    "clone_url": "https://github.com/alibaba/TorchEasyRec.git",
-    "stars": 33,
-    "size": 3849
+    "name": "teorth/equational_theories",
+    "clone_url": "https://github.com/teorth/equational_theories.git",
+    "stars": 66,
+    "size": 1023
+  },
+  {
+    "name": "Sinaptik-AI/panda-etl",
+    "clone_url": "https://github.com/Sinaptik-AI/panda-etl.git",
+    "stars": 56,
+    "size": 1023
   }
 ]
