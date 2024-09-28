@@ -1,0 +1,100 @@
+---
+import { Container } from './container';
+---
+
+<Container>
+  <section class="description">
+    <section>
+      <h2>Why do I need secure passwords?</h2>
+      <p>
+        Secure passwords protect your personal information and online accounts
+        from unauthorized access and cyber threats. Weak or guessable passwords
+        make it easy for hackers to breach your accounts, leading to identity
+        theft, financial loss, and privacy issues. Using strong, unique
+        passwords significantly lowers the risk of data breaches and keeps your
+        sensitive information safe. Investing in secure passwords is essential
+        for safeguarding your digital life and maintaining online security.
+      </p>
+    </section>
+
+    <section>
+      <h2>What is PSWD?</h2>
+      <p>
+        PSWD is a secure, user-friendly password generator that helps you create
+        strong, unique passwords effortlessly. Whether you prefer traditional
+        character-based passwords or memorable passphrases using the Diceware
+        method, PSWD offers customizable options like length, character types,
+        and word counts to meet your security needs. Its intuitive interface
+        makes generating robust credentials for your online accounts simple and
+        efficient.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why should I use PSWD?</h2>
+      <p>
+        PSWD allows you to easily generate strong, unique passwords tailored to
+        your security needs. With options for length, character types, and word
+        counts, you can create passwords that are both secure and memorable. Its
+        user-friendly interface simplifies the password creation process,
+        removing the hassle and guesswork. By using PSWD, you enhance your
+        online security, protect your personal information, and ensure your
+        accounts are safeguarded with reliable passwords.
+      </p>
+    </section>
+
+    <section>
+      <h2>How Are Passwords Generated in PSWD?</h2>
+      <p>
+        Passwords are generated entirely in your browser using the
+        <code>window.crypto.getRandomValues</code> API, which provides cryptographically
+        secure random numbers. Our <a
+          href="https://github.com/remvze/pswd/blob/main/src/helpers/crypto.ts"
+          >generation function</a
+        > carefully handles potential biases by discarding values outside the desired
+        range. All processing occurs locally on your device, and no password data
+        is ever sent to or stored on our servers. This ensures that only you have
+        access to your generated passwords, maintaining your privacy and security.
+      </p>
+    </section>
+  </section>
+</Container>
+
+<style>
+  .description {
+    padding: 60px 0;
+
+    & section {
+      &:not(:last-of-type) {
+        margin-bottom: 32px;
+      }
+
+      & h2 {
+        margin-bottom: 8px;
+        font-family: var(--font-display);
+        font-size: var(--font-lg);
+        color: var(--color-foreground);
+      }
+
+      & p {
+        line-height: 1.6;
+        color: var(--color-foreground-subtle);
+
+        & code {
+          padding: 2px 8px;
+          font-family: var(--font-mono);
+          font-size: var(--font-sm);
+          color: var(--color-foreground);
+          background-color: var(--color-neutral-100);
+          border-radius: 4px;
+        }
+
+        & a {
+          font-weight: 500;
+          color: var(--color-foreground);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+</style>
