@@ -1,32 +1,32 @@
 [
   {
-    "name": "baaivision/Emu3",
-    "clone_url": "https://github.com/baaivision/Emu3.git",
-    "stars": 290,
-    "size": 764
+    "name": "okaris/grounded-segmentation",
+    "clone_url": "https://github.com/okaris/grounded-segmentation.git",
+    "stars": 45,
+    "size": 3823
   },
   {
-    "name": "raysan5/raylib_project_creator",
-    "clone_url": "https://github.com/raysan5/raylib_project_creator.git",
-    "stars": 87,
-    "size": 2939
+    "name": "fabriziosalmi/proxmox-vm-autoscale",
+    "clone_url": "https://github.com/fabriziosalmi/proxmox-vm-autoscale.git",
+    "stars": 26,
+    "size": 54
   },
   {
-    "name": "trickster0/NamelessC2",
-    "clone_url": "https://github.com/trickster0/NamelessC2.git",
-    "stars": 77,
-    "size": 80
+    "name": "dh1011/subscription-manager",
+    "clone_url": "https://github.com/dh1011/subscription-manager.git",
+    "stars": 25,
+    "size": 693
   },
   {
-    "name": "teorth/equational_theories",
-    "clone_url": "https://github.com/teorth/equational_theories.git",
-    "stars": 66,
-    "size": 1023
+    "name": "remvze/pswd",
+    "clone_url": "https://github.com/remvze/pswd.git",
+    "stars": 22,
+    "size": 970
   },
   {
-    "name": "Sinaptik-AI/panda-etl",
-    "clone_url": "https://github.com/Sinaptik-AI/panda-etl.git",
-    "stars": 56,
-    "size": 1023
+    "name": "sam-paech/antislop-sampler",
+    "clone_url": "https://github.com/sam-paech/antislop-sampler.git",
+    "stars": 21,
+    "size": 2147
   }
 ]
