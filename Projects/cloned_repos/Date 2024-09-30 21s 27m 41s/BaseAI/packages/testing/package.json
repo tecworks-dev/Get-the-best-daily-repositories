@@ -1,0 +1,15 @@
+{
+	"private": true,
+	"name": "testing",
+	"main": "index.js",
+	"scripts": {
+		"baseai": "baseai"
+	},
+	"license": "UNLICENSED",
+	"dependencies": {
+		"@baseai/core": "workspace:*"
+	},
+	"devDependencies": {
+		"baseai": "workspace:*"
+	}
+}
