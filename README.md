@@ -1,7 +1,7 @@
-# Latest Repositories (2024-09-29 .. 2024-10-01)
+# Latest Repositories (2024-09-30 .. 2024-10-02)
 
-- [openai/openai-realtime-console](https://github.com/openai/openai-realtime-console) (235)
-- [nianticlabs/venator](https://github.com/nianticlabs/venator) (169)
-- [rythmaryan/Nine_Months_Placement_Roadmap](https://github.com/rythmaryan/Nine_Months_Placement_Roadmap) (60)
-- [Coagule/bitpump-pumpfun-bundler-comment-bot-sniper](https://github.com/Coagule/bitpump-pumpfun-bundler-comment-bot-sniper) (49)
-- [openai/openai-realtime-api-beta](https://github.com/openai/openai-realtime-api-beta) (43)
+- [jasonxtn/Argus](https://github.com/jasonxtn/Argus) (79)
+- [balazik/ComfyUI-PuLID-Flux](https://github.com/balazik/ComfyUI-PuLID-Flux) (75)
+- [qqrss/qrs](https://github.com/qqrss/qrs) (73)
+- [NomadicDaddy/htmx-debugger](https://github.com/NomadicDaddy/htmx-debugger) (59)
+- [fenaux/soccer-applications](https://github.com/fenaux/soccer-applications) (49)
