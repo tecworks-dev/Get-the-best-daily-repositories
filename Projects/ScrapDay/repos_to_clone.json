@@ -1,32 +1,32 @@
 [
   {
-    "name": "jasonxtn/Argus",
-    "clone_url": "https://github.com/jasonxtn/Argus.git",
-    "stars": 79,
-    "size": 118
+    "name": "xjdr-alt/entropix",
+    "clone_url": "https://github.com/xjdr-alt/entropix.git",
+    "stars": 179,
+    "size": 107
   },
   {
-    "name": "balazik/ComfyUI-PuLID-Flux",
-    "clone_url": "https://github.com/balazik/ComfyUI-PuLID-Flux.git",
-    "stars": 75,
-    "size": 2276
+    "name": "xichen-fy/Fira",
+    "clone_url": "https://github.com/xichen-fy/Fira.git",
+    "stars": 35,
+    "size": 184
   },
   {
-    "name": "qqrss/qrs",
-    "clone_url": "https://github.com/qqrss/qrs.git",
-    "stars": 73,
-    "size": 665
+    "name": "honestyan/malas-commit",
+    "clone_url": "https://github.com/honestyan/malas-commit.git",
+    "stars": 19,
+    "size": 60
   },
   {
-    "name": "NomadicDaddy/htmx-debugger",
-    "clone_url": "https://github.com/NomadicDaddy/htmx-debugger.git",
-    "stars": 59,
-    "size": 161
+    "name": "langchain-ai/react-voice-agent",
+    "clone_url": "https://github.com/langchain-ai/react-voice-agent.git",
+    "stars": 17,
+    "size": 343
   },
   {
-    "name": "fenaux/soccer-applications",
-    "clone_url": "https://github.com/fenaux/soccer-applications.git",
-    "stars": 49,
-    "size": 490
+    "name": "bensenescu/sst-feature-flag",
+    "clone_url": "https://github.com/bensenescu/sst-feature-flag.git",
+    "stars": 17,
+    "size": 95
   }
 ]
