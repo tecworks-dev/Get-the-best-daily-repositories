@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-01 .. 2024-10-03)
+# Latest Repositories (2024-10-02 .. 2024-10-04)
 
-- [xjdr-alt/entropix](https://github.com/xjdr-alt/entropix) (179)
-- [xichen-fy/Fira](https://github.com/xichen-fy/Fira) (35)
-- [honestyan/malas-commit](https://github.com/honestyan/malas-commit) (19)
-- [langchain-ai/react-voice-agent](https://github.com/langchain-ai/react-voice-agent) (17)
-- [bensenescu/sst-feature-flag](https://github.com/bensenescu/sst-feature-flag) (17)
+- [xjdr-alt/entropix](https://github.com/xjdr-alt/entropix) (252)
+- [tinygrad/toonygrad](https://github.com/tinygrad/toonygrad) (52)
+- [KaraBharat/react-full-stack-components](https://github.com/KaraBharat/react-full-stack-components) (38)
+- [5ec1cff/KsuWebUIStandalone](https://github.com/5ec1cff/KsuWebUIStandalone) (35)
+- [Nutlope/blinkshot](https://github.com/Nutlope/blinkshot) (34)
