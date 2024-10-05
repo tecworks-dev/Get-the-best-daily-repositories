@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-02 .. 2024-10-04)
+# Latest Repositories (2024-10-03 .. 2024-10-05)
 
-- [xjdr-alt/entropix](https://github.com/xjdr-alt/entropix) (252)
-- [tinygrad/toonygrad](https://github.com/tinygrad/toonygrad) (52)
-- [KaraBharat/react-full-stack-components](https://github.com/KaraBharat/react-full-stack-components) (38)
-- [5ec1cff/KsuWebUIStandalone](https://github.com/5ec1cff/KsuWebUIStandalone) (35)
-- [Nutlope/blinkshot](https://github.com/Nutlope/blinkshot) (34)
+- [rishikanthc/Scriberr](https://github.com/rishikanthc/Scriberr) (184)
+- [tinygrad/toonygrad](https://github.com/tinygrad/toonygrad) (66)
+- [lihuithe/podlm-public](https://github.com/lihuithe/podlm-public) (60)
+- [jbilcke-hf/FacePoke](https://github.com/jbilcke-hf/FacePoke) (40)
+- [dynamiccreator/voice-text-reader](https://github.com/dynamiccreator/voice-text-reader) (36)
