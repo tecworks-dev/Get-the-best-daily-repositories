@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-03 .. 2024-10-05)
+# Latest Repositories (2024-10-04 .. 2024-10-06)
 
-- [rishikanthc/Scriberr](https://github.com/rishikanthc/Scriberr) (184)
-- [tinygrad/toonygrad](https://github.com/tinygrad/toonygrad) (66)
-- [lihuithe/podlm-public](https://github.com/lihuithe/podlm-public) (60)
-- [jbilcke-hf/FacePoke](https://github.com/jbilcke-hf/FacePoke) (40)
-- [dynamiccreator/voice-text-reader](https://github.com/dynamiccreator/voice-text-reader) (36)
+- [lihuithe/podlm-public](https://github.com/lihuithe/podlm-public) (133)
+- [t3dotgg/quickpic](https://github.com/t3dotgg/quickpic) (104)
+- [ComfyUI-Workflow/awesome-comfyui](https://github.com/ComfyUI-Workflow/awesome-comfyui) (46)
+- [Chocapikk/CVE-2024-45519](https://github.com/Chocapikk/CVE-2024-45519) (43)
+- [c2pain/RustBird](https://github.com/c2pain/RustBird) (27)

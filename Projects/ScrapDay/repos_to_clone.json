@@ -1,32 +1,32 @@
 [
   {
-    "name": "rishikanthc/Scriberr",
-    "clone_url": "https://github.com/rishikanthc/Scriberr.git",
-    "stars": 184,
-    "size": 2571
-  },
-  {
-    "name": "tinygrad/toonygrad",
-    "clone_url": "https://github.com/tinygrad/toonygrad.git",
-    "stars": 66,
-    "size": 279
-  },
-  {
     "name": "lihuithe/podlm-public",
     "clone_url": "https://github.com/lihuithe/podlm-public.git",
-    "stars": 60,
+    "stars": 133,
     "size": 788
   },
   {
-    "name": "jbilcke-hf/FacePoke",
-    "clone_url": "https://github.com/jbilcke-hf/FacePoke.git",
-    "stars": 40,
-    "size": 1338
+    "name": "t3dotgg/quickpic",
+    "clone_url": "https://github.com/t3dotgg/quickpic.git",
+    "stars": 104,
+    "size": 959
   },
   {
-    "name": "dynamiccreator/voice-text-reader",
-    "clone_url": "https://github.com/dynamiccreator/voice-text-reader.git",
-    "stars": 36,
-    "size": 130
+    "name": "ComfyUI-Workflow/awesome-comfyui",
+    "clone_url": "https://github.com/ComfyUI-Workflow/awesome-comfyui.git",
+    "stars": 46,
+    "size": 125
+  },
+  {
+    "name": "Chocapikk/CVE-2024-45519",
+    "clone_url": "https://github.com/Chocapikk/CVE-2024-45519.git",
+    "stars": 43,
+    "size": 351
+  },
+  {
+    "name": "c2pain/RustBird",
+    "clone_url": "https://github.com/c2pain/RustBird.git",
+    "stars": 27,
+    "size": 222
   }
 ]
