@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "openai-gradio"
+version = "0.0.3"
+description = "A Python package for creating Gradio applications with OpenAI models"
+authors = [
+    { name = "AK", email = "ahsen.khaliq@gmail.com" }
+]
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "gradio>=5.0.0b5",
+    "openai",
+]
+
+[project.urls]
+homepage = "https://github.com/AK391/openai-gradio"
+repository = "https://github.com/AK391/openai-gradio"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["openai_gradio"]
+

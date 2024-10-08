@@ -1,32 +1,32 @@
 [
   {
-    "name": "t3dotgg/quickpic",
-    "clone_url": "https://github.com/t3dotgg/quickpic.git",
-    "stars": 167,
-    "size": 961
-  },
-  {
     "name": "Junyi42/monst3r",
     "clone_url": "https://github.com/Junyi42/monst3r.git",
-    "stars": 83,
+    "stars": 304,
     "size": 1190
   },
   {
-    "name": "SublimePeace/ObsidianHelpbox",
-    "clone_url": "https://github.com/SublimePeace/ObsidianHelpbox.git",
-    "stars": 62,
-    "size": 265
+    "name": "KoriIku/luxirty-search",
+    "clone_url": "https://github.com/KoriIku/luxirty-search.git",
+    "stars": 125,
+    "size": 116
   },
   {
     "name": "archiewood/gosql",
     "clone_url": "https://github.com/archiewood/gosql.git",
-    "stars": 49,
-    "size": 3247
+    "stars": 103,
+    "size": 3252
   },
   {
-    "name": "snakeying/flux-api-worker",
-    "clone_url": "https://github.com/snakeying/flux-api-worker.git",
-    "stars": 46,
-    "size": 287
+    "name": "gradio-app/openai-gradio",
+    "clone_url": "https://github.com/gradio-app/openai-gradio.git",
+    "stars": 37,
+    "size": 113
+  },
+  {
+    "name": "whiletruelearn/termichess",
+    "clone_url": "https://github.com/whiletruelearn/termichess.git",
+    "stars": 37,
+    "size": 303
   }
 ]

@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-05 .. 2024-10-07)
+# Latest Repositories (2024-10-06 .. 2024-10-08)
 
-- [t3dotgg/quickpic](https://github.com/t3dotgg/quickpic) (167)
-- [Junyi42/monst3r](https://github.com/Junyi42/monst3r) (83)
-- [SublimePeace/ObsidianHelpbox](https://github.com/SublimePeace/ObsidianHelpbox) (62)
-- [archiewood/gosql](https://github.com/archiewood/gosql) (49)
-- [snakeying/flux-api-worker](https://github.com/snakeying/flux-api-worker) (46)
+- [Junyi42/monst3r](https://github.com/Junyi42/monst3r) (304)
+- [KoriIku/luxirty-search](https://github.com/KoriIku/luxirty-search) (125)
+- [archiewood/gosql](https://github.com/archiewood/gosql) (103)
+- [gradio-app/openai-gradio](https://github.com/gradio-app/openai-gradio) (37)
+- [whiletruelearn/termichess](https://github.com/whiletruelearn/termichess) (37)

@@ -1,0 +1,126 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+
+  --section-gap: 160px;
+
+  --fr-font-basefont: system-ui, -apple-system, BlinkMacSystemFont, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', 'Android Emoji', 'EmojiSymbols', 'EmojiOne Mozilla', 'Twemoji Mozilla', 'Segoe UI Symbol', 'Noto Color Emoji Compat', emoji, 'Font Awesome 6 Pro', 'Font Awesome 5 Pro', FontAwesome, iconfont, icomoon, IcoFont, fontello, themify, 'Segoe Fluent Icons', 'Material Design Icons', bootstrap-icons;
+  --fr-font-family: 'Microsoft YaHei UI';
+  --fr-font-shadow: 0 0 0.75px #7c7c7cdd;
+  --fr-font-stroke: 0.015px currentcolor;
+  --uv-styles-color-surface: #ffffff;
+  --uv-styles-color-tertiary: #f8f9fa;
+  --uv-styles-color-secondary: #e9ecef;
+  --uv-styles-color-outline: #ced4da;
+  --uv-styles-color-primary: #007bff;
+  --uv-styles-color-text-primary: #007bff;
+  --uv-styles-color-text-emphasis: #212529;
+  --uv-styles-color-text-default: #495057;
+  --uv-styles-color-text-de-emphasis: #6c757d;
+  --uv-styles-color-visited-link: #551A8B;
+
+  --divider-color: #dfe1e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+
+    --uv-styles-color-text-default: #B7C1C6;
+
+    --title-color: #99C3FF;
+    --link-color: #bdc1c6;
+    --uv-styles-color-visited-link: #c58af9;
+
+    --divider-color: #3f4145;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.root {
+  --center-abs-margin: 180px;
+}
+
+@media (min-width: 1124px) and (max-width: 1300px) {
+  .root {
+      --center-abs-margin: calc((100vw - 1068px) / 2);
+  }
+}
+
+@media (min-width: 1475px) and (max-width: 1675px) {
+  .root {
+      --center-abs-margin: calc(25vw + -188.75px);
+  }
+}
