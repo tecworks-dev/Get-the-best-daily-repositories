@@ -1,0 +1,207 @@
+[workspace]
+members = [
+    "bin/odyssey/",
+    "crates/node",
+    "crates/precompile",
+    "crates/testing",
+    "crates/wallet",
+]
+default-members = ["bin/odyssey/"]
+resolver = "2"
+
+[workspace.package]
+version = "0.0.0"
+edition = "2021"
+rust-version = "1.81"
+authors = []
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/ithacaxyz/odyssey"
+keywords = ["ethereum", "crypto"]
+categories = ["cryptography", "cryptography::cryptocurrencies"]
+
+[workspace.metadata.docs.rs]
+all-features = true
+rustdoc-args = ["--cfg", "docsrs"]
+
+[workspace.lints]
+rust.missing_debug_implementations = "warn"
+rust.missing_docs = "warn"
+rust.rust_2018_idioms = { level = "deny", priority = -1 }
+rust.unreachable_pub = "warn"
+rust.unused_must_use = "deny"
+rustdoc.all = "warn"
+rust.unnameable-types = "warn"
+
+[workspace.lints.clippy]
+# These are some of clippy's nursery (i.e., experimental) lints that we like.
+# By default, nursery lints are allowed. Some of the lints below have made good
+# suggestions which we fixed. The others didn't have any findings, so we can
+# assume they don't have that many false positives. Let's enable them to
+# prevent future problems.
+borrow_as_ptr = "warn"
+branches_sharing_code = "warn"
+clear_with_drain = "warn"
+cloned_instead_of_copied = "warn"
+collection_is_never_read = "warn"
+derive_partial_eq_without_eq = "warn"
+doc_markdown = "warn"
+empty_line_after_doc_comments = "warn"
+empty_line_after_outer_attr = "warn"
+enum_glob_use = "warn"
+equatable_if_let = "warn"
+explicit_into_iter_loop = "warn"
+explicit_iter_loop = "warn"
+flat_map_option = "warn"
+from_iter_instead_of_collect = "warn"
+if_not_else = "warn"
+implicit_clone = "warn"
+imprecise_flops = "warn"
+iter_on_empty_collections = "warn"
+iter_on_single_items = "warn"
+iter_with_drain = "warn"
+iter_without_into_iter = "warn"
+large_stack_frames = "warn"
+manual_assert = "warn"
+manual_clamp = "warn"
+manual_is_variant_and = "warn"
+manual_string_new = "warn"
+match_same_arms = "warn"
+missing_const_for_fn = "warn"
+mutex_integer = "warn"
+naive_bytecount = "warn"
+needless_bitwise_bool = "warn"
+needless_continue = "warn"
+needless_for_each = "warn"
+needless_pass_by_ref_mut = "warn"
+nonstandard_macro_braces = "warn"
+option_as_ref_cloned = "warn"
+or_fun_call = "warn"
+path_buf_push_overwrite = "warn"
+read_zero_byte_vec = "warn"
+redundant_clone = "warn"
+redundant_else = "warn"
+single_char_pattern = "warn"
+string_lit_as_bytes = "warn"
+string_lit_chars_any = "warn"
+suboptimal_flops = "warn"
+suspicious_operation_groupings = "warn"
+trailing_empty_array = "warn"
+trait_duplication_in_bounds = "warn"
+transmute_undefined_repr = "warn"
+trivial_regex = "warn"
+tuple_array_conversions = "warn"
+type_repetition_in_bounds = "warn"
+uninhabited_references = "warn"
+unnecessary_self_imports = "warn"
+unnecessary_struct_initialization = "warn"
+unnested_or_patterns = "warn"
+unused_peekable = "warn"
+unused_rounding = "warn"
+use_self = "warn"
+useless_let_if_seq = "warn"
+while_float = "warn"
+zero_sized_map_values = "warn"
+
+# These are nursery lints which have findings. Allow them for now. Some are not
+# quite mature enough for use in our codebase and some we don't really want.
+# Explicitly listing should make it easier to fix in the future.
+as_ptr_cast_mut = "allow"
+cognitive_complexity = "allow"
+debug_assert_with_mut_call = "allow"
+fallible_impl_from = "allow"
+future_not_send = "allow"
+needless_collect = "allow"
+non_send_fields_in_send_ty = "allow"
+redundant_pub_crate = "allow"
+significant_drop_in_scrutinee = "allow"
+significant_drop_tightening = "allow"
+too_long_first_doc_paragraph = "allow"
+
+[profile.release]
+opt-level = 3
+lto = "thin"
+debug = "line-tables-only"
+strip = true
+panic = "unwind"
+codegen-units = 16
+
+# Use the `--profile profiling` flag to show symbols in release mode.
+# e.g. `cargo build --profile profiling`
+[profile.profiling]
+inherits = "release"
+debug = 2
+strip = false
+
+[workspace.dependencies]
+# odyssey
+odyssey-node = { path = "crates/node" }
+odyssey-precompile = { path = "crates/precompile" }
+odyssey-wallet = { path = "crates/wallet" }
+
+alloy = { version = "0.4", features = [
+    "contract",
+    "providers",
+    "provider-http",
+    "signers",
+] }
+alloy-network = { version = "0.4" }
+alloy-primitives = { version = "0.8.7" }
+alloy-rpc-types = { version = "0.4" }
+alloy-signer-local = { version = "0.4", features = ["mnemonic"] }
+
+# tokio
+tokio = { version = "1.21", default-features = false }
+
+# reth
+reth = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-chainspec = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-cli = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-cli-util = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-rpc-eth-api = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-node-api = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-node-builder = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-node-core = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-optimism-node = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-optimism-cli = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-optimism-rpc = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-optimism-forks = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-optimism-chainspec = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-payload-builder = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-primitives = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-provider = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-revm = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c", features = [
+    "optimism",
+] }
+reth-storage-api = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-tracing = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-transaction-pool = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-network = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+reth-network-types = { git = "https://github.com/paradigmxyz/reth.git", rev = "75dda1c" }
+
+# rpc
+jsonrpsee = "0.24"
+
+# misc
+clap = "4"
+eyre = "0.6.12"
+tracing = "0.1.0"
+serde = "1"
+serde_json = "1"
+thiserror = "1"
+
+# misc-testing
+rstest = "0.18.2"
