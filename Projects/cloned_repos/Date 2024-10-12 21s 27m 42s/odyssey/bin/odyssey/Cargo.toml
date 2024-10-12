@@ -1,0 +1,46 @@
+[package]
+name = "odyssey"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+description = "Odyssey is a testnet OP Stack rollup aimed at enabling experimentation of bleeding edge Ethereum Research."
+default-run = "odyssey"
+
+[lints]
+workspace = true
+
+[dependencies]
+alloy-signer-local.workspace = true
+alloy-network.workspace = true
+alloy-primitives.workspace = true
+odyssey-node.workspace = true
+odyssey-wallet.workspace = true
+eyre.workspace = true
+tracing.workspace = true
+reth-cli-util.workspace = true
+reth-node-builder.workspace = true
+reth-optimism-node.workspace = true
+reth-optimism-cli.workspace = true
+reth-optimism-rpc.workspace = true
+reth-provider.workspace = true
+clap = { workspace = true, features = ["derive"] }
+
+[features]
+default = ["jemalloc"]
+
+asm-keccak = ["reth-optimism-cli/asm-keccak"]
+
+jemalloc = ["reth-cli-util/jemalloc"]
+jemalloc-prof = ["jemalloc", "reth-cli-util/jemalloc-prof"]
+
+min-error-logs = ["tracing/release_max_level_error"]
+min-warn-logs = ["tracing/release_max_level_warn"]
+min-info-logs = ["tracing/release_max_level_info"]
+min-debug-logs = ["tracing/release_max_level_debug"]
+min-trace-logs = ["tracing/release_max_level_trace"]
+
+[[bin]]
+name = "odyssey"
+path = "src/main.rs"

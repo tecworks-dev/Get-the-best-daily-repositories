@@ -1,32 +1,32 @@
 [
   {
-    "name": "cr4n5/XiaoYuanKouSuan",
-    "clone_url": "https://github.com/cr4n5/XiaoYuanKouSuan.git",
-    "stars": 570,
-    "size": 1534
-  },
-  {
-    "name": "NirDiamant/Prompt_Engineering",
-    "clone_url": "https://github.com/NirDiamant/Prompt_Engineering.git",
-    "stars": 443,
-    "size": 151
-  },
-  {
-    "name": "skydoves/kmp-developer-roadmap",
-    "clone_url": "https://github.com/skydoves/kmp-developer-roadmap.git",
-    "stars": 191,
-    "size": 2219
-  },
-  {
-    "name": "extrant/KouSuanOCR",
-    "clone_url": "https://github.com/extrant/KouSuanOCR.git",
-    "stars": 108,
-    "size": 3714
-  },
-  {
     "name": "adriankarlen/textfox",
     "clone_url": "https://github.com/adriankarlen/textfox.git",
-    "stars": 92,
-    "size": 1507
+    "stars": 392,
+    "size": 1510
+  },
+  {
+    "name": "J4UNVR/m0dmenu-gta5-fr33",
+    "clone_url": "https://github.com/J4UNVR/m0dmenu-gta5-fr33.git",
+    "stars": 141,
+    "size": 516
+  },
+  {
+    "name": "nthieu228/FL-Studio",
+    "clone_url": "https://github.com/nthieu228/FL-Studio.git",
+    "stars": 139,
+    "size": 517
+  },
+  {
+    "name": "ithacaxyz/odyssey",
+    "clone_url": "https://github.com/ithacaxyz/odyssey.git",
+    "stars": 90,
+    "size": 1963
+  },
+  {
+    "name": "goncy/next-mercadopago",
+    "clone_url": "https://github.com/goncy/next-mercadopago.git",
+    "stars": 49,
+    "size": 1086
   }
 ]
