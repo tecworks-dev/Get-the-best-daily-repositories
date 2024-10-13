@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-10 .. 2024-10-12)
+# Latest Repositories (2024-10-11 .. 2024-10-13)
 
-- [adriankarlen/textfox](https://github.com/adriankarlen/textfox) (392)
+- [tmh72363/solana-trading-bot](https://github.com/tmh72363/solana-trading-bot) (310)
 - [J4UNVR/m0dmenu-gta5-fr33](https://github.com/J4UNVR/m0dmenu-gta5-fr33) (141)
 - [nthieu228/FL-Studio](https://github.com/nthieu228/FL-Studio) (139)
-- [ithacaxyz/odyssey](https://github.com/ithacaxyz/odyssey) (90)
-- [goncy/next-mercadopago](https://github.com/goncy/next-mercadopago) (49)
+- [lachezxd01/cheat-apex-legends-download](https://github.com/lachezxd01/cheat-apex-legends-download) (138)
+- [jaevor/Adobe-Photoshop](https://github.com/jaevor/Adobe-Photoshop) (137)
