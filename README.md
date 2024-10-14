@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-11 .. 2024-10-13)
+# Latest Repositories (2024-10-12 .. 2024-10-14)
 
-- [tmh72363/solana-trading-bot](https://github.com/tmh72363/solana-trading-bot) (310)
-- [J4UNVR/m0dmenu-gta5-fr33](https://github.com/J4UNVR/m0dmenu-gta5-fr33) (141)
-- [nthieu228/FL-Studio](https://github.com/nthieu228/FL-Studio) (139)
-- [lachezxd01/cheat-apex-legends-download](https://github.com/lachezxd01/cheat-apex-legends-download) (138)
-- [jaevor/Adobe-Photoshop](https://github.com/jaevor/Adobe-Photoshop) (137)
+- [lucasnewman/f5-tts-mlx](https://github.com/lucasnewman/f5-tts-mlx) (80)
+- [gtibo/Godot-Plush-Character](https://github.com/gtibo/Godot-Plush-Character) (70)
+- [amclubs/am-cf-tunnel](https://github.com/amclubs/am-cf-tunnel) (57)
+- [viiika/Meissonic](https://github.com/viiika/Meissonic) (56)
+- [hyprwm/hyprsysteminfo](https://github.com/hyprwm/hyprsysteminfo) (30)
