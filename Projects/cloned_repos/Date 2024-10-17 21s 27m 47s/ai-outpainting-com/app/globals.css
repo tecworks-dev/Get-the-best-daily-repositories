@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .text-balance {
+        text-wrap: inherit;
+    }
+}
+
+/*.custom-screen {*/
+/*  @apply max-w-screen-xl mx-auto px-4 md:px-8;*/
+/*}*/
+/*输入框获得焦点时，隐藏placeholder*/
+/* 针对支持CSS伪类选择器的现代浏览器 */
+/*input:focus::placeholder {*/
+/*  color: transparent;*/
+/*}*/
+:root {
+    --ai-create-color-theme-50: #E8FFFB;
+    --ai-create-color-theme-100: #A7E6DD;
+    --ai-create-color-theme-200: #6FCCC3;
+    --ai-create-color-theme-300: #41B3AB;
+    --ai-create-color-theme-400: #1C9995;
+    --ai-create-color-theme-500: #008080;
+    --ai-create-color-theme-600: #007276;
+    --ai-create-color-theme-700: #00646B;
+    --ai-create-color-theme-800: #005761;
+    --ai-create-color-theme-900: #004B57;
+    --ai-create-color-theme-950: #00404D;
+    --custom-heading-font: Roboto, ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --custom-body-font: Roboto, ui-sans-serif, system-ui, -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.bg-mask-200 {
+    background: rgba(243, 244, 246, .45);
+}
+
+
+:root {
+    font-family: var(--custom-body-font)
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+h1, h2 {
+    font-family: var(--custom-heading-font)
+}
+
+div[role="button"] {
+    background-color: var(--ai-create-color-theme-500) !important;
+}
+
+/*控制语言选项下拉框并两列显示*/
+.dropdown-grid ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+}
