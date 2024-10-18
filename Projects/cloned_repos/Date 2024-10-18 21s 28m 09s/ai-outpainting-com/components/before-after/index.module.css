@@ -1,0 +1,141 @@
+/* BeforeAfter.module.css */
+.host, .range, .before, .after {
+    box-sizing: border-box;
+}
+
+.host {
+    display: grid;
+    position: relative;
+    overflow: visible;
+    --before-after-position: to right;
+    --before-after-repeat: 1;
+    --before-after-thumb-size: 1px;
+    --before-after-thumb-color: white;
+    --before-after-val: 0;
+    --before-after-p: calc(var(--before-after-val) / var(--before-after-repeat) * 1%);
+    --thumb-size-hf: calc(var(--before-after-thumb-size) / 2);
+    --thumb-gradient-val: var(--before-after-position), #0000 0 calc(var(--before-after-p) - var(--thumb-size-hf)), var(--before-after-thumb-color) calc(var(--before-after-p) - var(--thumb-size-hf)) calc(var(--before-after-p) + var(--thumb-size-hf)), #0000 0 calc(100% / var(--before-after-repeat));
+    --thumb-opacity: calc(var(--before-after-val) * (100 - var(--before-after-val)));
+    --mask-before-val: var(--before-after-position), #0000 0, var(--before-after-p), #000 0 calc(100% / var(--before-after-repeat));
+    --mask-after-val: var(--before-after-position), #000 0, var(--before-after-p), #0000 0 calc(100% / var(--before-after-repeat));
+
+
+}
+
+.host::after {
+    content: 'thumb';
+    font-size: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(0px 0px 1px black);
+    background: var(--thumb-gradient);
+    opacity: var(--thumb-opacity);
+    pointer-events: none;
+}
+
+
+.host:hover::after {
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+.before {
+    mask: var(--mask-before);
+}
+
+.after {
+    mask: var(--mask-after);
+}
+
+.range,
+.before,
+.after {
+    grid-area: 1 / 1;
+}
+
+.range {
+    z-index: 1;
+    opacity: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    background: transparent;
+    cursor: ew-resize;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::-webkit-slider-thumb {
+        appearance: none;
+        -webkit-appearance: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+.host[data-orient='vertical'] {
+    --before-after-position: to bottom;
+}
+
+.host[data-orient='vertical'] .range {
+    appearance: slider-vertical;
+    cursor: ns-resize;
+    transform: rotate(0.5turn);
+}
+
+.host:not([data-variant*='repeating']) {
+    --before-after-repeat: 1 !important;
+}
+
+.host[data-variant*='repeating'] {
+    --before-after-repeat: 6;
+}
+
+.host[data-variant*='radial'] {
+    --before-after-position: circle at center;
+}
+
+.host[data-variant*='conic'] {
+    --before-after-position: at center;
+    --before-after-thumb-size: 0.2deg;
+    --before-after-p: calc(var(--before-after-val) / var(--before-after-repeat) * 0.01turn);
+}
+
+.host {
+    --thumb-gradient: linear-gradient(var(--thumb-gradient-val));
+    --mask-before: linear-gradient(var(--mask-before-val));
+    --mask-after: linear-gradient(var(--mask-after-val));
+}
+
+.host[data-variant='radial'] {
+    --thumb-gradient: radial-gradient(var(--thumb-gradient-val));
+    --mask-before: radial-gradient(var(--mask-before-val));
+    --mask-after: radial-gradient(var(--mask-after-val));
+}
+
+.host[data-variant='conic'] {
+    --thumb-gradient: conic-gradient(var(--thumb-gradient-val));
+    --mask-before: conic-gradient(var(--mask-before-val));
+    --mask-after: conic-gradient(var(--mask-after-val));
+}
+
+.host[data-variant='repeating-linear'] {
+    --thumb-gradient: repeating-linear-gradient(var(--thumb-gradient-val));
+    --mask-before: repeating-linear-gradient(var(--mask-before-val));
+    --mask-after: repeating-linear-gradient(var(--mask-after-val));
+}
+
+.host[data-variant='repeating-radial'] {
+    --thumb-gradient: repeating-radial-gradient(var(--thumb-gradient-val));
+    --mask-before: repeating-radial-gradient(var(--mask-before-val));
+    --mask-after: repeating-radial-gradient(var(--mask-after-val));
+}
+
+.host[data-variant='repeating-conic'] {
+    --thumb-gradient: repeating-conic-gradient(var(--thumb-gradient-val));
+    --mask-before: repeating-conic-gradient(var(--mask-before-val));
+    --mask-after: repeating-conic-gradient(var(--mask-after-val));
+}
