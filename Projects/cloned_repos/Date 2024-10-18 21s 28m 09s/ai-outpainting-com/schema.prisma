@@ -1,0 +1,271 @@
+datasource db {
+  url      = env("DATABASE_URL")
+  provider = "postgresql"
+  // directUrl = env("DIRECT_URL")
+}
+
+generator client {
+  provider      = "prisma-client-js"
+  // 确保一次生成可以兼容多个平台
+  binaryTargets = ["native", "darwin", "linux-musl", "rhel-openssl-1.1.x"]
+}
+
+enum UserType {
+  ANONYMOUS_USER
+  PLAIN_USER
+  ADMIN_USER
+}
+
+// 用户
+model User {
+  // 主键
+  id            String    @id @default(cuid())
+  // 用户类型
+  type          UserType  @default(ANONYMOUS_USER)
+  // 用户名
+  name          String?   @db.VarChar(50)
+  // 昵称
+  nickname      String?   @db.VarChar(30)
+  // 密码
+  password      String?   @db.VarChar(255)
+  // 头像
+  image         String?   @db.VarChar(255)
+  // 邮箱
+  email         String  @unique @db.VarChar(255)
+  // 是否已认证邮箱
+  emailVerified DateTime?
+  // 可用信用点
+  credit        Int       @default(0)
+  // 历史总消费信用点
+  totalCredit   Int       @default(0) @map("total_credit")
+  // 是否注册赠送过信用点，第一次登录时需要校验
+  giveCredit    Boolean   @default(false)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  orders        Order[]
+  trades        Trade[]
+  sessions      Session[]
+  accounts      Account[]
+
+  @@map("s_user")
+}
+
+model Account {
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@id([provider, providerAccountId])
+  @@map("s_account")
+}
+
+model Session {
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("s_session")
+}
+
+model VerificationToken {
+  identifier String
+  token      String
+  expires    DateTime
+
+  @@id([identifier, token])
+  @@map("s_verification_token")
+}
+
+// 数据字典
+model Dict {
+  id         Int      @id @default(autoincrement())
+  type       String   @unique @db.VarChar(50)
+  title      String   @db.VarChar(100)
+  remark     String?  @db.VarChar(255)
+  createBy   String   @map("create_by") @db.VarChar(50)
+  createTime DateTime @default(now()) @map("create_time")
+  updateBy   String   @map("update_by") @db.VarChar(50)
+  updateTime DateTime @updatedAt @map("update_time")
+
+  @@map("s_dict")
+}
+
+// 数据字典值
+model DictData {
+  id         Int      @id @default(autoincrement())
+  parentId   Int      @default(0) @map("parent_id")
+  type       String   @db.VarChar(50)
+  label      String   @db.VarChar(100)
+  value      String   @db.VarChar(255)
+  sort       Int      @default(0)
+  isDefault  Boolean  @default(false) @map("is_default")
+  layer      Int      @default(0)
+  path       String   @db.VarChar(255)
+  createBy   String   @map("create_by") @db.VarChar(50)
+  createTime DateTime @default(now()) @map("create_time")
+  updateBy   String   @map("update_by") @db.VarChar(50)
+  updateTime DateTime @updatedAt @map("update_time")
+
+  @@map("s_dict_data")
+}
+
+// 系统配置
+model Setting {
+  id         Int      @id @default(autoincrement())
+  type       String   @default("default") @db.VarChar(50)
+  key        String   @db.VarChar(50)
+  label      String   @db.VarChar(100)
+  value      String   @db.VarChar(255)
+  sort       Int      @default(0)
+  isRequire  Boolean  @default(false) @map("is_require")
+  tootip     String?  @db.VarChar(255)
+  remark     String?  @db.VarChar(255)
+  createBy   String   @map("create_by") @db.VarChar(50)
+  createTime DateTime @default(now()) @map("create_time")
+  updateBy   String   @map("update_by") @db.VarChar(50)
+  updateTime DateTime @updatedAt @map("update_time")
+
+  @@map("s_setting")
+}
+
+// 用户行为日志
+model BehaviorLog {
+  id         Int      @id @default(autoincrement())
+  title      String   @db.VarChar(100)
+  type       String   @db.VarChar(100)
+  url        String?  @db.VarChar(255)
+  method     String?  @db.VarChar(10)
+  ip         String?  @db.VarChar(50)
+  os         String?  @db.VarChar(50)
+  browser    String?  @db.VarChar(50)
+  params     String?  @db.VarChar(255)
+  restuls    String?  @db.VarChar(255)
+  deatils    String?  @db.VarChar(255)
+  errors     String?  @db.VarChar(255)
+  status     String   @db.VarChar(20)
+  createBy   String   @map("create_by") @db.VarChar(50)
+  createTime DateTime @updatedAt @map("create_time")
+
+  @@map("s_behavior_log")
+}
+
+enum OrderStatus {
+  // 排队中
+  PENDING
+  // 处理中
+  PROCESSING
+  // 订单完成
+  SUCCEED
+  // 订单失败
+  FAILED
+}
+
+// 订单
+model Order {
+  // 主键
+  id              Int         @id @default(autoincrement())
+  // 订单号
+  orderNo         String      @unique @map("order_no")
+  // 用户ID
+  userId          String      @map("user_id") @db.VarChar(64)
+  // 用户昵称
+  nickname        String?     @map("nickname")
+  // 产品编号
+  productCode     String      @map("product_code") @db.VarChar(20)
+  // 产品名称
+  productName     String      @map("product_name") @db.VarChar(20)
+  // 消耗信用点数
+  credit          Int         @default(0)
+  // 输入图片
+  inputImagePath  String      @map("input_image_path") @db.VarChar(200)
+  // 输出 ID
+  outputId        String?     @map("output_id") @db.VarChar(200)
+  // 输出图片
+  outputImagePath String?     @map("output_image_path") @db.VarChar(200)
+  // 输出选项
+  outputOptions   String?     @map("output_options") @db.Text
+  // 输出数量 
+  outputQuantity  Int         @default(1) @map("output_quantity")
+  // 状态
+  status          OrderStatus
+  // 订单失败原因
+  reason          String?     @db.VarChar(500)
+  // 创建时间
+  createTime      DateTime?   @default(now()) @map("create_time")
+  // 更新时间
+  updateTime      DateTime?   @updatedAt @map("update_time")
+  // 订单耗时(从创建到用户能看到最终的图片)
+  costTime        Int         @default(0) @map("cost_time")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("t_order")
+}
+
+enum TradeStatus {
+  // 待支付
+  WAIT_PAID
+  // 支付成功
+  PAY_SUCCEED
+  // 支付失败
+  PAY_FAILED
+}
+
+// 交易
+model Trade {
+  // 主键
+  id             Int         @id @default(autoincrement())
+  // 用户ID
+  userId         String      @map("user_id")
+  // 用户邮箱
+  userEmail      String      @map("user_email")
+  // 交易编号
+  tradeNo        String      @unique @map("trade_no") @db.VarChar(32)
+  // 交易套餐编号
+  planCode       String      @map("plan_code") @db.VarChar(30)
+  // 交易套餐名称
+  planName       String      @map("plan_name") @db.VarChar(100)
+  // 交易渠道
+  channel        String      @db.VarChar(50)
+  // 金额-单位 元
+  amount         String      @db.VarChar(50)
+  // 得到信用点数
+  credit         Int         @default(0)
+  // 交易描述
+  details        String      @db.VarChar(255)
+  // 交易状态
+  status         TradeStatus
+  // 第三方平台交易号
+  outTradeNo     String?     @map("out_trade_no") @db.VarChar(100)
+  // 第三方平台交易状态
+  outTradeStatus String?     @map("out_trade_status") @db.VarChar(50)
+  // 错误原因
+  reason         String?     @db.Text
+  // 完成时间
+  doneTime       DateTime?   @map("done_time")
+  // 创建时间
+  createTime     DateTime    @default(now()) @map("create_time")
+  // 更新时间
+  updateTime     DateTime    @updatedAt @map("update_time")
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@map("t_trade")
+}

@@ -1,0 +1,2102 @@
+{
+  "/HNf1t": {
+    "translation": "এআইতে ফটোগুলি প্রসারণের জাদু আবিষ্কার করুন",
+    "message": "\"Discover the Magic of Expanding Your Photos with AI\"",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/blogs-page-client.tsx",
+        37
+      ]
+    ]
+  },
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        34
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        35
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        36
+      ]
+    ]
+  },
+  "GkCoYT": {
+    "translation": "পুনঃ ব্লগ তালিকা দেখুন",
+    "message": "<< Return Blogs List",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/[slug]/page.tsx",
+        47
+      ]
+    ]
+  },
+  "heWVMD": {
+    "translation": "1 ক্রেডিট/ব্যবহার, {0} বাকি আছে",
+    "message": "1 Credit/use, {0} left",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        747
+      ]
+    ]
+  },
+  "Ukjyf+": {
+    "translation": "অবশ্যই! এআই ফটো এক্সটেন্ডার বিশেষভাবে প্রসারণ প্রক্রিয়া জুড়ে মূল ছবির স্টাইল সংরক্ষণ করার জন্য ডিজাইন করা হয়েছে। আমাদের এআই ফটো এক্সটেন্ডারের অ্যালগরিদমগুলি অনন্য ছবির বৈশিষ্ট্যগুলি বোঝার এবং পুনরুত্পাদন করার জন্য প্রশিক্ষিত, যা মূল এবং প্রসারিত সামগ্রীর মধ্যে দৃশ্যমান সামঞ্জস্য নিশ্চিত করে।",
+    "message": "Absolutely! AI Photo Extender is specifically designed to preserve the original image style throughout the expansion process. Our AI photo extender's algorithms are trained to understand and replicate unique image characteristics, ensuring visual consistency between the original and expanded content.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "Gc4eSt": {
+    "translation": "অবশ্যই! ছবির বিষয়বস্তু প্রসারিত করার পাশাপাশি, এআই ইমেজ এক্সটেন্ডার আপলোড করা ছবিগুলির পিক্সেল মাত্রা বাড়ানোর বিকল্পও প্রদান করে। এটি ব্যবহারকারীদের তাদের ছবিগুলির সামগ্রিক রেজোলিউশন এবং মান উন্নত করতে দেয়।",
+    "message": "Absolutely! In addition to expanding the content of the image, AI Image Extender also provides the option to increase the pixel dimensions of the uploaded images. This allows users to enhance the overall resolution and quality of their images.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        48
+      ]
+    ]
+  },
+  "PVrmDs": {
+    "translation": "নিশ্চিত! ইমেজের বিষয়বস্তু প্রসারিত করার পাশাপাশি, এআই আউটপেইন্টিং আপলোড করা ইমেজগুলির পিক্সেল মাত্রা বৃদ্ধির অপশনও দেয়। এটা ব্যবহারকারীদের তাদের ইমেজগুলির সামগ্রিক বৈশিষ্ট্য এবং গুণমান উন্নত করা দেয়।",
+    "message": "Absolutely! In addition to expanding the content of the image, AI Outpainting also provides the option to increase the pixel dimensions of the uploaded images. This allows users to enhance the overall resolution and quality of their images.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        48
+      ]
+    ]
+  },
+  "zLNTkq": {
+    "translation": "অবশ্যই! আমাদের জেনারেটিভ ফিল এআই বিশেষভাবে প্রসারণ প্রক্রিয়া জুড়ে মূল ছবির স্টাইল সংরক্ষণ করার জন্য ডিজাইন করা হয়েছে। এই জেনারেটিভ ফিল এআই প্রযুক্তিকে চালিত করা অ্যালগরিদমগুলি অনন্য ছবির বৈশিষ্ট্যগুলি বোঝার এবং পুনরুত্পাদন করার জন্য প্রশিক্ষিত, যা মূল এবং প্রসারিত সামগ্রীর মধ্যে দৃশ্যমান সামঞ্জস্য নিশ্চিত করে।",
+    "message": "Absolutely! Our generative fill AI is specifically designed to preserve the original image style throughout the expansion process. The algorithms powering this generative fill AI technology are trained to understand and replicate unique image characteristics, ensuring visual consistency between the original and expanded content.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "A+Al01": {
+    "translation": "ইমেজ এক্সটেন্ডারের পরে",
+    "message": "After Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        88
+      ]
+    ]
+  },
+  "uFZsqH": {
+    "translation": "লগইন করার পরে, আপনি এইআই দিয়ে ছবিটি প্রসারিত করার উপায় পাচ্ছেন",
+    "message": "After logging in, you can have three two trials expand your image with AI",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/index-uploader.tsx",
+        33
+      ]
+    ]
+  },
+  "JFnLY9": {
+    "translation": "আউটপেইন্টিং পরে",
+    "message": "After Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        219
+      ],
+      [
+        "components/wegic/hero.tsx",
+        92
+      ]
+    ]
+  },
+  "6EmTc/": {
+    "translation": "ফটো এক্সটেন্ডারের পরে",
+    "message": "After Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        88
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        88
+      ]
+    ]
+  },
+  "HOlava": {
+    "translation": "এআই ইমেজ এক্সটেন্ডার ব্যবহারকারীদের একই সাথে চারটি ছবি প্রসারিত করার সুবিধা দেয়। এই বহু-ছবি প্রসারণ বৈশিষ্ট্য ব্যবহারকারীদের একসাথে একাধিক ছবি সহজভাবে সুধুই সময়কার্যক্ষম ভাবে উন্নত করতে সাহায্য করে।",
+    "message": "AI Image Extender allows users to simultaneously expand up to four images. This multi-image expansion feature enables users to conveniently enhance multiple images in a time-efficient manner.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        56
+      ]
+    ]
+  },
+  "WN+5uZ": {
+    "translation": "এআই ইমেজ এক্সটেন্ডার অ্যাডভান্সড এআই অ্যালগরিদম ব্যবহার করে আপলোড করা ছবিগুলি বিশ্লেষণ করতে এবং বিদ্যমান ছবির ডেটার উপর ভিত্তি করে অতিরিক্ত বিষয়বস্তু উৎপন্ন করতে। গভীর শিক্ষা মডেল ব্যবহার করে, এআই প্রযুক্তি মূল স্টাইলের সাথে সুস্থিরভাবে ছবির বিষয়বস্তুকে প্রসারিত করতে সক্ষম।",
+    "message": "AI Image Extender employs cutting-edge AI algorithms to analyze the uploaded images and generate additional content based on the existing image data. By utilizing a deep learning model, the AI technology is able to seamlessly expand the image content in a way that remains consistent with the original style.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "C/klTT": {
+    "translation": "এআই ইমেজ এক্সটেন্ডার গ্যালারি",
+    "message": "AI Image Extender Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "7KKVnB": {
+    "translation": "এআই ইমেজ এক্সটেন্ডার হল একটি ওয়েবসাইট যা ব্যবহারকারীদ্বারা আপলোড করা ছবিগুলির প্রসারণ এবং উন্নত করার জন্য উন্নত এআই প্রযুক্তি ব্যবহার করে। এটি ছবির বিষয়বস্তুকে চারটি দিকে (উপর, নীচে, বাম এবং ডান) প্রসারিত করতে পারে, যাতে ছবির মূল স্টাইল বজায় থাকে। এটি ছবিদের পিক্সেল মাত্রা বৃদ্ধি করার সক্ষমতা রয়েছে এবং একই সময়ে চারটি ছবি প্রসারিত করতে পারে।",
+    "message": "AI Image Extender is a website that utilizes advanced AI technology to expand and enhance images uploaded by users. It can extend the content of images in four directions (up, down, left, and right), while maintaining the original style of the image. It also has the capability to increase the pixel dimensions of the images and simultaneously expand up to four images.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        28
+      ]
+    ]
+  },
+  "/vcx2e": {
+    "translation": "এআই ইমেজ এক্সটেন্ডার: সৃজনশীল ছবি প্রসারে আপনার প্রবাহ বৃদ্ধি করুন",
+    "message": "AI Image Extender: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "4u94S+": {
+    "translation": "এআই আউটপেইন্টিং ব্যবহারকারীদের একই সাথে দুই ছবিকে প্রসারিত করার সুবিধা দেয়। এই বহু ছবি প্রসারণ বৈশিষ্ট্য ব্যবহারকারীদের একসাথে একাধিক ছবি সহজভাবে সুধুই সময়কার্যক্ষম ভাবে উন্নত করতে সাহায্য করে।",
+    "message": "AI Outpainting allows users to simultaneously expand up to tow images. This multi-image expansion feature enables users to conveniently enhance multiple images in a time-efficient manner.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        56
+      ]
+    ]
+  },
+  "TuDjpa": {
+    "translation": "এআই আউটপেইন্টিং কাটিং-এজ এআই অ্যালগরিদম ব্যবহার করে আপলোড করা ইমেজগুলি বিশ্লেষণ করতে এবং বিদ্যমান ইমেজের ডেটার উপর ভিত্তি করে অতিরিক্ত বিষয়বস্তু উৎপন্ন করতে। গভীর শিক্ষা মডেল ব্যবহার করে, এআই প্রযুক্তি মূল স্টাইলের সাথে সুস্থিরভাবে ইমেজের বিষয়বস্তুকে প্রসারিত করতে সক্ষম।",
+    "message": "AI Outpainting employs cutting-edge AI algorithms to analyze the uploaded images and generate additional content based on the existing image data. By utilizing a deep learning model, the AI technology is able to seamlessly expand the image content in a way that remains consistent with the original style.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "jaB///": {
+    "translation": "এআই আউটপেইন্টিং গ্যালারি",
+    "message": "AI Outpainting Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "ZyBhxg": {
+    "translation": "এআই আউটপেইন্টিং ইমেজ",
+    "message": "AI Outpainting Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        166
+      ]
+    ]
+  },
+  "+dagcs": {
+    "translation": "এআই আউটপেইন্টিং ইমেজ ব্লগ পোস্ট",
+    "message": "AI Outpainting Image Blogs Post",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/blogs-page-client.tsx",
+        34
+      ]
+    ]
+  },
+  "GhDmK8": {
+    "translation": "এআই আউটপেইন্টিং ইমেজ: সৃজনশীল ইমেজ প্রসারে আপনার প্রবাহ বৃদ্ধি করুন",
+    "message": "AI Outpainting Image: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/hero.tsx",
+        39
+      ]
+    ]
+  },
+  "iTf+zF": {
+    "translation": "এআই আউটপেইন্টিং হল একটি ওয়েবসাইট যা ব্যবহারকারীদ্বারা আপলোড করা ছবিগুলির প্রসারণ এবং উন্নত করার জন্য উন্নত এআই প্রযুক্তি ব্যবহার করে। এটি ইমেজের বিষয়বস্তুকে চারটি দিকে (উপর, নীচে, বাম এবং ডান) প্রসারিত করতে পারে, যাতে ইমেজের মুল স্টাইল বজায় থাকে। সে ছবিদের পিক্সেল মাত্রা বৃদ্ধি করার সক্ষমতা রয়েছে এবং একই সময়ে চারটি ছবি প্রসারিত করতে পারে।",
+    "message": "AI Outpainting is a website that utilizes advanced AI technology to expand and enhance images uploaded by users. It can extend the content of images in four directions (up, down, left, and right), while maintaining the original style of the image. It also has the capability to increase the pixel dimensions of the images and simultaneously expand up to four images.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        28
+      ]
+    ]
+  },
+  "xxs+vI": {
+    "translation": "AI Outpainting Playground",
+    "message": "AI Outpainting Playground",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/page.tsx",
+        15
+      ]
+    ]
+  },
+  "n8ms0F": {
+    "translation": "এআই আউটপেন্টিং ফলাফল",
+    "message": "AI Outpainting Result",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/page.tsx",
+        19
+      ]
+    ]
+  },
+  "NFpS5a": {
+    "translation": "AI Photo Extender Gallery",
+    "message": "AI Photo Extender Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "CHNN5v": {
+    "translation": "AI Photo Extender é uma ferramenta online inovadora que usa tecnologia de inteligência artificial avançada para expandir e aprimorar imagens. Este estendedor de imagem de inteligência artificial pode estender o conteúdo da imagem em todas as direções de maneira contínua, mantendo o estilo original. Além disso, nosso estendedor de imagem de inteligência artificial pode aumentar a resolução da imagem e processar até quatro imagens simultaneamente.",
+    "message": "AI Photo Extender is an innovative online tool that uses advanced AI technology to expand and enhance user-uploaded images. This AI photo extender can seamlessly extend image content in all four directions while maintaining the original style. Additionally, our AI photo extender can increase image resolution and process up to four images simultaneously.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "bK/TAt": {
+    "translation": "O AI Photo Extender é capaz de processar até quatro imagens simultaneamente. Essa funcionalidade de múltiplas imagens do nosso estendedor de imagem de inteligência artificial permite que os usuários aprimorem efetivamente várias imagens em uma única sessão, economizando tempo e esforço.",
+    "message": "AI Photo Extender is capable of processing up to four images simultaneously. This multi-image feature of our AI photo extender enables users to efficiently enhance multiple images in a single session, saving time and effort.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        42
+      ]
+    ]
+  },
+  "MeL6D4": {
+    "translation": "O AI Photo Extender utiliza algoritmos de inteligência artificial de ponta para analisar as imagens carregadas e gerar conteúdo adicional. O modelo de aprendizado profundo do nosso estendedor de imagem de inteligência artificial garante que as áreas expandidas se integrem perfeitamente à imagem original, mantendo a coerência no estilo e na qualidade.",
+    "message": "AI Photo Extender utilizes state-of-the-art AI algorithms to analyze uploaded images and generate additional content. Our AI photo extender's deep learning model ensures that the expanded areas blend seamlessly with the original image, maintaining consistency in style and quality.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        30
+      ]
+    ]
+  },
+  "bJOlPb": {
+    "translation": "AI Photo Extender: Expanda seus horizontes com extensões criativas de imagens",
+    "message": "AI Photo Extender: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "4WPYPJ": {
+    "translation": "Tem certeza de que deseja limpar o canvas atual? Isso excluirá todas as imagens geradas e o estado de edição atual.",
+    "message": "Are you sure you want to clear the current canvas? This will delete all generated images and the current editing state.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        807
+      ]
+    ]
+  },
+  "iH8pgl": {
+    "translation": "Voltar",
+    "message": "Back",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        540
+      ]
+    ]
+  },
+  "8Cg4ES": {
+    "translation": "Antes do Estendedor de Imagem",
+    "message": "Before Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        75
+      ]
+    ]
+  },
+  "IBtiOe": {
+    "translation": "আউটপেইন্টিং হওয়ার আগে",
+    "message": "Before Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        181
+      ],
+      [
+        "components/wegic/hero.tsx",
+        79
+      ]
+    ]
+  },
+  "FU+lge": {
+    "translation": "Antes do Estendedor de Foto",
+    "message": "Before Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        75
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        75
+      ]
+    ]
+  },
+  "ExFMj8": {
+    "translation": "ব্লগ",
+    "message": "Blogs",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/page.tsx",
+        16
+      ],
+      [
+        "components/wegic/blogs.tsx",
+        20
+      ],
+      [
+        "components/wegic/footer.tsx",
+        12
+      ],
+      [
+        "components/wegic/header.tsx",
+        10
+      ]
+    ]
+  },
+  "zsiX7I": {
+    "translation": "Inferior",
+    "message": "Bottom",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        521
+      ]
+    ]
+  },
+  "xzHB2Z": {
+    "translation": "Navegue por exemplos impressionantes do estendedor de imagem de IA, mostrando as infinitas possibilidades de estender obras de arte.",
+    "message": "Browse\nthrough stunning examples of AI image extender, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "QgF6mS": {
+    "translation": "মুক্তিমা, ক্রিয়েটিভ প্রকল্পগুলি রূপান্তর এবং উন্নত করতে এআইর ক্ষমতা প্রদর্শন করেন।",
+    "message": "Browse\nthrough stunning examples of AI outpainting, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "A056gq": {
+    "translation": "Navegue por exemplos impressionantes do estendedor de foto de IA, mostrando as infinitas possibilidades de estender obras de arte.",
+    "message": "Browse\nthrough stunning examples of AI photo extender, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "eBimti": {
+    "translation": "Navegue por exemplos impressionantes do preenchimento gerativo de IA, mostrando as infinitas possibilidades de estender obras de arte.",
+    "message": "Browse\nthrough stunning examples of generative fill ai, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "EWY1qg": {
+    "translation": "O AI Image Extender pode aumentar as dimensões de pixels de uma imagem?",
+    "message": "Can AI Image Extender increase the pixel dimensions of an image?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        46
+      ]
+    ]
+  },
+  "WWl4gu": {
+    "translation": "O AI Image Extender pode manter o estilo da imagem original enquanto a expande?",
+    "message": "Can AI Image Extender maintain the style of the original image while expanding it?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        39
+      ]
+    ]
+  },
+  "1Fpd2D": {
+    "translation": "এআই আউটপেইন্টিং কি একটি ইমেজের পিক্সেল মাত্রা বৃদ্ধি করতে পারে?",
+    "message": "Can AI Outpainting increase the pixel dimensions of an image?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        46
+      ]
+    ]
+  },
+  "OTPxHN": {
+    "translation": "এআই আউটপেইন্টিং কি মূল ছবির ধরনটি বজায় রাখতে পারে যেভাবে প্রসারিত করা?",
+    "message": "Can AI Outpainting maintain the style of the original image while expanding it?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        39
+      ]
+    ]
+  },
+  "6+I5pv": {
+    "translation": "O AI Photo Extender pode manter o estilo da imagem original?",
+    "message": "Can AI Photo Extender maintain the original image style?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        33
+      ]
+    ]
+  },
+  "o7jL3/": {
+    "translation": "O preenchimento gerativo de IA pode manter o estilo da imagem original?",
+    "message": "Can Generative Fill AI maintain the original image style?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        33
+      ]
+    ]
+  },
+  "dEgA5A": {
+    "translation": "Cancelar",
+    "message": "Cancel",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        811
+      ]
+    ]
+  },
+  "z65MvS": {
+    "translation": "Limpar o Canvas",
+    "message": "Clear Canvas",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        720
+      ]
+    ]
+  },
+  "yz7wBu": {
+    "translation": "বন্ধ",
+    "message": "Close",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        828
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        56
+      ]
+    ]
+  },
+  "QTBZC3": {
+    "translation": "Confirmar Limpar",
+    "message": "Confirm Clear",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        814
+      ]
+    ]
+  },
+  "1KApxq": {
+    "translation": "Confirmar Limpar o Canvas",
+    "message": "Confirm Clear Canvas",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        805
+      ]
+    ]
+  },
+  "BWF0ai": {
+    "translation": "প্রসঙ্গ-সচেতন এআই",
+    "message": "Context-aware AI",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        23
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        23
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        23
+      ],
+      [
+        "components/wegic/features.tsx",
+        23
+      ]
+    ]
+  },
+  "qTrELo": {
+    "translation": "Continuar Gerando",
+    "message": "Continue Generating",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "TXxF+/": {
+    "translation": "ক্রেডিট",
+    "message": "credit",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        93
+      ]
+    ]
+  },
+  "mehNeY": {
+    "translation": "ক্রেডিট:{0}",
+    "message": "Credit:{0}",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        594
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        610
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        172
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        188
+      ]
+    ]
+  },
+  "38nphA": {
+    "translation": "O AI Photo Extender aumenta a resolução da imagem?",
+    "message": "Does AI Photo Extender increase image resolution?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        37
+      ]
+    ]
+  },
+  "8gRz33": {
+    "translation": "O preenchimento gerativo de IA aumenta a resolução da imagem?",
+    "message": "Does Generative Fill AI increase image resolution?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        37
+      ]
+    ]
+  },
+  "mzI/c+": {
+    "translation": "ডাউনলোড করুন",
+    "message": "Download",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        756
+      ]
+    ]
+  },
+  "0yQo/k": {
+    "translation": "চিত্র ডাউনলোড করুন",
+    "message": "Download Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        264
+      ]
+    ]
+  },
+  "fBjOS6": {
+    "translation": "আমাদের গ্যালারিতে প্রতিটি কার্য এআইতে কী শক্তির আলোকপ্রচার করে এবং সৃষ্টিশীল প্রকল্পগুলি প্রতিষ্ঠিত করার ক্ষমতা প্রদর্শন করে।",
+    "message": "Each\npiece in our gallery demonstrates the power of AI in transforming and enhancing creative projects.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        50
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        50
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        50
+      ],
+      [
+        "components/wegic/gallery.tsx",
+        50
+      ]
+    ]
+  },
+  "CajufG": {
+    "translation": "আপনার ইমেজ প্রসারণ করুন, আপনার ইমেজকে পুনর্নির্মাণ করুন",
+    "message": "Expand Your Image, Reshape Your Image",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/footer.tsx",
+        36
+      ]
+    ]
+  },
+  "Q+x/E4": {
+    "translation": "Expansão",
+    "message": "Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "jU4owd": {
+    "translation": "Direção da Expansão",
+    "message": "Expansion Direction",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        637
+      ]
+    ]
+  },
+  "kNSTBA": {
+    "translation": "Direção da Expansão:",
+    "message": "Expansion Direction:",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        546
+      ]
+    ]
+  },
+  "EaUzDm": {
+    "translation": "এআই আউটপেইন্টিং ইমেজ অন্বেষণ করুন, একটি ফ্রি অনলাইন সরঞ্জামের জন্য ছবিগুলি প্রসারণ এবং উন্নত করার সহজ উপায়ে",
+    "message": "Explore AI Outpainting Image, A Free Online Tool For Expanding and Enhancing Images Effortlessly",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/page.tsx",
+        30
+      ]
+    ]
+  },
+  "nkhTSO": {
+    "translation": "Expanda além do quadro com o estendedor de imagem de IA: Expanda suas fotos online usando inteligência artificial gerativa avançada, garantindo visuais de alta qualidade em todos os formatos de imagem.",
+    "message": "Explore Beyond the Frame with AI Image Extender: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "ucTv1Q": {
+    "translation": "এআই আউটপেইন্টিং ইমেজ সাথে ফ্রেম ছাড়া অন্বেষণ করুন: এডভান্সড জেনারেটিভ এআই ব্যবহার করে অনলাইনে আপনার ফটোগুলি সহজে প্রসারিত করুন, যদিও উচ্চ-গুণসম্পন্ন দৃশ্যমানতা সমস্ত ইমেজ অনুপাতে বজায় রাখা হয়।",
+    "message": "Explore Beyond the Frame with AI Outpainting Image: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/hero.tsx",
+        42
+      ]
+    ]
+  },
+  "UTesON": {
+    "translation": "Expanda além do quadro com o estendedor de foto de IA: Expanda suas fotos online usando inteligência artificial gerativa avançada, garantindo visuais de alta qualidade em todos os formatos de imagem.",
+    "message": "Explore Beyond the Frame with AI Photo Extender: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "HO2QAu": {
+    "translation": "Expanda além do quadro com o preenchimento gerativo de IA: Expanda suas fotos online usando inteligência artificial gerativa avançada, garantindo visuais de alta qualidade em todos os formatos de imagem.",
+    "message": "Explore Beyond the Frame with Generative Fill AI: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "ke8MAp": {
+    "translation": "আবার প্রসারণ করুন",
+    "message": "Extend Again",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        32
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        32
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        32
+      ],
+      [
+        "components/wegic/features.tsx",
+        32
+      ]
+    ]
+  },
+  "p5l4iX": {
+    "translation": "প্রসারিত ফলাফল পুনরায় প্রসারিত হতে পারে, যাতে ধারণকে অবিরত উন্নতি যায়",
+    "message": "Extended results can be expanded repeatedly,allowing for continuous enhancements",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        34
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        34
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        34
+      ],
+      [
+        "components/wegic/features.tsx",
+        34
+      ]
+    ]
+  },
+  "lIFSzb": {
+    "translation": "ফাইল আপলোড করা যায়নি: {0}",
+    "message": "Failed to upload file: {0}",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/useS34R2.ts",
+        23
+      ]
+    ]
+  },
+  "cDhYY/": {
+    "translation": "দ্রুত উৎপন্ন",
+    "message": "Fast generation",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        28
+      ]
+    ]
+  },
+  "TVSR9M": {
+    "translation": "ফাইলের আকার 10 এমবি ছাড়িয়ে গেছে। দয়া করে একটি ছোট ফাইল নির্বাচন করুন।",
+    "message": "File size exceeds 10MB. Please select a smaller file.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        183
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        40
+      ]
+    ]
+  },
+  "ofu/39": {
+    "translation": "Estendedor de imagem de IA gratuito",
+    "message": "Free AI Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "6lvumm": {
+    "translation": "বিনামূল্যে এআই আউটপেইন্টিং",
+    "message": "Free AI Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/features.tsx",
+        12
+      ]
+    ]
+  },
+  "0BCXgy": {
+    "translation": "Estendedor de foto de IA gratuito",
+    "message": "Free AI Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "ViaB2F": {
+    "translation": "Preenchimento gerativo de IA gratuito",
+    "message": "Free Generative Fill AI",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "fDIFV3": {
+    "translation": "এআই ইমেজ প্রসারণের জন্য বিনামূল্যে অনলাইন টুল",
+    "message": "Free Online Tool For AI Image Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/page.tsx",
+        27
+      ]
+    ]
+  },
+  "F7G/TS": {
+    "translation": "সচলভাবে জিজ্ঞাসিত প্রশ্নগুলি",
+    "message": "Frequently Asked Questions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        67
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        53
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        52
+      ],
+      [
+        "components/wegic/faqs.tsx",
+        67
+      ]
+    ]
+  },
+  "oJZ41z": {
+    "translation": "O preenchimento gerativo de IA usa algoritmos de ponta para analisar as imagens carregadas e gerar conteúdo adicional. O modelo de aprendizado profundo por trás do nosso preenchimento gerativo de IA garante que as áreas expandidas se integrem perfeitamente à imagem original, mantendo a coerência no estilo e na qualidade em todo o processo.",
+    "message": "Generative Fill AI employs state-of-the-art algorithms to analyze uploaded images and generate additional content. The deep learning model behind our generative fill AI ensures that the expanded areas blend seamlessly with the original image, maintaining consistency in style and quality throughout the process.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        30
+      ]
+    ]
+  },
+  "+XZy/0": {
+    "translation": "Galeria de Preenchimento Gerativo de IA",
+    "message": "Generative Fill AI Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "9Q0Mk1": {
+    "translation": "O preenchimento gerativo de IA é uma ferramenta online inovadora que usa inteligência artificial avançada para expandir e aprimorar imagens. Esta tecnologia inovadora de preenchimento gerativo de IA pode estender o conteúdo da imagem em todas as direções de maneira contínua, mantendo o estilo original. A ferramenta de preenchimento gerativo de IA também oferece aumento da resolução da imagem e pode processar até quatro imagens simultaneamente.",
+    "message": "Generative Fill AI is an innovative online tool that leverages advanced artificial intelligence to expand and enhance images. This cutting-edge generative fill AI technology can seamlessly extend image content in all directions while maintaining the original style. Our generative fill AI tool also offers image resolution enhancement and can process multiple images simultaneously.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "SH0knd": {
+    "translation": "Preenchimento gerativo de IA: Expanda seus horizontes com extensões criativas de imagens",
+    "message": "Generative Fill AI: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "c3b0B0": {
+    "translation": "শুরু করুন",
+    "message": "Get Started",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        49
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        49
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        49
+      ],
+      [
+        "components/wegic/hero.tsx",
+        53
+      ],
+      [
+        "components/wegic/index-uploader.tsx",
+        44
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        140
+      ]
+    ]
+  },
+  "sAH4M6": {
+    "translation": "পেমেন্টে যান",
+    "message": "Go to Payment",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/stripe.tsx",
+        35
+      ]
+    ]
+  },
+  "0RKAvR": {
+    "translation": "লগ ইন করেছে",
+    "message": "Has logged in",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        128
+      ]
+    ]
+  },
+  "Ghlr93": {
+    "translation": "উচ্চ গুণসম্পন্ন ছবি",
+    "message": "High quality images",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        29
+      ]
+    ]
+  },
+  "i0qMbr": {
+    "translation": "হোম",
+    "message": "Home",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/footer.tsx",
+        10
+      ],
+      [
+        "components/wegic/header.tsx",
+        8
+      ]
+    ]
+  },
+  "pzu7v4": {
+    "translation": "অনুভূমিক",
+    "message": "Horizontal",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        548
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        639
+      ]
+    ]
+  },
+  "k4BMq5": {
+    "translation": "অনুভাবাংতর",
+    "message": "Horizontal Expansion",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        255
+      ]
+    ]
+  },
+  "/o/u7t": {
+    "translation": "Como funciona o AI Image Extender?",
+    "message": "How does AI Image Extender work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        32
+      ]
+    ]
+  },
+  "NYWdBf": {
+    "translation": "এআই আউটপেইন্টিং কীভাবে কাজ করে?",
+    "message": "How does AI Outpainting work?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        32
+      ]
+    ]
+  },
+  "i1x708": {
+    "translation": "Como funciona o AI Photo Extender?",
+    "message": "How does AI Photo Extender work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        29
+      ]
+    ]
+  },
+  "VVkhXx": {
+    "translation": "Como funciona o preenchimento gerativo de IA?",
+    "message": "How does Generative Fill AI work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        29
+      ]
+    ]
+  },
+  "EJYtRo": {
+    "translation": "Quantas imagens o AI Photo Extender pode processar de uma vez?",
+    "message": "How many images can AI Photo Extender process at once?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "T2jWIX": {
+    "translation": "Quantas imagens o preenchimento gerativo de IA pode processar de uma vez?",
+    "message": "How many images can Generative Fill AI process at once?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "wVrOLV": {
+    "translation": "Quantas imagens posso expandir usando o AI Image Extender?",
+    "message": "How many images can I expand at once using AI Image Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        54
+      ]
+    ]
+  },
+  "c8UM3u": {
+    "translation": "এআই আউটপেইন্টিং ব্যবহার করে কতগুলি ইমেজ একবারে প্রসারিত করতে পারি?",
+    "message": "How many images can I expand at once using AI Outpainting?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        54
+      ]
+    ]
+  },
+  "E1UQnk": {
+    "translation": "চিত্রগুলিকে প্রসারিত করা",
+    "message": "Images Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        61
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        61
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        61
+      ],
+      [
+        "components/wegic/hero.tsx",
+        65
+      ]
+    ]
+  },
+  "oTSrSS": {
+    "translation": "পেপাল সেবার শুরুতে একটি ত্রুটি সনাক্ত করা গেছে।",
+    "message": "Initialization of PayPal services encountered an error.",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        60
+      ]
+    ]
+  },
+  "XU5AOg": {
+    "translation": "ইনপুট",
+    "message": "Input",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        179
+      ]
+    ]
+  },
+  "UlKSMd": {
+    "translation": "Esquerda",
+    "message": "Left",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        516
+      ]
+    ]
+  },
+  "F/9EGj": {
+    "translation": "চিত্র লোড হচ্ছে...",
+    "message": "Loading image...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        679
+      ]
+    ]
+  },
+  "Z3FXyt": {
+    "translation": "লোড হচ্ছে...",
+    "message": "Loading...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/loading.tsx",
+        8
+      ],
+      [
+        "components/payment/paypal.tsx",
+        54
+      ]
+    ]
+  },
+  "paehRh": {
+    "translation": "লগ আউট",
+    "message": "Log Out",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        600
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        178
+      ]
+    ]
+  },
+  "S1g3Ds": {
+    "translation": "Centro",
+    "message": "Middle",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        514
+      ]
+    ]
+  },
+  "bHt2FX": {
+    "translation": "নেটওয়ার্ক ত্রুটি বা CORS সমস্যা।",
+    "message": "Network error or CORS issue.",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/useS34R2.ts",
+        27
+      ]
+    ]
+  },
+  "ko93eb": {
+    "translation": "নতুন ব্যবহারকারী যারা লগ ইন করেছেন, তাদেরকে 2 টি ক্রেডিট প্রাপ্ত হবে",
+    "message": "New users who log in will receive 2 credits",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        39
+      ]
+    ]
+  },
+  "cvwg/A": {
+    "translation": "নতুন ব্যবহারকারী যারা লগইন করবে, তারা 5 ক্রেডিট পাবে",
+    "message": "New users who log in will receive 5 credits",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        120
+      ]
+    ]
+  },
+  "uO0GB/": {
+    "translation": "কোনও বৈধ সম্পদ তথ্য খুঁজে পাওয়া যায়নি।",
+    "message": "No valid resource information was found.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        334
+      ]
+    ]
+  },
+  "8HI10O": {
+    "translation": "Imagem Original",
+    "message": "Original Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        823
+      ]
+    ]
+  },
+  "shdsCc": {
+    "translation": "Posição da imagem original",
+    "message": "Original Image Position",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        645
+      ]
+    ]
+  },
+  "3gz7Y7": {
+    "translation": "Posição da imagem original:",
+    "message": "Original Image Position:",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        555
+      ]
+    ]
+  },
+  "56MoT/": {
+    "translation": "Nossa ferramenta de preenchimento gerativo de IA é capaz de processar até quatro imagens simultaneamente. Esta funcionalidade de múltiplas imagens permite que os usuários aprimorem efetivamente várias imagens em uma única sessão, mostrando a versatilidade e eficiência da tecnologia de preenchimento gerativo de IA.",
+    "message": "Our generative fill AI tool is capable of processing up to four images simultaneously. This multi-image feature enables users to efficiently enhance multiple images in a single session, showcasing the versatility and efficiency of generative fill AI technology.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        42
+      ]
+    ]
+  },
+  "gh06VD": {
+    "translation": "আউটপুট",
+    "message": "Output",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        217
+      ]
+    ]
+  },
+  "3F1hbx": {
+    "translation": "ব্যবহারকারী দ্বারা মেঘ",
+    "message": "Own By User",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        315
+      ]
+    ]
+  },
+  "2bVshK": {
+    "translation": "স্থায়ীভাবে বৈধ",
+    "message": "Permanently valid",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        27
+      ]
+    ]
+  },
+  "W3mmGV": {
+    "translation": "ছবি আপলোড করতে ছবিতে ক্লিক বা সোঁচান।",
+    "message": "Please click or drag the image to upload it.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        698
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        105
+      ]
+    ]
+  },
+  "+Y65s1": {
+    "translation": "চালিয়ে যাওয়ার জন্য দয়া করে সাইন ইন করুন",
+    "message": "Please Sign In To Continue",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        377
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        38
+      ]
+    ]
+  },
+  "PZCqeW": {
+    "translation": "পরে আবার চেষ্টা করুন।",
+    "message": "Please try again later.",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        58
+      ]
+    ]
+  },
+  "aHCEmh": {
+    "translation": "মূল্য নির্ধারণ",
+    "message": "Pricing",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(pricing)/pricing/page.tsx",
+        17
+      ],
+      [
+        "components/wegic/footer.tsx",
+        11
+      ],
+      [
+        "components/wegic/header.tsx",
+        9
+      ]
+    ]
+  },
+  "tdGO5K": {
+    "translation": "{0} এর মূল্য নির্ধারণ |",
+    "message": "Pricing | {0}",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(details)/details/[...slug]/page.tsx",
+        10
+      ]
+    ]
+  },
+  "rQBXl9": {
+    "translation": "মূল্য পরিকল্পনা",
+    "message": "Pricing Plans",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        66
+      ]
+    ]
+  },
+  "k1ifdL": {
+    "translation": "ব্যবস্থাপনা চলছে",
+    "message": "Processing...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        527
+      ]
+    ]
+  },
+  "x50rMS": {
+    "translation": "প্রকাশ তারিখ:",
+    "message": "Publish Date:",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/blogs.tsx",
+        33
+      ]
+    ]
+  },
+  "zZk9Yz": {
+    "translation": "ক্রয়",
+    "message": "Purchase",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        625
+      ]
+    ]
+  },
+  "A20mxR": {
+    "translation": "সদ্যপূর্ণ প্রয়োজনে ক্রয় করুন, কোনও প্রদান ফি নেই, অবিচ্ছিন্ন বৈধতা",
+    "message": "Purchase on demand, no subscription fee, lifetime validity",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        70
+      ]
+    ]
+  },
+  "WEYdDv": {
+    "translation": "অনুশীলিত",
+    "message": "Recommended",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        82
+      ]
+    ]
+  },
+  "6exX+8": {
+    "translation": "পুনরুত্থান করা",
+    "message": "Regenerate",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        731
+      ],
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        208
+      ]
+    ]
+  },
+  "6gRgw8": {
+    "translation": "পুনরায় চেষ্টা করুন",
+    "message": "Retry",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        281
+      ]
+    ]
+  },
+  "nOPbWJ": {
+    "translation": "ঠিক",
+    "message": "Right",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        518
+      ]
+    ]
+  },
+  "n1ekoW": {
+    "translation": "সাইন ইন করুন",
+    "message": "Sign In",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        582
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        160
+      ]
+    ]
+  },
+  "ZqvdDl": {
+    "translation": "গুগল দিয়ে সাইন ইন করুন",
+    "message": "Sign In With Google",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        574
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        152
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        128
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        50
+      ]
+    ]
+  },
+  "1DA6ap": {
+    "translation": "চতুর্দিক",
+    "message": "Square",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        550
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        641
+      ]
+    ]
+  },
+  "FKsmFn": {
+    "translation": "আয়োজন শুরু করুন",
+    "message": "Start Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "SowH7o": {
+    "translation": "এআই এক্সটেণ্ডার দিয়ে বিনামুল্যে শুরু করুন। প্রথম 3টি ইমেজকে খুব চার্জ করা হবে না।",
+    "message": "Start for free with the AI extender. Expand your first 3 images at no charge.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        14
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        14
+      ],
+      [
+        "components/wegic/features.tsx",
+        14
+      ]
+    ]
+  },
+  "fYBlNd": {
+    "translation": "স্বাধীনভাবে উদ্ভাবনশীল পূরণ AI এর সাথে শুরু করুন। আপনার প্রথম ৩টি ছবি ফ্রি করে বড়াও।",
+    "message": "Start for free with the generative fill ai. Expand your first 3 images at no charge.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        14
+      ]
+    ]
+  },
+  "ywdZxq": {
+    "translation": "সিস্টেম ত্রুটি, দয়া করে পুনঃচেষ্টা করুন বা ওয়েবসাইটের অ্যাডমিনকে যোগাযোগ করুন",
+    "message": "System Error,Please retry or contract website admin",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        421
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        78
+      ]
+    ]
+  },
+  "I3FBWw": {
+    "translation": "আপনার ইমেজের পাশ অ্যানালাইজ করে এআই এটা স্থিতিগতভাবে প্রসারিত করে যাতে স্বাভাবিক ফলাফল পাওয়া যায়।",
+    "message": "The AI analyzes your image's context and extends it for consistently realistic outcomes.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        25
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        25
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        25
+      ],
+      [
+        "components/wegic/features.tsx",
+        25
+      ]
+    ]
+  },
+  "fWtzVj": {
+    "translation": "চিত্র প্রসেস করা যায়নি। পরে আবার চেষ্টা করুন।",
+    "message": "There was an error processing the image. Please try again later.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        273
+      ]
+    ]
+  },
+  "WWy8TN": {
+    "translation": "শীর্ষ",
+    "message": "Top",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        520
+      ]
+    ]
+  },
+  "kCd+q+": {
+    "translation": "মোট মুল্য",
+    "message": "Total Payment",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/payment-modal.tsx",
+        90
+      ]
+    ]
+  },
+  "Rd1BcW": {
+    "translation": "বিনামূল্যে চেষ্টা করুন",
+    "message": "Try It Free",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/index-uploader.tsx",
+        29
+      ]
+    ]
+  },
+  "MxB2DA": {
+    "translation": "এটা পরীক্ষা করুন",
+    "message": "Try it out",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        63
+      ]
+    ]
+  },
+  "ONWvwQ": {
+    "translation": "আপলোড করুন",
+    "message": "Upload",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/button.tsx",
+        44
+      ]
+    ]
+  },
+  "Pdq4/9": {
+    "translation": "নতুন ছবি আপলোড করুন",
+    "message": "Upload New Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        158
+      ],
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        170
+      ]
+    ]
+  },
+  "+/4Lnu": {
+    "translation": "সফলভাবে আপলোড হয়েছে",
+    "message": "Upload successfully",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/painting-uploader.tsx",
+        49
+      ]
+    ]
+  },
+  "h3BBNG": {
+    "translation": "আপনার ছবি আপলোড করুন",
+    "message": "Upload your photo",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        26
+      ]
+    ]
+  },
+  "/eguJc": {
+    "translation": "আপলোড হচ্ছে",
+    "message": "Uploading",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/picture.tsx",
+        59
+      ]
+    ]
+  },
+  "GxkJXS": {
+    "translation": "আপলোড করা হচ্ছে...",
+    "message": "Uploading...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        679
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        88
+      ]
+    ]
+  },
+  "Sxm8rQ": {
+    "translation": "ব্যবহারকারী",
+    "message": "Users",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        56
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        56
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        56
+      ],
+      [
+        "components/wegic/hero.tsx",
+        60
+      ]
+    ]
+  },
+  "mX/isJ": {
+    "translation": "উল্লম্ব",
+    "message": "Vertical",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        549
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        640
+      ]
+    ]
+  },
+  "M1f5yq": {
+    "translation": "উলম্ব বিস্তার",
+    "message": "Vertical Expansion",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        246
+      ]
+    ]
+  },
+  "ernaiK": {
+    "translation": "আইএয়ার ইমেজ এক্সটেন্ডার কি?",
+    "message": "What is AI Image Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "hBTR82": {
+    "translation": "কি হল এআই আউটপেইন্টিং?",
+    "message": "What is AI Outpainting?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "e40dkT": {
+    "translation": "আই ফটো এক্সটেন্ডার কি?",
+    "message": "What is AI Photo Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        25
+      ]
+    ]
+  },
+  "tNQRV8": {
+    "translation": "উদ্ভাবনশীল পূরণ AI কি?",
+    "message": "What is Generative Fill AI?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        25
+      ]
+    ]
+  },
+  "xVURvs": {
+    "translation": "হ্যাঁ, AI Image Extender  এর উদ্দেশ্য ছবির বিস্তারিতে সদৃশতা রাখার। AI অ্যালগরিদমগুলি শিক্ষিত হয় ছবির বৈশিষ্ট্যগুলি বুঝতে এবং প্রতিনিধি করতে, যার ফলে, বিস্তারিত ছবি স不退色ভাবে সদৃশ থাকে।",
+    "message": "Yes, AI Image Extender is designed to preserve the style of the original image throughout the expansion process. The AI algorithms are trained to understand and replicate the unique characteristics of the image, ensuring that the expanded content remains visually consistent with the original.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "6kC20h": {
+    "translation": "হ্যাঁ, এআই আউটপেইন্টিংটি প্রাথমিক ইমেজের স্টাইল সংরক্ষণ করতে নির্দিষ্ট। এআই এলগোরিদমগুলি ইমেজের অনন্য বৈশিষ্ট্যগুলি বুঝতে এবং পুনরারম্ভ করতে প্রশিক্ষিত হয়েছে, যাতে প্রসারিত কন্টেন্ট মৌলিক ছবিতে দৃশ্যগতভাবে সামর্থক রয়ে।",
+    "message": "Yes, AI Outpainting is designed to preserve the style of the original image throughout the expansion process. The AI algorithms are trained to understand and replicate the unique characteristics of the image, ensuring that the expanded content remains visually consistent with the original.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "HiX60c": {
+    "translation": "হ্যাঁ, AI Photo Extender  ছবি কন텐্টের বিস্তারের উপর নির্ভর করার বাইরে পিক্সেল আওতাযudit বৃদ্ধিও প্রদান করে। আমাদের AI PHOTO EXTENDER এর এই বৈশিষ্ট্য ব্যবহারकर ব্যবহারকারীদের ছবির আওতা এবং গুণসম্পন্নতা উন্নত করতে সুযোগ দেয় এবং その結果、高解像度の出力が得られます。",
+    "message": "Yes, AI Photo Extender not only expands image content but also offers the option to increase pixel dimensions. This feature of our AI photo extender allows users to enhance both the size and quality of their images, resulting in higher resolution outputs.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        38
+      ]
+    ]
+  },
+  "FrTOHj": {
+    "translation": "হ্যাঁ, আমাদের γενেরেটিভ ফিল আই এর মাধ্যমে, ছবি কনটেন্টের বিস্তারের উপর নির্ভর করার বাইরে ছবি আওতা বৃদ্ধিও প্রদান করে। এই বৈশিষ্ট্যgend  ব্যবহারকারীদের ছবি আওতা এবং গুণসম্পন্নতা উন্নত করতে সুযোগ দেয় এবং その結果、高解像度の出力が得られます。",
+    "message": "Yes, our generative fill AI not only expands image content but also offers the option to increase pixel dimensions. This feature allows users to enhance both the size and quality of their images, resulting in higher resolution outputs through the power of generative fill AI technology.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        38
+      ]
+    ]
+  },
+  "WCkkI4": {
+    "translation": "আপনার ক্রেডিট পয়েন্ট কম, প্রথমে রিচার্জ করুন।",
+    "message": "Your credit points are insufficient, please recharge first.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        379
+      ]
+    ]
+  },
+  "lX4VC4": {
+    "translation": "ব্লগ তালিকা",
+    "message": "博客列表",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/layout..tsx",
+        7
+      ]
+    ]
+  },
+  "uk086D": {
+    "translation": "মানুষ বিভাজন অনুসন্ধান",
+    "message": "探索人声分离",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(explore)/explore/views.tsx",
+        40
+      ]
+    ]
+  },
+  "Xqre6v": {
+    "translation": "প্রায়ইক্ষেপ্ট ওয়ে আমাদের এআই মানুষের ভক্তি উদ্ধার কৌশল, যাতে আপনি জীবন ও কর্মে কর্মপাঠে সাহায্য করতে পারেন।",
+    "message": "轻松掌握我们的AI人声分离技术，助您在生活和工作中提高效率。",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(explore)/explore/views.tsx",
+        43
+      ]
+    ]
+  }
+}

@@ -1,0 +1,2102 @@
+{
+  "/HNf1t": {
+    "translation": "Khám phá Phép màu của Việc Mở rộng Ảnh của Bạn bằng Trí tuệ Nhân tạo",
+    "message": "\"Discover the Magic of Expanding Your Photos with AI\"",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/blogs-page-client.tsx",
+        37
+      ]
+    ]
+  },
+  "J/hVSQ": {
+    "translation": "{0}",
+    "message": "{0}",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        34
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        35
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        36
+      ]
+    ]
+  },
+  "GkCoYT": {
+    "translation": "<< Trở lại danh sách Blog",
+    "message": "<< Return Blogs List",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/[slug]/page.tsx",
+        47
+      ]
+    ]
+  },
+  "heWVMD": {
+    "translation": "1 Credit/use, {0} left",
+    "message": "1 Credit/use, {0} left",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        747
+      ]
+    ]
+  },
+  "Ukjyf+": {
+    "translation": "Hoạt động tuyệt vời! AI Photo Extender được đặc biệt thiết kế để duy trì phong cách hình ảnh gốc trong suốt quá trình mở rộng. Phần mềm mở rộng ảnh AI của chúng tôi được huấn luyện để hiểu và sao chép các đặc điểm nhận dạng độc đáo của hình ảnh, đảm bảo tính nhất quán về mặt thị giác giữa nội dung gốc và mở rộng.",
+    "message": "Absolutely! AI Photo Extender is specifically designed to preserve the original image style throughout the expansion process. Our AI photo extender's algorithms are trained to understand and replicate unique image characteristics, ensuring visual consistency between the original and expanded content.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "Gc4eSt": {
+    "translation": "Hoạt động tuyệt vời! Bên cạnh việc mở rộng nội dung hình ảnh, phần mềm mở rộng ảnh AI của chúng tôi còn cung cấp tùy chọn tăng độ phân giải chiều ngang của hình ảnh đã tải lên. Điều này cho phép người dùng nâng cao độ phân giải tổng thể và chất lượng hình ảnh của họ.",
+    "message": "Absolutely! In addition to expanding the content of the image, AI Image Extender also provides the option to increase the pixel dimensions of the uploaded images. This allows users to enhance the overall resolution and quality of their images.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        48
+      ]
+    ]
+  },
+  "PVrmDs": {
+    "translation": "Chắc chắn! Ngoài việc mở rộng nội dung của ảnh, AI Outpainting còn cung cấp tùy chọn tăng kích thước pixel của các hình ảnh được tải lên. Điều này cho phép người dùng cải thiện độ phân giải và chất lượng tổng thể của hình ảnh của họ.",
+    "message": "Absolutely! In addition to expanding the content of the image, AI Outpainting also provides the option to increase the pixel dimensions of the uploaded images. This allows users to enhance the overall resolution and quality of their images.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        48
+      ]
+    ]
+  },
+  "zLNTkq": {
+    "translation": "Hoạt động tuyệt vời! Công nghệ AI Fill của chúng tôi được đặc biệt thiết kế để duy trì phong cách hình ảnh gốc trong suốt quá trình mở rộng. Phần mềm AI Fill sử dụng thuật toán nhận dạng sâu để hiểu và sao chép các đặc điểm nhận dạng độc đáo của hình ảnh, đảm bảo tính nhất quán về mặt thị giác giữa nội dung gốc và mở rộng.",
+    "message": "Absolutely! Our generative fill AI is specifically designed to preserve the original image style throughout the expansion process. The algorithms powering this generative fill AI technology are trained to understand and replicate unique image characteristics, ensuring visual consistency between the original and expanded content.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "A+Al01": {
+    "translation": "Sau khi mở rộng",
+    "message": "After Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        88
+      ]
+    ]
+  },
+  "uFZsqH": {
+    "translation": "Sau khi đăng nhập, bạn có thể thực hiện ba hai thử nghiệm mở rộng hình ảnh của bạn với trí tuệ nhân tạo",
+    "message": "After logging in, you can have three two trials expand your image with AI",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/index-uploader.tsx",
+        33
+      ]
+    ]
+  },
+  "JFnLY9": {
+    "translation": "Sau Khi Mở rộng",
+    "message": "After Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        219
+      ],
+      [
+        "components/wegic/hero.tsx",
+        92
+      ]
+    ]
+  },
+  "6EmTc/": {
+    "translation": "Sau khi mở rộng ảnh",
+    "message": "After Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        88
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        88
+      ]
+    ]
+  },
+  "HOlava": {
+    "translation": "AI Image Extender cho phép người dùng mở rộng tới bốn hình ảnh cùng một lúc. Tính năng mở rộng đa hình ảnh này cho phép người dùng thuận tiện tăng kích thước hình ảnh nhiều lần trong một phiên làm việc có hiệu quả.",
+    "message": "AI Image Extender allows users to simultaneously expand up to four images. This multi-image expansion feature enables users to conveniently enhance multiple images in a time-efficient manner.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        56
+      ]
+    ]
+  },
+  "WN+5uZ": {
+    "translation": "AI Image Extender sử dụng thuật toán AI tiên tiến để phân tích hình ảnh đã tải lên và tạo nội dung bổ sung dựa trên dữ liệu hình ảnh hiện có. Bằng cách sử dụng mô hình học sâu, công nghệ AI có thể mở rộng nội dung hình ảnh một cách liền mạch mà vẫn giữ được phong cách ban đầu.",
+    "message": "AI Image Extender employs cutting-edge AI algorithms to analyze the uploaded images and generate additional content based on the existing image data. By utilizing a deep learning model, the AI technology is able to seamlessly expand the image content in a way that remains consistent with the original style.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "C/klTT": {
+    "translation": "Bộ sưu tập mở rộng ảnh AI",
+    "message": "AI Image Extender Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "7KKVnB": {
+    "translation": "AI Image Extender là một trang web sử dụng công nghệ AI tiên tiến để mở rộng và làm đẹp hình ảnh do người dùng tải lên. Nó có thể mở rộng nội dung hình ảnh theo bốn hướng (trên, xuống, trái và phải), đồng thời duy trì phong cách của hình ảnh gốc. Nó cũng có khả năng tăng độ phân giải chiều ngang của hình ảnh và đồng thời mở rộng tới bốn hình ảnh cùng một lúc.",
+    "message": "AI Image Extender is a website that utilizes advanced AI technology to expand and enhance images uploaded by users. It can extend the content of images in four directions (up, down, left, and right), while maintaining the original style of the image. It also has the capability to increase the pixel dimensions of the images and simultaneously expand up to four images.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        28
+      ]
+    ]
+  },
+  "/vcx2e": {
+    "translation": "AI Image Extender: Mở rộng tầm nhìn với các tác phẩm nghệ thuật mở rộng sáng tạo",
+    "message": "AI Image Extender: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "4u94S+": {
+    "translation": "AI Outpainting cho phép người dùng mở rộng đồng thời lên đến hai hình ảnh. Tính năng mở rộng nhiều hình ảnh này giúp người dùng nâng cao một cách thuận tiện nhiều hình ảnh trong thời gian hiệu quả.",
+    "message": "AI Outpainting allows users to simultaneously expand up to tow images. This multi-image expansion feature enables users to conveniently enhance multiple images in a time-efficient manner.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        56
+      ]
+    ]
+  },
+  "TuDjpa": {
+    "translation": "AI Outpainting sử dụng các thuật toán AI cắt lẻ tinh vi để phân tích các hình ảnh được tải lên và tạo ra nội dung bổ sung dựa trên dữ liệu hình ảnh hiện có. Bằng cách sử dụng một mô hình học sâu, công nghệ AI có khả năng mở rộng nội dung hình ảnh một cách liên tục mà vẫn giữ nguyên phong cách ban đầu.",
+    "message": "AI Outpainting employs cutting-edge AI algorithms to analyze the uploaded images and generate additional content based on the existing image data. By utilizing a deep learning model, the AI technology is able to seamlessly expand the image content in a way that remains consistent with the original style.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        34
+      ]
+    ]
+  },
+  "jaB///": {
+    "translation": "Bảo tàng Trình diễn Trí tuệ Nhân tạo",
+    "message": "AI Outpainting Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "ZyBhxg": {
+    "translation": "Hình Ảnh Trình diễn Trí tuệ Nhân tạo",
+    "message": "AI Outpainting Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        166
+      ]
+    ]
+  },
+  "+dagcs": {
+    "translation": "AI Outpainting Post Blogs Ảnh",
+    "message": "AI Outpainting Image Blogs Post",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/blogs-page-client.tsx",
+        34
+      ]
+    ]
+  },
+  "GhDmK8": {
+    "translation": "Ảnh Mở rộng của AI Outpainting: Mở rộng Tầm nhìn của Bạn với Các Mở rộng Ảnh Sáng tạo",
+    "message": "AI Outpainting Image: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/hero.tsx",
+        39
+      ]
+    ]
+  },
+  "iTf+zF": {
+    "translation": "AI Outpainting là một trang web sử dụng công nghệ AI tiên tiến để mở rộng và cải thiện hình ảnh được người dùng tải lên. Nó có thể mở rộng nội dung của hình ảnh theo bốn hướng (lên, xuống, trái, phải), trong khi giữ nguyên phong cách ban đầu của hình ảnh. Nó còn có khả năng tăng kích thước pixel của các hình ảnh và mở rộng đồng thời đến bốn hình ảnh.",
+    "message": "AI Outpainting is a website that utilizes advanced AI technology to expand and enhance images uploaded by users. It can extend the content of images in four directions (up, down, left, and right), while maintaining the original style of the image. It also has the capability to increase the pixel dimensions of the images and simultaneously expand up to four images.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        28
+      ]
+    ]
+  },
+  "xxs+vI": {
+    "translation": "Sân chơi tạo hình AI",
+    "message": "AI Outpainting Playground",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/page.tsx",
+        15
+      ]
+    ]
+  },
+  "n8ms0F": {
+    "translation": "Kết quả Outpainting của AI",
+    "message": "AI Outpainting Result",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/page.tsx",
+        19
+      ]
+    ]
+  },
+  "NFpS5a": {
+    "translation": "Bộ sưu tập mở rộng ảnh AI",
+    "message": "AI Photo Extender Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "CHNN5v": {
+    "translation": "AI Photo Extender là một công cụ trực tuyến sáng tạo sử dụng công nghệ trí tuệ nhân tạo tiên tiến để mở rộng và làm đẹp hình ảnh do người dùng tải lên. Công cụ mở rộng ảnh AI này có thể mở rộng nội dung hình ảnh theo tất cả các hướng đồng thời duy trì phong cách gốc. Ngoài ra, phần mềm mở rộng ảnh AI của chúng tôi có thể tăng độ phân giải hình ảnh và xử lý tới bốn hình ảnh cùng một lúc.",
+    "message": "AI Photo Extender is an innovative online tool that uses advanced AI technology to expand and enhance user-uploaded images. This AI photo extender can seamlessly extend image content in all four directions while maintaining the original style. Additionally, our AI photo extender can increase image resolution and process up to four images simultaneously.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "bK/TAt": {
+    "translation": "AI Photo Extender có khả năng xử lý tới bốn hình ảnh cùng một lúc. Tính năng mở rộng đa hình ảnh này của phần mềm mở rộng ảnh AI của chúng tôi cho phép người dùng tăng kích thước hình ảnh nhiều lần trong một phiên làm việc có hiệu quả.",
+    "message": "AI Photo Extender is capable of processing up to four images simultaneously. This multi-image feature of our AI photo extender enables users to efficiently enhance multiple images in a single session, saving time and effort.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        42
+      ]
+    ]
+  },
+  "MeL6D4": {
+    "translation": "AI Photo Extender sử dụng thuật toán AI tiên tiến để phân tích hình ảnh đã tải lên và tạo nội dung bổ sung dựa trên dữ liệu hình ảnh hiện có. Mô hình học sâu của phần mềm mở rộng ảnh AI của chúng tôi đảm bảo rằng các khu vực mở rộng được kết hợp liền mạch với hình ảnh gốc, duy trì tính nhất quán về phong cách và chất lượng.",
+    "message": "AI Photo Extender utilizes state-of-the-art AI algorithms to analyze uploaded images and generate additional content. Our AI photo extender's deep learning model ensures that the expanded areas blend seamlessly with the original image, maintaining consistency in style and quality.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        30
+      ]
+    ]
+  },
+  "bJOlPb": {
+    "translation": "AI Photo Extender: Mở rộng tầm nhìn với các tác phẩm nghệ thuật mở rộng sáng tạo",
+    "message": "AI Photo Extender: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "4WPYPJ": {
+    "translation": "Bạn có chắc muốn xóa bảng vẽ hiện tại không? Điều này sẽ xóa tất cả các hình ảnh đã tạo và trạng thái chỉnh sửa hiện tại.",
+    "message": "Are you sure you want to clear the current canvas? This will delete all generated images and the current editing state.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        807
+      ]
+    ]
+  },
+  "iH8pgl": {
+    "translation": "Quay lại",
+    "message": "Back",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        540
+      ]
+    ]
+  },
+  "8Cg4ES": {
+    "translation": "Trước khi mở rộng",
+    "message": "Before Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        75
+      ]
+    ]
+  },
+  "IBtiOe": {
+    "translation": "Trước Khi Mở rộng",
+    "message": "Before Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        181
+      ],
+      [
+        "components/wegic/hero.tsx",
+        79
+      ]
+    ]
+  },
+  "FU+lge": {
+    "translation": "Trước khi mở rộng ảnh",
+    "message": "Before Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        75
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        75
+      ]
+    ]
+  },
+  "ExFMj8": {
+    "translation": "Blogs",
+    "message": "Blogs",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/page.tsx",
+        16
+      ],
+      [
+        "components/wegic/blogs.tsx",
+        20
+      ],
+      [
+        "components/wegic/footer.tsx",
+        12
+      ],
+      [
+        "components/wegic/header.tsx",
+        10
+      ]
+    ]
+  },
+  "zsiX7I": {
+    "translation": "Dưới cùng",
+    "message": "Bottom",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        521
+      ]
+    ]
+  },
+  "xzHB2Z": {
+    "translation": "Duyệt qua các ví dụ tuyệt vời về phần mềm mở rộng ảnh AI, thể hiện khả năng mở rộng vô hạn của các tác phẩm nghệ thuật.",
+    "message": "Browse\nthrough stunning examples of AI image extender, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "QgF6mS": {
+    "translation": "Duyệt qua các ví dụ tuyệt vời về trí tuệ nhân tạo trong việc mở rộng tác phẩm nghệ thuật không giới hạn.",
+    "message": "Browse\nthrough stunning examples of AI outpainting, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "A056gq": {
+    "translation": "Duyệt qua các ví dụ tuyệt vời về phần mềm mở rộng ảnh AI, thể hiện khả năng mở rộng vô hạn của các tác phẩm nghệ thuật.",
+    "message": "Browse\nthrough stunning examples of AI photo extender, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "eBimti": {
+    "translation": "Duyệt qua các ví dụ tuyệt vời về phần mềm AI Fill, thể hiện khả năng mở rộng vô hạn của các tác phẩm nghệ thuật.",
+    "message": "Browse\nthrough stunning examples of generative fill ai, showcasing the limitless possibilities of extending\nartworks.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        45
+      ]
+    ]
+  },
+  "EWY1qg": {
+    "translation": "Phần mềm mở rộng ảnh AI có thể tăng độ phân giải chiều ngang của hình ảnh không?",
+    "message": "Can AI Image Extender increase the pixel dimensions of an image?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        46
+      ]
+    ]
+  },
+  "WWl4gu": {
+    "translation": "Phần mềm mở rộng ảnh AI có thể duy trì phong cách của hình ảnh gốc trong quá trình mở rộng không?",
+    "message": "Can AI Image Extender maintain the style of the original image while expanding it?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        39
+      ]
+    ]
+  },
+  "1Fpd2D": {
+    "translation": "AI Outpainting có thể tăng kích thước pixel của một hình ảnh không?",
+    "message": "Can AI Outpainting increase the pixel dimensions of an image?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        46
+      ]
+    ]
+  },
+  "OTPxHN": {
+    "translation": "AI Outpainting có thể giữ nguyên phong cách của hình ảnh gốc trong quá trình mở rộng không?",
+    "message": "Can AI Outpainting maintain the style of the original image while expanding it?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        39
+      ]
+    ]
+  },
+  "6+I5pv": {
+    "translation": "Phần mềm mở rộng ảnh AI có thể duy trì phong cách của hình ảnh gốc không?",
+    "message": "Can AI Photo Extender maintain the original image style?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        33
+      ]
+    ]
+  },
+  "o7jL3/": {
+    "translation": "Phần mềm AI Fill có thể duy trì phong cách của hình ảnh gốc không?",
+    "message": "Can Generative Fill AI maintain the original image style?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        33
+      ]
+    ]
+  },
+  "dEgA5A": {
+    "translation": "Huỷ bỏ",
+    "message": "Cancel",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        811
+      ]
+    ]
+  },
+  "z65MvS": {
+    "translation": "Xóa bảng vẽ",
+    "message": "Clear Canvas",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        720
+      ]
+    ]
+  },
+  "yz7wBu": {
+    "translation": "Đóng",
+    "message": "Close",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        828
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        56
+      ]
+    ]
+  },
+  "QTBZC3": {
+    "translation": "Xác nhận xóa",
+    "message": "Confirm Clear",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        814
+      ]
+    ]
+  },
+  "1KApxq": {
+    "translation": "Xác nhận xóa bảng vẽ",
+    "message": "Confirm Clear Canvas",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        805
+      ]
+    ]
+  },
+  "BWF0ai": {
+    "translation": "Trí tuệ AI hiểu bối cảnh",
+    "message": "Context-aware AI",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        23
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        23
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        23
+      ],
+      [
+        "components/wegic/features.tsx",
+        23
+      ]
+    ]
+  },
+  "qTrELo": {
+    "translation": "Tiếp tục tạo hình",
+    "message": "Continue Generating",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "TXxF+/": {
+    "translation": "Credit",
+    "message": "credit",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        93
+      ]
+    ]
+  },
+  "mehNeY": {
+    "translation": "Tín dụng:{0}",
+    "message": "Credit:{0}",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        594
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        610
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        172
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        188
+      ]
+    ]
+  },
+  "38nphA": {
+    "translation": "Phần mềm mở rộng ảnh AI có tăng độ phân giải hình ảnh không?",
+    "message": "Does AI Photo Extender increase image resolution?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        37
+      ]
+    ]
+  },
+  "8gRz33": {
+    "translation": "Phần mềm AI Fill có tăng độ phân giải hình ảnh không?",
+    "message": "Does Generative Fill AI increase image resolution?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        37
+      ]
+    ]
+  },
+  "mzI/c+": {
+    "translation": "Tải về",
+    "message": "Download",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        756
+      ]
+    ]
+  },
+  "0yQo/k": {
+    "translation": "Tải Ảnh về",
+    "message": "Download Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        264
+      ]
+    ]
+  },
+  "fBjOS6": {
+    "translation": "Mỗi tác phẩm trong bảo tàng của chúng tôi thể hiện sức mạnh của trí tuệ nhân tạo trong việc biến đổi và nâng cao dự án sáng tạo.",
+    "message": "Each\npiece in our gallery demonstrates the power of AI in transforming and enhancing creative projects.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/gallery.tsx",
+        50
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/gallery.tsx",
+        50
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        50
+      ],
+      [
+        "components/wegic/gallery.tsx",
+        50
+      ]
+    ]
+  },
+  "CajufG": {
+    "translation": "Mở Rộng Hình Ảnh Của Bạn, Tạo Lại Hình Ảnh Của Bạn",
+    "message": "Expand Your Image, Reshape Your Image",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/footer.tsx",
+        36
+      ]
+    ]
+  },
+  "Q+x/E4": {
+    "translation": "Mở rộng",
+    "message": "Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "jU4owd": {
+    "translation": "Chiều hướng mở rộng",
+    "message": "Expansion Direction",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        637
+      ]
+    ]
+  },
+  "kNSTBA": {
+    "translation": "Chiều hướng mở rộng:",
+    "message": "Expansion Direction:",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        546
+      ]
+    ]
+  },
+  "EaUzDm": {
+    "translation": "Khám phá AI Outpainting Image, Một Công cụ Trực tuyến Miễn phí để Mở rộng và Cải thiện Hình Ảnh Một cách Dễ Dàng",
+    "message": "Explore AI Outpainting Image, A Free Online Tool For Expanding and Enhancing Images Effortlessly",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/page.tsx",
+        30
+      ]
+    ]
+  },
+  "nkhTSO": {
+    "translation": "Khám phá bên ngoài khung hình với phần mềm mở rộng ảnh AI: Mở rộng trực tuyến hình ảnh chất lượng cao của bạn bằng cách sử dụng trí tuệ nhân tạo tạo hình tiên tiến, đảm bảo hình ảnh giữ được phong cách nhất quán trên tất cả các tỉ lệ khung hình.",
+    "message": "Explore Beyond the Frame with AI Image Extender: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "ucTv1Q": {
+    "translation": "Khám phá Ngoài Biên của Bức ảnh với AI Outpainting Image: Mở rộng hình ảnh trực tuyến của bạn một cách liền mạch bằng AI tạo sinh tiên tiến, đảm bảo duy trì hình ảnh chất lượng cao trên tất cả tỷ lệ hình ảnh.",
+    "message": "Explore Beyond the Frame with AI Outpainting Image: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/hero.tsx",
+        42
+      ]
+    ]
+  },
+  "UTesON": {
+    "translation": "Khám phá bên ngoài khung hình với phần mềm mở rộng ảnh AI: Mở rộng trực tuyến hình ảnh chất lượng cao của bạn bằng cách sử dụng trí tuệ nhân tạo tạo hình tiên tiến, đảm bảo hình ảnh giữ được phong cách nhất quán trên tất cả các tỉ lệ khung hình.",
+    "message": "Explore Beyond the Frame with AI Photo Extender: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "HO2QAu": {
+    "translation": "Khám phá bên ngoài khung hình với phần mềm AI Fill: Mở rộng trực tuyến hình ảnh chất lượng cao của bạn bằng cách sử dụng trí tuệ nhân tạo tạo hình tiên tiến, đảm bảo hình ảnh giữ được phong cách nhất quán trên tất cả các tỉ lệ khung hình.",
+    "message": "Explore Beyond the Frame with Generative Fill AI: Seamlessly expand your photos online using advanced generative AI, ensuring high-quality visuals are maintained across all image ratios.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        38
+      ]
+    ]
+  },
+  "ke8MAp": {
+    "translation": "Mở Rộng Lại",
+    "message": "Extend Again",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        32
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        32
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        32
+      ],
+      [
+        "components/wegic/features.tsx",
+        32
+      ]
+    ]
+  },
+  "p5l4iX": {
+    "translation": "Kết quả Mở rộng có thể được mở rộng lặp đi lặp lại, cho phép cải thiện liên tục",
+    "message": "Extended results can be expanded repeatedly,allowing for continuous enhancements",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        34
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        34
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        34
+      ],
+      [
+        "components/wegic/features.tsx",
+        34
+      ]
+    ]
+  },
+  "lIFSzb": {
+    "translation": "Không thể tải lên tệp: {0}",
+    "message": "Failed to upload file: {0}",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/useS34R2.ts",
+        23
+      ]
+    ]
+  },
+  "cDhYY/": {
+    "translation": "Tạo ra nhanh chóng",
+    "message": "Fast generation",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        28
+      ]
+    ]
+  },
+  "TVSR9M": {
+    "translation": "Dung lượng tập tin vượt quá 10MB. Vui lòng chọn tập tin nhỏ hơn.",
+    "message": "File size exceeds 10MB. Please select a smaller file.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        183
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        40
+      ]
+    ]
+  },
+  "ofu/39": {
+    "translation": "Miễn phí phần mềm mở rộng ảnh AI",
+    "message": "Free AI Image Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "6lvumm": {
+    "translation": "Miễn phí Trình diễn Trí tuệ Nhân tạo",
+    "message": "Free AI Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/features.tsx",
+        12
+      ]
+    ]
+  },
+  "0BCXgy": {
+    "translation": "Miễn phí phần mềm mở rộng ảnh AI",
+    "message": "Free AI Photo Extender",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "ViaB2F": {
+    "translation": "Miễn phí phần mềm AI Fill",
+    "message": "Free Generative Fill AI",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        12
+      ]
+    ]
+  },
+  "fDIFV3": {
+    "translation": "Công cụ Trực tuyến Miễn phí Cho Việc Mở rộng Hình ảnh Trí tuệ Nhân tạo",
+    "message": "Free Online Tool For AI Image Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/page.tsx",
+        27
+      ]
+    ]
+  },
+  "F7G/TS": {
+    "translation": "Câu hỏi Thường gặp",
+    "message": "Frequently Asked Questions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        67
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        53
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        52
+      ],
+      [
+        "components/wegic/faqs.tsx",
+        67
+      ]
+    ]
+  },
+  "oJZ41z": {
+    "translation": "Phần mềm AI Fill sử dụng thuật toán AI tiên tiến để phân tích hình ảnh đã tải lên và tạo nội dung bổ sung dựa trên dữ liệu hình ảnh hiện có. Mô hình học sâu của phần mềm AI Fill của chúng tôi đảm bảo rằng các khu vực mở rộng được kết hợp liền mạch với hình ảnh gốc, duy trì tính nhất quán về phong cách và chất lượng.",
+    "message": "Generative Fill AI employs state-of-the-art algorithms to analyze uploaded images and generate additional content. The deep learning model behind our generative fill AI ensures that the expanded areas blend seamlessly with the original image, maintaining consistency in style and quality throughout the process.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        30
+      ]
+    ]
+  },
+  "+XZy/0": {
+    "translation": "Bộ sưu tập phần mềm AI Fill",
+    "message": "Generative Fill AI Gallery",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/gallery.tsx",
+        40
+      ]
+    ]
+  },
+  "9Q0Mk1": {
+    "translation": "Phần mềm AI Fill là một công cụ trực tuyến sáng tạo sử dụng công nghệ trí tuệ nhân tạo tiên tiến để mở rộng và làm đẹp hình ảnh do người dùng tải lên. Công cụ mở rộng ảnh AI này có khả năng mở rộng nội dung hình ảnh theo tất cả các hướng đồng thời duy trì phong cách gốc. Ngoài ra, phần mềm mở rộng ảnh AI của chúng tôi còn có thể tăng độ phân giải hình ảnh và xử lý tới bốn hình ảnh cùng một lúc.",
+    "message": "Generative Fill AI is an innovative online tool that leverages advanced artificial intelligence to expand and enhance images. This cutting-edge generative fill AI technology can seamlessly extend image content in all directions while maintaining the original style. Our generative fill AI tool also offers image resolution enhancement and can process multiple images simultaneously.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "SH0knd": {
+    "translation": "Phần mềm AI Fill: Mở rộng tầm nhìn với các tác phẩm nghệ thuật mở rộng sáng tạo",
+    "message": "Generative Fill AI: Expand Your Horizons with Creative Image Extensions",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        35
+      ]
+    ]
+  },
+  "c3b0B0": {
+    "translation": "Bắt Đầu",
+    "message": "Get Started",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        49
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        49
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        49
+      ],
+      [
+        "components/wegic/hero.tsx",
+        53
+      ],
+      [
+        "components/wegic/index-uploader.tsx",
+        44
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        140
+      ]
+    ]
+  },
+  "sAH4M6": {
+    "translation": "Đi đến Thanh toán",
+    "message": "Go to Payment",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/stripe.tsx",
+        35
+      ]
+    ]
+  },
+  "0RKAvR": {
+    "translation": "Đã đăng nhập",
+    "message": "Has logged in",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        128
+      ]
+    ]
+  },
+  "Ghlr93": {
+    "translation": "Hình ảnh chất lượng cao",
+    "message": "High quality images",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        29
+      ]
+    ]
+  },
+  "i0qMbr": {
+    "translation": "Trang chủ",
+    "message": "Home",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/footer.tsx",
+        10
+      ],
+      [
+        "components/wegic/header.tsx",
+        8
+      ]
+    ]
+  },
+  "pzu7v4": {
+    "translation": "Ngang",
+    "message": "Horizontal",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        548
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        639
+      ]
+    ]
+  },
+  "k4BMq5": {
+    "translation": "Mở rộng Ngang",
+    "message": "Horizontal Expansion",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        255
+      ]
+    ]
+  },
+  "/o/u7t": {
+    "translation": "Cách thức hoạt động của phần mềm mở rộng ảnh AI như thế nào?",
+    "message": "How does AI Image Extender work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        32
+      ]
+    ]
+  },
+  "NYWdBf": {
+    "translation": "AI Outpainting hoạt động như thế nào?",
+    "message": "How does AI Outpainting work?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        32
+      ]
+    ]
+  },
+  "i1x708": {
+    "translation": "Cách thức hoạt động của Ứng dụng kéo dài ảnh AI?",
+    "message": "How does AI Photo Extender work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        29
+      ]
+    ]
+  },
+  "VVkhXx": {
+    "translation": "Cách thức hoạt động của Ứng dụng làm đầy bằng trí tuệ nhân tạo?",
+    "message": "How does Generative Fill AI work?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        29
+      ]
+    ]
+  },
+  "EJYtRo": {
+    "translation": "Ứng dụng kéo dài ảnh AI có thể xử lý cùng lúc bao nhiêu hình ảnh?",
+    "message": "How many images can AI Photo Extender process at once?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "T2jWIX": {
+    "translation": "Ứng dụng làm đầy bằng trí tuệ nhân tạo có thể xử lý cùng lúc bao nhiêu hình ảnh?",
+    "message": "How many images can Generative Fill AI process at once?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "wVrOLV": {
+    "translation": "Tôi có thể mở rộng bao nhiêu hình ảnh cùng một lúc bằng Ứng dụng mở rộng ảnh AI?",
+    "message": "How many images can I expand at once using AI Image Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        54
+      ]
+    ]
+  },
+  "c8UM3u": {
+    "translation": "Một lần bạn có thể mở rộng bao nhiêu hình ảnh cùng một lúc bằng AI Outpainting?",
+    "message": "How many images can I expand at once using AI Outpainting?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        54
+      ]
+    ]
+  },
+  "E1UQnk": {
+    "translation": "Hình Ảnh Trình diễn",
+    "message": "Images Outpainting",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        61
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        61
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        61
+      ],
+      [
+        "components/wegic/hero.tsx",
+        65
+      ]
+    ]
+  },
+  "oTSrSS": {
+    "translation": "Khởi tạo dịch vụ PayPal gặp sự cố.",
+    "message": "Initialization of PayPal services encountered an error.",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        60
+      ]
+    ]
+  },
+  "XU5AOg": {
+    "translation": "Đầu Vào",
+    "message": "Input",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        179
+      ]
+    ]
+  },
+  "UlKSMd": {
+    "translation": "Trái",
+    "message": "Left",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        516
+      ]
+    ]
+  },
+  "F/9EGj": {
+    "translation": "Đang tải hình ảnh...",
+    "message": "Loading image...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        679
+      ]
+    ]
+  },
+  "Z3FXyt": {
+    "translation": "Đang tải...",
+    "message": "Loading...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/loading.tsx",
+        8
+      ],
+      [
+        "components/payment/paypal.tsx",
+        54
+      ]
+    ]
+  },
+  "paehRh": {
+    "translation": "Đăng Xuất",
+    "message": "Log Out",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        600
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        178
+      ]
+    ]
+  },
+  "S1g3Ds": {
+    "translation": "Giữa",
+    "message": "Middle",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        514
+      ]
+    ]
+  },
+  "bHt2FX": {
+    "translation": "Lỗi mạng hoặc vấn đề CORS.",
+    "message": "Network error or CORS issue.",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/useS34R2.ts",
+        27
+      ]
+    ]
+  },
+  "ko93eb": {
+    "translation": "Người dùng mới đăng nhập sẽ nhận được 2 tín dụng",
+    "message": "New users who log in will receive 2 credits",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        39
+      ]
+    ]
+  },
+  "cvwg/A": {
+    "translation": "Người dùng mới đăng nhập sẽ nhận 5 tín dụng",
+    "message": "New users who log in will receive 5 credits",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        120
+      ]
+    ]
+  },
+  "uO0GB/": {
+    "translation": "Không tìm thấy thông tin nguồn tài nguyên hợp lệ.",
+    "message": "No valid resource information was found.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        334
+      ]
+    ]
+  },
+  "8HI10O": {
+    "translation": "Hình ảnh gốc",
+    "message": "Original Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        823
+      ]
+    ]
+  },
+  "shdsCc": {
+    "translation": "Vị trí hình ảnh gốc",
+    "message": "Original Image Position",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        645
+      ]
+    ]
+  },
+  "3gz7Y7": {
+    "translation": "Vị trí hình ảnh gốc:",
+    "message": "Original Image Position:",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        555
+      ]
+    ]
+  },
+  "56MoT/": {
+    "translation": "Công cụ làm đầy bằng trí tuệ nhân tạo của chúng tôi có khả năng xử lý tới bốn hình ảnh cùng lúc. Tính năng xử lý nhiều hình ảnh này cho phép người dùng tăng tốc việc tăng cường nhiều hình ảnh trong một phiên, thể hiện tính linh hoạt và hiệu quả của công nghệ làm đầy bằng trí tuệ nhân tạo.",
+    "message": "Our generative fill AI tool is capable of processing up to four images simultaneously. This multi-image feature enables users to efficiently enhance multiple images in a single session, showcasing the versatility and efficiency of generative fill AI technology.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        42
+      ]
+    ]
+  },
+  "gh06VD": {
+    "translation": "Kết Quả",
+    "message": "Output",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        217
+      ]
+    ]
+  },
+  "3F1hbx": {
+    "translation": "Sở Hữu Bởi Người Dùng",
+    "message": "Own By User",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        315
+      ]
+    ]
+  },
+  "2bVshK": {
+    "translation": "Luôn luôn hiệu lực",
+    "message": "Permanently valid",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        27
+      ]
+    ]
+  },
+  "W3mmGV": {
+    "translation": "Vui lòng nhấp hoặc kéo hình ảnh để tải lên.",
+    "message": "Please click or drag the image to upload it.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        698
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        105
+      ]
+    ]
+  },
+  "+Y65s1": {
+    "translation": "Vui lòng Đăng nhập để Tiếp tục",
+    "message": "Please Sign In To Continue",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        377
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        38
+      ]
+    ]
+  },
+  "PZCqeW": {
+    "translation": "Vui lòng thử lại sau.",
+    "message": "Please try again later.",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        58
+      ]
+    ]
+  },
+  "aHCEmh": {
+    "translation": "Giá cả",
+    "message": "Pricing",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(pricing)/pricing/page.tsx",
+        17
+      ],
+      [
+        "components/wegic/footer.tsx",
+        11
+      ],
+      [
+        "components/wegic/header.tsx",
+        9
+      ]
+    ]
+  },
+  "tdGO5K": {
+    "translation": "Giá cả | {0}",
+    "message": "Pricing | {0}",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(details)/details/[...slug]/page.tsx",
+        10
+      ]
+    ]
+  },
+  "rQBXl9": {
+    "translation": "Gói Giá",
+    "message": "Pricing Plans",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        66
+      ]
+    ]
+  },
+  "k1ifdL": {
+    "translation": "Đang xử lý...",
+    "message": "Processing...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        527
+      ]
+    ]
+  },
+  "x50rMS": {
+    "translation": "Ngày Xuất Bản:",
+    "message": "Publish Date:",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/blogs.tsx",
+        33
+      ]
+    ]
+  },
+  "zZk9Yz": {
+    "translation": "Mua",
+    "message": "Purchase",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        625
+      ]
+    ]
+  },
+  "A20mxR": {
+    "translation": "Mua theo yêu cầu, không phí đăng ký, hiệu lực suốt đời",
+    "message": "Purchase on demand, no subscription fee, lifetime validity",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        70
+      ]
+    ]
+  },
+  "WEYdDv": {
+    "translation": "Được Khuyến nghị",
+    "message": "Recommended",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        82
+      ]
+    ]
+  },
+  "6exX+8": {
+    "translation": "Tái tạo",
+    "message": "Regenerate",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        731
+      ],
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        208
+      ]
+    ]
+  },
+  "6gRgw8": {
+    "translation": "Thử lại",
+    "message": "Retry",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        281
+      ]
+    ]
+  },
+  "nOPbWJ": {
+    "translation": "Phải",
+    "message": "Right",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        518
+      ]
+    ]
+  },
+  "n1ekoW": {
+    "translation": "Đăng Nhập",
+    "message": "Sign In",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        582
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        160
+      ]
+    ]
+  },
+  "ZqvdDl": {
+    "translation": "Đăng Nhập Bằng Google",
+    "message": "Sign In With Google",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        574
+      ],
+      [
+        "components/wegic/navbar.tsx",
+        152
+      ],
+      [
+        "components/wegic/pricing.tsx",
+        128
+      ],
+      [
+        "framework/components/login/GoogleLogin.tsx",
+        50
+      ]
+    ]
+  },
+  "1DA6ap": {
+    "translation": "Vuông",
+    "message": "Square",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        550
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        641
+      ]
+    ]
+  },
+  "FKsmFn": {
+    "translation": "Bắt đầu mở rộng",
+    "message": "Start Expanding",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        743
+      ]
+    ]
+  },
+  "SowH7o": {
+    "translation": "Bắt đầu miễn phí với bộ mở rộng AI. Mở rộng 3 hình ảnh đầu tiên của bạn mà không mất phí.",
+    "message": "Start for free with the AI extender. Expand your first 3 images at no charge.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        14
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        14
+      ],
+      [
+        "components/wegic/features.tsx",
+        14
+      ]
+    ]
+  },
+  "fYBlNd": {
+    "translation": "Bắt đầu dùng thử miễn phí với công cụ làm đầy bằng trí tuệ nhân tạo. Mở rộng 3 hình ảnh đầu tiên của bạn hoàn toàn miễn phí.",
+    "message": "Start for free with the generative fill ai. Expand your first 3 images at no charge.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        14
+      ]
+    ]
+  },
+  "ywdZxq": {
+    "translation": "Lỗi Hệ Thống, Vui lòng thử lại hoặc liên hệ quản trị trang web",
+    "message": "System Error,Please retry or contract website admin",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        421
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        78
+      ]
+    ]
+  },
+  "I3FBWw": {
+    "translation": "AI phân tích ngữ cảnh hình ảnh của bạn và mở rộng nó để có kết quả luôn làm cho người nhìn tin rằng nó thực tế.",
+    "message": "The AI analyzes your image's context and extends it for consistently realistic outcomes.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/features.tsx",
+        25
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/features.tsx",
+        25
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/features.tsx",
+        25
+      ],
+      [
+        "components/wegic/features.tsx",
+        25
+      ]
+    ]
+  },
+  "fWtzVj": {
+    "translation": "Có lỗi xảy ra khi xử lý hình ảnh. Vui lòng thử lại sau.",
+    "message": "There was an error processing the image. Please try again later.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        273
+      ]
+    ]
+  },
+  "WWy8TN": {
+    "translation": "Trên cùng",
+    "message": "Top",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        520
+      ]
+    ]
+  },
+  "kCd+q+": {
+    "translation": "Tổng Thanh Toán",
+    "message": "Total Payment",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/payment-modal.tsx",
+        90
+      ]
+    ]
+  },
+  "Rd1BcW": {
+    "translation": "Thử Miễn Phí",
+    "message": "Try It Free",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/index-uploader.tsx",
+        29
+      ]
+    ]
+  },
+  "MxB2DA": {
+    "translation": "Hãy thử nó",
+    "message": "Try it out",
+    "comments": [],
+    "origin": [
+      [
+        "components/payment/paypal.tsx",
+        63
+      ]
+    ]
+  },
+  "ONWvwQ": {
+    "translation": "Tải lên",
+    "message": "Upload",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/button.tsx",
+        44
+      ]
+    ]
+  },
+  "Pdq4/9": {
+    "translation": "Tải Ảnh Mới Lên",
+    "message": "Upload New Image",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        158
+      ],
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        170
+      ]
+    ]
+  },
+  "+/4Lnu": {
+    "translation": "Tải lên thành công",
+    "message": "Upload successfully",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/painting-uploader.tsx",
+        49
+      ]
+    ]
+  },
+  "h3BBNG": {
+    "translation": "Tải ảnh của bạn lên",
+    "message": "Upload your photo",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/pricing.tsx",
+        26
+      ]
+    ]
+  },
+  "/eguJc": {
+    "translation": "Đang tải lên",
+    "message": "Uploading",
+    "comments": [],
+    "origin": [
+      [
+        "framework/components/ue-upload/picture.tsx",
+        59
+      ]
+    ]
+  },
+  "GxkJXS": {
+    "translation": "Đang tải lên...",
+    "message": "Uploading...",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        679
+      ],
+      [
+        "components/wegic/painting-uploader.tsx",
+        88
+      ]
+    ]
+  },
+  "Sxm8rQ": {
+    "translation": "Người Dùng",
+    "message": "Users",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/hero.tsx",
+        56
+      ],
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/hero.tsx",
+        56
+      ],
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/hero.tsx",
+        56
+      ],
+      [
+        "components/wegic/hero.tsx",
+        60
+      ]
+    ]
+  },
+  "mX/isJ": {
+    "translation": "Dọc",
+    "message": "Vertical",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        549
+      ],
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        640
+      ]
+    ]
+  },
+  "M1f5yq": {
+    "translation": "Mở rộng Dọc",
+    "message": "Vertical Expansion",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/playgroundv1/[[...slug]]/views.tsx",
+        246
+      ]
+    ]
+  },
+  "ernaiK": {
+    "translation": "Ứng dụng mở rộng ảnh AI là gì?",
+    "message": "What is AI Image Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "hBTR82": {
+    "translation": "AI Outpainting là gì?",
+    "message": "What is AI Outpainting?",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        26
+      ]
+    ]
+  },
+  "e40dkT": {
+    "translation": "Ứng dụng kéo dài ảnh AI là gì?",
+    "message": "What is AI Photo Extender?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        25
+      ]
+    ]
+  },
+  "tNQRV8": {
+    "translation": "Ứng dụng làm đầy bằng trí tuệ nhân tạo là gì?",
+    "message": "What is Generative Fill AI?",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        25
+      ]
+    ]
+  },
+  "xVURvs": {
+    "translation": "Có, Ứng dụng mở rộng ảnh AI được thiết kế để giữ phong cách của hình ảnh gốc trong suốt quá trình mở rộng. Phần mềm nhận dạng hình ảnh AI được đào tạo để hiểu và sao chép các đặc điểm độc đáo của hình ảnh, đảm bảo rằng nội dung mở rộng vẫn có tính nhất quán thị giác với hình ảnh gốc.",
+    "message": "Yes, AI Image Extender is designed to preserve the style of the original image throughout the expansion process. The AI algorithms are trained to understand and replicate the unique characteristics of the image, ensuring that the expanded content remains visually consistent with the original.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-image-extender/views/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "6kC20h": {
+    "translation": "Có, AI Outpainting được thiết kế để bảo tồn phong cách của hình ảnh gốc trong suốt quá trình mở rộng. Các thuật toán AI được huấn luyện để hiểu và sao chép các đặc điểm độc đáo của hình ảnh, đảm bảo nội dung mở rộng vẫn duy trì tính nhất quán với hình ảnh ban đầu.",
+    "message": "Yes, AI Outpainting is designed to preserve the style of the original image throughout the expansion process. The AI algorithms are trained to understand and replicate the unique characteristics of the image, ensuring that the expanded content remains visually consistent with the original.",
+    "comments": [],
+    "origin": [
+      [
+        "components/wegic/faqs.tsx",
+        41
+      ]
+    ]
+  },
+  "HiX60c": {
+    "translation": "Có, Ứng dụng kéo dài ảnh AI không chỉ mở rộng nội dung hình ảnh mà còn có tùy chọn tăng độ phân giải điểm ảnh. Tính năng này của ứng dụng kéo dài ảnh AI của chúng tôi cho phép người dùng tăng kích thước và chất lượng hình ảnh của họ, mang lại đầu ra có độ phân giải cao hơn thông qua sức mạnh của công nghệ AI.",
+    "message": "Yes, AI Photo Extender not only expands image content but also offers the option to increase pixel dimensions. This feature of our AI photo extender allows users to enhance both the size and quality of their images, resulting in higher resolution outputs.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/ai-photo-extender/views/faqs.tsx",
+        38
+      ]
+    ]
+  },
+  "FrTOHj": {
+    "translation": "Có, công cụ làm đầy bằng trí tuệ nhân tạo của chúng tôi không chỉ mở rộng nội dung hình ảnh mà còn có tùy chọn tăng độ phân giải điểm ảnh. Tính năng này cho phép người dùng tăng kích thước và chất lượng hình ảnh của họ, mang lại đầu ra có độ phân giải cao hơn nhờ công nghệ làm đầy bằng trí tuệ nhân tạo.",
+    "message": "Yes, our generative fill AI not only expands image content but also offers the option to increase pixel dimensions. This feature allows users to enhance both the size and quality of their images, resulting in higher resolution outputs through the power of generative fill AI technology.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/generative-fill-ai/views/faqs.tsx",
+        38
+      ]
+    ]
+  },
+  "WCkkI4": {
+    "translation": "Số điểm tín dụng của bạn chưa đủ, vui lòng nạp tiền trước.",
+    "message": "Your credit points are insufficient, please recharge first.",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(editor)/editor/view.tsx",
+        379
+      ]
+    ]
+  },
+  "lX4VC4": {
+    "translation": "Danh Sách Blog",
+    "message": "博客列表",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(blogs)/blogs/layout..tsx",
+        7
+      ]
+    ]
+  },
+  "uk086D": {
+    "translation": "Khám Phá Phân Tách Âm Thanh Của Người",
+    "message": "探索人声分离",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(explore)/explore/views.tsx",
+        40
+      ]
+    ]
+  },
+  "Xqre6v": {
+    "translation": "Dễ dàng nhận thức công nghệ tách âm thanh AI của chúng tôi, giúp bạn nâng cao hiệu suất trong cuộc sống và công việc.",
+    "message": "轻松掌握我们的AI人声分离技术，助您在生活和工作中提高效率。",
+    "comments": [],
+    "origin": [
+      [
+        "app/[lang]/(public)/(explore)/explore/views.tsx",
+        43
+      ]
+    ]
+  }
+}
