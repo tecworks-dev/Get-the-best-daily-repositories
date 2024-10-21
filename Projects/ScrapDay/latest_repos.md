@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-18 .. 2024-10-20)
+# Latest Repositories (2024-10-19 .. 2024-10-21)
 
-- [VinRblx658Exploidsscripds/Roblox-Blox-Fruits-Script-2024](https://github.com/VinRblx658Exploidsscripds/Roblox-Blox-Fruits-Script-2024) (254)
-- [TithdavidRa/roblox-scripts-solara](https://github.com/TithdavidRa/roblox-scripts-solara) (254)
-- [shubhamgandhi08/m0dmenu-gta5-free](https://github.com/shubhamgandhi08/m0dmenu-gta5-free) (252)
-- [zetisu/FL-Studio](https://github.com/zetisu/FL-Studio) (252)
-- [tdesw/minecraft-cheat2024](https://github.com/tdesw/minecraft-cheat2024) (251)
+- [francielekuchler/modelos-curriculos](https://github.com/francielekuchler/modelos-curriculos) (186)
+- [egoist/whispo](https://github.com/egoist/whispo) (89)
+- [xxblacksmithxxlau/market-maker-bot](https://github.com/xxblacksmithxxlau/market-maker-bot) (65)
+- [M165437/nice-view-gem](https://github.com/M165437/nice-view-gem) (63)
+- [konstin/sudoku-in-python-packaging](https://github.com/konstin/sudoku-in-python-packaging) (58)
