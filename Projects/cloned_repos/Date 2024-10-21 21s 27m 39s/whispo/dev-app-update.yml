@@ -1,0 +1,4 @@
+provider: github
+owner: egoist
+repo: chatkit-desktop
+updaterCacheDirName: desktop-updater-whispo2
