@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-21 .. 2024-10-23)
+# Latest Repositories (2024-10-22 .. 2024-10-24)
 
-- [corbt/agent.exe](https://github.com/corbt/agent.exe) (510)
-- [IVExShowcase/cheat-apex-legends-download](https://github.com/IVExShowcase/cheat-apex-legends-download) (177)
-- [LuigiGamesScripts/Roblox-Blox-Fruits-Script-2024](https://github.com/LuigiGamesScripts/Roblox-Blox-Fruits-Script-2024) (176)
-- [mOONtHEdEV2012/m0dmenu-gta5-free](https://github.com/mOONtHEdEV2012/m0dmenu-gta5-free) (176)
-- [Scriptztyz/Nexus-Roblox](https://github.com/Scriptztyz/Nexus-Roblox) (176)
+- [corbt/agent.exe](https://github.com/corbt/agent.exe) (1562)
+- [soultiz/Nexus-Roblox](https://github.com/soultiz/Nexus-Roblox) (268)
+- [OpacGOD12/cheat-apex-legends-download](https://github.com/OpacGOD12/cheat-apex-legends-download) (218)
+- [kijai/ComfyUI-MochiWrapper](https://github.com/kijai/ComfyUI-MochiWrapper) (206)
+- [MusashiSamaa/r0blox-synapse-x-free](https://github.com/MusashiSamaa/r0blox-synapse-x-free) (165)
