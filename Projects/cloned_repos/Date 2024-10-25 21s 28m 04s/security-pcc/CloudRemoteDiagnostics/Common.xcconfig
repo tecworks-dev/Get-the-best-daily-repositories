@@ -1,0 +1,30 @@
+//
+//  Common.xcconfig
+//  CloudRemoteDiagnostics
+//
+//  Created by Marco Magdy on 11/7/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// MARK: - Architectures
+SDKROOT = macosx.internal
+SUPPORTED_PLATFORMS = macosx iphoneos
+SUPPORTED_ARCHITECTURES = arm64 arm64e
+
+// MARK: - Deployment
+IPHONEOS_DEPLOYMENT_TARGET = 18.0
+MACOSX_DEPLOYMENT_TARGET = 15.0
+TARGETED_DEVICE_FAMILY = 1,2,6
+SKIP_INSTALL = NO
+
+// MARK: - Swift
+SWIFT_INSTALL_OBJC_HEADER = NO
+SWIFT_VERSION = 5.0
+
+// MARK: - Signing
+CODE_SIGN_IDENTITY = -
+CODE_SIGN_STYLE = Automatic
+
+// MARK: - Preprocessor Definitions
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) XPC_APP_SERVER=1

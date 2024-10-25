@@ -1,0 +1,5 @@
+#include "Base.xcconfig"
+
+INSTALL_PATH = $(INSTALL_PATH_DAEMON)
+PRODUCT_NAME = cloudmetrics_test
+CODE_SIGN_ENTITLEMENTS = ${SRCROOT}/Sources/CloudMetricsTestApp/SupportingFiles/cloudmetrics_test.entitlements

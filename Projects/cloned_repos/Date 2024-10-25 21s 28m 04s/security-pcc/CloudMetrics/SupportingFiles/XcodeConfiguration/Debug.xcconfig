@@ -1,0 +1,25 @@
+//
+//  Debug.xcconfig
+//
+//  Created by Scott G Johnston on 11/4/21.
+//  Copyright © 2021 Apple Inc. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// MARK: - Architectures
+ONLY_ACTIVE_ARCH = YES
+
+// MARK: - Build Options
+DEBUG_INFORMATION_FORMAT = dwarf
+ENABLE_TESTABILITY = YES
+
+// MARK: - Swift
+SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG
+SWIFT_OPTIMIZATION_LEVEL = -Onone
+
+// MARK: - Apple Clang
+GCC_OPTIMIZATION_LEVEL = 0

@@ -1,0 +1,18 @@
+//
+//  cloudremotediagcli.xcconfig
+//  remotediagcli
+//
+//  Created by Marco Magdy on 11/6/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+MACOSX_DEPLOYMENT_TARGET = 14.0 //(marcomag) Allow running the ctl on my development machine
+PRODUCT_NAME = cloudremotediagctl
+
+OTHER_LDFLAGS = -framework IOKit -lstdc++ -ltop
+
+CODE_SIGN_ENTITLEMENTS = CloudRemoteDiagnosticsControl/cloudremotediagnosticsctl.entitlements

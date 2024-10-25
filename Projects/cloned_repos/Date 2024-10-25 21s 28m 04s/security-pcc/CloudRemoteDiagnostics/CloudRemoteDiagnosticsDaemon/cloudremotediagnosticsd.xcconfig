@@ -1,0 +1,21 @@
+//
+//  cloudremotediagnosticsd.xcconfig
+//  CloudRemoteDiagnosticsDaemon
+//
+//  Created by Marco Magdy on 12/1/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+PRODUCT_NAME = cloudremotediagd
+INSTALL_PATH = /usr/libexec
+
+CODE_SIGN_ENTITLEMENTS = CloudRemoteDiagnosticsDaemon/cloudremotediagnostics.entitlements
+
+OTHER_LDFLAGS = -framework IOKit -lstdc++ -ltop -lpcap -lspindump -lCloudRemoteDiagnosticsCore
+
+ADDITIONAL_SDKS[sdk=iphoneos*] = privatecloudsupport;
+ADDITIONAL_SDKS[sdk=macosx*] = acdcsupport;

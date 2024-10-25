@@ -1,0 +1,4 @@
+#include "Base.xcconfig"
+
+INSTALL_PATH = /System/Library/PrivateFrameworks
+DEFINES_MODULE = YES

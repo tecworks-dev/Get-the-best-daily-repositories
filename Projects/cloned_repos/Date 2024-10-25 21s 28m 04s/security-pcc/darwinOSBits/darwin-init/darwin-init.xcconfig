@@ -1,0 +1,2 @@
+CODEREQUIREMENT=$(SRCROOT)/darwin-init/darwin-init.coderequirement
+CODEREQUIREMENT[sdk=macosx*]=

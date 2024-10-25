@@ -1,0 +1,176 @@
+// Copyright © 2024 Apple Inc. All Rights Reserved.
+
+// APPLE INC.
+// PRIVATE CLOUD COMPUTE SOURCE CODE INTERNAL USE LICENSE AGREEMENT
+// PLEASE READ THE FOLLOWING PRIVATE CLOUD COMPUTE SOURCE CODE INTERNAL USE LICENSE AGREEMENT (“AGREEMENT”) CAREFULLY BEFORE DOWNLOADING OR USING THE APPLE SOFTWARE ACCOMPANYING THIS AGREEMENT(AS DEFINED BELOW). BY DOWNLOADING OR USING THE APPLE SOFTWARE, YOU ARE AGREEING TO BE BOUND BY THE TERMS OF THIS AGREEMENT. IF YOU DO NOT AGREE TO THE TERMS OF THIS AGREEMENT, DO NOT DOWNLOAD OR USE THE APPLE SOFTWARE. THESE TERMS AND CONDITIONS CONSTITUTE A LEGAL AGREEMENT BETWEEN YOU AND APPLE.
+// IMPORTANT NOTE: BY DOWNLOADING OR USING THE APPLE SOFTWARE, YOU ARE AGREEING ON YOUR OWN BEHALF AND/OR ON BEHALF OF YOUR COMPANY OR ORGANIZATION TO THE TERMS OF THIS AGREEMENT.
+// 1. As used in this Agreement, the term “Apple Software” collectively means and includes all of the Apple Private Cloud Compute materials provided by Apple here, including but not limited to the Apple Private Cloud Compute software, tools, data, files, frameworks, libraries, documentation, logs and other Apple-created materials. In consideration for your agreement to abide by the following terms, conditioned upon your compliance with these terms and subject to these terms, Apple grants you, for a period of ninety (90) days from the date you download the Apple Software, a limited, non-exclusive, non-sublicensable license under Apple’s copyrights in the Apple Software to download, install, compile and run the Apple Software internally within your organization only on a single Apple-branded computer you own or control, for the sole purpose of verifying the security and privacy characteristics of Apple Private Cloud Compute. This Agreement does not allow the Apple Software to exist on more than one Apple-branded computer at a time, and you may not distribute or make the Apple Software available over a network where it could be used by multiple devices at the same time. You may not, directly or indirectly, redistribute the Apple Software or any portions thereof. The Apple Software is only licensed and intended for use as expressly stated above and may not be used for other purposes or in other contexts without Apple's prior written permission. Except as expressly stated in this notice, no other rights or licenses, express or implied, are granted by Apple herein.
+// 2. The Apple Software is provided by Apple on an "AS IS" basis. APPLE MAKES NO WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION THE IMPLIED WARRANTIES OF NON-INFRINGEMENT, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE, REGARDING THE APPLE SOFTWARE OR ITS USE AND OPERATION ALONE OR IN COMBINATION WITH YOUR PRODUCTS, SYSTEMS, OR SERVICES. APPLE DOES NOT WARRANT THAT THE APPLE SOFTWARE WILL MEET YOUR REQUIREMENTS, THAT THE OPERATION OF THE APPLE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE, THAT DEFECTS IN THE APPLE SOFTWARE WILL BE CORRECTED, OR THAT THE APPLE SOFTWARE WILL BE COMPATIBLE WITH FUTURE APPLE PRODUCTS, SOFTWARE OR SERVICES. NO ORAL OR WRITTEN INFORMATION OR ADVICE GIVEN BY APPLE OR AN APPLE AUTHORIZED REPRESENTATIVE WILL CREATE A WARRANTY.
+// 3. IN NO EVENT SHALL APPLE BE LIABLE FOR ANY DIRECT, SPECIAL, INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) ARISING IN ANY WAY OUT OF THE USE, REPRODUCTION, COMPILATION OR OPERATION OF THE APPLE SOFTWARE, HOWEVER CAUSED AND WHETHER UNDER THEORY OF CONTRACT, TORT (INCLUDING NEGLIGENCE), STRICT LIABILITY OR OTHERWISE, EVEN IF APPLE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+// 4. This Agreement is effective until terminated. Your rights under this Agreement will terminate automatically without notice from Apple if you fail to comply with any term(s) of this Agreement. Upon termination, you agree to cease all use of the Apple Software and destroy all copies, full or partial, of the Apple Software. This Agreement constitutes the entire understanding of the parties with respect to the subject matter contained herein, and supersedes all prior negotiations, representations, or understandings, written or oral. This Agreement will be governed and construed in accordance with the laws of the State of California, without regard to its choice of law rules.
+// You may report security issues about Apple products to product-security@apple.com, as described here: https://www.apple.com/support/security/. Non-security bugs and enhancement requests can be made via https://bugreport.apple.com as described here: https://developer.apple.com/bug-reporting/
+// EA1937
+// 10/02/2024
+
+/*
+ * HTTP service provided by ROPES.
+ */
+syntax = "proto3";
+
+package com.apple.ropes.service.http.v1;
+
+option java_multiple_files = true;
+option swift_prefix="Proto_Ropes_HttpService_";
+
+import "RopesCommon.proto";
+import "RopesRateLimit.proto";
+
+// ==============================================================================
+// POST /invoke
+// Request body: stream of InvokeRequest messages, with 32-bit length-prefix framing.
+// Response body: stream of InvokeResponse messages, with 32-bit length-prefix framing.
+// ==============================================================================
+
+message InvokeRequest {
+
+    message SetupRequest {
+        message AttestationMapping {
+            string node_identifier = 1;
+            uint32 ohttp_context = 2;
+        }
+
+        // oHTTP context that the client is using to send encrypted request chunks
+        uint32 encrypted_request_ohttp_context = 1;
+
+        // Node identifiers that the client has cached attestations for
+        repeated AttestationMapping attestation_mappings = 2;
+
+        optional com.apple.ropes.common.v1.Capabilities capabilities = 3;
+    }
+
+    message LoggingMetadata {
+        string message = 1;
+    }
+
+    // When an unexpected error happens, the client should send a Terminate message instead of abruptly
+    // closing the stream. This provides ROPES useful information for monitoring/alerting purposes.
+    message Terminate {
+        enum Code {
+            UNDEFINED         = 0;
+            CRYPTO_ERROR      = 1; // Client failed to decrypt a response chunk
+            APPLICATION_ERROR = 2; // Error happened at the TIE layer
+        }
+        Code code              = 1;
+        optional string reason = 2;
+    }
+    
+    oneof type {
+        SetupRequest setup_request = 1;
+        LoggingMetadata logging_metadata = 2;
+        Terminate terminate = 3;
+    }
+}
+
+message InvokeResponse {
+
+    message NodeSelected {
+    }
+
+    message LoggingMetadata {
+        string message = 1;
+    }
+
+    message NoFurtherAttestations {
+    }
+
+    message ExpiredAttestationList {
+        repeated string node_identifier = 1;
+        // Threshold is configured on Ropes.
+        // True: client invalidate attestation cache and triggers a prefetch.
+        // False: client prunes the returned node identifiers from attestation cache.
+        bool should_clear_cache = 2;
+    }
+
+    oneof type {
+        com.apple.ropes.common.v1.AttestationList attestation_list = 1;
+        com.apple.ropes.common.v1.CompressedAttestationList compressed_attestation_list = 8;
+        NodeSelected node_selected = 2;
+        LoggingMetadata logging_metadata = 3;
+        com.apple.ropes.ratelimit.v1.RateLimitConfigurationList rate_limit_configuration_list = 4;
+        ExpiredAttestationList expired_attestation_list = 5;
+        // ROPES sends this message to signal client that it'll not receive further attestations
+        // on current connection, for client to fail early.
+        NoFurtherAttestations no_further_attestations = 7;
+    }
+
+    reserved 6;
+}
+
+// ==============================================================================
+// POST /prefetch
+// Request body: PrefetchAttestationsRequest message.
+// Response body: PrefetchAttestationsResponse message.
+// ==============================================================================
+
+message PrefetchAttestationsRequest {
+    optional com.apple.ropes.common.v1.Capabilities capabilities = 1;
+    // ROPES will return min(prefetch-k, client_requested_attestation_count) attestations in response.
+    optional uint32 client_requested_attestation_count = 2;
+}
+
+message PrefetchAttestationsResponse {
+    repeated com.apple.ropes.common.v1.Attestation attestation = 1;
+    com.apple.ropes.ratelimit.v1.RateLimitConfigurationList rate_limit_configuration_list = 2;
+    optional com.apple.ropes.common.v1.CompressedAttestationList compressed_attestation_list = 3;
+}
+
+// ==============================================================================
+// POST /ratelimits
+// Request body: ConfigRequest message.
+// Response body: ConfigResponse message.
+// ==============================================================================
+
+message ConfigRequest {
+    oneof type {
+        com.apple.ropes.ratelimit.v1.RateLimitConfigRequest rate_limit_config_request = 1;
+    }
+}
+
+message ConfigResponse {
+    oneof type {
+        com.apple.ropes.ratelimit.v1.RateLimitConfigurationList rate_limit_configuration_list = 1;
+    }
+}
+
+// ==============================================================================
+// GET /admin_api
+// Response body: base64-encoded string of serialized AdminApiResponse message.
+//
+// TODO: move to internal gRPC admin endpoint for iCloud Edge?
+// ==============================================================================
+
+message AdminApiResponse {
+
+    // A collection of workloads with the same workload_type.
+    message Workload {
+        // Routing parameters
+        message Parameters {
+            // An example of TIE workload: {"model": "A", "adapter": "B"}
+            map<string, string> params = 1;
+        }
+
+        // e.g., TIE, CMP, MOCK, etc.
+        string workload_type = 1;
+        repeated string mandatory_keys = 2;
+        Parameters routing_parameters = 4;
+    }
+
+    message ApiEndpoint {
+        // For example: "/invoke", "/prefetch"
+        string url = 1;
+        // Future use: add fields for metadata associated with the endpoint.
+    }
+
+    repeated Workload supported_workloads = 1;
+    repeated ApiEndpoint public_api_endpoints = 2;
+}

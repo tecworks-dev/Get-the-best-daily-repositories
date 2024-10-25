@@ -1,0 +1,16 @@
+#include "Base.xcconfig"
+
+INSTALL_PATH = /System/Library/PrivateFrameworks
+EXECUTABLE_EXTENSION = .framework
+
+PRODUCT_BUNDLE_IDENTIFIER = com.apple.CloudMetricsFramework
+
+INFOPLIST_FILE = $(PROJECT_DIR)/SupportingFiles/Info.plist
+INFOPLIST_PREPROCESS = YES
+
+BUILD_LIBRARY_FOR_DISTRIBUTION = YES
+
+DEFINES_MODULE = YES
+
+MODULEMAP_FILE[sdk=*] = $(PROJECT_DIR)/Sources/CloudMetricsFramework/ObjC/CloudMetricsFramework.modulemap
+SUPPORTS_TEXT_BASED_API = YES
