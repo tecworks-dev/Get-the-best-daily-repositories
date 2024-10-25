@@ -1,0 +1,13 @@
+//
+//  Release-macosx.xcconfig
+//
+//  Created by Andrea Guzzo on 09/27/23.
+//  Copyright © 2023 Apple Inc. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Release.xcconfig"
+
+SUPPORTED_PLATFORMS = macosx

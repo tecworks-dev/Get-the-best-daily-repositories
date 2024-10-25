@@ -1,0 +1,18 @@
+//
+//  CloudRemoteDiagnostics.xcconfig
+//  CloudRemoteDiagnosticsFramework
+//
+//  Created by Marco Magdy on 11/15/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Common.xcconfig"
+
+INSTALL_PATH = /System/Library/PrivateFrameworks
+EXECUTABLE_EXTENSION = .framework
+
+DEFINES_MODULE = NO
+SUPPORTS_TEXT_BASED_API = YES
+BUILD_LIBRARY_FOR_DISTRIBUTION = YES

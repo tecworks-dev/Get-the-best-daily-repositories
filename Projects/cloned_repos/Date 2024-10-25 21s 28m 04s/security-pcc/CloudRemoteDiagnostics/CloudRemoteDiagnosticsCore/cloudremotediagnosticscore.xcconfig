@@ -1,0 +1,13 @@
+//
+//  cloudremotediagnosticscore.xcconfig
+//  CloudRemoteDiagnostics
+//
+//  Created by Marco Magdy on 11/7/23.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include "Common.xcconfig"
+
+ADDITIONAL_SDKS[sdk=iphoneos*] = privatecloudsupport;
+ADDITIONAL_SDKS[sdk=macosx*] = acdcsupport;

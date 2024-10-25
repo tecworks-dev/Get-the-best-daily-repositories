@@ -1,0 +1,1108 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		814CC17F2AF9B50D00A230DF /* all */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 814CC1802AF9B50D00A230DF /* Build configuration list for PBXAggregateTarget "all" */;
+			buildPhases = (
+			);
+			dependencies = (
+				81322B472B1A8AC000E7F130 /* PBXTargetDependency */,
+				810CC3972B0542A000BF0624 /* PBXTargetDependency */,
+			);
+			name = all;
+			productName = all;
+		};
+		CF7AD9B02B97EEE200B40015 /* all_macOS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = CF7AD9B32B97EEE200B40015 /* Build configuration list for PBXAggregateTarget "all_macOS" */;
+			buildPhases = (
+			);
+			dependencies = (
+				7DEBEC2A2C3356810091C6AD /* PBXTargetDependency */,
+				CF7AD9C62B97F0E800B40015 /* PBXTargetDependency */,
+			);
+			name = all_macOS;
+			productName = all_macOS;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0D9BE5372C368C120027AD51 /* DenaliProtoTrace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D9BE5362C368C120027AD51 /* DenaliProtoTrace.swift */; };
+		4D84BE1E2BF6EDA3004C33DB /* GetCloudBoardHealthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84BE1D2BF6EDA3004C33DB /* GetCloudBoardHealthHandler.swift */; };
+		4D84BE202BF6F96E004C33DB /* GetCloudBoardHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D84BE1F2BF6F96E004C33DB /* GetCloudBoardHealth.swift */; };
+		7D87D04D2C404B3F00C4152C /* GetCloudMetricsHealthHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D87D04C2C404B3E00C4152C /* GetCloudMetricsHealthHandler.swift */; };
+		7DD959782C404A5B008AC8A2 /* GetCloudMetricsHealth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DD959772C404A5B008AC8A2 /* GetCloudMetricsHealth.swift */; };
+		810CC3CB2B16824600BF0624 /* TopHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3CA2B16824600BF0624 /* TopHandler.swift */; };
+		810CC3F12B17FB8D00BF0624 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3F02B17FB8D00BF0624 /* app.swift */; };
+		81322B502B1A8E2F00E7F130 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C02B0551F200BF0624 /* Types.swift */; };
+		81322B512B1A8E3400E7F130 /* XPCServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */; };
+		81322B552B1E5AB600E7F130 /* com.apple.acdc.cloudremotediagd.plist in Copy Launchd.plist */ = {isa = PBXBuildFile; fileRef = 81322B532B1E567D00E7F130 /* com.apple.acdc.cloudremotediagd.plist */; };
+		81322B5A2B211A5C00E7F130 /* XPCServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */; };
+		813C46002B6C8CE600023613 /* CloudRemoteDiagnosticsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3B72B0547EE00BF0624 /* CloudRemoteDiagnosticsClient.swift */; };
+		813C46012B6C8D1D00023613 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C02B0551F200BF0624 /* Types.swift */; };
+		814FA7192BF5474A0064810E /* DenaliStatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814FA7182BF5474A0064810E /* DenaliStatusHandler.swift */; };
+		81503B732C5051610082739E /* crd_scope_guard.h in Headers */ = {isa = PBXBuildFile; fileRef = 81503B722C5051500082739E /* crd_scope_guard.h */; };
+		81509FF82B2918C9003221B8 /* Ping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81509FF72B2918C9003221B8 /* Ping.swift */; };
+		815409D02BBC9C8500A51D12 /* com.apple.acdc.cloudremotediagd.mac_OS.plist in Copy Launchd.plist */ = {isa = PBXBuildFile; fileRef = CF7AD9C22B97EFA800B40015 /* com.apple.acdc.cloudremotediagd.mac_OS.plist */; };
+		815619AD2B6B423E00721B67 /* SpindumpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815619AB2B6B423100721B67 /* SpindumpHandler.swift */; };
+		815619B12B6B4CAA00721B67 /* Spindump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 815619B02B6B4CA400721B67 /* Spindump.swift */; };
+		8175D94C2B51E97100B581F4 /* TcpdumpHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8175D94B2B51E97100B581F4 /* TcpdumpHandler.swift */; };
+		81861C802B226C2600FAB371 /* Top.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81861C7F2B226C2600FAB371 /* Top.swift */; };
+		81930BDE2B3622B6006805FA /* PingHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81E82BD92B22D9D2007965D9 /* PingHandler.swift */; };
+		81B102F92BF55006005387AD /* GetDenaliStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81B102F82BF55006005387AD /* GetDenaliStatus.swift */; };
+		81BD2FF72B6070B900C6E414 /* Tcpdump.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81BD2FF62B6070B900C6E414 /* Tcpdump.swift */; };
+		81BD2FF92B6072EC00C6E414 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C02B0551F200BF0624 /* Types.swift */; };
+		81BD2FFB2B61C1ED00C6E414 /* crd_tcpdump.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81BD2FFA2B61C1EC00C6E414 /* crd_tcpdump.cpp */; };
+		81D4AC872B6999E200FB5334 /* CloudRemoteDiagnosticsClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3B72B0547EE00BF0624 /* CloudRemoteDiagnosticsClient.swift */; };
+		81D4AC882B699A0C00FB5334 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C02B0551F200BF0624 /* Types.swift */; };
+		81D4AC892B699A1800FB5334 /* XPCServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */; };
+		81E82BD82B22D857007965D9 /* crd_ping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81E82BD72B22D857007965D9 /* crd_ping.cpp */; };
+		81F3B5332AE6FB0B00057D49 /* remotediag.h in Headers */ = {isa = PBXBuildFile; fileRef = 81336A972AD5C413008F420D /* remotediag.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		81F3B5342AE6FB1300057D49 /* crd_core.h in Headers */ = {isa = PBXBuildFile; fileRef = 81336A982AD5C413008F420D /* crd_core.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		81F3B5362AE6FB1900057D49 /* crd_process_stats.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 81F4EB182ADDF062006F76AA /* crd_process_stats.cpp */; };
+		81F3B53E2AE861A300057D49 /* CloudRemoteDiagnosticsControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F3B53D2AE861A300057D49 /* CloudRemoteDiagnosticsControl.swift */; };
+		CF6DEF722B99BB030032FFDE /* Ensemble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF7AD9CD2B99A50200B40015 /* Ensemble.framework */; };
+		CF7AD9B82B97EF0E00B40015 /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3F02B17FB8D00BF0624 /* app.swift */; };
+		CF7AD9B92B97EF0E00B40015 /* XPCServiceMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */; };
+		CF7AD9BA2B97EF0E00B40015 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810CC3C02B0551F200BF0624 /* Types.swift */; };
+		CF7AD9CA2B99259A00B40015 /* GetEnsembleStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7AD9C92B99258400B40015 /* GetEnsembleStatus.swift */; };
+		CF7AD9CC2B99A46700B40015 /* GetEnsembleStatusHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF7AD9CB2B99A46300B40015 /* GetEnsembleStatusHandler.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D84BE232BF7D475004C33DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81336A892AD5C200008F420D;
+			remoteInfo = CloudRemoteDiagnosticsControl;
+		};
+		7DEBEC292C3356810091C6AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81336A892AD5C200008F420D;
+			remoteInfo = CloudRemoteDiagnosticsControl;
+		};
+		810CC3962B0542A000BF0624 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81336A892AD5C200008F420D;
+			remoteInfo = cloudremotediagctl;
+		};
+		812E8C1C2B23A79500FAF62C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8174CD172AE3232300B64FB3;
+			remoteInfo = CloudRemoteDiagnosticsCore;
+		};
+		81322B432B1A88C900E7F130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8174CD172AE3232300B64FB3;
+			remoteInfo = CloudRemoteDiagnosticsCore;
+		};
+		81322B462B1A8AC000E7F130 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 810CC3ED2B17FB8D00BF0624;
+			remoteInfo = CloudRemoteDiagnosticsDaemon;
+		};
+		CF7AD9B62B97EF0E00B40015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8174CD172AE3232300B64FB3;
+			remoteInfo = CloudRemoteDiagnosticsCore;
+		};
+		CF7AD9C52B97F0E800B40015 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81336A822AD5C200008F420D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF7AD9B42B97EF0E00B40015;
+			remoteInfo = CloudRemoteDiagnosticsDaemon_macOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		810CC3EC2B17FB8D00BF0624 /* Copy Launchd.plist */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /Library/LaunchDaemons;
+			dstSubfolderSpec = 0;
+			files = (
+				81322B552B1E5AB600E7F130 /* com.apple.acdc.cloudremotediagd.plist in Copy Launchd.plist */,
+			);
+			name = "Copy Launchd.plist";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		81336A882AD5C200008F420D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		815409CF2BBC9C6600A51D12 /* Copy Launchd.plist */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /Library/LaunchDaemons;
+			dstSubfolderSpec = 0;
+			files = (
+				815409D02BBC9C8500A51D12 /* com.apple.acdc.cloudremotediagd.mac_OS.plist in Copy Launchd.plist */,
+			);
+			name = "Copy Launchd.plist";
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D9BE5362C368C120027AD51 /* DenaliProtoTrace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenaliProtoTrace.swift; sourceTree = "<group>"; };
+		4D84BE1D2BF6EDA3004C33DB /* GetCloudBoardHealthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCloudBoardHealthHandler.swift; sourceTree = "<group>"; };
+		4D84BE1F2BF6F96E004C33DB /* GetCloudBoardHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCloudBoardHealth.swift; sourceTree = "<group>"; };
+		7D87D04C2C404B3E00C4152C /* GetCloudMetricsHealthHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCloudMetricsHealthHandler.swift; sourceTree = "<group>"; };
+		7DD959772C404A5B008AC8A2 /* GetCloudMetricsHealth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCloudMetricsHealth.swift; sourceTree = "<group>"; };
+		810CC3A22B05472300BF0624 /* CloudRemoteDiagnostics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CloudRemoteDiagnostics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		810CC3B72B0547EE00BF0624 /* CloudRemoteDiagnosticsClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudRemoteDiagnosticsClient.swift; sourceTree = "<group>"; };
+		810CC3BD2B054BAC00BF0624 /* CloudRemoteDiagnosticsFramework.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = CloudRemoteDiagnosticsFramework.xcconfig; sourceTree = "<group>"; };
+		810CC3C02B0551F200BF0624 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
+		810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XPCServiceMessage.swift; sourceTree = "<group>"; };
+		810CC3CA2B16824600BF0624 /* TopHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHandler.swift; sourceTree = "<group>"; };
+		810CC3EE2B17FB8D00BF0624 /* cloudremotediagd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cloudremotediagd; sourceTree = BUILT_PRODUCTS_DIR; };
+		810CC3F02B17FB8D00BF0624 /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = cloudremotediagnosticsd.xcconfig; sourceTree = "<group>"; };
+		81322B522B1AA33F00E7F130 /* cloudremotediagnostics.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloudremotediagnostics.entitlements; sourceTree = "<group>"; };
+		81322B532B1E567D00E7F130 /* com.apple.acdc.cloudremotediagd.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = com.apple.acdc.cloudremotediagd.plist; sourceTree = "<group>"; };
+		81336A8A2AD5C200008F420D /* cloudremotediagctl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cloudremotediagctl; sourceTree = BUILT_PRODUCTS_DIR; };
+		81336A972AD5C413008F420D /* remotediag.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = remotediag.h; sourceTree = "<group>"; };
+		81336A982AD5C413008F420D /* crd_core.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; path = crd_core.h; sourceTree = "<group>"; };
+		814CC17E2AF9B23E00A230DF /* cloudremotediagcli.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = cloudremotediagcli.xcconfig; sourceTree = "<group>"; };
+		814CC1872AFAB95700A230DF /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		814CC1882AFABADB00A230DF /* cloudremotediagnosticscore.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = cloudremotediagnosticscore.xcconfig; sourceTree = "<group>"; };
+		814FA7182BF5474A0064810E /* DenaliStatusHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DenaliStatusHandler.swift; sourceTree = "<group>"; };
+		81503B722C5051500082739E /* crd_scope_guard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = crd_scope_guard.h; sourceTree = "<group>"; };
+		81509FF72B2918C9003221B8 /* Ping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ping.swift; sourceTree = "<group>"; };
+		815619AB2B6B423100721B67 /* SpindumpHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SpindumpHandler.swift; path = CloudRemoteDiagnosticsCore/SpindumpHandler.swift; sourceTree = SOURCE_ROOT; };
+		815619B02B6B4CA400721B67 /* Spindump.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spindump.swift; sourceTree = "<group>"; };
+		8174CD182AE3232300B64FB3 /* libCloudRemoteDiagnosticsCore.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCloudRemoteDiagnosticsCore.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8175D94B2B51E97100B581F4 /* TcpdumpHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TcpdumpHandler.swift; sourceTree = "<group>"; };
+		8182BEA32B2147F2003F8296 /* cloudremotediagnosticsctl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = cloudremotediagnosticsctl.entitlements; sourceTree = "<group>"; };
+		81861C7F2B226C2600FAB371 /* Top.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Top.swift; sourceTree = "<group>"; };
+		81B102F82BF55006005387AD /* GetDenaliStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetDenaliStatus.swift; sourceTree = "<group>"; };
+		81BD2FF62B6070B900C6E414 /* Tcpdump.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tcpdump.swift; sourceTree = "<group>"; };
+		81BD2FFA2B61C1EC00C6E414 /* crd_tcpdump.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crd_tcpdump.cpp; sourceTree = "<group>"; };
+		81E82BD72B22D857007965D9 /* crd_ping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crd_ping.cpp; sourceTree = "<group>"; };
+		81E82BD92B22D9D2007965D9 /* PingHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingHandler.swift; sourceTree = "<group>"; };
+		81F3B53D2AE861A300057D49 /* CloudRemoteDiagnosticsControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudRemoteDiagnosticsControl.swift; sourceTree = "<group>"; };
+		81F4EB182ADDF062006F76AA /* crd_process_stats.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = crd_process_stats.cpp; sourceTree = "<group>"; };
+		CF7AD9C12B97EF0E00B40015 /* cloudremotediagd */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = cloudremotediagd; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF7AD9C22B97EFA800B40015 /* com.apple.acdc.cloudremotediagd.mac_OS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = com.apple.acdc.cloudremotediagd.mac_OS.plist; sourceTree = "<group>"; };
+		CF7AD9C92B99258400B40015 /* GetEnsembleStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEnsembleStatus.swift; sourceTree = "<group>"; };
+		CF7AD9CB2B99A46300B40015 /* GetEnsembleStatusHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEnsembleStatusHandler.swift; sourceTree = "<group>"; };
+		CF7AD9CD2B99A50200B40015 /* Ensemble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Ensemble.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.Internal.sdk/System/Library/PrivateFrameworks/Ensemble.framework; sourceTree = DEVELOPER_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		810CC39F2B05472300BF0624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810CC3EB2B17FB8D00BF0624 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81336A872AD5C200008F420D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8174CD162AE3232300B64FB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF6DEF722B99BB030032FFDE /* Ensemble.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7AD9BB2B97EF0E00B40015 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		810CC3A32B05472300BF0624 /* CloudRemoteDiagnosticsFramework */ = {
+			isa = PBXGroup;
+			children = (
+				810CC3B72B0547EE00BF0624 /* CloudRemoteDiagnosticsClient.swift */,
+				810CC3BD2B054BAC00BF0624 /* CloudRemoteDiagnosticsFramework.xcconfig */,
+			);
+			path = CloudRemoteDiagnosticsFramework;
+			sourceTree = "<group>";
+		};
+		810CC3BF2B0551C200BF0624 /* CloudRemoteDiagnosticsCommon */ = {
+			isa = PBXGroup;
+			children = (
+				810CC3C02B0551F200BF0624 /* Types.swift */,
+				810CC3C72B08247B00BF0624 /* XPCServiceMessage.swift */,
+			);
+			path = CloudRemoteDiagnosticsCommon;
+			sourceTree = "<group>";
+		};
+		810CC3EF2B17FB8D00BF0624 /* CloudRemoteDiagnosticsDaemon */ = {
+			isa = PBXGroup;
+			children = (
+				810CC3F02B17FB8D00BF0624 /* app.swift */,
+				81322B522B1AA33F00E7F130 /* cloudremotediagnostics.entitlements */,
+				81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */,
+				81322B532B1E567D00E7F130 /* com.apple.acdc.cloudremotediagd.plist */,
+				CF7AD9C22B97EFA800B40015 /* com.apple.acdc.cloudremotediagd.mac_OS.plist */,
+			);
+			path = CloudRemoteDiagnosticsDaemon;
+			sourceTree = "<group>";
+		};
+		81336A812AD5C200008F420D = {
+			isa = PBXGroup;
+			children = (
+				810CC3BF2B0551C200BF0624 /* CloudRemoteDiagnosticsCommon */,
+				814CC1872AFAB95700A230DF /* Common.xcconfig */,
+				81F3B53C2AE8618500057D49 /* CloudRemoteDiagnosticsControl */,
+				81336A8C2AD5C200008F420D /* CloudRemoteDiagnosticsCore */,
+				810CC3A32B05472300BF0624 /* CloudRemoteDiagnosticsFramework */,
+				810CC3EF2B17FB8D00BF0624 /* CloudRemoteDiagnosticsDaemon */,
+				81336A8B2AD5C200008F420D /* Products */,
+				81336A942AD5C3A5008F420D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		81336A8B2AD5C200008F420D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81336A8A2AD5C200008F420D /* cloudremotediagctl */,
+				8174CD182AE3232300B64FB3 /* libCloudRemoteDiagnosticsCore.a */,
+				810CC3A22B05472300BF0624 /* CloudRemoteDiagnostics.framework */,
+				810CC3EE2B17FB8D00BF0624 /* cloudremotediagd */,
+				CF7AD9C12B97EF0E00B40015 /* cloudremotediagd */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81336A8C2AD5C200008F420D /* CloudRemoteDiagnosticsCore */ = {
+			isa = PBXGroup;
+			children = (
+				7D87D04C2C404B3E00C4152C /* GetCloudMetricsHealthHandler.swift */,
+				810CC3CA2B16824600BF0624 /* TopHandler.swift */,
+				81E82BD92B22D9D2007965D9 /* PingHandler.swift */,
+				815619AB2B6B423100721B67 /* SpindumpHandler.swift */,
+				8175D94B2B51E97100B581F4 /* TcpdumpHandler.swift */,
+				CF7AD9CB2B99A46300B40015 /* GetEnsembleStatusHandler.swift */,
+				814FA7182BF5474A0064810E /* DenaliStatusHandler.swift */,
+				4D84BE1D2BF6EDA3004C33DB /* GetCloudBoardHealthHandler.swift */,
+				81336A982AD5C413008F420D /* crd_core.h */,
+				81E82BD72B22D857007965D9 /* crd_ping.cpp */,
+				81BD2FFA2B61C1EC00C6E414 /* crd_tcpdump.cpp */,
+				81503B722C5051500082739E /* crd_scope_guard.h */,
+				81F4EB182ADDF062006F76AA /* crd_process_stats.cpp */,
+				81336A972AD5C413008F420D /* remotediag.h */,
+				814CC1882AFABADB00A230DF /* cloudremotediagnosticscore.xcconfig */,
+			);
+			path = CloudRemoteDiagnosticsCore;
+			sourceTree = "<group>";
+		};
+		81336A942AD5C3A5008F420D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF7AD9CD2B99A50200B40015 /* Ensemble.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81861C7E2B226C1400FAB371 /* Commands */ = {
+			isa = PBXGroup;
+			children = (
+				0D9BE5362C368C120027AD51 /* DenaliProtoTrace.swift */,
+				81861C7F2B226C2600FAB371 /* Top.swift */,
+				81509FF72B2918C9003221B8 /* Ping.swift */,
+				81BD2FF62B6070B900C6E414 /* Tcpdump.swift */,
+				815619B02B6B4CA400721B67 /* Spindump.swift */,
+				CF7AD9C92B99258400B40015 /* GetEnsembleStatus.swift */,
+				81B102F82BF55006005387AD /* GetDenaliStatus.swift */,
+				4D84BE1F2BF6F96E004C33DB /* GetCloudBoardHealth.swift */,
+				7DD959772C404A5B008AC8A2 /* GetCloudMetricsHealth.swift */,
+			);
+			path = Commands;
+			sourceTree = "<group>";
+		};
+		81F3B53C2AE8618500057D49 /* CloudRemoteDiagnosticsControl */ = {
+			isa = PBXGroup;
+			children = (
+				81F3B53D2AE861A300057D49 /* CloudRemoteDiagnosticsControl.swift */,
+				81861C7E2B226C1400FAB371 /* Commands */,
+				8182BEA32B2147F2003F8296 /* cloudremotediagnosticsctl.entitlements */,
+				814CC17E2AF9B23E00A230DF /* cloudremotediagcli.xcconfig */,
+			);
+			path = CloudRemoteDiagnosticsControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		810CC39D2B05472300BF0624 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8174CD142AE3232300B64FB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F3B5332AE6FB0B00057D49 /* remotediag.h in Headers */,
+				81503B732C5051610082739E /* crd_scope_guard.h in Headers */,
+				81F3B5342AE6FB1300057D49 /* crd_core.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		810CC3A12B05472300BF0624 /* CloudRemoteDiagnostics */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810CC3B12B05472300BF0624 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnostics" */;
+			buildPhases = (
+				810CC39D2B05472300BF0624 /* Headers */,
+				810CC39E2B05472300BF0624 /* Sources */,
+				810CC39F2B05472300BF0624 /* Frameworks */,
+				810CC3A02B05472300BF0624 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudRemoteDiagnostics;
+			productName = CloudRemoteDiagnosticsFramework;
+			productReference = 810CC3A22B05472300BF0624 /* CloudRemoteDiagnostics.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		810CC3ED2B17FB8D00BF0624 /* CloudRemoteDiagnosticsDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 810CC3F42B17FB8D00BF0624 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsDaemon" */;
+			buildPhases = (
+				810CC3EA2B17FB8D00BF0624 /* Sources */,
+				810CC3EB2B17FB8D00BF0624 /* Frameworks */,
+				810CC3EC2B17FB8D00BF0624 /* Copy Launchd.plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81322B442B1A88C900E7F130 /* PBXTargetDependency */,
+				4D84BE242BF7D475004C33DB /* PBXTargetDependency */,
+			);
+			name = CloudRemoteDiagnosticsDaemon;
+			productName = CloudRemoteDiagnosticsDaemon;
+			productReference = 810CC3EE2B17FB8D00BF0624 /* cloudremotediagd */;
+			productType = "com.apple.product-type.tool";
+		};
+		81336A892AD5C200008F420D /* CloudRemoteDiagnosticsControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81336A912AD5C200008F420D /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsControl" */;
+			buildPhases = (
+				81336A862AD5C200008F420D /* Sources */,
+				81336A872AD5C200008F420D /* Frameworks */,
+				81336A882AD5C200008F420D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				812E8C1D2B23A79500FAF62C /* PBXTargetDependency */,
+			);
+			name = CloudRemoteDiagnosticsControl;
+			packageProductDependencies = (
+			);
+			productName = remotediag;
+			productReference = 81336A8A2AD5C200008F420D /* cloudremotediagctl */;
+			productType = "com.apple.product-type.tool";
+		};
+		8174CD172AE3232300B64FB3 /* CloudRemoteDiagnosticsCore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8174CD192AE3232300B64FB3 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsCore" */;
+			buildPhases = (
+				8174CD142AE3232300B64FB3 /* Headers */,
+				8174CD152AE3232300B64FB3 /* Sources */,
+				8174CD162AE3232300B64FB3 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CloudRemoteDiagnosticsCore;
+			productName = "remotediag-core";
+			productReference = 8174CD182AE3232300B64FB3 /* libCloudRemoteDiagnosticsCore.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		CF7AD9B42B97EF0E00B40015 /* CloudRemoteDiagnosticsDaemon_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF7AD9BE2B97EF0E00B40015 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsDaemon_macOS" */;
+			buildPhases = (
+				CF7AD9B72B97EF0E00B40015 /* Sources */,
+				CF7AD9BB2B97EF0E00B40015 /* Frameworks */,
+				815409CF2BBC9C6600A51D12 /* Copy Launchd.plist */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF7AD9B52B97EF0E00B40015 /* PBXTargetDependency */,
+			);
+			name = CloudRemoteDiagnosticsDaemon_macOS;
+			productName = CloudRemoteDiagnosticsDaemon;
+			productReference = CF7AD9C12B97EF0E00B40015 /* cloudremotediagd */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81336A822AD5C200008F420D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					810CC3A12B05472300BF0624 = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					810CC3ED2B17FB8D00BF0624 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					81336A892AD5C200008F420D = {
+						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
+					};
+					814CC17F2AF9B50D00A230DF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					8174CD172AE3232300B64FB3 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					CF7AD9B02B97EEE200B40015 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = 81336A852AD5C200008F420D /* Build configuration list for PBXProject "CloudRemoteDiagnostics" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81336A812AD5C200008F420D;
+			packageReferences = (
+			);
+			productRefGroup = 81336A8B2AD5C200008F420D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81336A892AD5C200008F420D /* CloudRemoteDiagnosticsControl */,
+				8174CD172AE3232300B64FB3 /* CloudRemoteDiagnosticsCore */,
+				814CC17F2AF9B50D00A230DF /* all */,
+				CF7AD9B02B97EEE200B40015 /* all_macOS */,
+				810CC3A12B05472300BF0624 /* CloudRemoteDiagnostics */,
+				810CC3ED2B17FB8D00BF0624 /* CloudRemoteDiagnosticsDaemon */,
+				CF7AD9B42B97EF0E00B40015 /* CloudRemoteDiagnosticsDaemon_macOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		810CC3A02B05472300BF0624 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		810CC39E2B05472300BF0624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81D4AC872B6999E200FB5334 /* CloudRemoteDiagnosticsClient.swift in Sources */,
+				81D4AC892B699A1800FB5334 /* XPCServiceMessage.swift in Sources */,
+				81D4AC882B699A0C00FB5334 /* Types.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		810CC3EA2B17FB8D00BF0624 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				810CC3F12B17FB8D00BF0624 /* app.swift in Sources */,
+				81322B512B1A8E3400E7F130 /* XPCServiceMessage.swift in Sources */,
+				81322B502B1A8E2F00E7F130 /* Types.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81336A862AD5C200008F420D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81F3B53E2AE861A300057D49 /* CloudRemoteDiagnosticsControl.swift in Sources */,
+				81B102F92BF55006005387AD /* GetDenaliStatus.swift in Sources */,
+				CF7AD9CA2B99259A00B40015 /* GetEnsembleStatus.swift in Sources */,
+				81BD2FF72B6070B900C6E414 /* Tcpdump.swift in Sources */,
+				81861C802B226C2600FAB371 /* Top.swift in Sources */,
+				813C46012B6C8D1D00023613 /* Types.swift in Sources */,
+				7DD959782C404A5B008AC8A2 /* GetCloudMetricsHealth.swift in Sources */,
+				0D9BE5372C368C120027AD51 /* DenaliProtoTrace.swift in Sources */,
+				813C46002B6C8CE600023613 /* CloudRemoteDiagnosticsClient.swift in Sources */,
+				4D84BE202BF6F96E004C33DB /* GetCloudBoardHealth.swift in Sources */,
+				81322B5A2B211A5C00E7F130 /* XPCServiceMessage.swift in Sources */,
+				81509FF82B2918C9003221B8 /* Ping.swift in Sources */,
+				815619B12B6B4CAA00721B67 /* Spindump.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8174CD152AE3232300B64FB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81BD2FFB2B61C1ED00C6E414 /* crd_tcpdump.cpp in Sources */,
+				814FA7192BF5474A0064810E /* DenaliStatusHandler.swift in Sources */,
+				81930BDE2B3622B6006805FA /* PingHandler.swift in Sources */,
+				81E82BD82B22D857007965D9 /* crd_ping.cpp in Sources */,
+				CF7AD9CC2B99A46700B40015 /* GetEnsembleStatusHandler.swift in Sources */,
+				81F3B5362AE6FB1900057D49 /* crd_process_stats.cpp in Sources */,
+				7D87D04D2C404B3F00C4152C /* GetCloudMetricsHealthHandler.swift in Sources */,
+				81BD2FF92B6072EC00C6E414 /* Types.swift in Sources */,
+				4D84BE1E2BF6EDA3004C33DB /* GetCloudBoardHealthHandler.swift in Sources */,
+				8175D94C2B51E97100B581F4 /* TcpdumpHandler.swift in Sources */,
+				815619AD2B6B423E00721B67 /* SpindumpHandler.swift in Sources */,
+				810CC3CB2B16824600BF0624 /* TopHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF7AD9B72B97EF0E00B40015 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF7AD9B82B97EF0E00B40015 /* app.swift in Sources */,
+				CF7AD9B92B97EF0E00B40015 /* XPCServiceMessage.swift in Sources */,
+				CF7AD9BA2B97EF0E00B40015 /* Types.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D84BE242BF7D475004C33DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81336A892AD5C200008F420D /* CloudRemoteDiagnosticsControl */;
+			targetProxy = 4D84BE232BF7D475004C33DB /* PBXContainerItemProxy */;
+		};
+		7DEBEC2A2C3356810091C6AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81336A892AD5C200008F420D /* CloudRemoteDiagnosticsControl */;
+			targetProxy = 7DEBEC292C3356810091C6AD /* PBXContainerItemProxy */;
+		};
+		810CC3972B0542A000BF0624 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81336A892AD5C200008F420D /* CloudRemoteDiagnosticsControl */;
+			targetProxy = 810CC3962B0542A000BF0624 /* PBXContainerItemProxy */;
+		};
+		812E8C1D2B23A79500FAF62C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8174CD172AE3232300B64FB3 /* CloudRemoteDiagnosticsCore */;
+			targetProxy = 812E8C1C2B23A79500FAF62C /* PBXContainerItemProxy */;
+		};
+		81322B442B1A88C900E7F130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8174CD172AE3232300B64FB3 /* CloudRemoteDiagnosticsCore */;
+			targetProxy = 81322B432B1A88C900E7F130 /* PBXContainerItemProxy */;
+		};
+		81322B472B1A8AC000E7F130 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 810CC3ED2B17FB8D00BF0624 /* CloudRemoteDiagnosticsDaemon */;
+			targetProxy = 81322B462B1A8AC000E7F130 /* PBXContainerItemProxy */;
+		};
+		CF7AD9B52B97EF0E00B40015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8174CD172AE3232300B64FB3 /* CloudRemoteDiagnosticsCore */;
+			targetProxy = CF7AD9B62B97EF0E00B40015 /* PBXContainerItemProxy */;
+		};
+		CF7AD9C62B97F0E800B40015 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF7AD9B42B97EF0E00B40015 /* CloudRemoteDiagnosticsDaemon_macOS */;
+			targetProxy = CF7AD9C52B97F0E800B40015 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		810CC3B22B05472300BF0624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810CC3BD2B054BAC00BF0624 /* CloudRemoteDiagnosticsFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.acdc.CloudRemoteDiagnosticsFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx.internal;
+				SKIP_INSTALL = NO;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SUPPORTED_PLATFORMS = "iphoneos macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		810CC3B32B05472300BF0624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 810CC3BD2B054BAC00BF0624 /* CloudRemoteDiagnosticsFramework.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "$(INSTALL_PATH)";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = "";
+				MARKETING_VERSION = 1.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.apple.acdc.CloudRemoteDiagnosticsFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx.internal;
+				SKIP_INSTALL = NO;
+				SUPPORTED_PLATFORMS = "iphoneos macosx";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		810CC3F22B17FB8D00BF0624 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos.internal;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		810CC3F32B17FB8D00BF0624 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */;
+			buildSettings = {
+				SDKROOT = iphoneos.internal;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81336A8F2AD5C200008F420D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC1872AFAB95700A230DF /* Common.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx.internal;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81336A902AD5C200008F420D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC1872AFAB95700A230DF /* Common.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx.internal;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		81336A922AD5C200008F420D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC17E2AF9B23E00A230DF /* cloudremotediagcli.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(APPLE_INTERNAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		81336A932AD5C200008F420D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC17E2AF9B23E00A230DF /* cloudremotediagcli.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(APPLE_INTERNAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		814CC1812AF9B50D00A230DF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		814CC1822AF9B50D00A230DF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		8174CD1A2AE3232300B64FB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC1882AFABADB00A230DF /* cloudremotediagnosticscore.xcconfig */;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx.internal;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = CloudRemoteDiagnosticsCore/remotediag.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		8174CD1B2AE3232300B64FB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 814CC1882AFABADB00A230DF /* cloudremotediagnosticscore.xcconfig */;
+			buildSettings = {
+				EXECUTABLE_PREFIX = lib;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx.internal;
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = CloudRemoteDiagnosticsCore/remotediag.h;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		CF7AD9B12B97EEE200B40015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF7AD9B22B97EEE200B40015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF7AD9BF2B97EF0E00B40015 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */;
+			buildSettings = {
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos.internal;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF7AD9C02B97EF0E00B40015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81322B4F2B1A8D0300E7F130 /* cloudremotediagnosticsd.xcconfig */;
+			buildSettings = {
+				PRODUCT_MODULE_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(PRODUCT_NAME:c99extidentifier)";
+				SDKROOT = iphoneos.internal;
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		810CC3B12B05472300BF0624 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810CC3B22B05472300BF0624 /* Debug */,
+				810CC3B32B05472300BF0624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		810CC3F42B17FB8D00BF0624 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				810CC3F22B17FB8D00BF0624 /* Debug */,
+				810CC3F32B17FB8D00BF0624 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81336A852AD5C200008F420D /* Build configuration list for PBXProject "CloudRemoteDiagnostics" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81336A8F2AD5C200008F420D /* Debug */,
+				81336A902AD5C200008F420D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81336A912AD5C200008F420D /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81336A922AD5C200008F420D /* Debug */,
+				81336A932AD5C200008F420D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		814CC1802AF9B50D00A230DF /* Build configuration list for PBXAggregateTarget "all" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				814CC1812AF9B50D00A230DF /* Debug */,
+				814CC1822AF9B50D00A230DF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8174CD192AE3232300B64FB3 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsCore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8174CD1A2AE3232300B64FB3 /* Debug */,
+				8174CD1B2AE3232300B64FB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7AD9B32B97EEE200B40015 /* Build configuration list for PBXAggregateTarget "all_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7AD9B12B97EEE200B40015 /* Debug */,
+				CF7AD9B22B97EEE200B40015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF7AD9BE2B97EF0E00B40015 /* Build configuration list for PBXNativeTarget "CloudRemoteDiagnosticsDaemon_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF7AD9BF2B97EF0E00B40015 /* Debug */,
+				CF7AD9C02B97EF0E00B40015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 81336A822AD5C200008F420D /* Project object */;
+}

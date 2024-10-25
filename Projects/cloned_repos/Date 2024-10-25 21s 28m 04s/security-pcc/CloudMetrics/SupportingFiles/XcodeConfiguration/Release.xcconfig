@@ -1,0 +1,28 @@
+//
+//  Release.xcconfig
+//
+//  Created by Scott G Johnston on 11/4/21.
+//  Copyright © 2021 Apple Inc. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Base.xcconfig"
+
+// MARK: - Architectures
+ONLY_ACTIVE_ARCH = NO
+
+// MARK: - Build Options
+DEBUG_INFORMATION_FORMAT = dwarf-with-dsym
+VALIDATE_PRODUCT = YES
+
+// MARK: - Swift
+SWIFT_COMPILATION_MODE = wholemodule
+SWIFT_OPTIMIZATION_LEVEL = -O
+
+// MARK: - Apple Clang
+GCC_OPTIMIZATION_LEVEL = s
+
+BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+

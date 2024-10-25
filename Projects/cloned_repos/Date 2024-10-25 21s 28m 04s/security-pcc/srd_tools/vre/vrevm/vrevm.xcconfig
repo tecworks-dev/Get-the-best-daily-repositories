@@ -1,0 +1,10 @@
+PRODUCT_NAME = vrevm
+PRODUCT_BUNDLE_IDENTIFIER = com.apple.security-research.vrevm
+
+INSTALL_PATH = /System/Library/SecurityResearch/usr/bin/
+
+SWIFT_OBJC_BRIDGING_HEADER = $PROJECT_DIR/vrevm/BridgingHeader.h
+CODE_SIGN_ENTITLEMENTS = $PROJECT_DIR/vrevm/vrevm.entitlements
+
+SYSTEM_FRAMEWORK_SEARCH_PATHS = $(inherited) $(SDKROOT)$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks
+
