@@ -1,0 +1,17 @@
+[package]
+name = "fennec-reflection"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-interner = { path = "../interner" }
+fennec-span = { path = "../span" }
+fennec-source = { path = "../source" }
+fennec-reporting = { path = "../reporting" }
+fennec-ast = { path = "../ast" }
+tracing = { workspace = true }

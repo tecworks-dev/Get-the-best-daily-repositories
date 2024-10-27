@@ -1,0 +1,8 @@
+.vscode/
+.env
+*_templ.go
+*_templ.txt
+bin/
+node_modules/
+package-lock.json
+static/css/tw.css

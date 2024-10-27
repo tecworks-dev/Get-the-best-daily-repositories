@@ -1,0 +1,21 @@
+[package]
+name = "fennec-source"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-config = { path = "../config" }
+fennec-interner = { path = "../interner" }
+codespan-reporting = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true, features = ["sync"] }
+tracing = { workspace = true }
+dashmap = { workspace = true }
+glob-match = { workspace = true }
+futures = { workspace = true }
+async-walkdir = { workspace = true }

@@ -1,0 +1,16 @@
+[package]
+name = "fennec-docblock"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-ast = { path = "../ast" }
+fennec-span = { path = "../span" }
+fennec-interner = { path = "../interner" }
+tracing = { workspace = true }
+serde = { workspace = true }

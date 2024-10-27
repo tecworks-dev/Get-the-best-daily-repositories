@@ -1,0 +1,13 @@
+[package]
+name = "fennec-span"
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-source = { path = "../source" }
+serde = { workspace = true }

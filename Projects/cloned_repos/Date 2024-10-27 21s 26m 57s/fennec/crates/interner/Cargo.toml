@@ -1,0 +1,25 @@
+[package]
+name = "fennec-interner"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+serde = { workspace = true }
+lasso = { workspace = true, features = [
+    "multi-threaded",
+    "ahasher",
+    "serialize",
+    "inline-more",
+] }
+
+[dev-dependencies]
+criterion = { workspace = true }
+
+[[bench]]
+name = "general"
+harness = false

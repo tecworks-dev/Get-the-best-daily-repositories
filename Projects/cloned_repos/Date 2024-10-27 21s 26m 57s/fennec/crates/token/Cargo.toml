@@ -1,0 +1,15 @@
+[package]
+name = "fennec-token"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-span = { path = "../span" }
+fennec-interner = { path = "../interner" }
+serde = { workspace = true }
+strum = { workspace = true }
