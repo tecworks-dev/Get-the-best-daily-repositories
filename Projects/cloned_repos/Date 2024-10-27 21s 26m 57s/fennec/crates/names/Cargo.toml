@@ -1,0 +1,18 @@
+[package]
+name = "fennec-names"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-interner = { path = "../interner" }
+fennec-walker = { path = "../walker" }
+fennec-span = { path = "../span" }
+fennec-ast = { path = "../ast" }
+serde = { workspace = true }
+strum = { workspace = true }
+ahash = { workspace = true }

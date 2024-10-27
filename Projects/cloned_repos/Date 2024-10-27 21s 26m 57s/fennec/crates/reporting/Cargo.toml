@@ -1,0 +1,17 @@
+[package]
+name = "fennec-reporting"
+version.workspace = true
+edition.workspace = true
+authors.workspace = true
+license.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+fennec-span = { path = "../span" }
+fennec-source = { path = "../source" }
+fennec-fixer = { path = "../fixer" }
+codespan-reporting = { workspace = true }
+serde = { workspace = true }
+tokio = { workspace = true }

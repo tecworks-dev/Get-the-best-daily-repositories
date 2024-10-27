@@ -1,0 +1,86 @@
+[package]
+name = "fennec"
+version = "0.0.0"
+edition = "2021"
+authors = ["Saif Eddin Gmati <azjezz@protonmail.com>"]
+license = "MIT OR Apache-2.0"
+description = "The Oxidized PHP Toolchain"
+
+[workspace]
+package.edition = "2021"
+package.authors = ["Saif Eddin Gmati <azjezz@protonmail.com>"]
+package.license = "MIT OR Apache-2.0"
+package.version = "0.0.0"
+members = ["crates/*"]
+
+[workspace.lints]
+
+[workspace.dependencies]
+dashmap = { version = "6.1.0" }
+tracing = { version = "0.1.40" }
+ahash = { version = "0.8.11" }
+serde_json = { version = "1.0.128" }
+serde = { version = "1.0", features = ["derive"] }
+tokio = { version = "1.39.3", features = ["rt", "rt-multi-thread", "time"] }
+strum = { version = "0.26", features = ["derive"] }
+ordered-float = { version = "4.0", default-features = false }
+pretty_assertions = { version = "1.4.1" }
+either = { version = "1.13.0" }
+codespan-reporting = { version = "0.11.1", features = [
+    "serde",
+    "serialization",
+] }
+tracing-subscriber = { version = "0.3.18", features = ["env-filter"] }
+config = { version = "0.14.0", features = ["toml"] }
+toml = { version = "0.8.19" }
+num_cpus = "1.16.0"
+regex = "1.11.0"
+cruet = "0.14.0"
+indicatif = { version = "0.17.8", features = ["tokio"] }
+glob-match = "0.2.1"
+paste = "1.0.15"
+criterion = "0.5.1"
+lasso = "0.7.3"
+clap = { version = "4.5.20", features = [
+    "cargo",
+    "derive",
+    "unicode",
+    "wrap_help",
+] }
+colored = "2.1.0"
+futures = "0.3.31"
+async-stream = "0.3.6"
+async-walkdir = "2.0.0"
+
+[dependencies]
+fennec-reporting = { path = "crates/reporting" }
+fennec-interner = { path = "crates/interner" }
+fennec-source = { path = "crates/source" }
+fennec-parser = { path = "crates/parser" }
+fennec-ast = { path = "crates/ast" }
+fennec-names = { path = "crates/names" }
+fennec-semantics = { path = "crates/semantics" }
+fennec-linter = { path = "crates/linter" }
+fennec-config = { path = "crates/config" }
+fennec-fixer = { path = "crates/fixer" }
+fennec-feedback = { path = "crates/feedback" }
+fennec-symbol-table = { path = "crates/symbol-table" }
+serde = { workspace = true }
+tokio = { workspace = true }
+clap = { workspace = true }
+colored = { workspace = true }
+serde_json = { workspace = true }
+ahash = { workspace = true }
+futures = { workspace = true }
+
+[profile.release]
+opt-level = 3
+debug = false
+strip = 'symbols'
+debug-assertions = false
+overflow-checks = false
+lto = 'fat'
+panic = 'abort'
+incremental = true
+codegen-units = 1
+rpath = true

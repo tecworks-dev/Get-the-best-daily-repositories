@@ -1,0 +1,137 @@
+# The number of threads to use for parallel processing
+threads = 10
+
+# Source code directories configuration
+[source]
+# Source code directories
+paths = ["src"]
+# External dependencies
+includes = ["vendor"]
+# Files to exclude from processing
+excludes = [
+    # The following files contain invalid UTF-8 characters, so we exclude them
+    # to avoid warning messages
+    "**/vendor/composer/*",
+]
+
+# Linter configuration
+[linter]
+# The highest level of issues to report: "Error", "Warning", "Info", "Help", or "Off"
+level = "Note"
+# Whether to report issues in external dependencies
+external = false
+# Whether to enable the default set of plugins
+default_plugins = false
+# List of plugins to enable
+plugins = [
+    "best-practices",
+    "comment",
+    "consistency",
+    "naming",
+    "redundancy",
+    "safety",
+    "strictness",
+]
+
+# Configuration for individual rules
+[[linter.rules]]
+# Rule name
+name = "best-practices/no-unused-parameter"
+# The highest level of issues to report: "Error", "Warning", "Info", "Help", or "Off" to disable the rule.
+level = "Off"
+
+[[linter.rules]]
+name = "best-practices/no-goto"
+level = "Off"
+
+[[linter.rules]]
+name = "best-practices/no-debug-symbols"
+level = "Off"
+
+[[linter.rules]]
+name = "best-practices/excessive-nesting"
+options = { threshold = 9 }
+
+[[linter.rules]]
+name = "comment/no-untagged-todo"
+level = "Off"
+
+[[linter.rules]]
+name = "comment/no-untagged-fixme"
+level = "Off"
+
+[[linter.rules]]
+name = "consistency/no-function-aliases"
+level = "Off"
+
+[[linter.rules]]
+name = "naming/class"
+options = { psr = false }
+
+[[linter.rules]]
+name = "naming/trait"
+options = { psr = false }
+
+[[linter.rules]]
+name = "naming/interface"
+options = { psr = false }
+
+[[linter.rules]]
+name = "naming/function"
+options = { either = true }
+
+[[linter.rules]]
+name = "redundancy/redundant-parentheses"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-suppressed-expression"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-request-variable"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-global"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-eval"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-ffi"
+level = "Off"
+
+[[linter.rules]]
+name = "safety/no-shell-execute-string"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-strict-types"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-constant-type"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-parameter-type"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-return-type"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-property-type"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/require-identity-comparison"
+level = "Off"
+
+[[linter.rules]]
+name = "strictness/no-assignment-in-condition"
+level = "Off"
