@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-26 .. 2024-10-28)
+# Latest Repositories (2024-10-27 .. 2024-10-29)
 
-- [martinzsentori/Roblox-Blox-Fruits-Script-2024](https://github.com/martinzsentori/Roblox-Blox-Fruits-Script-2024) (208)
-- [Aboodwaddah/r0blox-synapse-x-free](https://github.com/Aboodwaddah/r0blox-synapse-x-free) (206)
-- [Falledkid/m0dmenu-gta5-free](https://github.com/Falledkid/m0dmenu-gta5-free) (206)
-- [varanofficial/SonyVegas-2024](https://github.com/varanofficial/SonyVegas-2024) (206)
-- [Gabriel345/Nexus-Roblox](https://github.com/Gabriel345/Nexus-Roblox) (206)
+- [kennethreitz/simplemind](https://github.com/kennethreitz/simplemind) (66)
+- [guycipher/k4](https://github.com/guycipher/k4) (54)
+- [solanarushdotcom/solana-pumpfun-frontrun-bot](https://github.com/solanarushdotcom/solana-pumpfun-frontrun-bot) (28)
+- [duzhaokun123/YAPatch](https://github.com/duzhaokun123/YAPatch) (23)
+- [arthur-vr/ClipSync](https://github.com/arthur-vr/ClipSync) (21)
