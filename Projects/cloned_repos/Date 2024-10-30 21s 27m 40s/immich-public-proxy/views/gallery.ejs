@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Gallery</title>
+    <link type="text/css" rel="stylesheet" href="/style.css"/>
+    <link type="text/css" rel="stylesheet" href="/lightgallery-bundle.min.css"/>
+</head>
+<body>
+<div id="lightgallery">
+    <% items.forEach(item => {
+    if (item.video) { %>
+        <a data-video='<%- item.video %>'>
+            <img alt="" src="<%- item.thumbnailUrl %>"/>
+            <div class="play-icon"></div>
+        </a>
+    <% } else { %>
+        <a href="<%- item.originalUrl %>">
+            <img alt="" src="<%- item.thumbnailUrl %>"/>
+        </a>
+    <% }
+    }) %>
+</div>
+<script src="/lightgallery.min.js"></script>
+<script src="/lg-fullscreen.min.js"></script>
+<script src="/lg-thumbnail.min.js"></script>
+<script src="/lg-video.min.js"></script>
+<script src="/lg-zoom.min.js"></script>
+<script type="text/javascript">
+  lightGallery(document.getElementById('lightgallery'), {
+    plugins: [lgZoom, lgThumbnail, lgVideo, lgFullscreen],
+    /*
+    This license key was graciously provided by LightGallery under their
+    GPLv3 open-source project license:
+    */
+    licenseKey: '8FFA6495-676C4D30-8BFC54B6-4D0A6CEC',
+    /*
+    Please do not take it and use it for other projects, as it was provided
+    specifically for Immich Public Proxy.
+
+    For your own projects you can use the default license key of
+    0000-0000-000-0000 as per their docs:
+
+    https://www.lightgalleryjs.com/docs/settings/#licenseKey
+    */
+    speed: 500
+  })
+  <% if (openItem) { %>
+  const openItem = <%- openItem %>
+  const thumbs = document.querySelectorAll('#lightgallery a')
+  if (thumbs.length >= openItem) {
+    thumbs[openItem - 1].click()
+  }
+  <% } %>
+</script>
+</body>
+</html>

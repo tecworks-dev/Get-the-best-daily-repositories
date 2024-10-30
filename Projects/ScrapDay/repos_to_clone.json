@@ -1,32 +1,32 @@
 [
   {
-    "name": "kennethreitz/simplemind",
-    "clone_url": "https://github.com/kennethreitz/simplemind.git",
-    "stars": 66,
-    "size": 144
+    "name": "alangrainger/immich-public-proxy",
+    "clone_url": "https://github.com/alangrainger/immich-public-proxy.git",
+    "stars": 209,
+    "size": 285
   },
   {
-    "name": "guycipher/k4",
-    "clone_url": "https://github.com/guycipher/k4.git",
-    "stars": 54,
-    "size": 108
+    "name": "jbikker/tinybvh",
+    "clone_url": "https://github.com/jbikker/tinybvh.git",
+    "stars": 91,
+    "size": 124
   },
   {
-    "name": "solanarushdotcom/solana-pumpfun-frontrun-bot",
-    "clone_url": "https://github.com/solanarushdotcom/solana-pumpfun-frontrun-bot.git",
-    "stars": 28,
-    "size": 127
+    "name": "hustvl/Senna",
+    "clone_url": "https://github.com/hustvl/Senna.git",
+    "stars": 63,
+    "size": 2160
   },
   {
-    "name": "duzhaokun123/YAPatch",
-    "clone_url": "https://github.com/duzhaokun123/YAPatch.git",
-    "stars": 23,
-    "size": 447
+    "name": "Mustafa-Esoofally/llm-podcast-engine",
+    "clone_url": "https://github.com/Mustafa-Esoofally/llm-podcast-engine.git",
+    "stars": 46,
+    "size": 154
   },
   {
-    "name": "arthur-vr/ClipSync",
-    "clone_url": "https://github.com/arthur-vr/ClipSync.git",
-    "stars": 21,
-    "size": 66
+    "name": "cinit/LibcoreSyscall",
+    "clone_url": "https://github.com/cinit/LibcoreSyscall.git",
+    "stars": 34,
+    "size": 119
   }
 ]

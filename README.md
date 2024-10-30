@@ -1,7 +1,7 @@
-# Latest Repositories (2024-10-27 .. 2024-10-29)
+# Latest Repositories (2024-10-28 .. 2024-10-30)
 
-- [kennethreitz/simplemind](https://github.com/kennethreitz/simplemind) (66)
-- [guycipher/k4](https://github.com/guycipher/k4) (54)
-- [solanarushdotcom/solana-pumpfun-frontrun-bot](https://github.com/solanarushdotcom/solana-pumpfun-frontrun-bot) (28)
-- [duzhaokun123/YAPatch](https://github.com/duzhaokun123/YAPatch) (23)
-- [arthur-vr/ClipSync](https://github.com/arthur-vr/ClipSync) (21)
+- [alangrainger/immich-public-proxy](https://github.com/alangrainger/immich-public-proxy) (209)
+- [jbikker/tinybvh](https://github.com/jbikker/tinybvh) (91)
+- [hustvl/Senna](https://github.com/hustvl/Senna) (63)
+- [Mustafa-Esoofally/llm-podcast-engine](https://github.com/Mustafa-Esoofally/llm-podcast-engine) (46)
+- [cinit/LibcoreSyscall](https://github.com/cinit/LibcoreSyscall) (34)

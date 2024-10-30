@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  public-proxy:
+    image: "node:22"
+    container_name: immich-public-proxy
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - ./:/home/node/app:Z
+    ports:
+      - ${PORT}:3000
+    command: bash -c "cd /home/node/app && npm install && npm start"
+    restart: always
+    healthcheck:
+      test: (ps ax | grep -q "[n]ode dist/index.js" && echo "Ok") || exit 1
+      interval: 60s
+      start_period: 10s

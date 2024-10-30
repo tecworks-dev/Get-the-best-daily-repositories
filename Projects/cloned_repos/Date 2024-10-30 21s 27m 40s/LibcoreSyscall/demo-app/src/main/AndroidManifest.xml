@@ -1,0 +1,22 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:name="com.example.test.app.TestApplication"
+        android:label="SyscallTest"
+        android:theme="@android:style/Theme.Holo"
+        tools:ignore="MissingApplicationIcon"
+        tools:targetApi="q">
+
+        <activity
+            android:name="com.example.test.app.TestMainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
