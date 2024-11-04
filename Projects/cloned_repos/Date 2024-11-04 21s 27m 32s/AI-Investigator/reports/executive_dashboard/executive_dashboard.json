@@ -1,0 +1,35 @@
+{
+  "case_2": {
+    "company": "OpenTable",
+    "industry": "Restaurant Services/Technology",
+    "confidence_score": 0.9,
+    "implementation_scale": "Processing 5,000 images per day, enterprise-wide content moderation system",
+    "key_technologies": [
+      "Computer Vision",
+      "Custom AI Models",
+      "Content Moderation AI"
+    ]
+  },
+  "case_6": {
+    "company": "Deel",
+    "industry": "HR Technology/Global Payroll",
+    "confidence_score": 0.8,
+    "implementation_scale": "2,700+ employees across 100+ countries, serving enterprise customers with thousands of workers",
+    "key_technologies": [
+      "OpenAI GPT",
+      "Custom Knowledge Base",
+      "Natural Language Processing"
+    ]
+  },
+  "case_7": {
+    "company": "9GAG",
+    "industry": "Media and Entertainment",
+    "confidence_score": 0.9,
+    "implementation_scale": "20,000 pieces of content processed daily, serving 150 million users",
+    "key_technologies": [
+      "Computer Vision",
+      "Content Moderation AI",
+      "Pre-trained Moderation Models"
+    ]
+  }
+}

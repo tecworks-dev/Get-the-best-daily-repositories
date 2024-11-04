@@ -1,0 +1,109 @@
+Title: Build a Scalable Content Moderation Strategy using AI Automation
+URL: https://www.clarifai.com/customers/opentable
+
+Content:
+New
+Clarifai is recognized as a Leader in The Forrester Wave™: Computer Vision Tools, Q1 2024
+Read the report
+Contact us
+Join the Discord
+Restaurant reservation company
+Build a Scalable Content Moderation Strategy using AI Automation
+How OpenTable used Clarifai’s platform and custom computer vision models to support their business.
+Background
+OpenTable, a restaurant reservation company, offers user generated images and reviews of restaurants on their website. They offer a look into what a dining experience is like at user reviewed restaurants. They expect all of the content to be relevant and appealing in order to entice future diners to book a reservation. This supports an authentic experience that consumers have come to expect.
+Information
+Use Case
+Content moderation
+Industry
+Services
+Client
+Restaurant reservation company
+Details
+Challenge
+Before using Clarifai, OpenTable could moderate only 300 images per day because they had one person manually reviewing user generated content. The moderator's job was to make sure there wasn't anything inappropriate in the photos. After reviewing, the images were organized into categories like "pictures of the restaurant itself," "pictures of the food," "pictures of the wait-staff," "pictures of the guests," etc.
+Because of the sheer volume of images posted, many images could not be reviewed and inappropriate images were inadvertently posted which negatively impacted the company’s reputation and brand. The lack of a scalable content moderation strategy prevented them from pursuing their goal of ingesting photos from Instagram onto their website to increase the amount of user generated reviews.
+Solution
+Before spending money on hiring additional human moderators, OpenTable turned to Clarifai to leverage the capabilities of its AI lifecycle platform,
+content moderation
+, and custom models in order to curate their restaurant photos appropriately. Clarifai helped them build custom trained models with concepts that encompassed all of the types of pictures users could submit from their restaurant experience. After the models were trained, OpenTable was able to plug into a
+Clarifai API
+, so their moderation team could use the Clarifai platform to review predictions. OpenTable was able to train its models in about 14 days before using the Clarifai platform for its predictive capabilities.
+Results
+16x improvement of operational efficiency and moderator productivity
+Increased images moderated from 300 to 5,000 per day per moderator
+Mitigated legal concerns over unwanted content and copyright infringements
+Ready to get started?
+Whether you're a start-up or a Fortune 500, contact us to discuss how to enrich your data with AI assisted labeling to annotate datasets accurately, quickly and affordably.
+Learn more about Clarifai
+Schedule a demo
+Discuss your solutions options
+Already a customer?
+If you are encountering a technical or payment issue, the customer support team will be happy to assist you.
+Contact support >
+© 2023 Clarifai, Inc.
+Terms of Service
+Content Takedown
+Privacy Policy
+CONTACT
+sales@clarifai.com
+marketing@clarifai.com
+government@clarifai.com
+Platform
+Overview
+AI Lake
+Scribe Label
+Spacetime Search
+Enlight Train
+Mesh Workflows
+Flare Edge
+UI Modules
+New
+Computer Vision
+Foundation Models
+Generative AI
+NLP
+Solutions
+By Industry
+Government
+Manufacturing
+Media and Entertainment
+Retail and E-Commerce
+Transportation
+By Use Case
+Content Moderation
+Digital Asset Management
+Intelligence, Surveillance
+Product Discovery
+Visual Inspection
+Community
+Explore
+Image Models
+Text Models
+Audio Models
+Workflows
+COMPANY
+About
+Careers
+We’re hiring!
+Customers
+Events
+Partners
+Press
+Tech Awards
+Resources
+API Status
+Blog
+Docs
+Resource Library
+Discord
+YouTube
+Pricing
+CONTACT
+sales@clarifai.com
+marketing@clarifai.com
+government@clarifai.com
+© 2023 Clarifai, Inc.
+Terms of Service
+Content Takedown
+Privacy Policy

@@ -1,0 +1,121 @@
+Title: Improve Content Moderation Accuracy with AI
+URL: https://www.clarifai.com/customers/9gag
+
+Content:
+New
+Clarifai is recognized as a Leader in The Forrester Wave™: Computer Vision Tools, Q1 2024
+Read the report
+Contact us
+Join the Discord
+media and entertainment social media company
+Improve Content Moderation Accuracy with AI
+How 9GAG turned to Clarifai to protect their 150 million user community.
+Background
+9GAG is a Hong Kong-based entertainment platform and social media website, which allows its users to upload and share "user-generated content" or other content from external social media websites. It is the 6th most-followed brand on Instagram worldwide and has a total audience of 150 million people. As one of the top 300 global websites, 9GAG is constantly being updated with thousands of new user-generated media on a daily basis.
+Information
+Use Case
+Content moderation
+Industry
+Media and entertainment
+Client
+9GAG
+Details
+Challenge
+Co-Founder and VP of Product, Chris Chan, knew that moderation was a foundation of a successful community. Although most people shared interesting and funny posts on 9GAG, some would try to post spam, inappropriate, or sexually explicit content. In order to protect users, the team of four moderators would manually review every post that was uploaded to the platform; a task which Chris admits was “a routine and often unpleasant job.”
+However, the platform was experiencing exponential growth and the sheer volume of content to be reviewed was becoming unmanageable. Chris and the team were keen to find a way to automate community moderation and thought that AI might provide them with a scalable, efficient solution that would support them as they continued to grow.
+Solution
+The 9GAG team searched Hacker News and asked their network to recommend computer vision and AI solution platform providers. They created a shortlist and proceeded to compare and test the tools offered by these providers. During the testing phase, it became clear that Clarifai offered the best
+content moderation solution
+. Chris was particularly impressed by Clarifai’s ability to separate
+NSFW
+“explicit nudity” from “suggestive nudity” with a level of accuracy unmatched by Amazon and Google.
+Results
+Thanks to Clarifai's
+pre-trained moderation models
+, it took one developer just four weeks to integrate AI to the 9GAG content moderation process (a feat which Chris says “is pretty impressive”). Now, Clarifai’s intelligent
+moderation model
+checks over 20,000 pieces of user-generated content on 9GAG for gore, drugs, explicit, and suggestive nudity every day at a level of 95% accuracy compared to human review.
+Since implementing Clarifai's computer vision platform, 9GAG has reduced the hours spent moderating the platform for inappropriate content by over 90%. This has enabled the team to reinvest time in more impactful work, such as supporting the growing community.
+90%
+Reduction in moderation hours; saving 145 hours per week
+95%
+Improvement in accurately detecting unwanted content
+20K
+User generated images moderated daily
+We compared several services including Google Cloud Vision, Amazon and Clarifai. We found that Clarifai is the most flexible, accurate, efficient solution and best fits our use case.”
+Chris Chan
+Co-founder and VP of Product
+Ready to get started?
+Whether you're a start-up or a Fortune 500, contact us to discuss how to enrich your data with AI assisted labeling to annotate datasets accurately, quickly and affordably.
+Learn more about Clarifai
+Schedule a demo
+Discuss your solutions options
+Already a customer?
+If you are encountering a technical or payment issue, the customer support team will be happy to assist you.
+Contact support >
+© 2023 Clarifai, Inc.
+Terms of Service
+Content Takedown
+Privacy Policy
+CONTACT
+sales@clarifai.com
+marketing@clarifai.com
+government@clarifai.com
+Platform
+Overview
+AI Lake
+Scribe Label
+Spacetime Search
+Enlight Train
+Mesh Workflows
+Flare Edge
+UI Modules
+New
+Computer Vision
+Foundation Models
+Generative AI
+NLP
+Solutions
+By Industry
+Government
+Manufacturing
+Media and Entertainment
+Retail and E-Commerce
+Transportation
+By Use Case
+Content Moderation
+Digital Asset Management
+Intelligence, Surveillance
+Product Discovery
+Visual Inspection
+Community
+Explore
+Image Models
+Text Models
+Audio Models
+Workflows
+COMPANY
+About
+Careers
+We’re hiring!
+Customers
+Events
+Partners
+Press
+Tech Awards
+Resources
+API Status
+Blog
+Docs
+Resource Library
+Discord
+YouTube
+Pricing
+CONTACT
+sales@clarifai.com
+marketing@clarifai.com
+government@clarifai.com
+© 2023 Clarifai, Inc.
+Terms of Service
+Content Takedown
+Privacy Policy

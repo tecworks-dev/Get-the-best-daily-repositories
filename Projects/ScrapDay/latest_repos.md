@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-01 .. 2024-11-03)
+# Latest Repositories (2024-11-02 .. 2024-11-04)
 
-- [Envin69/Roblox-Blox-Fruits-Script-2024](https://github.com/Envin69/Roblox-Blox-Fruits-Script-2024) (420)
-- [Nothingg2011/r0blox-synapse-x-free](https://github.com/Nothingg2011/r0blox-synapse-x-free) (419)
-- [hieu132450/Al-Photoshop-2024](https://github.com/hieu132450/Al-Photoshop-2024) (419)
-- [boru512/h4ck-f0rtnite](https://github.com/boru512/h4ck-f0rtnite) (418)
-- [Jackvv123/SonyVegas-2024](https://github.com/Jackvv123/SonyVegas-2024) (417)
+- [Standard-Intelligence/hertz-dev](https://github.com/Standard-Intelligence/hertz-dev) (587)
+- [zgimszhd61/openai-capcha-detection](https://github.com/zgimszhd61/openai-capcha-detection) (155)
+- [aniruddha-adhikary/mrt-buddy](https://github.com/aniruddha-adhikary/mrt-buddy) (139)
+- [muratcankoylan/AI-Investigator](https://github.com/muratcankoylan/AI-Investigator) (134)
+- [Doriandarko/Claude-Vision-Object-Detection](https://github.com/Doriandarko/Claude-Vision-Object-Detection) (101)

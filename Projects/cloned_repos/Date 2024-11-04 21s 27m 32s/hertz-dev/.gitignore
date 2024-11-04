@@ -1,0 +1,9 @@
+.venv
+*.wav
+*.mp3
+*.m4a
+!prompts/*.wav
+!prompts/*.mp3
+!prompts/*.m4a
+__pycache__
+*ckpt

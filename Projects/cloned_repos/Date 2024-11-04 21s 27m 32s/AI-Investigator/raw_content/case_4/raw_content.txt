@@ -1,0 +1,253 @@
+Title: How IgniteTech is using AI to change its business
+URL: https://www.bensbites.com/case-study/how-ignitetech-is-using-ai-to-change-its-business
+
+Content:
+Blog
+How IgniteTech is using AI to change its business
+How IgniteTech is using AI to change its business
+Save
+Saved
+I write about businesses using AI and today I’m excited to show you how IgniteTech is radically changing their company.
+IgniteTech
+acquires and modernises enterprise software, offering it to customers through a cost-effective all-you-can-eat subscription model.
+Thank you to the CEO,
+Eric Vaughan
+,
+for spending time with me and sharing his thoughts.
+Here are some takeaways from the post:
+Get leadership on board
+. It's important to have leaders not just say ‘let’s use AI’ but also get involved themselves.
+Start tinkering with processes and products.
+Find spots where AI can make a difference in what you do and how your products work. Small wins show what's possible and excite people.
+Give your team what they need.
+Provide time, tools, and training to experiment with AI. Encourage learning and experimentation.
+Change the culture
+. Getting AI to work is about the people as much as the tech. Get everyone on board and support those ready to jump in.
+Expect some bumps
+. Implementing AI is complex, especially for large companies stuck in certain ways. Push through early struggles and remind everyone it's about the long-term potential.
+Promote grassroots enthusiasm at scale
+. Make AI skill-building available and rewarding. Carefully shift talent unable or unwilling to adapt.
+Keep communicating the why
+. Make sure AI ties back to the big-picture goals so it feels like part of a bigger plan, not just tech for tech's sake.
+Driving cultural change with AI
+Eric, a technologist at heart, founded 3 software companies over the last few decades. But when he saw what generative AI could do, it changed his perspective on the world, like the internet and iPhone did.
+I’ve never seen anything like this. The potential of generative AI is keeping me up at night...I feel overwhelmed that I'm not doing enough and we're not doing enough.
+I believe this has the potential to change everything. Everywhere. For everyone and that's just phenomenal. And so I feel it because I'm that guy. I'm that technology guy. I feel a responsibility to my friends, my family, and certainly my company and my teams to say, you've got to wake up if you aren't using this. You don't understand why this could be so important. Don't resist. Embrace it, learn. We're at the beginning of the frontier. Everybody's experimenting at the same time.
+As CEO, Eric made AI the top priority at the company.
+I made this our top priority at the entire company...We're an enterprise software company with thousands of customers all around the world. A lot of responsibility to those customers, but the same thing I've got a responsibility of those customers to lead. Now with AI first features in all of our software products and that's where we focus.
+In Q2 of 2023, they kicked off with a company-wide challenge to foster engagement and exploration.
+I presented at an all hands meeting in the second quarter of last year and my second slide was a picture of a gift. I said, here's something you don't hear from CEOs at companies often. I'm giving everyone here on this call a gift, an unequivocal gift. There's no other way to describe it. It's a gift of time, education, money, support, enthusiasm. To learn something so fundamentally groundbreaking that it's going to make you far better than you were before.
+A month-long project ensued where all employees were asked to share information in a Slack group; articles they’ve read, newsletters, products they tried, ChatGPT prompts, etc.
+Employees were given $200 (and ChatGPT+ accounts) to spend on AI learning tools.
+The engagement level was scored.
+There was a funnel with three colours: green, yellow, and red.
+Green for top scorers - who got a $2,500 reward
+Yellow for people who were engaged but weren’t in the basement
+Red (basement) for least engaged people
+Anyone in red will be leaving the company.
+...anybody in the basement [least engaged in AI integration] will be exiting the company, because to be in the basement, you will have not tried.
+This thinking changes the culture, which Eric was conscious of.
+It's a cultural change, by the way...And part of that cultural change is finding the people that won't come along with you. You’ve got to sort that out because that's not going to be productive.
+But the potential competitive advantage is too large to ignore. AI will create "haves and have-nots", and Ignite Tech is positioning its people as ‘haves’.
+Eric said learning AI is imperative for employees to stay in the company. Those who know it and leave are much better placed in the market than those who haven't learned it.
+if this doesn't excite you, then you're probably in the wrong business.
+Not all employees need to become AI experts, but they need to be willing adopters, as AI will increasingly affect all parts of the business.
+Getting the Team Trained on AI
+In December 2023, they created a self-assessment - measuring engagement and introducing skill level.
+We asked them to show us their conversational prompts. We asked them to show us their quality control prompts, give us an example of the work they could do.
+They’re going through a process called top-grading, which means you’re below the bar for the role. They want you to hit the bar and will spend time helping you get there. If you don’t, you’ll be replaced.
+It is 100% our goal to not replace anybody. It is to get everybody up to snub, bring everybody up to the same level. And this isn't like we're not trying to be the experts. We're just trying to be like base level.
+So AI Mondays were introduced for 2024, without equivocation.
+You may not talk to a customer, or have a video call. Go visit a customer, go to a trade show or do any of the things you normally do. You can't do anything except work on Gen AI projects inside the company.
+They hired a VP of Gen AI who spent a decade on ML at Ericsson to develop a curriculum for learning various techniques and capabilities.
+Now everyone has only 4 days to do what they used to do in 5.
+But that’s by design, you’ve only got 4 days to do the same work, and the way to do it is by leaning into using AI.
+Everyone received $1,000 for AI education and were encouraged to spend it on 'AI Mondays’.
+From the self-assessments, they realised that over 50% of people were using very basic approaches to using AI.
+We realized you can't ask somebody to build a house until you teach them what a hammer is, what a screwdriver is, what a saw is... We were doing that. We're like, 'Go build a house. Let's see what your house is.' So we've spent a lot of time on prompt frameworks, for example, and best practices.
+So IgniteTech has focused on educating it’s team by:
+Equipping people with the basics
+Helping people understand; what is a prompt? What’s the best practice for a prompt? Don’t use the little prompt input box as it’s inherently limiting—go create a prompt in a Google Doc with delimiters and steps clearly outlined. Try that prompt with different LLMs; OpenAI, Claude, Bard (now called Gemini). Ask the model to rewrite it based on best practices. Ask it to reference people that you want it to model after.
+Prompt frameworks
+Borrowing from experts, they leaned on Sheila Tao’s CO-STAR prompt framework, for which she won Singapore’s GPT-4 Prompt Engineering Competition. Here’s how it works:
+(C) Context: Provide background information on the task
+This helps the LLM understand the specific scenario being discussed, ensuring its response is relevant.
+(O) Objective: Define what the task is that you want the LLM to perform
+Being clear about your objective helps the LLM to focus its response on meeting that specific goal.
+(S) Style: Specify the writing style you want the LLM to use
+This could be a particular famous person’s style of writing, or a particular expert in a profession, like a business analyst expert or CEO. This
+guides the LLM to respond with the manner and choice of words aligned with your needs.
+(T) Tone: Set the attitude of the response
+This ensures the LLM’s response resonates with the intended sentiment or emotional context required. Examples are formal, humorous, empathetic, among others.
+(A) Audience: Identify who the response is intended for
+Tailoring the LLM’s response to an audience, such as experts in a field, beginners, children, and so on, ensures that it is appropriate and understandable in your required context.
+(R) Response: Provide the response format
+This ensures that the LLM outputs in the exact format that you require for downstream tasks. Examples include a list, a JSON, a professional report, and so on. For most LLM applications which work on the LLM responses programmatically for downstream manipulations, a JSON output format would be ideal.
+Source
+Hands-on practice
+Give people a real use case to put it into practice.
+everybody had 75 minutes to complete this exercise. They didn't know it was coming. It was a timed exercise and they had to choose one of two assignments. One was to write or to come up with AI features for a set of products that they had never heard of, for a company they had never heard of.
+And the other was, imagine that we've acquired that company because we are a very acquisitive, company. Design the restructuring for HR and all the processes in the company. How will you measure it?
+Now, a year ago, people would have said, you know what? The first thing they would have done? Is open Google and gone and found the company and started reading about the products. Yeah. You're not going to make it through this in 75 minutes.
+They require participation, but mostly focus on mindset over skills.
+The training seems to be paying off in expanding employees' perspectives. As Vaughan noted after a recent AI Monday training,
+I got some beautiful answers, but I got people that not only did they design features for these four products that we listed, but they even had it right press releases announcing the new features. Some people were flexing their muscles. Like I can do this stuff now.
+Iterative learning
+Give groups the same assignment to complete individually and then come together and compare their prompts. Select the best one and enhance it.
+Improving products with AI
+IgniteTech is also undertaking a sweeping effort to incorporate AI across its software offerings and internal processes.
+We are now going through every single process. Applying what we know right now as best practices in Gen AI, brought from months of working on this to completely redesign those processes to eliminate manual work and stopping waiting on a person wherever we possibly can.
+The most fundamental thing is how you start the day. And you are about to do something. Your very first thought should be, can I do that differently? Can I include a tool to augment that process? Is there something I could try? That's what AI first is.
+The company announced plans to roll out AI features in each product division. This requires a significant investment but promises to make Ignite Tech's solutions smarter, more efficient, and more valuable.
+We announced to the world, all of our customers, that we will have an AI capability in all of our...we've articulated divisions for each of them, and we're starting to roll all of those out.
+They are not only rolling out AI in all their products but have found new areas they can develop.
+They acquired three companies under one product, GFI, but it was operating separately instead of as one.
+Certain resellers only think of one of them, never talking about the other, no cross-training, etc.
+So they built App Manager, bringing the three interfaces under one roof.
+Now all three products were under one roof, and the data was unified.
+They were able to see insights and anomaly detection built into a new feature called Radar, which can correlate data across products by implementing AI.
+Leadership commitment is critical for AI success
+Implementing AI on an enterprise scale requires leadership buy-in and commitment.
+Eric made AI a personal priority at every level of the organization, and this leading-by-example approach is essential.
+I've got to be involved as everybody else, and you've got to make this a priority. I think they should make it a priority, because if not, then in my opinion, we're going to quickly create two classes of companies and workers. Haves and have nots.
+Other examples of companies leading AI adoption from the top can be seen
+here
+.
+Give everyone the same chance to participate.
+So in my opinion, as a leader of an organization, when you're trying to affect cultural change you've got to give everybody the same chance. The same support and the same encouragement to participate. But you got to find the ones that are like, yeah, I'm just not going to do it.
+If you found this post valuable, share it with a friend, and consider subscribing. Feel free to
+suggest new topics
+for me to cover.
+Cheers,
+Get full access
+Join
+16,221
+learners
+from companies like Microsoft, Coca Cola, NBA, Adobe & Google
+Monthly
+Yearly
+Monthly
+Yearly
+Face Id 1 Streamline Icon: https://streamlinehq.com
+Personal
+For individuals exploring AI for work
+$
+250
+One-time
+Get access
+Check Circle 2 Streamline Icon: https://streamlinehq.com
+300+
+courses
+&
+tutorials
+Check Circle 2 Streamline Icon: https://streamlinehq.com
+Live
+expert workshops
+Check Circle 2 Streamline Icon: https://streamlinehq.com
+Private
+community
+access
+Check Circle 2 Streamline Icon: https://streamlinehq.com
+Certifications
+for completed courses
+Check Circle 2 Streamline Icon: https://streamlinehq.com
+Lifetime access
+. No subscription
+Team Meeting Streamline Icon: https://streamlinehq.com
+Team
+3 seats
+For teams (up to 10 people) learning to use AI
+$
+600
+One-time
+$
+750
+Save
+15%
+Learn more
+3 Seats x $212.50
+Multi-seat options team management and more
+Create an account
+Email
+Password
+Company URL
+Sign up for the Ben's Bites daily AI newsletter
+or sign up with
+Google
+Linkedin
+Facebook
+Thank you! Your submission has been received!
+Oops! Something went wrong while submitting the form.
+Basic plan
+Lorem ipsum dolor sit amet
+$180
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Business plan
+Lorem ipsum dolor sit amet
+$280
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Enterprise plan
+Lorem ipsum dolor sit amet
+$480
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Basic plan
+Lorem ipsum dolor sit amet
+$180
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Business plan
+Lorem ipsum dolor sit amet
+$280
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Enterprise plan
+Lorem ipsum dolor sit amet
+$480
+/yr
+Save 20%
+Get started
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Feature text goes here
+Already have an account?
+Log In
+Send to a friend
+Copy link to clipboard
+More like this
+Real-world examples of AI transforming business operations.
+View all
+The formula for landing pages that convert
+Agency founder Corey Haines on using AI to slash the time it takes to craft high-converting website copy.
+BB Digest: Who's using AI at work?
+PLUS: Claude runs code now, new AI's are cooking.
+Make more sales with AI: 4 ways to get more leads to buy
+How to use ChatGPT to create sales strategies that turn more leads into customers.
