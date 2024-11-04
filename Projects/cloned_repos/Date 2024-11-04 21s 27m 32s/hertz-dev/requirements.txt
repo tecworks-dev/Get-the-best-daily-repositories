@@ -1,0 +1,14 @@
+torch
+torchaudio
+einops
+tqdm
+IPython
+numpy
+soundfile
+websockets
+requests
+sounddevice
+matplotlib
+fastapi
+uvicorn
+argparse

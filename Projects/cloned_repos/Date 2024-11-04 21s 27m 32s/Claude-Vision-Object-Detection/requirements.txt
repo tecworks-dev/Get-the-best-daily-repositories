@@ -1,0 +1,3 @@
+anthropic
+Pillow
+python-dotenv

@@ -1,0 +1,142 @@
+Title: How Deel Uses Deel: The Story Behind Deel AI
+URL: https://www.deel.com/blog/how-deel-uses-deel-ai/
+
+Content:
+Article
+5 min read
+How Deel Uses Deel: The Story Behind Deel AI
+Global hiring
+Author
+Anja
+Simic
+Published
+October 16, 2023
+Last Update
+August 20, 2024
+Table of Contents
+Built for internal use, fine-tuned for everyone
+How does Deel AI actually work?
+Our knowledge is at your disposal
+Key takeaways
+Deel AI was built to make our organization's internal processes faster and more efficient.
+Instead of relying on third-party AI, we built our own system for maximum accuracy and data protection.
+All of our team members tap into Deel AI’s knowledge base to provide every customer with an exceptional experience.
+What started out as a small startup is today a globally distributed company with over 2,700 team members across 100+ countries. The company size of our customers also grew—some of them run their global HR and payroll for thousands of workers fully through Deel.
+To be able to provide an elevated, one-of-a-kind experience to all our customers, big or small, we needed to keep tabs on the efficiency of our processes—all the time.
+That’s how Deel AI was born.
+Built for internal use, fine-tuned for everyone
+When you’re such a big, global team, and especially in the field of global HR, payroll, and compliance, there’s no room for mistakes. Every error can turn out to be costly.
+That’s why we do everything to ensure the accuracy of the information we work with. But, managing an enormous
+knowledge base for the 150+ countries
+we help customers hire in can be difficult.
+We faced similar challenges when we needed
+an effective HRIS that could scale with us
+and support our needs as a global company. We couldn’t find an ideal tool among the existing platforms, so we built one.
+Now, we wanted to reduce the time necessary to find the right answers around global hiring and within our own organization, removing the back-and-forth among multiple team members.
+Here’s how Deel AI makes it easier for us:
+We get answers fast:
+Instead of manually browsing through our internal data, we rely on carefully trained AI to surface the right information quickly. That helps us resolve issues and queries for our customers faster than ever.
+We have one source of truth:
+We’ve said goodbye to mismatching data in different resources. Thanks to Deel AI, we know we’re working with accurate and up-to-date data at all times.
+We keep the data accessible:
+Our internal wiki keeps the data digestible for everyone on our team, even the team members who don’t have legal expertise. This facilitates many processes within the organization, from communication with customers to creating marketing materials, as it removes the need for back-and-forth messages between team members.
+Once we realized we’d built a powerful knowledge base for internal use, we started thinking about how our customers could benefit from it as well.
+For HR professionals looking to take this leap into the world of AI, the landscape will undoubtedly be messy for a while - but Deel is aiming to make it clearer.
+—
+Alex Bouaziz
+,
+CEO & Co-founder, Deel
+How does Deel AI actually work?
+Deel AI is like a global employment assistant who has all the answers about laws and regulations in over 150 countries, but can also give you instant insights and reports on your workforce data. It’s built based on the same AI-powered language model that’s behind OpenAI's ChatGPT, with additional access to Deel's deep knowledge base to make sure our experts’ factual knowledge is included, too.
+We rely on an internal team of 20+ engineers and writers to build the product and cover global compliance and payroll topics by getting the data from our local experts, and helping all other team members get answers quickly when they need them.
+When talking to our customers or prospects, their questions may sometimes get very specific. Like:
+What type of worker can I hire in Brazil?
+How long is maternity leave in Spain?
+How do you terminate full-time employees in the Philippines?
+What's the median salary for a Sr. Data Analyst in Canada?
+Or even: How many new workers started this month?
+Whether our team members are writing a blog post, resolving a support ticket, or having a sales call, they can quickly enter these questions into Deel AI and provide an explanation to the customer. No more “we’ll get back to you with this later” and having to memorize pages and pages of documentation for each of the 150 countries.
+We always strive to make our products flawless, so our team members are frequently asked to provide honest feedback on Deel AI’s performance. That way, we can work day and night to make sure the product is up to the standards we aim to maintain. We know that human involvement is irreplaceable to ensure the maximum accuracy of all information provided, so our in-house experts validate every single query entered into the system.
+In addition to continuously training and improving our models, anytime we have questions not in our knowledge base, we have a 24-hour SLA to create the content with our team of over 40 compliance experts, making sure we have the most up-to-date and accurate answers possible. On the infrastructure side, we also built some powerful technology to ensure our clients' data is protected while still available through generative AI.
+—
+Aaron Goldsmid
+,
+Head of Product, Payments & Integration, Deel
+Our knowledge is at your disposal
+Deel AI demonstrates our dedication not only to providing an unrivaled customer experience but also to keeping up with the trends and leveraging technological advancements to improve our product further.
+What impresses me the most about Deel AI is the reactions that we get from our customers.  It enables them to have access to the world's foremost knowledge base and employment data at their fingertips in an incredibly intuitive experience. It empowers them with knowledge and gives them time back.
+—
+Aaron Goldsmid
+,
+Head of Product, Payments & Integration, Deel
+We don’t want to compromise when it comes to facilitating global employment and helping our customers build the business of their dreams. Every step we take toward becoming more efficient is a step forward for you to achieve your global goals—fast, compliantly, and hassle-free.
+Learn more about Deel AI
+About the author
+Anja Simic
+is a passionate advocate for remote work and leveling the playing field for diverse talents worldwide. She’s the Director of Content Marketing at Deel. As a content marketing professional, she thrives on shaping impactful narratives through different formats such as long-form content, webinars, and newsletters (to name a few).
+Back to top
+Related resources
+Article
+3 min read
+Expat Tax Break Guide: Netherlands New 30/20/10 Ruling
+Read more
+Article
+3 min read
+How to Register as a Sole Proprietorship in Ecuador
+Read more
+Article
+4 min read
+A Guide to PEO in Florida
+Read more
+Article
+3 min read
+9 Mental Health Tips to Help You While Working Remotely
+Read more
+Article
+3 mins
+Understanding the International Entrepreneur Rule (IER) and How it Compares to the O1 Visa
+Read more
+Article
+6 min read
+15 Data Analyst Interview Questions and Answers
+Read more
+Article
+3 min read
+How to Register as a Sole Proprietor in North Macedonia
+Read more
+Article
+7 min read
+Legal Entity Setup for SMBs: The Complete Guide for 2024
+Read more
+Article
+11 min read
+PEO vs EOR: The Difference (And Why It Matters)
+Read more
+Article
+6 min read
+15 Common Program Manager Interview Questions and Answers
+Read more
+Article
+3 min read
+How to Write a Marketing Manager Cover Letter (With Template)
+Read more
+Article
+3 min read
+Your Ultimate Guide to Puerto Rico Payroll
+Read more
+Article
+3 min read
+Deel enters public offer to acquire PayGroup Limited
+Read more
+Article
+3 min read
+What Happens to PTO When You Quit?
+Read more
+Article
+8 min read
+How to Legally Terminate an Employee with Grace
+Read more
+Article
+6 min read
+How to Transition from Contractors to PEO Services with US Employees
+Read more

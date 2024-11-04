@@ -1,0 +1,59 @@
+{
+  "case_2": {
+    "company": {
+      "name": "OpenTable",
+      "industry": "Restaurant Services/Technology",
+      "size_category": "Large Enterprise"
+    },
+    "technologies": [
+      "Computer Vision",
+      "Custom AI Models",
+      "Content Moderation AI"
+    ],
+    "success_factors": {
+      "established_company": true,
+      "business_focus": true,
+      "enterprise_scale": true,
+      "clear_outcomes": true
+    },
+    "business_impact": {}
+  },
+  "case_6": {
+    "company": {
+      "name": "Deel",
+      "industry": "HR Technology/Global Payroll",
+      "size_category": "Large Enterprise"
+    },
+    "technologies": [
+      "OpenAI GPT",
+      "Custom Knowledge Base",
+      "Natural Language Processing"
+    ],
+    "success_factors": {
+      "established_company": true,
+      "business_focus": true,
+      "enterprise_scale": true,
+      "clear_outcomes": true
+    },
+    "business_impact": {}
+  },
+  "case_7": {
+    "company": {
+      "name": "9GAG",
+      "industry": "Media and Entertainment",
+      "size_category": "Large Enterprise"
+    },
+    "technologies": [
+      "Computer Vision",
+      "Content Moderation AI",
+      "Pre-trained Moderation Models"
+    ],
+    "success_factors": {
+      "established_company": true,
+      "business_focus": true,
+      "enterprise_scale": true,
+      "clear_outcomes": true
+    },
+    "business_impact": {}
+  }
+}
