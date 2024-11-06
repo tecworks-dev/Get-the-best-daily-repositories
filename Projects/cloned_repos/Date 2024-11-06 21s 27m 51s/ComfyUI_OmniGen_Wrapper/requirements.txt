@@ -1,0 +1,9 @@
+transformers>=4.45.0
+diffusers>=0.29.0
+numpy<2
+datasets
+accelerate
+timm
+peft
+safetensors
+huggingface_hub
