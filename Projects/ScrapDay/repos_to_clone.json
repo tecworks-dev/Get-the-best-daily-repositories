@@ -1,32 +1,32 @@
 [
   {
-    "name": "HelloVision/ComfyUI_HelloMeme",
-    "clone_url": "https://github.com/HelloVision/ComfyUI_HelloMeme.git",
-    "stars": 44,
-    "size": 955
+    "name": "aarondfrancis/solo",
+    "clone_url": "https://github.com/aarondfrancis/solo.git",
+    "stars": 116,
+    "size": 1104
   },
   {
-    "name": "mattn/vim-usa-election-2024",
-    "clone_url": "https://github.com/mattn/vim-usa-election-2024.git",
-    "stars": 37,
-    "size": 439
-  },
-  {
-    "name": "chflame163/ComfyUI_OmniGen_Wrapper",
-    "clone_url": "https://github.com/chflame163/ComfyUI_OmniGen_Wrapper.git",
-    "stars": 32,
-    "size": 601
-  },
-  {
-    "name": "tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator",
-    "clone_url": "https://github.com/tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator.git",
-    "stars": 22,
-    "size": 111
+    "name": "adamsol/GitQuill",
+    "clone_url": "https://github.com/adamsol/GitQuill.git",
+    "stars": 79,
+    "size": 642
   },
   {
     "name": "NtDallas/KrakenMask",
     "clone_url": "https://github.com/NtDallas/KrakenMask.git",
-    "stars": 22,
+    "stars": 45,
     "size": 77
+  },
+  {
+    "name": "mattn/vim-usa-election-2024",
+    "clone_url": "https://github.com/mattn/vim-usa-election-2024.git",
+    "stars": 40,
+    "size": 439
+  },
+  {
+    "name": "Rabnail-SOL/Solana-PumpFun-Bundler",
+    "clone_url": "https://github.com/Rabnail-SOL/Solana-PumpFun-Bundler.git",
+    "stars": 27,
+    "size": 94
   }
 ]

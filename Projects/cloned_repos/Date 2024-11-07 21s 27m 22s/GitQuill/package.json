@@ -1,0 +1,53 @@
+{
+  "name": "git-quill",
+  "productName": "GitQuill",
+  "version": "0.1.0",
+  "description": "Cross-platform GUI for Git.",
+  "keywords": [
+    "git",
+    "diff",
+    "graph",
+    "gui",
+    "client"
+  ],
+  "repository": "https://github.com/adamsol/GitQuill",
+  "license": "MIT",
+  "author": {
+    "name": "Adam Sołtysik",
+    "url": "https://github.com/adamsol"
+  },
+  "scripts": {
+    "watch": "webpack --mode=development --watch",
+    "build": "webpack --mode=production",
+    "start": "electron ."
+  },
+  "dependencies": {
+    "@guolao/vue-monaco-editor": "^1.5.1",
+    "@mdi/js": "^7.4.47",
+    "css-loader": "^7.0.0",
+    "electron": "^29.1.5",
+    "electron-context-menu": "^3.6.1",
+    "electron-log": "^5.2.0",
+    "electron-store": "^8.2.0",
+    "json5": "^2.2.3",
+    "lodash": "^4.17.21",
+    "monaco-editor": "^0.49.0",
+    "monaco-editor-webpack-plugin": "^7.1.0",
+    "pluralize": "^8.0.0",
+    "postcss-loader": "^8.1.1",
+    "splitpanes": "^3.1.5",
+    "style-loader": "^3.3.4",
+    "tailwindcss": "^3.4.3",
+    "vue": "^3.4.19",
+    "vue-loader": "^17.4.2",
+    "vue-virtual-scroller": "2.0.0-beta.3",
+    "vuedraggable": "^4.1.0",
+    "webpack": "^5.90.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "//": {
+    "vue-virtual-scroller": "https://github.com/Akryum/vue-virtual-scroller/issues/863"
+  },
+  "type": "module",
+  "main": "main.js"
+}

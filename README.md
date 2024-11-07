@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-04 .. 2024-11-06)
+# Latest Repositories (2024-11-05 .. 2024-11-07)
 
-- [HelloVision/ComfyUI_HelloMeme](https://github.com/HelloVision/ComfyUI_HelloMeme) (44)
-- [mattn/vim-usa-election-2024](https://github.com/mattn/vim-usa-election-2024) (37)
-- [chflame163/ComfyUI_OmniGen_Wrapper](https://github.com/chflame163/ComfyUI_OmniGen_Wrapper) (32)
-- [tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator](https://github.com/tryonlabs/FLUX.1-dev-LoRA-Outfit-Generator) (22)
-- [NtDallas/KrakenMask](https://github.com/NtDallas/KrakenMask) (22)
+- [aarondfrancis/solo](https://github.com/aarondfrancis/solo) (116)
+- [adamsol/GitQuill](https://github.com/adamsol/GitQuill) (79)
+- [NtDallas/KrakenMask](https://github.com/NtDallas/KrakenMask) (45)
+- [mattn/vim-usa-election-2024](https://github.com/mattn/vim-usa-election-2024) (40)
+- [Rabnail-SOL/Solana-PumpFun-Bundler](https://github.com/Rabnail-SOL/Solana-PumpFun-Bundler) (27)
