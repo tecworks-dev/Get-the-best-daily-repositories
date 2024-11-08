@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-05 .. 2024-11-07)
+# Latest Repositories (2024-11-06 .. 2024-11-08)
 
-- [aarondfrancis/solo](https://github.com/aarondfrancis/solo) (116)
-- [adamsol/GitQuill](https://github.com/adamsol/GitQuill) (79)
-- [NtDallas/KrakenMask](https://github.com/NtDallas/KrakenMask) (45)
-- [mattn/vim-usa-election-2024](https://github.com/mattn/vim-usa-election-2024) (40)
-- [Rabnail-SOL/Solana-PumpFun-Bundler](https://github.com/Rabnail-SOL/Solana-PumpFun-Bundler) (27)
+- [wp-privacy/wp-api-privacy](https://github.com/wp-privacy/wp-api-privacy) (73)
+- [Rabnail-SOL/Solana-PumpFun-Bundler](https://github.com/Rabnail-SOL/Solana-PumpFun-Bundler) (56)
+- [Rabnail-SOL/Solana-Pumpfun-Smart-Contract-Forking](https://github.com/Rabnail-SOL/Solana-Pumpfun-Smart-Contract-Forking) (49)
+- [kijai/ComfyUI-GIMM-VFI](https://github.com/kijai/ComfyUI-GIMM-VFI) (47)
+- [donydchen/mvsplat360](https://github.com/donydchen/mvsplat360) (41)
