@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-07 .. 2024-11-09)
+# Latest Repositories (2024-11-08 .. 2024-11-10)
 
-- [mikevanes/home-assistant-config](https://github.com/mikevanes/home-assistant-config) (39)
-- [sharafdin/yocode](https://github.com/sharafdin/yocode) (22)
-- [zzzhub1/Hwid-Spoof](https://github.com/zzzhub1/Hwid-Spoof) (18)
-- [pornin/rust-fn-dsa](https://github.com/pornin/rust-fn-dsa) (17)
-- [jamescherti/compile-angel.el](https://github.com/jamescherti/compile-angel.el) (16)
+- [todesstern1second/delta-robl0x-](https://github.com/todesstern1second/delta-robl0x-) (107)
+- [Winci1/Roblox-B1ox-Fruits-Scr1pt-2024](https://github.com/Winci1/Roblox-B1ox-Fruits-Scr1pt-2024) (106)
+- [xBallistic/rob1ox-scr1pts-so1ara](https://github.com/xBallistic/rob1ox-scr1pts-so1ara) (106)
+- [thisuxhq/SvelteDnD](https://github.com/thisuxhq/SvelteDnD) (76)
+- [lalomorales22/global-analytics-dashboard](https://github.com/lalomorales22/global-analytics-dashboard) (69)
