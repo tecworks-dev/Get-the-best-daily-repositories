@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-09 .. 2024-11-11)
+# Latest Repositories (2024-11-10 .. 2024-11-12)
 
-- [thisuxhq/SvelteDnD](https://github.com/thisuxhq/SvelteDnD) (182)
-- [todesstern1second/delta-robl0x-](https://github.com/todesstern1second/delta-robl0x-) (84)
-- [Winci1/Roblox-B1ox-Fruits-Scr1pt-2024](https://github.com/Winci1/Roblox-B1ox-Fruits-Scr1pt-2024) (83)
-- [xBallistic/rob1ox-scr1pts-so1ara](https://github.com/xBallistic/rob1ox-scr1pts-so1ara) (83)
-- [ik1vz/IDM-Activation-Script-2024](https://github.com/ik1vz/IDM-Activation-Script-2024) (79)
+- [jackyzha0/sunlit](https://github.com/jackyzha0/sunlit) (264)
+- [Dineshkumarmsc/GTA-5-Mod-Menu-2024](https://github.com/Dineshkumarmsc/GTA-5-Mod-Menu-2024) (179)
+- [CrystalDustt/Canva-Pro-2024](https://github.com/CrystalDustt/Canva-Pro-2024) (179)
+- [FETHUMOHAMMED/Xbox-Game-Pass-Activator-Free-2024](https://github.com/FETHUMOHAMMED/Xbox-Game-Pass-Activator-Free-2024) (179)
+- [Dyanrik/rust-hack-fr33](https://github.com/Dyanrik/rust-hack-fr33) (178)
