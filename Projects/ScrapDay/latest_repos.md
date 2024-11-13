@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-10 .. 2024-11-12)
+# Latest Repositories (2024-11-11 .. 2024-11-13)
 
-- [jackyzha0/sunlit](https://github.com/jackyzha0/sunlit) (264)
-- [Dineshkumarmsc/GTA-5-Mod-Menu-2024](https://github.com/Dineshkumarmsc/GTA-5-Mod-Menu-2024) (179)
-- [CrystalDustt/Canva-Pro-2024](https://github.com/CrystalDustt/Canva-Pro-2024) (179)
-- [FETHUMOHAMMED/Xbox-Game-Pass-Activator-Free-2024](https://github.com/FETHUMOHAMMED/Xbox-Game-Pass-Activator-Free-2024) (179)
-- [Dyanrik/rust-hack-fr33](https://github.com/Dyanrik/rust-hack-fr33) (178)
+- [Nutlope/llama-ocr](https://github.com/Nutlope/llama-ocr) (369)
+- [CrystalDustt/Canva-Pro-2024](https://github.com/CrystalDustt/Canva-Pro-2024) (216)
+- [DebbyKogs/cheat-escape-from-tarkov](https://github.com/DebbyKogs/cheat-escape-from-tarkov) (215)
+- [Dev-Samsoor/Fl-Studio-2024](https://github.com/Dev-Samsoor/Fl-Studio-2024) (215)
+- [Davidogola/Discord-AllinOne-Tool](https://github.com/Davidogola/Discord-AllinOne-Tool) (215)
