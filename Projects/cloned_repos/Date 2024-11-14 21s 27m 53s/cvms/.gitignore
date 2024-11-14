@@ -1,0 +1,25 @@
+# exclude binary files
+bin
+bin/*
+
+# personal
+TODO
+UNUSED
+
+# .DS_Store
+.DS_Store
+**/.DS_Store
+
+# test envs
+.env.test
+tests/test.go
+
+# prod envs
+.env
+config.yaml
+docker-compose.override.yaml
+custom-prometheus.yaml
+
+# IDEA editor
+.idea
+**/.idea

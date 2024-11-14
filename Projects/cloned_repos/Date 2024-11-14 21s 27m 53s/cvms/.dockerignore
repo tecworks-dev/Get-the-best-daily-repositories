@@ -1,0 +1,21 @@
+# state
+.git
+.github
+.idea
+.*ignore
+
+# etc..
+docs
+bin
+scripts
+.image
+
+# dev
+deploy.sh
+prometheus.*
+docker-compose.*
+tests/**
+
+# personal
+TODO
+UNUSED

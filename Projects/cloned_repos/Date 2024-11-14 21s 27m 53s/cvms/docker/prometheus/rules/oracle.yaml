@@ -1,0 +1,22 @@
+groups:
+  - name: OraclePackage
+    rules:
+      - alert: IncreasingMissCounterOver30%During1h
+        expr: (delta(cvms_oracle_miss_counter[1h]) / on (chain_id) group_left delta(cvms_oracle_block_height[1h])) * on (chain_id) group_left cvms_oracle_vote_period > 0.30
+        for:
+        labels:
+          severity: critical
+        annotations:
+          summary: The Oracle Miss Counter for the network {{ $labels.chain }}-{{ $labels.chain_id }} is increasing by over 30% during the past hour
+
+      - alert: OracleUptimeUnder50%
+        expr: |
+          (
+            (cvms_oracle_vote_window - on (chain_id) group_right () cvms_oracle_miss_counter)
+              / on (chain_id) group_left ()
+            cvms_oracle_vote_window
+          ) < 0.5
+        labels:
+          severity: critical
+        annotations:
+          summary: The Validator's Oracle vote rate is too low for the {{ $labels.chain }}-{{ $labels.chain_id }} network

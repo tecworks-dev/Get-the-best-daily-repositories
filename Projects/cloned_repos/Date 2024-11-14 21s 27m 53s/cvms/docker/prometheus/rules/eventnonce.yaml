@@ -1,0 +1,21 @@
+groups:
+  - name: EventNoncePackage
+    rules:
+      - alert: CosmosEventNonceDiffOver0
+        expr: (cvms_eventnonce_highest_nonce - on (chain_id) group_right cvms_eventnonce_nonce) > 0
+        for: 15m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'Validator node event nonce is behind in {{ $labels.chain }}'
+          description: '{{ $labels.chain }} has an event nonce that is {{ $value }} behind other validators.'
+
+      - alert: CosmosEventNonceDiffOver1h
+        expr: (cvms_eventnonce_highest_nonce - on (chain_id) group_right cvms_eventnonce_nonce) > 0
+        for: 1h
+        labels:
+          severity: critical
+        annotations:
+          summary: 'Validator node event nonce is behind in {{ $labels.chain }} during 1h'
+          description: |
+            The event nonce for {{ $labels.chain }} is more than {{ $value }} behind other validators. Immediate action is required.
