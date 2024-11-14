@@ -1,0 +1,21 @@
+groups:
+  - name: BlockPackage
+    rules:
+      # - alert: LastestBlockTimeDiffOver60s
+      #   expr: (time() - cvms_block_timestamp) > 60
+      #   for: 30s
+      #   labels:
+      #     severity: warning
+      #   annotations:
+      #     summary: 'Latest Block Timestamp is over 60 seconds from now'
+      #     description: |
+      #       The block timestamp for the {{ $labels.chain }} chain at {{ $labels.endpoint }} has exceeded 60 seconds. Please check the synchronization status of the node.
+
+      - alert: LastestBlockTimeDiffOver300s
+        expr: (time() - cvms_block_timestamp) > 300
+        labels:
+          severity: critical
+        annotations:
+          summary: 'The {{ $labels.chain }}-{{ $labels.chain_id }} latest block timestamp has exceeded 5 minutes'
+          description: |
+            The block timestamp at {{ $labels.endpoint }} has exceeded 5 minutes. Please check the node's synchronization status immediately.

@@ -1,0 +1,10 @@
+groups:
+  - name: YodaPackage
+    rules:
+      - alert: BandYodaStatusInactivated
+        expr: cvms_yoda_status == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'The Yoda status of the validator has been deactivated in the {{ $labels.chain }}-{{ $labels.chain_id }} network'

@@ -1,0 +1,497 @@
+{
+  "annotations": {
+    "list": [
+      {
+        "builtIn": 1,
+        "datasource": {
+          "type": "grafana",
+          "uid": "-- Grafana --"
+        },
+        "enable": true,
+        "hide": true,
+        "iconColor": "rgba(0, 211, 255, 1)",
+        "name": "Annotations & Alerts",
+        "type": "dashboard"
+      }
+    ]
+  },
+  "editable": true,
+  "fiscalYearStartMonth": 0,
+  "graphTooltip": 0,
+  "id": 2,
+  "links": [],
+  "panels": [
+    {
+      "description": "",
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 4,
+        "w": 24,
+        "x": 0,
+        "y": 0
+      },
+      "id": 5,
+      "options": {
+        "code": {
+          "language": "plaintext",
+          "showLineNumbers": false,
+          "showMiniMap": false
+        },
+        "content": "<!-- Main content -->\n<div style=\"display: flex; justify-content: space-between; align-items: center;\">\n  <!-- H2 with a link -->\n   <a href=\"https://github.com/cosmostation/cvms\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\">\n    <h2 style=\"margin-right: 10px;\">Cosmos Validator Monitoring Service (CVMS) 🌌 🔭</h2>\n  </a> \n  <!-- \"Powered by Cosmostation\" on the right -->\n  <div style=\"display: flex; align-items: center;\">\n    <a href=\"https://cosmostation.io\" target=\"_blank\" style=\"text-decoration: none; color: inherit;\">\n        <span>Powered by Cosmostation </span>\n        <img src=\"https://raw.githubusercontent.com/cosmostation/chainlist/refs/heads/main/resource/cosmostation/cosmostation_color.svg\" alt=\"Logo\" style=\"height: 30px; margin-left: 5px;\">\n    </a>\n  </div>\n</div>\n\n<!-- Paragraph below the header -->\n<p>\n  The Cosmos Validator Monitoring Service (CVMS) is an open-source, integrated monitoring system designed for validators and network in the Cosmos app chain ecosystem.<br/>\n  This public dashboard is part of the beta launch, with the open-source repository coming soon.\n</p>\n<p>\n  <a href=\"https://public-cosmos-vms.cosmostation.io/d/be37h6ce99dz4e/network-duty-dashboard?from=now-30m\" target=\"_blank\" style=\"text-decoration: none; color: #1E90FF;\">\n    👉 Validator Duty Overview Click Here\n  </a> \n  <a href=\"https://public-cosmos-vms.cosmostation.io\" target=\"_blank\" style=\"text-decoration: none; color: #1E90FF;\">\n    👉 Validator Consensus Overview Click Here\n  </a> \n</p>",
+        "mode": "html"
+      },
+      "pluginVersion": "11.3.0",
+      "title": "",
+      "transparent": true,
+      "type": "text"
+    },
+    {
+      "datasource": {
+        "default": true,
+        "type": "prometheus",
+        "uid": "cvms_exporter_db"
+      },
+      "description": "The golden time means you should recover back up in consensus in specific duration. if not, your validator node will be jailed by onchain parameter ",
+      "fieldConfig": {
+        "defaults": {
+          "color": {
+            "mode": "thresholds"
+          },
+          "custom": {
+            "align": "auto",
+            "cellOptions": {
+              "type": "color-text",
+              "wrapText": false
+            },
+            "filterable": true,
+            "inspect": false
+          },
+          "mappings": [],
+          "thresholds": {
+            "mode": "absolute",
+            "steps": [
+              {
+                "color": "text",
+                "value": null
+              }
+            ]
+          },
+          "unit": "s"
+        },
+        "overrides": [
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Value"
+            },
+            "properties": [
+              {
+                "id": "displayName",
+                "value": "Golden Time"
+              },
+              {
+                "id": "mappings",
+                "value": [
+                  {
+                    "options": {
+                      "from": 0,
+                      "result": {
+                        "color": "red",
+                        "index": 0
+                      },
+                      "to": 3600
+                    },
+                    "type": "range"
+                  },
+                  {
+                    "options": {
+                      "from": 3600,
+                      "result": {
+                        "color": "yellow",
+                        "index": 1
+                      },
+                      "to": 7200
+                    },
+                    "type": "range"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "Time"
+            },
+            "properties": [
+              {
+                "id": "custom.hidden",
+                "value": true
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "chain"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 193
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "moniker"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 148
+              }
+            ]
+          },
+          {
+            "matcher": {
+              "id": "byName",
+              "options": "chain_id"
+            },
+            "properties": [
+              {
+                "id": "custom.width",
+                "value": 178
+              }
+            ]
+          }
+        ]
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 4
+      },
+      "id": 2,
+      "options": {
+        "cellHeight": "sm",
+        "footer": {
+          "countRows": false,
+          "enablePagination": false,
+          "fields": [],
+          "reducer": [],
+          "show": false
+        },
+        "frameIndex": 0,
+        "showHeader": true,
+        "sortBy": [
+          {
+            "desc": false,
+            "displayName": "Golden Time"
+          }
+        ]
+      },
+      "pluginVersion": "11.3.0",
+      "targets": [
+        {
+          "datasource": {
+            "type": "prometheus",
+            "uid": "cvms_exporter_db"
+          },
+          "editorMode": "code",
+          "exemplar": false,
+          "expr": "  sum without (proposer_address, validator_consensus_address, validator_opeartor_address, instance, job, package, service) (\n      ceil(cvms_uptime_signed_blocks_window * (1 - cvms_uptime_min_signed_per_window))\n    - on (chain, chain_id) group_right ()\n      cvms_uptime_missed_blocks_counter\n  )\n* on (chain_id) group_left () (min by (chain_id) (60 / delta(cvms_block_height[1m])))",
+          "format": "table",
+          "instant": true,
+          "interval": "",
+          "legendFormat": "",
+          "range": false,
+          "refId": "A"
+        }
+      ],
+      "title": "Validator Golden Timer",
+      "transparent": true,
+      "type": "table"
+    },
+    {
+      "datasource": {
+        "default": false,
+        "type": "grafana-postgresql-datasource",
+        "uid": "cvms_indexer_db"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 34,
+        "w": 24,
+        "x": 0,
+        "y": 11
+      },
+      "id": 1,
+      "options": {
+        "allData": {},
+        "config": {},
+        "data": [],
+        "imgFormat": "png",
+        "layout": {
+          "font": {
+            "family": "Inter, Helvetica, Arial, sans-serif"
+          },
+          "margin": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          },
+          "title": {
+            "automargin": true
+          },
+          "xaxis": {
+            "automargin": true,
+            "autorange": true,
+            "type": "date"
+          },
+          "yaxis": {
+            "automargin": true,
+            "autorange": true
+          }
+        },
+        "onclick": "// Event handling\ntry {\n  const { type: eventType, data: eventData } = event;\n  switch (eventType) {\n    case 'click':\n      const clickedPoints = eventData.points;\n      \n      if (clickedPoints.length > 0) {\n        const clickedPoint = clickedPoints[0]; // Get the first clicked point (you can adjust this for multiple clicks)\n\n        // Get the text value (assumed to be like: 'x: 16952481<br>y: agoric-Cosmostation<br>z: Missed')\n        const textValue = clickedPoint.text;\n\n        // Parse height (x), chainName (y before '-'), and status (z) from textValue\n        const height = textValue.match(/x:\\s*(\\d+)/)[1];  // Extract height after 'x:'\n        const chainName = textValue.match(/y:\\s*([\\w-]+)/)[1].split('-')[0];  // Extract chainName before '-'\n        const _ = textValue.match(/z:\\s*(\\w+)/)[1];  // Extract status after 'z:'\n\n        // Generate the link URL with current x, y, z values (change 'your-url' as needed)\n        const linkUrl = `https://www.mintscan.io/${chainName}/block/${height}`;\n\n        // Create a new window with the link (you can change this to another type of action if needed)\n        window.open(linkUrl, '_blank');\n      }\n    default:\n      console.log('Unhandled event type:', eventType, eventData);\n  }\n} catch (error) {\n  console.error('Error in onclick handler:', error);\n}",
+        "resScale": 2,
+        "script": "// Function to map the voted status to its corresponding meaning\nfunction getStatusMeaning(status) {\n  switch(status) {\n    case 0:\n      return 'Inactive';\n    case 1:\n      return 'Missed';\n    case 2:\n      return 'Voted';\n    case 3:\n      return 'Proposed';\n    default:\n      return 'Unknown';\n  }\n}\n\n// Extracting the SQL data\nlet series = data.series[0];  // Access the data series\nif (!series || series.length === 0 || series.fields[0].values.length === 0) {\n  // Query result has no records, so skip the chart rendering\n  return {\n      data: [],\n    layout: {\n      title: 'No Data Available',\n      height: 10, // Reduce panel height\n      margin: {\n        l: 20,  // Left margin\n        r: 20,  // Right margin\n        t: 40,  // Top margin\n        b: 40   // Bottom margin\n      }\n    }\n  };\n}\n\nlet height = series.fields[0];  // Block height\nlet voted = series.fields[1];   // Voted status (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nlet validator = series.fields[2]; // Validator (chain_name-moniker combination)\n\n// Get unique validators for the Y-axis\nlet uniqueValidators = [...new Set(validator.values)].sort().reverse();  // Sorted descending\n\n// The X-axis will now use the actual block heights instead of the index\n// The X-axis index is fixed as [0, 1, ..., 49] since we are querying 50 blocks per validator\nlet numBlocks = 100;\nlet xIndex = [...Array(numBlocks).keys()];  // X-axis indices from 0 to 49 (latest 50 blocks)\n\n// Initialize the array for zValues (statuses)\nlet zValues = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(0));\nlet hoverText = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(\"\"));\n\n// Populate zValues with voted data (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nfor (let i = 0; i < voted.values.length; i++) {\n  let rowIndex = uniqueValidators.indexOf(validator.values[i]);  // Find the correct row for the validator\n  let colIndex = i % numBlocks;  // Cycle through the 50 columns for each validator\n  if (rowIndex !== -1 && colIndex !== -1) {\n    zValues[rowIndex][colIndex] = voted.values[i];  // Assign the voted status\n    let statusMeaning = getStatusMeaning(voted.values[i]);  // Get the status meaning\n    hoverText[rowIndex][colIndex] = `x: ${height.values[i]}<br>y: ${validator.values[i]}<br>z: ${statusMeaning}`;  // Custom hover info with status meaning    \n  }\n}\n\n// Define a continuous color scale for smoother transitions\nlet colorScale = [\n  [0, 'rgba(128, 128, 128, 0.5)'],    // Inactive = gray\n  [0.33, 'rgba(255, 0, 0, 0.5)'],     // Missed = red\n  [0.66, 'rgba(0, 0, 0, 0.5)'],       // Voted = black\n  [1, 'rgba(0, 255, 0, 0.5)'],        // Proposed = green\n];\n\n// Return the heatmap configuration for Plotly\nreturn {\n  data: [{\n    z: zValues,               // 2D array of statuses (0, 1, 2, 3)\n    x: xIndex,\n    y: uniqueValidators,      // Validators for Y-axis\n    type: 'heatmap',          // Plotly heatmap type\n    colorscale: colorScale,   // Use color scale for statuses\n    showscale: false,         // Hide the color scale bar\n    zmin: 0,                  // Set the minimum value for z (status)\n    zmax: 3,                  // Set the maximum value for z (status)\n    xgap: 5,                  // Add gap between cells along the X-axis\n    ygap: 5,                   // Add gap between cells along the Y-axis\n    hoverinfo: 'text',        // Use custom hover text\n    text: hoverText           // Use the hoverText array for displaying custom hover info    \n  }],\n  layout: {\n    xaxis: {\n      type: 'linear',\n      showgrid: true,          // Ensure gridlines on X-axis\n      tickformat: '.0f',\n      tickangle: -45,          // Rotate labels for better readability\n      title: 'Block Height',    // Label for the X-axis\n      showticklabels: false    // **Hide the X-axis labels**\n    },\n    yaxis: {\n      tickmode: 'array',        // Use tickmode 'array' to manually set Y-axis labels\n      tickvals: uniqueValidators, // Set tick values to all unique validators (sorted alphabetically)\n      ticktext: uniqueValidators, // Display all validators as text on Y-axis (sorted alphabetically)\n      showgrid: true            // Ensure gridlines on Y-axis\n    },\n    margin: {\n      l: 200,  // Adjust margin for longer validator names\n      t: 20,   // Reduce top margin\n      b: 120,  // Adjust bottom margin for X-axis labels\n    }\n  }\n};",
+        "syncTimeRange": false,
+        "timeCol": ""
+      },
+      "pluginVersion": "1.8.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "cvms_indexer_db"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": " -- Get the latest 100 blocks for mainnet\nWITH latest_blocks_per_validator AS (\n  SELECT\n    vidx.height,\n    vidx.status,\n    concat(ci.chain_name, '-', ci.chain_id, '-', vi.moniker) as validator,\n    ROW_NUMBER() OVER (PARTITION BY vidx.validator_hex_address_id ORDER BY vidx.height DESC) as row_num\n  FROM\n    voteindexer vidx\n  JOIN\n    meta.chain_info ci ON vidx.chain_info_id = ci.id\n  JOIN\n    meta.validator_info vi ON vidx.validator_hex_address_id = vi.id\n  WHERE ci.mainnet = true     \n)\nSELECT\n  height,\n  status,\n  validator\nFROM\n  latest_blocks_per_validator\nWHERE\n  row_num <= 100\nORDER BY\n  validator ASC, height DESC;\n  \n ",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Mainnet Validator Consensus Vote Status",
+      "transparent": true,
+      "type": "nline-plotlyjs-panel"
+    },
+    {
+      "datasource": {
+        "default": false,
+        "type": "grafana-postgresql-datasource",
+        "uid": "cvms_indexer_db"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 14,
+        "w": 24,
+        "x": 0,
+        "y": 45
+      },
+      "id": 4,
+      "options": {
+        "allData": {},
+        "config": {},
+        "data": [],
+        "imgFormat": "png",
+        "layout": {
+          "font": {
+            "family": "Inter, Helvetica, Arial, sans-serif"
+          },
+          "margin": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          },
+          "title": {
+            "automargin": true
+          },
+          "xaxis": {
+            "automargin": true,
+            "autorange": true,
+            "type": "date"
+          },
+          "yaxis": {
+            "automargin": true,
+            "autorange": true
+          }
+        },
+        "onclick": "// Event handling\ntry {\n  const { type: eventType, data: eventData } = event;\n  switch (eventType) {\n    case 'click':\n      const clickedPoints = eventData.points;\n      \n      if (clickedPoints.length > 0) {\n        const clickedPoint = clickedPoints[0]; // Get the first clicked point (you can adjust this for multiple clicks)\n\n        // Get the text value (assumed to be like: 'x: 16952481<br>y: agoric-Cosmostation<br>z: Missed')\n        const textValue = clickedPoint.text;\n\n        // Parse height (x), chainName (y before '-'), and status (z) from textValue\n        const height = textValue.match(/x:\\s*(\\d+)/)[1];  // Extract height after 'x:'\n        const chainName = textValue.match(/y:\\s*([\\w-]+)/)[1].split('-')[0];  // Extract chainName before '-'\n        const _ = textValue.match(/z:\\s*(\\w+)/)[1];  // Extract status after 'z:'\n\n        // Generate the link URL with current x, y, z values (change 'your-url' as needed)\n        const linkUrl = `https://www.mintscan.io/${chainName}/block/${height}`;\n\n        // Create a new window with the link (you can change this to another type of action if needed)\n        window.open(linkUrl, '_blank');\n      }\n    default:\n      console.log('Unhandled event type:', eventType, eventData);\n  }\n} catch (error) {\n  console.error('Error in onclick handler:', error);\n}",
+        "resScale": 2,
+        "script": "// Function to map the voted status to its corresponding meaning\nfunction getStatusMeaning(status) {\n  switch(status) {\n    case 0:\n      return 'Inactive';\n    case 1:\n      return 'Missed';\n    case 2:\n      return 'Voted';\n    case 3:\n      return 'Proposed';\n    default:\n      return 'Unknown';\n  }\n}\n\n// Extracting the SQL data\nlet series = data.series[0];  // Access the data series\nif (!series || series.length === 0 || series.fields[0].values.length === 0) {\n  // Query result has no records, so skip the chart rendering\n  return {\n      data: [],\n    layout: {\n      title: 'No Data Available',\n      height: 10, // Reduce panel height\n      margin: {\n        l: 20,  // Left margin\n        r: 20,  // Right margin\n        t: 40,  // Top margin\n        b: 40   // Bottom margin\n      }\n    }\n  };\n}\n\nlet height = series.fields[0];  // Block height\nlet voted = series.fields[1];   // Voted status (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nlet validator = series.fields[2]; // Validator (chain_name-moniker combination)\n\n// Get unique validators for the Y-axis\nlet uniqueValidators = [...new Set(validator.values)].sort().reverse();  // Sorted descending\n\n// The X-axis will now use the actual block heights instead of the index\n// The X-axis index is fixed as [0, 1, ..., 49] since we are querying 50 blocks per validator\nlet numBlocks = 100;\nlet xIndex = [...Array(numBlocks).keys()];  // X-axis indices from 0 to 49 (latest 50 blocks)\n\n// Initialize the array for zValues (statuses)\nlet zValues = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(0));\nlet hoverText = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(\"\"));\n\n// Populate zValues with voted data (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nfor (let i = 0; i < voted.values.length; i++) {\n  let rowIndex = uniqueValidators.indexOf(validator.values[i]);  // Find the correct row for the validator\n  let colIndex = i % numBlocks;  // Cycle through the 50 columns for each validator\n  if (rowIndex !== -1 && colIndex !== -1) {\n    zValues[rowIndex][colIndex] = voted.values[i];  // Assign the voted status\n    let statusMeaning = getStatusMeaning(voted.values[i]);  // Get the status meaning\n    hoverText[rowIndex][colIndex] = `x: ${height.values[i]}<br>y: ${validator.values[i]}<br>z: ${statusMeaning}`;  // Custom hover info with status meaning    \n  }\n}\n\n// Define a continuous color scale for smoother transitions\nlet colorScale = [\n  [0, 'rgba(128, 128, 128, 0.5)'],    // Inactive = gray\n  [0.33, 'rgba(255, 0, 0, 0.5)'],     // Missed = red\n  [0.66, 'rgba(0, 0, 0, 0.5)'],       // Voted = black\n  [1, 'rgba(0, 255, 0, 0.5)'],        // Proposed = green\n];\n\n// Return the heatmap configuration for Plotly\nreturn {\n  data: [{\n    z: zValues,               // 2D array of statuses (0, 1, 2, 3)\n    x: xIndex,\n    y: uniqueValidators,      // Validators for Y-axis\n    type: 'heatmap',          // Plotly heatmap type\n    colorscale: colorScale,   // Use color scale for statuses\n    showscale: false,         // Hide the color scale bar\n    zmin: 0,                  // Set the minimum value for z (status)\n    zmax: 3,                  // Set the maximum value for z (status)\n    xgap: 5,                  // Add gap between cells along the X-axis\n    ygap: 5,                   // Add gap between cells along the Y-axis\n    hoverinfo: 'text',        // Use custom hover text\n    text: hoverText           // Use the hoverText array for displaying custom hover info    \n  }],\n  layout: {\n    xaxis: {\n      type: 'linear',\n      showgrid: true,          // Ensure gridlines on X-axis\n      tickformat: '.0f',\n      tickangle: -45,          // Rotate labels for better readability\n      title: 'Block Height',    // Label for the X-axis\n      showticklabels: false    // **Hide the X-axis labels**\n    },\n    yaxis: {\n      tickmode: 'array',        // Use tickmode 'array' to manually set Y-axis labels\n      tickvals: uniqueValidators, // Set tick values to all unique validators (sorted alphabetically)\n      ticktext: uniqueValidators, // Display all validators as text on Y-axis (sorted alphabetically)\n      showgrid: true            // Ensure gridlines on Y-axis\n    },\n    margin: {\n      l: 200,  // Adjust margin for longer validator names\n      t: 20,   // Reduce top margin\n      b: 120,  // Adjust bottom margin for X-axis labels\n    }\n  }\n};",
+        "syncTimeRange": false,
+        "timeCol": ""
+      },
+      "pluginVersion": "1.8.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "cvms_indexer_db"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "  -- Get the latest 100 blocks for testnet\nWITH latest_blocks_per_validator AS (\n  SELECT\n    vidx.height,\n    vidx.status,\n    concat(ci.chain_name, '-', ci.chain_id, '-', vi.moniker) as validator,\n    ROW_NUMBER() OVER (PARTITION BY vidx.validator_hex_address_id ORDER BY vidx.height DESC) as row_num\n  FROM\n    voteindexer vidx\n  JOIN\n    meta.chain_info ci ON vidx.chain_info_id = ci.id\n  JOIN\n    meta.validator_info vi ON vidx.validator_hex_address_id = vi.id\n  WHERE ci.mainnet = false     \n)\nSELECT\n  height,\n  status,\n  validator\nFROM\n  latest_blocks_per_validator\nWHERE\n  row_num <= 100\nORDER BY\n  validator ASC, height DESC;",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Testnet Validator Consensus Vote Status",
+      "transparent": true,
+      "type": "nline-plotlyjs-panel"
+    },
+    {
+      "datasource": {
+        "default": false,
+        "type": "grafana-postgresql-datasource",
+        "uid": "cvms_indexer_db"
+      },
+      "fieldConfig": {
+        "defaults": {},
+        "overrides": []
+      },
+      "gridPos": {
+        "h": 7,
+        "w": 24,
+        "x": 0,
+        "y": 59
+      },
+      "id": 3,
+      "options": {
+        "allData": {},
+        "config": {},
+        "data": [],
+        "imgFormat": "png",
+        "layout": {
+          "font": {
+            "family": "Inter, Helvetica, Arial, sans-serif"
+          },
+          "margin": {
+            "b": 0,
+            "l": 0,
+            "r": 0,
+            "t": 0
+          },
+          "title": {
+            "automargin": true
+          },
+          "xaxis": {
+            "automargin": true,
+            "autorange": true,
+            "type": "date"
+          },
+          "yaxis": {
+            "automargin": true,
+            "autorange": true
+          }
+        },
+        "onclick": "// Event handling\ntry {\n  const { type: eventType, data: eventData } = event;\n  switch (eventType) {\n    case 'click':\n      const clickedPoints = eventData.points;\n      \n      if (clickedPoints.length > 0) {\n        const clickedPoint = clickedPoints[0]; // Get the first clicked point (you can adjust this for multiple clicks)\n\n        // Get the text value (assumed to be like: 'x: 16952481<br>y: agoric-Cosmostation<br>z: Missed')\n        const textValue = clickedPoint.text;\n\n        // Parse height (x), chainName (y before '-'), and status (z) from textValue\n        const height = textValue.match(/x:\\s*(\\d+)/)[1];  // Extract height after 'x:'\n        const chainName = textValue.match(/y:\\s*([\\w-]+)/)[1].split('-')[0];  // Extract chainName before '-'\n        const _ = textValue.match(/z:\\s*(\\w+)/)[1];  // Extract status after 'z:'\n\n        // Generate the link URL with current x, y, z values (change 'your-url' as needed)\n        const linkUrl = `https://www.mintscan.io/${chainName}/block/${height}`;\n\n        // Create a new window with the link (you can change this to another type of action if needed)\n        window.open(linkUrl, '_blank');\n      }\n    default:\n      console.log('Unhandled event type:', eventType, eventData);\n  }\n} catch (error) {\n  console.error('Error in onclick handler:', error);\n}",
+        "resScale": 2,
+        "script": "// Function to map the ve status to its corresponding meaning\n// ref; https://github.com/cometbft/cometbft/blob/v0.38.x/proto/tendermint/types/validator.pb.go\nfunction getStatusMeaning(status) {\n  switch(status) {\n    case 1:\n      return 'Absent';\n    case 2:\n      return 'Commit';\n    case 3:\n      return 'Nil';\n    default:\n      return 'Unknown';\n  }\n}\n\n// Extracting the SQL data\nlet series = data.series[0];  // Access the data series\nif (!series || series.fields[0].values.length === 0) {\n  // No data available, so adjust the layout accordingly\n  return {\n    data: [],\n    layout: {\n      title: 'No Data Available',\n      height: 100,  // Set a small height if no data\n      margin: {\n        l: 20,  // Left margin\n        r: 20,  // Right margin\n        t: 40,  // Top margin\n        b: 40   // Bottom margin\n      }\n    }\n  };\n}\n\nlet height = series.fields[0];  // Block height\nlet voted = series.fields[1];   // Voted status (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nlet validator = series.fields[2]; // Validator (chain_name-moniker combination)\n// TOOD: let veLength = series.fields[3];\n\n// Get unique validators for the Y-axis\nlet uniqueValidators = [...new Set(validator.values)].sort().reverse();  // Sorted descending\n\n// The X-axis will now use the actual block heights instead of the index\n// The X-axis index is fixed as [0, 1, ..., 49] since we are querying 50 blocks per validator\nlet numBlocks = 100;\nlet xIndex = [...Array(numBlocks).keys()];  // X-axis indices from 0 to 49 (latest 50 blocks)\n\n// Initialize the array for zValues (statuses)\nlet zValues = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(0));\nlet hoverText = Array(uniqueValidators.length).fill(null).map(() => Array(numBlocks).fill(\"\"));\n\n// Populate zValues with voted data (0 = Inactive, 1 = Missed, 2 = Voted, 3 = Proposed)\nfor (let i = 0; i < voted.values.length; i++) {\n  let rowIndex = uniqueValidators.indexOf(validator.values[i]);  // Find the correct row for the validator\n  let colIndex = i % numBlocks;  // Cycle through the 50 columns for each validator\n  if (rowIndex !== -1 && colIndex !== -1) {\n    zValues[rowIndex][colIndex] = voted.values[i];  // Assign the voted status\n    let statusMeaning = getStatusMeaning(voted.values[i]);  // Get the status meaning\n    hoverText[rowIndex][colIndex] = `x: ${height.values[i]}<br>y: ${validator.values[i]}<br>z: ${statusMeaning}`;  // Custom hover info with status meaning    \n  }\n}\n\n// Define a continuous color scale for smoother transitions\nlet colorScale = [\n  [0, 'rgba(128, 128, 128, 0.5)'],    // Inactive = gray\n  [0.33, 'rgba(255, 0, 0, 0.5)'],     // Missed = red\n  [0.66, 'rgba(0, 0, 0, 0.5)'],       // Voted = black\n  [1, 'rgba(255, 0, 0, 0.5)'],        // Proposed = green\n];\n\n// Return the heatmap configuration for Plotly\nreturn {\n  data: [{\n    z: zValues,               // 2D array of statuses (0, 1, 2, 3)\n    x: xIndex,\n    y: uniqueValidators,      // Validators for Y-axis\n    type: 'heatmap',          // Plotly heatmap type\n    colorscale: colorScale,   // Use color scale for statuses\n    showscale: false,         // Hide the color scale bar\n    zmin: 0,                  // Set the minimum value for z (status)\n    zmax: 3,                  // Set the maximum value for z (status)\n    xgap: 5,                  // Add gap between cells along the X-axis\n    ygap: 5,                   // Add gap between cells along the Y-axis\n    hoverinfo: 'text',        // Use custom hover text\n    text: hoverText           // Use the hoverText array for displaying custom hover info    \n  }],\n  layout: {\n    xaxis: {\n      type: 'linear',\n      showgrid: true,          // Ensure gridlines on X-axis\n      tickformat: '.0f',\n      tickangle: -45,          // Rotate labels for better readability\n      title: 'Block Height',    // Label for the X-axis\n      showticklabels: false    // **Hide the X-axis labels**\n    },\n    yaxis: {\n      tickmode: 'array',        // Use tickmode 'array' to manually set Y-axis labels\n      tickvals: uniqueValidators, // Set tick values to all unique validators (sorted alphabetically)\n      ticktext: uniqueValidators, // Display all validators as text on Y-axis (sorted alphabetically)\n      showgrid: true            // Ensure gridlines on Y-axis\n    },\n    margin: {\n      l: 200,  // Adjust margin for longer validator names\n      t: 20,   // Reduce top margin\n      b: 120,  // Adjust bottom margin for X-axis labels\n    }\n  }\n};",
+        "syncTimeRange": false,
+        "timeCol": ""
+      },
+      "pluginVersion": "1.8.1",
+      "targets": [
+        {
+          "datasource": {
+            "type": "grafana-postgresql-datasource",
+            "uid": "cvms_indexer_db"
+          },
+          "editorMode": "code",
+          "format": "table",
+          "rawQuery": true,
+          "rawSql": "-- Get the latest 100 blocks for ve\nWITH latest_blocks_per_validator AS (\n  SELECT\n    veidx.height,\n    veidx.status,\n    veidx.vote_extension_length as ve_length,\n    concat(ci.chain_name, '-', ci.chain_id ,'-', vi.moniker) as validator,\n    ROW_NUMBER() OVER (PARTITION BY veidx.validator_hex_address_id ORDER BY veidx.height DESC) as row_num\n  FROM\n    veindexer veidx\n  JOIN\n    meta.chain_info ci ON veidx.chain_info_id = ci.id\n  JOIN\n    meta.validator_info vi ON veidx.validator_hex_address_id = vi.id\n)\nSELECT\n  height,\n  status,\n  validator,\n  ve_length\nFROM\n  latest_blocks_per_validator\nWHERE\n  row_num <= 100\nORDER BY\n  validator ASC, height DESC;\n  \n",
+          "refId": "A",
+          "sql": {
+            "columns": [
+              {
+                "parameters": [],
+                "type": "function"
+              }
+            ],
+            "groupBy": [
+              {
+                "property": {
+                  "type": "string"
+                },
+                "type": "groupBy"
+              }
+            ],
+            "limit": 50
+          }
+        }
+      ],
+      "title": "Validator Extension Vote Status",
+      "transparent": true,
+      "type": "nline-plotlyjs-panel"
+    }
+  ],
+  "preload": false,
+  "refresh": "5s",
+  "schemaVersion": 40,
+  "tags": ["consensus-vote-indexer", "extension-vote-indexer"],
+  "templating": {
+    "list": []
+  },
+  "time": {
+    "from": "now-5m",
+    "to": "now"
+  },
+  "timepicker": {},
+  "timezone": "browser",
+  "title": "Validator Consensus Dashboard",
+  "uid": "be0fqrlk919moe",
+  "version": 2,
+  "weekStart": ""
+}

@@ -1,0 +1,34 @@
+groups:
+  - name: BalancePackage
+    rules:
+      - alert: AxelarEVMBroadcasterBalanceUnder10
+        expr: cvms_balance_remaining_amount{balance_address='axelar146kdz9stlycvacm03hg0t5fxq6jszlc4gtxgpr'} < 10
+        for: 5m
+        labels:
+          severity: info
+        annotations:
+          summary: 'The broadcaster ({{ $labels.balance_address }}) has less than 10 tokens remaining. Current balance: {{ $value }}'
+
+      - alert: KavaOracleBroadcasterBalanceUnder10
+        expr: cvms_balance_remaining_amount{balance_address='kava1ujfrlcd0ted58mzplnyxzklsw0sqevlgxndanp'} < 10
+        for: 5m
+        labels:
+          severity: info
+        annotations:
+          summary: 'The broadcaster ({{ $labels.balance_address }}) has less than 10 tokens remaining. Current balance: {{ $value }}'
+
+      - alert: InjectiveEventnonceBroadcasterBalanceUnder1
+        expr: cvms_balance_remaining_amount{balance_address='inj1mtxhcchfyvvs6u4nmnylgkxvkrax7c2la69l8w'} < 1
+        for: 5m
+        labels:
+          severity: info
+        annotations:
+          summary: 'The broadcaster ({{ $labels.balance_address }}) has less than 1 tokens remaining. Current balance: {{ $value }}'
+
+      - alert: NibiruOracleBroadcasterBalanceUnder10
+        expr: cvms_balance_remaining_amount{balance_address='nibi14zc23q3qcewscy7wnt3s95h32chytenqxe633l'} < 10
+        for: 5m
+        labels:
+          severity: info
+        annotations:
+          summary: 'The broadcaster ({{ $labels.balance_address }}) has less than 10 tokens remaining. Current balance: {{ $value }}'

@@ -1,0 +1,11 @@
+---
+demochain:
+  protocol_type: cosmos
+  support_asset:
+    denom: stake
+    decimal: 6
+  packages:
+    - block
+    - upgrade
+    - uptime
+    - voteindexer

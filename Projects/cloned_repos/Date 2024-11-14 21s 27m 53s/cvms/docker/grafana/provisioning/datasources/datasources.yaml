@@ -1,0 +1,28 @@
+---
+apiVersion: 1
+
+deleteDatasources:
+  - name: CVMSExporterDB
+  - name: CVMSIndexerDB
+
+datasources:
+  - name: CVMSExporterDB
+    type: prometheus
+    access: proxy
+    orgId: 1
+    uid: cvms_exporter_db
+    url: http://cvms-exporter-db:9090
+    editable: false
+
+  - name: CVMSIndexerDB
+    type: postgres
+    uid: cvms_indexer_db
+    url: ${DB_HOST}:${DB_PORT}
+    user: ${DB_USER}
+    secureJsonData:
+      password: ${DB_PASSWORD}
+    jsonData:
+      database: cvms
+      sslmode: 'disable' # disable/require/verify-ca/verify-full
+      postgresVersion: 1604 # 903=9.3, 904=9.4, 905=9.5, 906=9.6, 1000=10
+      timescaledb: false

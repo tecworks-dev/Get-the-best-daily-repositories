@@ -1,0 +1,26 @@
+groups:
+  - name: Upgrade
+    rules:
+      - alert: OnchainUpgradeRegistered
+        expr: (cvms_upgrade_remaining_time - cvms_upgrade_remaining_time offset 30m > 3600) and (cvms_upgrade_remaining_time offset 30m == 0)
+        labels:
+          severity: info
+          channel: upgrade
+        annotations:
+          summary: 'An upgrade named {{ $labels.upgrade_name }} has been registered on the {{ $labels.chain }}-{{ $labels.chain_id }} network.'
+
+      - alert: onchain_upgrade_remaining_3h
+        expr: cvms_upgrade_remaining_time != 0 and cvms_upgrade_remaining_time < 10800
+        labels:
+          severity: info
+          channel: upgrade
+        annotations:
+          summary: 'The upgrade {{ $labels.upgrade_name }} on the {{ $labels.chain }}-{{ $labels.chain_id }} network is approximately 3 hours away.'
+
+      - alert: onchain_upgrade_remaining_1h
+        expr: cvms_upgrade_remaining_time != 0 and cvms_upgrade_remaining_time < 3600
+        annotations:
+          summary: 'The upgrade {{ $labels.upgrade_name }} on the {{ $labels.chain }}-{{ $labels.chain_id }} network is approximately 1 hour away.'
+        labels:
+          severity: info
+          channel: upgrade

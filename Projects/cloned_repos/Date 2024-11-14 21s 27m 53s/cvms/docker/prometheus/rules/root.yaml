@@ -1,0 +1,54 @@
+groups:
+  - name: Prometheus
+    rules:
+      - alert: CVMSExporterDown
+        expr: up == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: 'One of CVMS Service was down.'
+          description: |
+            The {{ $labels.job }} was down. you should recover this service right now to keep CVMS monitoring service.
+
+      - alert: Found failed evaludation rules in prometheus
+        expr: increase(prometheus_rule_evaluation_failures_total[5m]) > 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: 'Some of rules in CVMS was failed to be evaludated.'
+          description: |
+            Some of rules in {{ $labels.rule_group }} is not normal. Please check the rules ASAP to monitor normally.
+
+  - name: Root
+    rules:
+      - alert: FoundUnnormalPackageOps
+        expr: changes(cvms_root_processed_ops_total[3m]) < 1
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'There are abnormal packages in the CVMS service.'
+          description: |
+            The {{ $labels.package }} service being collected from {{ $labels.chain }} is not operating correctly.
+
+      - alert: FoundUnhealthyPackage
+        expr: cvms_root_health_checker == 0
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'There are abnormal packages in the CVMS service.'
+          description: |
+            The {{ $labels.package }} service being collected from {{ $labels.chain }} is not operating correctly.
+
+      - alert: FoundSkippedPackage
+        expr: cvms_root_skip_counter == 1
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'There are skipped packages in the CVMS service.'
+          description: |
+            The {{ $labels.package }} service being collected from {{ $labels.instance_name }} has been skipped.

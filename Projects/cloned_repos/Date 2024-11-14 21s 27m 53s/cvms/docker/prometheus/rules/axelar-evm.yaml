@@ -1,0 +1,10 @@
+groups:
+  - name: AxelarEVMPackage
+    rules:
+      - alert: AxelarEVMChainMaintainerInactive
+        expr: cvms_axelar_evm_maintainer_status == 0
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: 'Axelar EVM Maintainer for `{{ $labels.evm_chain }}` is inactive in {{ $labels.chain_id }}'

@@ -1,0 +1,18 @@
+groups:
+  - name: VoteExtensionIndexerPackage
+    # rules:
+    #   - alert: VoteExtensionIndexerSyncSlow
+    #     expr: (time() - cvms_extension_vote_latest_index_pointer_block_timestamp) > 300
+    #     for: 30s
+    #     labels:
+    #       severity: warning
+    #     annotations:
+    #       summary: The Vote Extension Indexer Package sync is slow to sync blocks for {{ $labels.chain_id }}
+
+    #   - alert: IncreaseRecentExtensionVoteMiss
+    #     expr: increase(cvms_extension_vote_recent_miss_counter[1m]) > 15
+    #     for: 30s
+    #     labels:
+    #       severity: critical
+    #     annotations:
+    #       summary: The validator is missing too many votes in the extension voting for {{ $labels.chain_id }}

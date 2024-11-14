@@ -1,0 +1,21 @@
+---
+apiVersion: 1
+
+providers:
+  - name: 'CVMS Validator Mode'
+    orgId: 1
+    folder: 'Validator Dashboards'
+    type: file
+    disableDeletion: false
+    editable: false
+    options:
+      path: /etc/grafana/provisioning/dashboards/validator
+
+  - name: 'CVMS Network Mode'
+    orgId: 1
+    folder: 'Network Dashboards'
+    type: file
+    disableDeletion: false
+    editable: false
+    options:
+      path: /etc/grafana/provisioning/dashboards/network

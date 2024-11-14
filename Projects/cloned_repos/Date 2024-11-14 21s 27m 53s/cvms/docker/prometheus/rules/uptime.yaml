@@ -1,0 +1,29 @@
+groups:
+  - name: UptimePackage
+    rules:
+      # - alert: IncreasingMissCounterOver30%During1h
+      #   expr: |
+      #     # 30mins ago, the validator is unjailed. but got jailed 
+      #     cvms_uptime_jailed - cvms_uptime_jailed offset 30m > 0 and (cvms_uptime_jailed offset 30m == 0)
+      #   labels:
+      #     severity: critical
+      #   annotations:
+      #     summary: The validator is jailed now in {{ $labels.chain_id }}
+
+      # - alert: UptimeMissCounterIsIncreasing10%During1h
+      #   expr: |
+      #     # miss counter during 1h / blocks during 1h
+      #     (delta(cvms_uptime_missed_blocks_counter[1h]) / on (chain_id) group_left max by (chain_id) (delta(cvms_block_height[1h]))) > 0.1
+      #   labels:
+      #     severity: critical
+      #   annotations:
+      #     summary: The Validator's uptime is decreasing now! Check your validator in {{ $labels.chain }}-{{ $labels.chain_id }} network
+
+      # - alert: Remaining1000BlocksBeforeGettingSlashing
+      #   expr: |
+      #     # max missed - current missed 
+      #     ceil(cvms_uptime_signed_blocks_window * (1 - cvms_uptime_min_signed_per_window)) - on (chain_id) group_right () cvms_uptime_missed_blocks_counter < 1000
+      #   labels:
+      #     severity: critical
+      #   annotations:
+      #     summary: The Validator's is missing too many! Check your validator in {{ $labels.chain }}-{{ $labels.chain_id }} network

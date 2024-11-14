@@ -1,0 +1,159 @@
+services:
+  exporter:
+    build: .
+    image: cosmostation/cvms:latest
+    container_name: cvms-exporter
+    restart: unless-stopped
+    ports: ['${EXPORTER_PORT:-9200}:9200']
+    entrypoint: [/bin/cvms]
+    command:
+      [
+        start,
+        exporter,
+        --config=/var/lib/cvms/config.yaml,
+        --log-color-disable,
+        '${LOG_COLOR_DISABLE:-false}',
+        --log-level,
+        '${LOG_LEVEL:-4}',
+        --port=9200,
+      ]
+    volumes:
+      - ${CONFIG_PATH:-./config.yaml}:/var/lib/cvms/config.yaml:ro
+      - ./docker/cvms/support_chains.yaml:/var/lib/cvms/docker/cvms/support_chains.yaml:ro
+      - ./docker/cvms/custom_chains.yaml:/var/lib/cvms/docker/cvms/custom_chains.yaml:ro
+    networks:
+      - cvms-net
+
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: cvms-exporter-db
+    extra_hosts:
+      - host.docker.internal:host-gateway
+    ports:
+      - ${PROM_SERVER_PORT:-9090}:9090
+    volumes:
+      - ./docker/prometheus:/etc/prometheus:ro
+      - exporter-db-volume:/prometheus:rw
+    command:
+      - --config.file=/etc/prometheus/${PROM_CONFIG_FILE:-prometheus.yaml}
+      - --web.enable-lifecycle
+      - --web.console.libraries=/etc/prometheus/console_libraries
+      - --web.console.templates=/etc/prometheus/consoles
+      - --storage.tsdb.retention.time=${PROM_RETENTION_TIME:-1w}
+    networks:
+      - cvms-net
+    restart: unless-stopped
+    depends_on:
+      - exporter
+
+  indexer:
+    build: .
+    image: cosmostation/cvms:latest
+    container_name: cvms-indexer
+    restart: unless-stopped
+    ports: ['${INDEXER_PORT:-9300}:9300']
+    entrypoint: [/bin/cvms]
+    command:
+      [
+        start,
+        indexer,
+        --config=/var/lib/cvms/config.yaml,
+        --log-color-disable,
+        '${LOG_COLOR_DISABLE:-false}',
+        --log-level,
+        '${LOG_LEVEL:-4}',
+        --port=9300,
+      ]
+    environment:
+      - DB_HOST=cvms-indexer-db
+      - DB_PORT=5432
+      - DB_NAME=cvms
+      - DB_USER=${DB_USER:-cvms}
+      - DB_PASSWORD=${DB_PASSWORD:-mysecretpassword}
+      - DB_RETENTION_PERIOD=${DB_RETENTION_PERIOD:-1h}
+    volumes:
+      - ${CONFIG_PATH:-./config.yaml}:/var/lib/cvms/config.yaml:ro
+      - ./docker/cvms/support_chains.yaml:/var/lib/cvms/docker/cvms/support_chains.yaml:ro
+      - ./docker/cvms/custom_chains.yaml:/var/lib/cvms/docker/cvms/custom_chains.yaml:ro
+    networks:
+      - cvms-net
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:16.4
+    container_name: cvms-indexer-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: cvms
+      POSTGRES_USER: ${DB_USER:-cvms}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-mysecretpassword}
+    ports:
+      - 5432:5432
+    networks:
+      - cvms-net
+    volumes:
+      - ./docker/postgres/schema:/docker-entrypoint-initdb.d/:ro
+      - indexer-db-volume:/var/lib/postgresql/data
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: cvms-grafana
+    restart: unless-stopped
+    volumes:
+      - grafana-volume:/var/lib/grafana:rw
+      - ./docker/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./docker/grafana/grafana.ini:/etc/grafana/grafana.ini:ro
+    environment:
+      # management
+      - GF_SECURITY_ADMIN_USER=${ADMIN_USER:-admin}
+      - GF_SECURITY_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
+      - GF_DASHBOARDS_DEFAULT_HOME_DASHBOARD_PATH=${GRAFANA_HOME_DASHBOARD}
+      - GF_USERS_DEFAULT_THEME=dark
+      - GF_LOG_MODE=console
+      - GF_LOG_LEVEL=critical
+      # public access
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      # applications
+      - DB_HOST=cvms-indexer-db
+      - DB_PORT=5432
+      - DB_NAME=cvms
+      - DB_USER=${DB_USER:-cvms}
+      - DB_PASSWORD=${DB_PASSWORD:-mysecretpassword}
+      - GF_INSTALL_PLUGINS=nline-plotlyjs-panel
+    ports:
+      - ${GRAFANA_SERVER_PORT:-3000}:3000
+    # depends_on: [prometheus or postgres]
+    networks:
+      - cvms-net
+
+  alertmanager:
+    image: prom/alertmanager:latest
+    container_name: cvms-alertmanager
+    restart: unless-stopped
+    volumes:
+      - ./docker/alertmanager:/etc/alertmanager:ro
+      - alertmanager-volume:/alertmanager:rw
+    command:
+      - --config.file=/etc/alertmanager/alertmanager.yaml
+    networks:
+      - cvms-net
+    depends_on:
+      - prometheus
+    ports:
+      - ${ALERTMANAGER_SERVER_PORT:-9093}:9093
+
+networks:
+  cvms-net:
+    name: cvms-net
+    driver: bridge
+
+volumes:
+  grafana-volume:
+    name: grafana-volume
+  alertmanager-volume:
+    name: alertmanager-volume
+  exporter-db-volume:
+    name: exporter-db-volume
+  indexer-db-volume:
+    name: indexer-db-volume

@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-11 .. 2024-11-13)
+# Latest Repositories (2024-11-12 .. 2024-11-14)
 
-- [Nutlope/llama-ocr](https://github.com/Nutlope/llama-ocr) (369)
-- [CrystalDustt/Canva-Pro-2024](https://github.com/CrystalDustt/Canva-Pro-2024) (216)
-- [DebbyKogs/cheat-escape-from-tarkov](https://github.com/DebbyKogs/cheat-escape-from-tarkov) (215)
-- [Dev-Samsoor/Fl-Studio-2024](https://github.com/Dev-Samsoor/Fl-Studio-2024) (215)
-- [Davidogola/Discord-AllinOne-Tool](https://github.com/Davidogola/Discord-AllinOne-Tool) (215)
+- [nwaliaez/ez-notes-app](https://github.com/nwaliaez/ez-notes-app) (134)
+- [luckkyzhou/ComfyUI-API-Integration](https://github.com/luckkyzhou/ComfyUI-API-Integration) (28)
+- [TonicAI/textual](https://github.com/TonicAI/textual) (26)
+- [Gradiant/open5gs-legacy-operator](https://github.com/Gradiant/open5gs-legacy-operator) (24)
+- [cosmostation/cvms](https://github.com/cosmostation/cvms) (21)
