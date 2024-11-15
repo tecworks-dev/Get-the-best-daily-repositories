@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-12 .. 2024-11-14)
+# Latest Repositories (2024-11-13 .. 2024-11-15)
 
-- [nwaliaez/ez-notes-app](https://github.com/nwaliaez/ez-notes-app) (134)
-- [luckkyzhou/ComfyUI-API-Integration](https://github.com/luckkyzhou/ComfyUI-API-Integration) (28)
-- [TonicAI/textual](https://github.com/TonicAI/textual) (26)
-- [Gradiant/open5gs-legacy-operator](https://github.com/Gradiant/open5gs-legacy-operator) (24)
-- [cosmostation/cvms](https://github.com/cosmostation/cvms) (21)
+- [nwaliaez/ez-notes-app](https://github.com/nwaliaez/ez-notes-app) (196)
+- [nv-tlabs/LLaMA-Mesh](https://github.com/nv-tlabs/LLaMA-Mesh) (93)
+- [Abdullahocalan3162/Valorant-H4ck](https://github.com/Abdullahocalan3162/Valorant-H4ck) (79)
+- [4drzy/Al-Photoshop-2024](https://github.com/4drzy/Al-Photoshop-2024) (79)
+- [abdulrahim-AI/Adobe-Express-2024](https://github.com/abdulrahim-AI/Adobe-Express-2024) (79)
