@@ -1,0 +1,5 @@
+node_modules
+dist
+example/android
+example/ios
+legendapp-list.tgz

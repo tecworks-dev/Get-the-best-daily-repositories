@@ -1,0 +1,104 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "target": "es2018",
+        "module": "ES2015",
+        "lib": [
+            "dom",
+            "dom.iterable",
+            "esnext"
+        ],
+        "skipLibCheck": true,
+        "strict": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "incremental": true,
+        "tsBuildInfoFile": "./tsconfig.tsbuildinfo", // Specify the build info file
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "stripInternal": true,
+        "baseUrl": ".",
+        "rootDirs": [
+            "./src",
+        ],
+        "declaration": true,
+        "declarationMap": false,
+        "sourceMap": true,
+        "paths": {
+            "react": [
+                "node_modules/react"
+            ],
+            "react-native": [
+                "node_modules/react-native"
+            ],
+            "react-native-mmkv": [
+                "node_modules/react-native-mmkv"
+            ],
+            "next": [
+                "node_modules/next"
+            ],
+            "next/router": [
+                "node_modules/next/router"
+            ],
+            "@babel/types": [
+                "node_modules/@babel/types"
+            ],
+            "@tanstack/react-query": [
+                "node_modules/@tanstack/react-query"
+            ],
+            "firebase/auth": [
+                "node_modules/firebase/auth"
+            ],
+            "firebase/database": [
+                "node_modules/firebase/database"
+            ],
+            "@legendapp/state": [
+                "index"
+            ],
+            "@legendapp/state/config/*": [
+                "src/config/*"
+            ],
+            "@legendapp/state/persist": [
+                "persist"
+            ],
+            "@legendapp/state/sync": [
+                "sync"
+            ],
+            "@legendapp/state/react": [
+                "react"
+            ],
+            "@legendapp/state/helpers/fetch": [
+                "src/helpers/fetch"
+            ],
+            "@legendapp/state/sync-plugins/crud": [
+                "src/sync-plugins/crud"
+            ],
+            "@legendapp/state/sync-plugins/tanstack-query": [
+                "src/sync-plugins/tanstack-query"
+            ],
+            "@legendapp/state/react-reactive/enableReactive": [
+                "src/react-reactive/enableReactive"
+            ],
+            "@legendapp/state/react-reactive/enableReactComponents": [
+                "src/react-reactive/enableReactComponents"
+            ],
+            "@legendapp/state/react-reactive/enableReactNativeComponents": [
+                "src/react-reactive/enableReactNativeComponents"
+            ]
+        },
+        "resolveJsonModule": true,
+        "noEmit": true
+    },
+    "include": [
+        "**/*.ts",
+        "**/*.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "types.d.ts",
+        "src/types"
+    ],
+}

@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-17 .. 2024-11-19)
+# Latest Repositories (2024-11-18 .. 2024-11-20)
 
-- [willyBanco/Bums-autoclicker](https://github.com/willyBanco/Bums-autoclicker) (283)
-- [tayefhimel/AutoCliker-Blum](https://github.com/tayefhimel/AutoCliker-Blum) (283)
-- [bondanbmk/NotPixel-autoclicker](https://github.com/bondanbmk/NotPixel-autoclicker) (282)
-- [lobo666788/Solara-Executor](https://github.com/lobo666788/Solara-Executor) (282)
-- [YcaroDantas1/City-Holder-autoclicker](https://github.com/YcaroDantas1/City-Holder-autoclicker) (282)
+- [TheBlewish/Automated-AI-Web-Researcher-Ollama](https://github.com/TheBlewish/Automated-AI-Web-Researcher-Ollama) (383)
+- [LegendApp/legend-list](https://github.com/LegendApp/legend-list) (73)
+- [golanlevin/p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) (50)
+- [Solara-Executor-Updated/Wave-Executor](https://github.com/Solara-Executor-Updated/Wave-Executor) (44)
+- [xavia-io/xavia-ota](https://github.com/xavia-io/xavia-ota) (36)
