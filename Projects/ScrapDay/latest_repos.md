@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-18 .. 2024-11-20)
+# Latest Repositories (2024-11-20 .. 2024-11-22)
 
-- [TheBlewish/Automated-AI-Web-Researcher-Ollama](https://github.com/TheBlewish/Automated-AI-Web-Researcher-Ollama) (383)
-- [LegendApp/legend-list](https://github.com/LegendApp/legend-list) (73)
-- [golanlevin/p5.plotSvg](https://github.com/golanlevin/p5.plotSvg) (50)
-- [Solara-Executor-Updated/Wave-Executor](https://github.com/Solara-Executor-Updated/Wave-Executor) (44)
-- [xavia-io/xavia-ota](https://github.com/xavia-io/xavia-ota) (36)
+- [Meliodasfeh/Roblox-Blox-Fruits-Script-2024](https://github.com/Meliodasfeh/Roblox-Blox-Fruits-Script-2024) (268)
+- [Billos/Broadcastarr](https://github.com/Billos/Broadcastarr) (206)
+- [athazahrane/apex-legends-cheat-download](https://github.com/athazahrane/apex-legends-cheat-download) (92)
+- [ajonescode/Adobe-Express-2024](https://github.com/ajonescode/Adobe-Express-2024) (92)
+- [BrayanAugusto/SketchUp-Pro-free-2024](https://github.com/BrayanAugusto/SketchUp-Pro-free-2024) (92)
