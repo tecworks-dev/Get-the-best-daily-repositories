@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-21 .. 2024-11-23)
+# Latest Repositories (2024-11-22 .. 2024-11-24)
 
-- [marcop979/m0dmenu-gta5-free](https://github.com/marcop979/m0dmenu-gta5-free) (177)
-- [jackgren22/counter-str1ke-2-h4ck](https://github.com/jackgren22/counter-str1ke-2-h4ck) (171)
-- [JamiesonS/OpenSea-Bidding-Bot-2024](https://github.com/JamiesonS/OpenSea-Bidding-Bot-2024) (171)
-- [Aditya8630971911/Al-Photoshop-2024](https://github.com/Aditya8630971911/Al-Photoshop-2024) (171)
-- [Astra1x7/Adobe-Express-2024](https://github.com/Astra1x7/Adobe-Express-2024) (171)
+- [wario33rod/fortnite-hack-external](https://github.com/wario33rod/fortnite-hack-external) (87)
+- [bzshhsdhdj/moonbix-auto](https://github.com/bzshhsdhdj/moonbix-auto) (76)
+- [bzshhsdhdj/Blum-Auto-Clicker-Download-2024](https://github.com/bzshhsdhdj/Blum-Auto-Clicker-Download-2024) (76)
+- [zademeadowshk/NEW-2025-Solana-Raydium-Sniper-Trading-Bot](https://github.com/zademeadowshk/NEW-2025-Solana-Raydium-Sniper-Trading-Bot) (51)
+- [hfiref0x/WinDepends](https://github.com/hfiref0x/WinDepends) (47)
