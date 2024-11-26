@@ -1,0 +1,13 @@
+{
+  "dependencies": [
+    {
+      "name": "protobuf",
+      "version>=": "3.21.12#2"
+    },
+    {
+      "name": "directx-dxc",
+      "version>=": "2024-03-07"
+    }
+  ],
+  "builtin-baseline": "a1212c93cabaa9c5c36c1ffdb4bddd59fdf31e43"
+}

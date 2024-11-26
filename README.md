@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-23 .. 2024-11-25)
+# Latest Repositories (2024-11-24 .. 2024-11-26)
 
-- [H54XEDD/h4ck-f0rtnite](https://github.com/H54XEDD/h4ck-f0rtnite) (332)
-- [Snehasish2011/m0dmenu-gta5-free](https://github.com/Snehasish2011/m0dmenu-gta5-free) (330)
-- [wario33rod/fortnite-hack-external](https://github.com/wario33rod/fortnite-hack-external) (159)
-- [nurmohammed840/nio](https://github.com/nurmohammed840/nio) (139)
-- [PrakashiniS/Complaint-management-system](https://github.com/PrakashiniS/Complaint-management-system) (43)
+- [WashingtonLuiz07/Roblox-Blox-Fruits-Script-2024](https://github.com/WashingtonLuiz07/Roblox-Blox-Fruits-Script-2024) (383)
+- [stalkermustang/llm-bulls-and-cows-benchmark](https://github.com/stalkermustang/llm-bulls-and-cows-benchmark) (129)
+- [s-smits/agentic-cursorrules](https://github.com/s-smits/agentic-cursorrules) (111)
+- [NauEngine/NauEditorPublic](https://github.com/NauEngine/NauEditorPublic) (87)
+- [joneslloyd/bluesky-comments-chrome](https://github.com/joneslloyd/bluesky-comments-chrome) (53)

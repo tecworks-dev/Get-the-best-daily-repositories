@@ -1,0 +1,8 @@
+.vs/
+.idea/
+x64/
+*.user
+build
+installer/win64/temp/*
+
+/run_tests.bat
