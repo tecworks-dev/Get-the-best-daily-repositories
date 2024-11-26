@@ -1,0 +1,52 @@
+project_title: "cursorrules-agentic"
+
+tree_focus:
+  - "app"
+  - "api"
+  # - "db"
+  # - "api/auth/middleware"
+  # - "app/components/forms"
+
+# Important directories that should always be included
+important_dirs:
+  - components
+  - pages
+  - app
+  - src
+  - lib
+  - utils
+  - hooks
+  - styles
+  - public
+  - assets
+  - layouts
+  - services
+  - context
+  - types
+
+# Directories that should always be excluded
+exclude_dirs:
+  - node_modules
+  - dist
+  - build
+  - .next
+  - out
+  - __pycache__
+  - venv
+  - env
+  - .git
+
+# File extensions to include
+include_extensions:
+  - .py
+  - .ts
+  - .tsx
+  - .js
+  - .jsx
+  - .json
+  - .css
+  - .scss
+  - .html
+  - .md
+  - .vue
+  - .svelte
