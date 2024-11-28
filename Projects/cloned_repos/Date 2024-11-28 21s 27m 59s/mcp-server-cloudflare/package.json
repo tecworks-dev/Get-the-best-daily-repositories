@@ -1,0 +1,49 @@
+{
+  "name": "@cloudflare/mcp-server-cloudflare",
+  "version": "0.1.6",
+  "description": "MCP server for interacting with Cloudflare API",
+  "license": "MIT",
+  "author": "Cloudflare, Inc. (https://cloudflare.com)",
+  "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
+  "bugs": "https://github.com/cloudflare/mcp-server-cloudflare/issues",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "access": "public",
+  "bin": {
+    "mcp-server-cloudflare": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts --dts --format esm --external xdg-app-paths --external which",
+    "postbuild": "shx chmod +x dist/*.js",
+    "check": "tsc --noEmit",
+    "build:watch": "pnpm build --watch"
+  },
+  "dependencies": {
+    "@iarna/toml": "^2.2.5",
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "chalk": "^5.3.0",
+    "dotenv": "^16.4.5",
+    "undici": "^5.28.4",
+    "which": "^5.0.0",
+    "xdg-app-paths": "^8.3.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20241112.0",
+    "@types/node": "^22.10.0",
+    "@types/which": "^3.0.4",
+    "prettier": "^3.4.1",
+    "shx": "^0.3.4",
+    "tsup": "^8.3.5",
+    "typescript": "^5.6.2"
+  },
+  "engines": {
+    "node": ">=16.17.0"
+  }
+}

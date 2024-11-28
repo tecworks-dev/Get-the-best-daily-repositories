@@ -1,0 +1,61 @@
+{
+  "name": "visa-checker",
+  "version": "1.0.1",
+  "description": "Schengen vizesi randevularını otomatik takip eden ve Telegram üzerinden bildirim gönderen bot",
+  "author": {
+    "name": "byigitt",
+    "email": "bbayburtlu@hotmail.com",
+    "url": "https://github.com/byigitt"
+  },
+  "homepage": "https://github.com/byigitt/visa-checker",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/byigitt/visa-checker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/byigitt/visa-checker/issues",
+    "email": "bbayburtlu@hotmail.com"
+  },
+  "keywords": [
+    "schengen",
+    "vize",
+    "randevu",
+    "telegram",
+    "bot",
+    "takip",
+    "bildirim"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --no-deprecation dist/index.js",
+    "dev": "node --no-deprecation -r ts-node/register src/index.ts",
+    "lint": "eslint . --ext .ts",
+    "test": "jest",
+    "clean": "rimraf dist",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "telegraf": "^4.15.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.3",
+    "@types/node-cron": "^3.0.11",
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.55.0",
+    "jest": "^29.7.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
