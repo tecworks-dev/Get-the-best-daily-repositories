@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-25 .. 2024-11-27)
+# Latest Repositories (2024-11-26 .. 2024-11-28)
 
-- [BeeSyncAI/BeeSync](https://github.com/BeeSyncAI/BeeSync) (173)
-- [stalkermustang/llm-bulls-and-cows-benchmark](https://github.com/stalkermustang/llm-bulls-and-cows-benchmark) (171)
-- [akazwz/extract](https://github.com/akazwz/extract) (51)
-- [bottes8117/R0blox-KRNL-Executor](https://github.com/bottes8117/R0blox-KRNL-Executor) (45)
-- [bethovenblond/R0blox-Delta-executor](https://github.com/bethovenblond/R0blox-Delta-executor) (45)
+- [akazwz/extract](https://github.com/akazwz/extract) (85)
+- [Octoberfest7/Enumprotections_BOF](https://github.com/Octoberfest7/Enumprotections_BOF) (70)
+- [hkirat/bolt.newer](https://github.com/hkirat/bolt.newer) (59)
+- [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) (58)
+- [byigitt/visa-checker](https://github.com/byigitt/visa-checker) (48)

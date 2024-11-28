@@ -1,32 +1,32 @@
 [
   {
-    "name": "BeeSyncAI/BeeSync",
-    "clone_url": "https://github.com/BeeSyncAI/BeeSync.git",
-    "stars": 173,
-    "size": 693
-  },
-  {
-    "name": "stalkermustang/llm-bulls-and-cows-benchmark",
-    "clone_url": "https://github.com/stalkermustang/llm-bulls-and-cows-benchmark.git",
-    "stars": 171,
-    "size": 2038
-  },
-  {
     "name": "akazwz/extract",
     "clone_url": "https://github.com/akazwz/extract.git",
-    "stars": 51,
+    "stars": 85,
     "size": 253
   },
   {
-    "name": "bottes8117/R0blox-KRNL-Executor",
-    "clone_url": "https://github.com/bottes8117/R0blox-KRNL-Executor.git",
-    "stars": 45,
-    "size": 1205
+    "name": "Octoberfest7/Enumprotections_BOF",
+    "clone_url": "https://github.com/Octoberfest7/Enumprotections_BOF.git",
+    "stars": 70,
+    "size": 368
   },
   {
-    "name": "bethovenblond/R0blox-Delta-executor",
-    "clone_url": "https://github.com/bethovenblond/R0blox-Delta-executor.git",
-    "stars": 45,
-    "size": 1205
+    "name": "hkirat/bolt.newer",
+    "clone_url": "https://github.com/hkirat/bolt.newer.git",
+    "stars": 59,
+    "size": 72
+  },
+  {
+    "name": "cloudflare/mcp-server-cloudflare",
+    "clone_url": "https://github.com/cloudflare/mcp-server-cloudflare.git",
+    "stars": 58,
+    "size": 123
+  },
+  {
+    "name": "byigitt/visa-checker",
+    "clone_url": "https://github.com/byigitt/visa-checker.git",
+    "stars": 48,
+    "size": 88
   }
 ]
