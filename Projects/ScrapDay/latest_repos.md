@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-26 .. 2024-11-28)
+# Latest Repositories (2024-11-27 .. 2024-11-29)
 
-- [akazwz/extract](https://github.com/akazwz/extract) (85)
-- [Octoberfest7/Enumprotections_BOF](https://github.com/Octoberfest7/Enumprotections_BOF) (70)
-- [hkirat/bolt.newer](https://github.com/hkirat/bolt.newer) (59)
-- [cloudflare/mcp-server-cloudflare](https://github.com/cloudflare/mcp-server-cloudflare) (58)
-- [byigitt/visa-checker](https://github.com/byigitt/visa-checker) (48)
+- [asseph/pumpfun-smart-contract-solana](https://github.com/asseph/pumpfun-smart-contract-solana) (91)
+- [nvpro-samples/vk_minimal_latest](https://github.com/nvpro-samples/vk_minimal_latest) (78)
+- [bestK/cursor-fake-machine](https://github.com/bestK/cursor-fake-machine) (50)
+- [antfu/markdown-it-async](https://github.com/antfu/markdown-it-async) (29)
+- [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) (29)
