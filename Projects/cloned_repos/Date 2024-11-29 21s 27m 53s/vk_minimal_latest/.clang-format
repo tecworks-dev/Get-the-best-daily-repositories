@@ -1,0 +1,121 @@
+﻿---
+Language: CSharp
+BasedOnStyle: LLVM
+
+# Whitespace
+MaxEmptyLinesToKeep: 2
+IndentWidth: 4
+ColumnLimit: 100
+UseTab: Never
+
+# Preprocessor
+AlignEscapedNewlines: Left
+IncludeBlocks: Regroup
+
+# Functions
+AllowAllArgumentsOnNextLine: false
+BinPackArguments: false
+BinPackParameters: false
+AllowAllParametersOfDeclarationOnNextLine: false
+PenaltyReturnTypeOnItsOwnLine: 9999999
+PenaltyBreakBeforeFirstCallParameter: 6
+AllowShortFunctionsOnASingleLine: Inline
+
+# Brackets and braces
+AlignAfterOpenBracket: AlwaysBreak
+BreakBeforeBraces: Allman
+BreakAfterAttributes : Never
+
+# Pointers
+PointerAlignment: Left
+
+# Classes
+PackConstructorInitializers: NextLineOnly
+BreakConstructorInitializers: BeforeComma
+AccessModifierOffset: -4
+
+# Switch statements
+IndentCaseBlocks: true
+
+# Templates
+SpaceAfterTemplateKeyword: false
+AlwaysBreakTemplateDeclarations: true
+
+# Misc
+SortUsingDeclarations: Never
+AlignConsecutiveAssignments: true
+AlignConsecutiveBitFields: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+
+
+---
+Language: Cpp
+BasedOnStyle: LLVM
+AccessModifierOffset: '-2'
+AlignAfterOpenBracket: Align
+AlignConsecutiveAssignments: 'true'
+AlignConsecutiveDeclarations: 'true'
+AlignOperands: 'true'
+AlignTrailingComments: 'true'
+AllowAllParametersOfDeclarationOnNextLine: 'false'
+AllowShortBlocksOnASingleLine: 'false'
+AllowShortCaseLabelsOnASingleLine: 'false'
+AllowShortFunctionsOnASingleLine: Inline
+AllowShortIfStatementsOnASingleLine: 'false'
+AllowShortLoopsOnASingleLine: 'false'
+AlwaysBreakAfterReturnType: None
+AlwaysBreakBeforeMultilineStrings: 'true'
+AlwaysBreakTemplateDeclarations: 'true'
+BinPackArguments: 'true'
+BinPackParameters: 'false'
+ExperimentalAutoDetectBinPacking: 'false'
+BreakBeforeBinaryOperators: NonAssignment
+BreakBeforeBraces: Custom
+BreakBeforeTernaryOperators: 'false'
+BreakConstructorInitializersBeforeComma: 'true'
+ColumnLimit: '120'
+ConstructorInitializerAllOnOneLineOrOnePerLine: 'false'
+Cpp11BracedListStyle: 'true'
+IndentCaseLabels: 'true'
+IndentWidth: '2'
+KeepEmptyLinesAtTheStartOfBlocks: 'true'
+MaxEmptyLinesToKeep: '2'
+NamespaceIndentation: None
+ObjCSpaceBeforeProtocolList: 'true'
+PointerAlignment: Left
+SpaceAfterCStyleCast: 'false'
+SpaceBeforeAssignmentOperators: 'true'
+SpaceBeforeParens: Never
+SpaceInEmptyParentheses: 'false'
+SpacesBeforeTrailingComments: '2'
+SpacesInAngles: 'false'
+SpacesInCStyleCastParentheses: 'false'
+SpacesInParentheses: 'false'
+SpacesInSquareBrackets: 'false'
+Standard: Cpp11
+TabWidth: '2'
+UseTab: Never
+SortIncludes: 'false'
+ReflowComments: 'false'
+BraceWrapping: {
+ AfterClass: 'true'
+ AfterControlStatement: 'true'
+ AfterEnum: 'true'
+ AfterFunction: 'true'
+ AfterNamespace: 'false' 
+ AfterStruct: 'true'
+ AfterUnion: 'true'
+ BeforeCatch: 'true'
+ BeforeElse: 'true'
+ IndentBraces: 'false'
+}
+PenaltyExcessCharacter: 1
+PenaltyBreakBeforeFirstCallParameter: 40
+PenaltyBreakFirstLessLess: 1
+PenaltyBreakComment: 30
+PenaltyBreakString: 30
+PenaltyReturnTypeOnItsOwnLine: 9999
+BreakStringLiterals: false
+
+
