@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-28 .. 2024-11-30)
+# Latest Repositories (2024-11-29 .. 2024-12-01)
 
-- [virattt/ai-hedge-fund](https://github.com/virattt/ai-hedge-fund) (198)
-- [asseph/pumpfun-smart-contract-solana](https://github.com/asseph/pumpfun-smart-contract-solana) (181)
-- [NullM3/Roblox-Blox-Fruits-Script-2024](https://github.com/NullM3/Roblox-Blox-Fruits-Script-2024) (59)
-- [s0laProBotq/sol-copy-trading-bot](https://github.com/s0laProBotq/sol-copy-trading-bot) (42)
-- [antfu/markdown-it-async](https://github.com/antfu/markdown-it-async) (40)
+- [punkpeye/awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) (303)
+- [SIPWOOCD/counter-str1ke-2-h4ck](https://github.com/SIPWOOCD/counter-str1ke-2-h4ck) (103)
+- [TechWezTheMan/Discord-AllinOne-Tool](https://github.com/TechWezTheMan/Discord-AllinOne-Tool) (103)
+- [Magercat/Al-Photoshop-2024](https://github.com/Magercat/Al-Photoshop-2024) (103)
+- [Xenozlol/minecraft-cheat2024](https://github.com/Xenozlol/minecraft-cheat2024) (102)
