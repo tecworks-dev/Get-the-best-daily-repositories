@@ -1,7 +1,7 @@
-# Latest Repositories (2024-11-30 .. 2024-12-02)
+# Latest Repositories (2024-12-01 .. 2024-12-03)
 
-- [TechWezTheMan/Discord-AllinOne-Tool](https://github.com/TechWezTheMan/Discord-AllinOne-Tool) (103)
-- [SIPWOOCD/counter-str1ke-2-h4ck](https://github.com/SIPWOOCD/counter-str1ke-2-h4ck) (103)
-- [Magercat/Al-Photoshop-2024](https://github.com/Magercat/Al-Photoshop-2024) (103)
-- [ThePiCoder/FL-Studio](https://github.com/ThePiCoder/FL-Studio) (102)
-- [UNDERBOSSDS/ESET-KeyGen-2024](https://github.com/UNDERBOSSDS/ESET-KeyGen-2024) (102)
+- [sasa1977/soul_of_erlang_and_elixir](https://github.com/sasa1977/soul_of_erlang_and_elixir) (64)
+- [zinc1234596/multiple-store-stripe-dashboard](https://github.com/zinc1234596/multiple-store-stripe-dashboard) (46)
+- [akile-network/akile_monitor_fe](https://github.com/akile-network/akile_monitor_fe) (38)
+- [kijai/ComfyUI-HunyuanVideoWrapper](https://github.com/kijai/ComfyUI-HunyuanVideoWrapper) (26)
+- [bartolli/mcp-llm-bridge](https://github.com/bartolli/mcp-llm-bridge) (24)
