@@ -1,0 +1,8 @@
+.vscode/*
+VM/.vs/*
+VM/*.vcxproj
+VM/*.vcxproj.*
+VM/*.cmake
+VM/*.dir
+VM/*.sln
+VM/x64/*

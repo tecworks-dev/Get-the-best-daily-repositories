@@ -1,0 +1,12 @@
+[build]
+target = "x86_64-vekos.json"
+
+[unstable]
+build-std = ["core", "compiler_builtins", "alloc"]
+build-std-features = ["compiler-builtins-mem"]
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"
+
+[package.metadata.bootimage]
+physical-memory-offset = "0xFFFF800000000000"
