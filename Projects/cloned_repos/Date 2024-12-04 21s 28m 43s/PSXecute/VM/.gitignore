@@ -1,0 +1,8 @@
+SCPH1001.BIN
+cmake-build-debug/
+.idea/
+CMakeFiles/
+.vscode/
+build/
+guide.pdf
+.DS_Store

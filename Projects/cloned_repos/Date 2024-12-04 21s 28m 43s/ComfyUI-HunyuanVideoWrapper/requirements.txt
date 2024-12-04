@@ -1,0 +1,4 @@
+accelerate >= 1.1.1
+diffusers >= 0.31.0
+transformers >= 4.39.3
+jax >= 0.4.28

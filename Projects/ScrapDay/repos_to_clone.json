@@ -1,32 +1,32 @@
 [
   {
-    "name": "sasa1977/soul_of_erlang_and_elixir",
-    "clone_url": "https://github.com/sasa1977/soul_of_erlang_and_elixir.git",
-    "stars": 64,
-    "size": 70
-  },
-  {
-    "name": "zinc1234596/multiple-store-stripe-dashboard",
-    "clone_url": "https://github.com/zinc1234596/multiple-store-stripe-dashboard.git",
-    "stars": 46,
-    "size": 682
-  },
-  {
-    "name": "akile-network/akile_monitor_fe",
-    "clone_url": "https://github.com/akile-network/akile_monitor_fe.git",
-    "stars": 38,
-    "size": 113
+    "name": "mcpservers/mcp-server-chatsum",
+    "clone_url": "https://github.com/mcpservers/mcp-server-chatsum.git",
+    "stars": 171,
+    "size": 1720
   },
   {
     "name": "kijai/ComfyUI-HunyuanVideoWrapper",
     "clone_url": "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper.git",
-    "stars": 26,
-    "size": 70
+    "stars": 158,
+    "size": 198
   },
   {
-    "name": "bartolli/mcp-llm-bridge",
-    "clone_url": "https://github.com/bartolli/mcp-llm-bridge.git",
-    "stars": 24,
-    "size": 4505
+    "name": "sasa1977/soul_of_erlang_and_elixir",
+    "clone_url": "https://github.com/sasa1977/soul_of_erlang_and_elixir.git",
+    "stars": 83,
+    "size": 73
+  },
+  {
+    "name": "JGiraldo29/vekos",
+    "clone_url": "https://github.com/JGiraldo29/vekos.git",
+    "stars": 55,
+    "size": 154
+  },
+  {
+    "name": "eversinc33/PSXecute",
+    "clone_url": "https://github.com/eversinc33/PSXecute.git",
+    "stars": 50,
+    "size": 186
   }
 ]
