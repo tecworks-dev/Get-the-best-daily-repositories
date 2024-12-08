@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-05 .. 2024-12-07)
+# Latest Repositories (2024-12-06 .. 2024-12-08)
 
-- [ti3445an/roblox-script](https://github.com/ti3445an/roblox-script) (192)
-- [aldorsiahaan/hack-apex-1egend](https://github.com/aldorsiahaan/hack-apex-1egend) (71)
-- [ffjhgfng/counter-str1ke-2-h4ck](https://github.com/ffjhgfng/counter-str1ke-2-h4ck) (70)
-- [siskawp/Roblox-Blox-Fruits-Script-2024](https://github.com/siskawp/Roblox-Blox-Fruits-Script-2024) (64)
-- [Six6sun/minecraft-cheat2024](https://github.com/Six6sun/minecraft-cheat2024) (64)
+- [notedit/TransRouter](https://github.com/notedit/TransRouter) (84)
+- [noahduck/Adobe-Express-2024](https://github.com/noahduck/Adobe-Express-2024) (75)
+- [xzuanasaguada2/counter-str1ke-2-h4ck](https://github.com/xzuanasaguada2/counter-str1ke-2-h4ck) (75)
+- [Slowcor/Al-Photoshop-2024](https://github.com/Slowcor/Al-Photoshop-2024) (75)
+- [wKPAXw/Exit1ag-Free-2024](https://github.com/wKPAXw/Exit1ag-Free-2024) (72)

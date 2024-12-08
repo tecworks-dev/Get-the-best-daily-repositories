@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+*.pyc
+recordings/
+*.wav
+synthesis/
+*.wav 
+
+log.txt
+.env
