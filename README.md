@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-06 .. 2024-12-08)
+# Latest Repositories (2024-12-07 .. 2024-12-09)
 
-- [notedit/TransRouter](https://github.com/notedit/TransRouter) (84)
-- [noahduck/Adobe-Express-2024](https://github.com/noahduck/Adobe-Express-2024) (75)
-- [xzuanasaguada2/counter-str1ke-2-h4ck](https://github.com/xzuanasaguada2/counter-str1ke-2-h4ck) (75)
-- [Slowcor/Al-Photoshop-2024](https://github.com/Slowcor/Al-Photoshop-2024) (75)
-- [wKPAXw/Exit1ag-Free-2024](https://github.com/wKPAXw/Exit1ag-Free-2024) (72)
+- [USERNAME999079/Adobe-Acrobat-Pro-2024](https://github.com/USERNAME999079/Adobe-Acrobat-Pro-2024) (368)
+- [Oswald-123/Al-Photoshop-2024](https://github.com/Oswald-123/Al-Photoshop-2024) (366)
+- [LuisEnriqueRomoBenitez/AquaDiscord](https://github.com/LuisEnriqueRomoBenitez/AquaDiscord) (366)
+- [juankak4/BrtWallet](https://github.com/juankak4/BrtWallet) (366)
+- [Joeyka/apex-legends-cheat-download](https://github.com/Joeyka/apex-legends-cheat-download) (366)
