@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-07 .. 2024-12-09)
+# Latest Repositories (2024-12-08 .. 2024-12-10)
 
-- [USERNAME999079/Adobe-Acrobat-Pro-2024](https://github.com/USERNAME999079/Adobe-Acrobat-Pro-2024) (368)
-- [Oswald-123/Al-Photoshop-2024](https://github.com/Oswald-123/Al-Photoshop-2024) (366)
-- [LuisEnriqueRomoBenitez/AquaDiscord](https://github.com/LuisEnriqueRomoBenitez/AquaDiscord) (366)
-- [juankak4/BrtWallet](https://github.com/juankak4/BrtWallet) (366)
-- [Joeyka/apex-legends-cheat-download](https://github.com/Joeyka/apex-legends-cheat-download) (366)
+- [persys-ai/persys](https://github.com/persys-ai/persys) (83)
+- [QwenLM/ProcessBench](https://github.com/QwenLM/ProcessBench) (38)
+- [imxtx/awesome-controllabe-speech-synthesis](https://github.com/imxtx/awesome-controllabe-speech-synthesis) (30)
+- [ChenDarYen/NitroFusion](https://github.com/ChenDarYen/NitroFusion) (25)
+- [nuance-dev/uno](https://github.com/nuance-dev/uno) (19)
