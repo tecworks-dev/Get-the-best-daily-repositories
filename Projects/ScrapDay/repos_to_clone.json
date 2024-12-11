@@ -1,32 +1,32 @@
 [
   {
-    "name": "persys-ai/persys",
-    "clone_url": "https://github.com/persys-ai/persys.git",
-    "stars": 83,
-    "size": 2055
-  },
-  {
-    "name": "QwenLM/ProcessBench",
-    "clone_url": "https://github.com/QwenLM/ProcessBench.git",
-    "stars": 38,
-    "size": 3279
-  },
-  {
-    "name": "imxtx/awesome-controllabe-speech-synthesis",
-    "clone_url": "https://github.com/imxtx/awesome-controllabe-speech-synthesis.git",
-    "stars": 30,
-    "size": 1305
-  },
-  {
     "name": "ChenDarYen/NitroFusion",
     "clone_url": "https://github.com/ChenDarYen/NitroFusion.git",
-    "stars": 25,
-    "size": 1711
+    "stars": 126,
+    "size": 1714
   },
   {
-    "name": "nuance-dev/uno",
-    "clone_url": "https://github.com/nuance-dev/uno.git",
-    "stars": 19,
-    "size": 1544
+    "name": "better-auth/utils",
+    "clone_url": "https://github.com/better-auth/utils.git",
+    "stars": 70,
+    "size": 121
+  },
+  {
+    "name": "iAmCorey/coreychiu-portfolio-template",
+    "clone_url": "https://github.com/iAmCorey/coreychiu-portfolio-template.git",
+    "stars": 67,
+    "size": 985
+  },
+  {
+    "name": "kijai/ComfyUI-MMAudio",
+    "clone_url": "https://github.com/kijai/ComfyUI-MMAudio.git",
+    "stars": 51,
+    "size": 120
+  },
+  {
+    "name": "dylski/PaperPiAI",
+    "clone_url": "https://github.com/dylski/PaperPiAI.git",
+    "stars": 37,
+    "size": 1633
   }
 ]
