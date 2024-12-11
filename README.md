@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-08 .. 2024-12-10)
+# Latest Repositories (2024-12-09 .. 2024-12-11)
 
-- [persys-ai/persys](https://github.com/persys-ai/persys) (83)
-- [QwenLM/ProcessBench](https://github.com/QwenLM/ProcessBench) (38)
-- [imxtx/awesome-controllabe-speech-synthesis](https://github.com/imxtx/awesome-controllabe-speech-synthesis) (30)
-- [ChenDarYen/NitroFusion](https://github.com/ChenDarYen/NitroFusion) (25)
-- [nuance-dev/uno](https://github.com/nuance-dev/uno) (19)
+- [ChenDarYen/NitroFusion](https://github.com/ChenDarYen/NitroFusion) (126)
+- [better-auth/utils](https://github.com/better-auth/utils) (70)
+- [iAmCorey/coreychiu-portfolio-template](https://github.com/iAmCorey/coreychiu-portfolio-template) (67)
+- [kijai/ComfyUI-MMAudio](https://github.com/kijai/ComfyUI-MMAudio) (51)
+- [dylski/PaperPiAI](https://github.com/dylski/PaperPiAI) (37)
