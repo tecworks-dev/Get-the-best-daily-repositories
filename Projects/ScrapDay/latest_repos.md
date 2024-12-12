@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-09 .. 2024-12-11)
+# Latest Repositories (2024-12-10 .. 2024-12-12)
 
-- [ChenDarYen/NitroFusion](https://github.com/ChenDarYen/NitroFusion) (126)
-- [better-auth/utils](https://github.com/better-auth/utils) (70)
-- [iAmCorey/coreychiu-portfolio-template](https://github.com/iAmCorey/coreychiu-portfolio-template) (67)
-- [kijai/ComfyUI-MMAudio](https://github.com/kijai/ComfyUI-MMAudio) (51)
-- [dylski/PaperPiAI](https://github.com/dylski/PaperPiAI) (37)
+- [Beamzmethods/Ex1tlag-Free-2024](https://github.com/Beamzmethods/Ex1tlag-Free-2024) (359)
+- [Enma-Tokito/Ad0be-Express-2024](https://github.com/Enma-Tokito/Ad0be-Express-2024) (355)
+- [joonistabarista/1express-Vpn-Free-2024](https://github.com/joonistabarista/1express-Vpn-Free-2024) (306)
+- [MarvellousLyngdoh/Wemod-Premium-Unlocker-2024](https://github.com/MarvellousLyngdoh/Wemod-Premium-Unlocker-2024) (305)
+- [assfdsa211/Dead1ock-h4ck](https://github.com/assfdsa211/Dead1ock-h4ck) (305)
