@@ -1,0 +1,21 @@
+{
+    "build": {
+        "path_prefix": "mc/"
+    },
+    "styles": {
+        "theme": "axodark",
+        "favicon": "https://www.axo.dev/favicon.ico"
+    },
+    "components": {
+        "changelog": true,
+        "artifacts": {
+            "package_managers": {
+                "additional": {
+                    "binstall": "cargo binstall mc-cli",
+                    "cargo": "cargo install mc-cli",
+                    "git": "cargo install --git https://github.com/thewh1teagle/mc"
+                }
+            }
+        }
+    }
+}
