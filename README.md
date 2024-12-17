@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-14 .. 2024-12-16)
+# Latest Repositories (2024-12-15 .. 2024-12-17)
 
-- [tuqagigusiqa/roblox-script](https://github.com/tuqagigusiqa/roblox-script) (319)
-- [tigay1223scar/fortnite-hack-external](https://github.com/tigay1223scar/fortnite-hack-external) (314)
-- [thewh1teagle/mc](https://github.com/thewh1teagle/mc) (60)
-- [addyosmani/squish](https://github.com/addyosmani/squish) (47)
-- [Sfupu/Solana-Pump-Fun-Sniper-Bot](https://github.com/Sfupu/Solana-Pump-Fun-Sniper-Bot) (45)
+- [tigay1223scar/fortnite-hack-external](https://github.com/tigay1223scar/fortnite-hack-external) (350)
+- [Sfupu/Solana-Pump-Fun-Sniper-Bot](https://github.com/Sfupu/Solana-Pump-Fun-Sniper-Bot) (88)
+- [0-RTT/JSimages](https://github.com/0-RTT/JSimages) (52)
+- [NtDallas/Svartalfheim](https://github.com/NtDallas/Svartalfheim) (51)
+- [RafalWilinski/mcp-apple-notes](https://github.com/RafalWilinski/mcp-apple-notes) (46)
