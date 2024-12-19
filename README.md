@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-16 .. 2024-12-18)
+# Latest Repositories (2024-12-17 .. 2024-12-19)
 
-- [Mikambo/Ex1tlag-Free-2024](https://github.com/Mikambo/Ex1tlag-Free-2024) (441)
-- [Blaaa1/rust-hack-fre3](https://github.com/Blaaa1/rust-hack-fre3) (399)
-- [AkihikoKurosaki/SilenceGen](https://github.com/AkihikoKurosaki/SilenceGen) (387)
-- [RathodRajan/SketchUp-Pro-free-2024](https://github.com/RathodRajan/SketchUp-Pro-free-2024) (373)
-- [ShinraiYT/SonyVegas-2024](https://github.com/ShinraiYT/SonyVegas-2024) (326)
+- [moonbitlang/moonbit-compiler](https://github.com/moonbitlang/moonbit-compiler) (284)
+- [StartHua/Comfyui_leffa](https://github.com/StartHua/Comfyui_leffa) (52)
+- [leochen-g/dify-schedule](https://github.com/leochen-g/dify-schedule) (37)
+- [RafalWilinski/aws-mcp](https://github.com/RafalWilinski/aws-mcp) (37)
+- [aollivierre/ConditionalAccess](https://github.com/aollivierre/ConditionalAccess) (34)

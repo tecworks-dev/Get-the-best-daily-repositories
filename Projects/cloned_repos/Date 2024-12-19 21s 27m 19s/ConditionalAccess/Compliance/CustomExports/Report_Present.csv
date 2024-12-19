@@ -1,0 +1,5 @@
+"ComplianceStatus","TrustType","DeviceOS","DeviceStateInIntune","Count"
+"Compliant","Azure AD joined","Windows","Present","6"
+"Compliant","Azure AD joined","Windows10","Present","14"
+"Compliant","Hybrid Azure AD joined","Windows","Present","15"
+"Compliant","Hybrid Azure AD joined","Windows10","Present","13"

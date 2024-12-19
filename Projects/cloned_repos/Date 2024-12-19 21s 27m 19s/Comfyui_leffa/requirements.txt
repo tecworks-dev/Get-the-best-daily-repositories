@@ -1,0 +1,32 @@
+av
+accelerate
+# diffusers
+einops
+fvcore
+# gradio
+# gradio-client
+imageio
+matplotlib
+numpy
+omegaconf
+opencv-python
+pandas
+pillow
+pycocotools
+pyyaml
+psutil
+peft
+regex==2024.5.15
+safetensors
+scikit-image
+scipy
+timm
+tokenizers
+# torch
+# torchaudio
+torchmetrics
+# torchvision
+tqdm
+# transformers
+#triton
+cloudpickle

@@ -1,0 +1,25 @@
+{
+  "name": "dify-schedule",
+  "version": "1.0.0",
+  "description": "Dify Schedule.A free automated scheduling solution for Dify, powered by GitHub Actions.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "workflowDify": "node ./workflow/dify.js"
+  },
+  "author": "Leo_chen",
+  "license": "ISC",
+  "keywords": ["Dify", "Dify Schedule", "Schedule", "Dify Task", "Task", "Auto Schedule"],
+  "dependencies": {
+    "axios": "^1.7.9",
+    "nodemailer": "^6.9.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leochen-g/dify-schedule.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leochen-g/dify-schedule/issues"
+  },
+  "homepage": "https://github.com/leochen-g/dify-schedule#readme"
+}

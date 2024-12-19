@@ -1,0 +1,36 @@
+{
+    "Scopes": [
+      "User.Read",
+      "User.ReadWrite",
+      "User.ReadBasic.All",
+      "Mail.Read",
+      "Mail.ReadWrite",
+      "Mail.Send",
+      "Calendars.Read",
+      "Calendars.ReadWrite",
+      "Contacts.Read",
+      "Contacts.ReadWrite",
+      "Files.Read",
+      "Files.ReadWrite",
+      "Sites.Read.All",
+      "Sites.ReadWrite.All",
+      "Group.Read.All",
+      "Group.ReadWrite.All",
+      "Directory.Read.All",
+      "Directory.ReadWrite.All",
+      "Application.Read.All",
+      "Application.ReadWrite.All",
+      "Device.Read",
+      "DeviceManagementApps.Read.All",
+      "DeviceManagementApps.ReadWrite.All",
+      "DeviceManagementConfiguration.Read.All",
+      "DeviceManagementConfiguration.ReadWrite.All",
+      "Organization.Read.All",
+      "Organization.ReadWrite.All",
+      "Policy.Read.All",
+      "Policy.ReadWrite.ConditionalAccess",
+      "DeviceManagementApps.ReadWrite.All",
+      "AppRoleAssignment.ReadWrite.All"
+    ]
+  }
+  
