@@ -1,0 +1,2 @@
+"DeviceName","UserName","DeviceEntraID","UserEntraID","DeviceOS","OSVersion","DeviceComplianceStatus","DeviceStateInIntune","TrustType","UserLicense","SignInStatus","City","State","CountryOrRegion"
+"{PII Removed}","Siddiqui, Ayesha","N/A","21b90bc7-95c1-4988-8b84-c6833fc38699","Windows10","","Non-Compliant","External","Hybrid Azure AD joined","Other","Success","Toronto","Ontario","CA"

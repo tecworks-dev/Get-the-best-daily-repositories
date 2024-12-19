@@ -1,0 +1,33 @@
+name: Auto
+
+on:
+  schedule:
+    - cron: "30 22 * * *" # 北京时间上午06:30
+  workflow_dispatch:
+
+env:
+  DIFY_TOKENS: ${{ secrets.DIFY_TOKENS }}
+  DIFY_BASE_URL: ${{ secrets.DIFY_BASE_URL }}
+  DIFY_INPUTS: ${{ secrets.DIFY_INPUTS }}
+  EMAIL_USER: ${{ secrets.EMAIL_USER }}
+  EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
+  EMAIL_TO: ${{ secrets.EMAIL_TO }}
+  DINGDING_WEBHOOK: ${{ secrets.DINGDING_WEBHOOK }}
+  PUSHPLUS_TOKEN: ${{ secrets.PUSHPLUS_TOKEN }}
+  WEIXIN_WEBHOOK: ${{ secrets.WEIXIN_WEBHOOK }}
+  SERVERPUSHKEY: ${{ secrets.SERVERPUSHKEY }}
+  FEISHU_WEBHOOK: ${{ secrets.FEISHU_WEBHOOK }}
+  AIBOTK_KEY: ${{ secrets.AIBOTK_KEY }}
+  AIBOTK_ROOM_RECIVER: ${{ secrets.AIBOTK_ROOM_RECIVER }}
+  AIBOTK_CONTACT_RECIVER: ${{ secrets.AIBOTK_CONTACT_RECIVER }}
+
+jobs:
+  DifyWorkflow:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+      - name: Run Project
+        run: |
+          yarn
+          yarn workflowDify

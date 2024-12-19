@@ -1,0 +1,27 @@
+{
+    "requiredModules": [
+        "Microsoft.Graph.Authentication",
+        "Microsoft.Graph.Applications",
+        "Microsoft.Graph.Identity.DirectoryManagement",
+        "ImportExcel", 
+        "powershell-yaml" , 
+        "PSWriteHTML",
+        "MSAL.PS",
+        "IntuneWin32App",
+        "Microsoft.Graph.Groups",
+        "SvRooij.ContentPrep.Cmdlet"
+    ],
+    "importedModules": [
+        "Microsoft.Graph.Identity.DirectoryManagement",
+        "Microsoft.Graph.Authentication",
+        "Microsoft.Graph.Identity.DirectoryManagement",
+        "Microsoft.Graph.Applications",
+        "ImportExcel", 
+        "powershell-yaml" , 
+        "PSWriteHTML",
+        "MSAL.PS",
+        "IntuneWin32App",
+        "Microsoft.Graph.Groups",
+        "SvRooij.ContentPrep.Cmdlet"
+    ]
+}
