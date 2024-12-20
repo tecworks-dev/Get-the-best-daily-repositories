@@ -1,0 +1,24 @@
+# Test
+save_dir: logs/flower_test
+data_root: /group/40075/wangzhao/ipcg/flower_new
+test_file: test_list_mv.txt
+batch_size: 100
+num_workers: 24
+num_sampling_steps: 250
+ckpt_path: /your/path/to/trained/model/ckpt.pt
+
+# Generator
+run_generate: True 
+generator: FlowerFactory
+params_dict_file: params_dict.txt
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 9
+
+# Render
+r_cam_dists: [4.0]
+r_cam_elevations: [60]
+r_cam_azimuths: [0]
+r_zoff: 0.0

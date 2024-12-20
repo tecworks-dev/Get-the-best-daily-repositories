@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/basket
+save_dir: logs/basket_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/basket.pt
+
+# Generator
+generator_root: core/assets
+generator: BasketBaseFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 14
+
+# Render
+r_cam_dists: [1.6]
+r_cam_elevations: [60]
+r_cam_azimuths: [30]
+r_zoff: 0.0
