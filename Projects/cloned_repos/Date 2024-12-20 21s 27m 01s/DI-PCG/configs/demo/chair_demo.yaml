@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/chair
+save_dir: logs/chair_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/chair.pt
+
+# Generator
+generator_root: core/assets
+generator: ChairFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 48
+
+# Render
+r_cam_dists: [2.0]
+r_cam_elevations: [60]
+r_cam_azimuths: [30]
+r_zoff: 0.0

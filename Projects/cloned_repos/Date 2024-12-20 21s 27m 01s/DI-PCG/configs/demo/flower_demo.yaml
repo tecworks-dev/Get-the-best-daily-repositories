@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/flower
+save_dir: logs/flower_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/flower.pt
+
+# Generator
+generator_root: core/assets
+generator: FlowerFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 9
+
+# Render
+r_cam_dists: [4.0]
+r_cam_elevations: [60]
+r_cam_azimuths: [0]
+r_zoff: 0.0

@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/dandelion
+save_dir: logs/dandelion_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/dandelion.pt
+
+# Generator
+generator_root: core/assets
+generator: DandelionFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 15
+
+# Render
+r_cam_dists: [3.0]
+r_cam_elevations: [90]
+r_cam_azimuths: [0]
+r_zoff: 0.5

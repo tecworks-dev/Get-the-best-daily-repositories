@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/vase
+save_dir: logs/vase_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/vase.pt
+
+# Generator
+generator_root: core/assets
+generator: VaseFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 12
+
+# Render
+r_cam_dists: [2.0]
+r_cam_elevations: [60]
+r_cam_azimuths: [0]
+r_zoff: 0.3

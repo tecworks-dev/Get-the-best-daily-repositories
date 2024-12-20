@@ -1,0 +1,20 @@
+# Test
+condition_img_dir: examples/table
+save_dir: logs/table_demo
+num_sampling_steps: 250
+ckpt_path: pretrained_models/table.pt
+
+# Generator
+generator_root: core/assets
+generator: TableDiningFactory
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 19
+
+# Render
+r_cam_dists: [5.0]
+r_cam_elevations: [60]
+r_cam_azimuths: [30]
+r_zoff: 0.1

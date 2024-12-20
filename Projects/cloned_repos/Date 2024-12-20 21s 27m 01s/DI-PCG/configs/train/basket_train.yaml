@@ -1,0 +1,17 @@
+# Train
+save_dir: logs/basket_train
+data_root: /group/40075/wangzhao/ipcg/basket
+train_file: train_list_mv_withaug.txt
+test_file: test_list_mv.txt
+params_dict_file: params_dict.txt
+epochs: 200
+batch_size: 128
+num_workers: 64
+lr: 0.0001
+seed: 0
+logging_iter: 100
+ckpt_iter: 10000
+
+# Model
+model: DiT_mini
+num_params: 14

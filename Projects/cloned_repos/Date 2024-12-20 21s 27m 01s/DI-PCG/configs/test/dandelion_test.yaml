@@ -1,0 +1,24 @@
+# Test
+save_dir: logs/dandelion_test
+data_root: /group/40075/wangzhao/ipcg/dandelion_new
+test_file: test_list_mv.txt
+batch_size: 100
+num_workers: 24
+num_sampling_steps: 250
+ckpt_path: /your/path/to/trained/model/ckpt.pt
+
+# Generator
+run_generate: True
+generator: DandelionFactory
+params_dict_file: params_dict.txt
+seed: 0
+
+# Model
+model: DiT_mini
+num_params: 15
+
+# Render
+r_cam_dists: [3.0]
+r_cam_elevations: [90]
+r_cam_azimuths: [0]
+r_zoff: 0.5
