@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-18 .. 2024-12-20)
+# Latest Repositories (2024-12-19 .. 2024-12-21)
 
-- [lvwzhen/medicine](https://github.com/lvwzhen/medicine) (100)
-- [qihao067/CrossFlow](https://github.com/qihao067/CrossFlow) (47)
-- [TencentARC/DI-PCG](https://github.com/TencentARC/DI-PCG) (46)
-- [IIIImmmyyy/AntiOllvm](https://github.com/IIIImmmyyy/AntiOllvm) (42)
-- [ziyanx02/Genesis-backflip](https://github.com/ziyanx02/Genesis-backflip) (33)
+- [leverimmy/THU-Annual-Eat](https://github.com/leverimmy/THU-Annual-Eat) (320)
+- [lvwzhen/medicine](https://github.com/lvwzhen/medicine) (230)
+- [tatis23na/roblox-script](https://github.com/tatis23na/roblox-script) (190)
+- [vgupKDpipkdia/fortnite-hack-external](https://github.com/vgupKDpipkdia/fortnite-hack-external) (110)
+- [vivekbs555tai/spoofer-riot](https://github.com/vivekbs555tai/spoofer-riot) (109)

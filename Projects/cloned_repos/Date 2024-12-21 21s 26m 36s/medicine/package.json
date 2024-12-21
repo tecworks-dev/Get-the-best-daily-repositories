@@ -1,0 +1,62 @@
+{
+  "name": "medicine",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "translate": "transmart",
+    "generate": "nuxt generate",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@lottiefiles/vue-lottie-player": "^1.1.0",
+    "@nuxtjs/axios": "^5.13.6",
+    "@nuxtjs/i18n": "^7.3.1",
+    "@nuxtjs/sitemap": "^2.4.0",
+    "compressorjs": "^1.2.1",
+    "cookie-universal-nuxt": "^2.2.2",
+    "core-js": "^3.25.3",
+    "crypto-js": "^4.1.1",
+    "img-comparison-slider": "^8.0.6",
+    "js-cookie": "^3.0.5",
+    "localforage": "^1.10.0",
+    "markdown-it-vue": "^1.1.7",
+    "nsfw-filter": "^1.0.3",
+    "nuxt": "^2.15.8",
+    "promptmaker": "^1.1.0",
+    "swiper": "^5.4.5",
+    "vue": "^2.7.10",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-clipboard2": "^0.3.3",
+    "vue-compare-image": "^0.2.0",
+    "vue-good-table": "^2.21.11",
+    "vue-multiselect": "^2.1.7",
+    "vue-server-renderer": "^2.7.10",
+    "vue-slider-component": "^3.2.24",
+    "vue-social-sharing": "^3.0.9",
+    "vue-template-compiler": "^2.7.10",
+    "vue-typed-js": "^0.1.2",
+    "vuex": "^3.6.2",
+    "vuex-persistedstate": "^4.1.0"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^5.3.3",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/line-clamp": "^0.4.2",
+    "@tailwindcss/typography": "^0.5.9",
+    "@transmart/cli": "^0.1.0",
+    "autoprefixer": "^10.4.13",
+    "husky": "^8.0.3",
+    "jszip": "^3.10.1",
+    "lint-staged": "^13.2.2",
+    "postcss": "^8.4.17",
+    "prettier": "^2.8.8",
+    "prettier-plugin-tailwindcss": "^0.2.8",
+    "tailwindcss": "^3.4.3"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+}
