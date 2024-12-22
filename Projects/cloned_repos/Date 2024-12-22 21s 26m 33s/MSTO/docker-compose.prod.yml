@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  app:
+    environment:
+      - ENV=prod
+      - TRADING_MODE=live
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.5'
+          memory: 512M
+    networks:
+      - msto_net
+    volumes:
+      - ./logs:/app/logs:ro
+      - ./data:/app/data:ro
+
+  db:
+    restart: unless-stopped
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1G
+        reservations:
+          cpus: '0.25'
+          memory: 256M
+    networks:
+      - msto_net
+    volumes:
+      - postgres_data:/var/lib/postgresql/data:rw
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=scram-sha-256
+      - POSTGRES_INITDB_ARGS=--auth-host=scram-sha-256
+
+networks:
+  msto_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.28.0.0/16
+    driver_opts:
+      com.docker.network.bridge.name: msto_net
+      com.docker.network.bridge.enable_icc: "true"
+      com.docker.network.bridge.enable_ip_masquerade: "true"
+
+volumes:
+  postgres_data:
+    driver: local 

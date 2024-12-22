@@ -1,0 +1,143 @@
+{
+    "alarms": [
+        {
+            "name": "msto-cpu-utilization",
+            "description": "Alert when CPU utilization is too high",
+            "namespace": "AWS/ECS",
+            "metricName": "CPUUtilization",
+            "dimensions": {
+                "ClusterName": "msto-cluster",
+                "ServiceName": "msto-service"
+            },
+            "statistic": "Average",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 80,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-memory-utilization",
+            "description": "Alert when memory utilization is too high",
+            "namespace": "AWS/ECS",
+            "metricName": "MemoryUtilization",
+            "dimensions": {
+                "ClusterName": "msto-cluster",
+                "ServiceName": "msto-service"
+            },
+            "statistic": "Average",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 80,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-error-rate",
+            "description": "Alert when error rate is too high",
+            "namespace": "MSTO",
+            "metricName": "ErrorCount",
+            "dimensions": {
+                "Service": "msto"
+            },
+            "statistic": "Sum",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 10,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-processing-time",
+            "description": "Alert when processing time is too high",
+            "namespace": "MSTO",
+            "metricName": "ProcessingTime",
+            "dimensions": {
+                "Service": "msto",
+                "Operation": "TickerProcessing"
+            },
+            "statistic": "Average",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 30,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-unhealthy-hosts",
+            "description": "Alert when there are unhealthy hosts",
+            "namespace": "AWS/ApplicationELB",
+            "metricName": "UnHealthyHostCount",
+            "dimensions": {
+                "TargetGroup": "msto-target-group"
+            },
+            "statistic": "Average",
+            "period": 60,
+            "evaluationPeriods": 3,
+            "threshold": 0,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-db-connections",
+            "description": "Alert when database connections are too high",
+            "namespace": "AWS/RDS",
+            "metricName": "DatabaseConnections",
+            "dimensions": {
+                "DBInstanceIdentifier": "msto-db"
+            },
+            "statistic": "Average",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 80,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-db-storage",
+            "description": "Alert when database free storage is low",
+            "namespace": "AWS/RDS",
+            "metricName": "FreeStorageSpace",
+            "dimensions": {
+                "DBInstanceIdentifier": "msto-db"
+            },
+            "statistic": "Average",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 5368709120,
+            "comparisonOperator": "LessThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        },
+        {
+            "name": "msto-efs-connections",
+            "description": "Alert when EFS client connections are too high",
+            "namespace": "AWS/EFS",
+            "metricName": "ClientConnections",
+            "dimensions": {
+                "FileSystemId": "${EFS_FILESYSTEM_ID}"
+            },
+            "statistic": "Sum",
+            "period": 300,
+            "evaluationPeriods": 2,
+            "threshold": 100,
+            "comparisonOperator": "GreaterThanThreshold",
+            "alarmActions": [
+                "arn:aws:sns:${AWS_REGION}:${AWS_ACCOUNT_ID}:msto-alerts"
+            ]
+        }
+    ]
+} 
