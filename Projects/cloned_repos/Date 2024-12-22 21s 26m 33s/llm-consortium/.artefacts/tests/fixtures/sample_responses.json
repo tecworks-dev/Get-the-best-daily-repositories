@@ -1,0 +1,19 @@
+{
+    "model_response": {
+        "thought_process": "Sample thought process for testing",
+        "answer": "Sample test answer",
+        "confidence": 0.85
+    },
+    "synthesis_response": {
+        "synthesis": "Sample synthesis for testing",
+        "confidence": 0.9,
+        "analysis": "Sample analysis",
+        "dissent": "Sample dissenting view",
+        "needs_iteration": false,
+        "refinement_areas": ["area1", "area2"]
+    },
+    "error_response": {
+        "error": "Sample error message",
+        "model": "test-model"
+    }
+}

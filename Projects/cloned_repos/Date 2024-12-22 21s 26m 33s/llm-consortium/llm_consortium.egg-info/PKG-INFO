@@ -1,0 +1,164 @@
+Metadata-Version: 2.1
+Name: llm-consortium
+Version: 0.2
+Summary: LLM plugin implementing Andrej Karpathy's model consortium tweet
+Author-email: Thomas Hughes <irthomasthomas@gmail.com>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/irthomasthomas/karpathy-consortium
+Project-URL: Changelog, https://github.com/irthomasthomas/karpathy-consortium/releases
+Project-URL: Issues, https://github.com/irthomasthomas/karpathy-consortium/issues
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
+Requires-Dist: llm
+Requires-Dist: click
+Requires-Dist: httpx
+Requires-Dist: sqlite-utils
+Requires-Dist: asyncio
+
+# LLM Karpathy Consortium
+
+A sophisticated plugin for the `llm` package that implements an advanced model consortium system with iterative refinement and response synthesis capabilities. This plugin orchestrates multiple language models to collaboratively solve complex problems through structured dialogue and arbitration.
+
+## Features
+
+- **Multi-Model Orchestration**: Coordinate responses from multiple LLMs simultaneously
+- **Iterative Refinement**: Automatically refine responses through multiple rounds until confidence threshold is met
+- **Structured Response Format**: XML-based response structure for consistent parsing and analysis
+- **Advanced Arbitration**: Uses a designated arbiter model to synthesize and evaluate responses
+- **Database Logging**: Built-in SQLite logging of all interactions and responses
+- **Comprehensive Error Handling**: Robust error handling and logging system
+- **Configurable Parameters**: Adjustable confidence thresholds, iteration limits, and model selection
+
+## Installation
+
+```bash
+pip install llm-karpathy-consortium
+```
+
+## Command Line Usage
+
+Basic usage:
+```bash
+llm consortium "Your prompt"
+```
+
+Advanced usage with options:
+```bash
+llm consortium "Your complex query" \
+  --models claude-3-opus-20240229 \
+  --models claude-3-sonnet-20240229 \
+  --models gpt-4 \
+  --models gemini-pro \
+  --arbiter-model claude-3-opus-20240229 \
+  --confidence-threshold 0.8 \
+  --max-iterations 3 \
+  --output results.json
+```
+
+### Options
+
+- `-m, --models`: Models to include in consortium (can specify multiple)
+- `--arbiter-model`: Model to use as arbiter (default: claude-3-opus-20240229)
+- `--confidence-threshold`: Minimum confidence threshold (default: 0.8)
+- `--max-iterations`: Maximum number of iteration rounds (default: 3)
+- `--system`: Custom system prompt
+- `--output`: Save full results to a JSON file
+
+## Response Structure
+
+The plugin uses a structured XML format for responses:
+
+```xml
+<thought_process>
+[Detailed reasoning about the problem]
+</thought_process>
+
+<answer>
+[Final answer to the query]
+</answer>
+
+<confidence>
+[Confidence level from 0 to 1]
+</confidence>
+```
+
+## Iteration Process
+
+1. Initial responses are gathered from all configured models
+2. The arbiter model synthesizes responses and evaluates confidence
+3. If confidence is below threshold and max iterations not reached:
+   - Refinement areas are identified
+   - A new iteration begins with an enhanced prompt
+4. Process continues until confidence threshold is met or max iterations reached
+
+## Database Logging
+
+All interactions are automatically logged to a SQLite database located in the LLM user directory:
+
+- Model responses
+- Confidence levels
+- Iteration history
+- Synthesis results
+- Timing information
+
+## Programmatic Usage
+
+```python
+from llm_consortium import ConsortiumOrchestrator
+
+orchestrator = ConsortiumOrchestrator(
+    models=["claude-3-opus-20240229", "gpt-4", "gemini-pro"],
+    confidence_threshold=0.8,
+    max_iterations=3,
+    arbiter_model="claude-3-opus-20240229"
+)
+
+result = await orchestrator.orchestrate("Your prompt")
+
+print(f"Synthesized Response: {result['synthesis']['synthesis']}")
+print(f"Confidence: {result['synthesis']['confidence']}")
+print(f"Analysis: {result['synthesis']['analysis']}")
+```
+
+## Architecture
+
+The plugin uses a layered architecture:
+
+1. **ConsortiumOrchestrator**: Main orchestration layer
+2. **DatabaseConnection**: Singleton for database operations
+3. **IterationContext**: Manages iteration state and history
+4. **Response Synthesis**: Handled by arbiter model
+5. **Logging System**: Multi-level logging with file and console output
+
+## Core Algorithm Flow
+
+The following Mermaid diagram illustrates the core algorithm flow of the LLM Karpathy Consortium:
+
+```mermaid
+flowchart TD
+    A[Start] --> B[Get Model Responses]
+    B --> C[Synthesize Responses]
+    C --> D{Check Confidence}
+    D -- Confidence >= Threshold --> E[Return Final Result]
+    D -- Confidence < Threshold --> F{Max Iterations Reached?}
+    F -- No --> G[Prepare Next Iteration]
+    G --> B
+    F -- Yes --> E
+```
+
+## Development
+
+To contribute:
+
+1. Clone the repository
+2. Install development dependencies: `pip install -e ".[dev]"`
+3. Run tests: `pytest`
+4. Submit pull requests with tests and documentation
+
+## License
+
+MIT License
+
+## Credits
+
+Developed as part of the LLM ecosystem, inspired by Andrej Karpathy's work on model collaboration and iteration.

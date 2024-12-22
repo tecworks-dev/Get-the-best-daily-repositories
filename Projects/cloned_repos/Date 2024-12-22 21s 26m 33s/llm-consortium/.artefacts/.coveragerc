@@ -1,0 +1,21 @@
+[run]
+source = llm_consortium
+omit =
+    */tests/*
+    */site-packages/*
+    setup.py
+
+[report]
+exclude_lines =
+    pragma: no cover
+    def __repr__
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    pass
+    raise ImportError
+    except ImportError:
+    def main
+
+[html]
+directory = coverage_html
+title = LLM Karpathy Consortium Coverage Report

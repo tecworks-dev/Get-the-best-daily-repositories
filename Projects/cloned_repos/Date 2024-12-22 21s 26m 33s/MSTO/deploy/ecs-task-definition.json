@@ -1,0 +1,110 @@
+{
+    "family": "msto-task",
+    "networkMode": "awsvpc",
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "1024",
+    "memory": "2048",
+    "executionRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/ecsTaskExecutionRole",
+    "taskRoleArn": "arn:aws:iam::${AWS_ACCOUNT_ID}:role/ecsTaskRole",
+    "containerDefinitions": [
+        {
+            "name": "msto",
+            "image": "${ECR_REPOSITORY_URI}:latest",
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "protocol": "tcp"
+                }
+            ],
+            "environment": [
+                {
+                    "name": "ENV",
+                    "value": "prod"
+                },
+                {
+                    "name": "TRADING_MODE",
+                    "value": "paper"
+                }
+            ],
+            "secrets": [
+                {
+                    "name": "TRADINGVIEW_WEBHOOK_URL",
+                    "valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/msto/tradingview_webhook_url"
+                },
+                {
+                    "name": "NEWS_API_KEY",
+                    "valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/msto/news_api_key"
+                },
+                {
+                    "name": "DB_CONNECTION_STRING",
+                    "valueFrom": "arn:aws:ssm:${AWS_REGION}:${AWS_ACCOUNT_ID}:parameter/msto/db_connection_string"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/msto",
+                    "awslogs-region": "${AWS_REGION}",
+                    "awslogs-stream-prefix": "msto",
+                    "awslogs-create-group": "true"
+                }
+            },
+            "mountPoints": [
+                {
+                    "sourceVolume": "data",
+                    "containerPath": "/app/data",
+                    "readOnly": false
+                },
+                {
+                    "sourceVolume": "logs",
+                    "containerPath": "/app/logs",
+                    "readOnly": false
+                }
+            ],
+            "healthCheck": {
+                "command": [
+                    "CMD-SHELL",
+                    "curl -f http://localhost:8080/health || exit 1"
+                ],
+                "interval": 30,
+                "timeout": 5,
+                "retries": 3,
+                "startPeriod": 60
+            },
+            "ulimits": [
+                {
+                    "name": "nofile",
+                    "softLimit": 65536,
+                    "hardLimit": 65536
+                }
+            ]
+        }
+    ],
+    "volumes": [
+        {
+            "name": "data",
+            "efsVolumeConfiguration": {
+                "fileSystemId": "${EFS_FILESYSTEM_ID}",
+                "rootDirectory": "/data",
+                "transitEncryption": "ENABLED",
+                "authorizationConfig": {
+                    "accessPointId": "${EFS_ACCESS_POINT_ID}",
+                    "iam": "ENABLED"
+                }
+            }
+        },
+        {
+            "name": "logs",
+            "efsVolumeConfiguration": {
+                "fileSystemId": "${EFS_FILESYSTEM_ID}",
+                "rootDirectory": "/logs",
+                "transitEncryption": "ENABLED",
+                "authorizationConfig": {
+                    "accessPointId": "${EFS_ACCESS_POINT_ID}",
+                    "iam": "ENABLED"
+                }
+            }
+        }
+    ]
+} 
