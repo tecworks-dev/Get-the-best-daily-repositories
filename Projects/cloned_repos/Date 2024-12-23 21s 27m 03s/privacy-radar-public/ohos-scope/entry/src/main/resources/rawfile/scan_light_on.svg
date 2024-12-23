@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>手电筒已开启态</title>
+    <defs>
+        <path d="M9.03089919,10.5 L14.999047,10.5008976 C15.2746936,10.5174364 15.484742,10.7542995 15.4682032,11.0299461 L14.8346097,21.5898384 C14.787083,22.3819499 14.1308384,23 13.3373024,23 L10.6626976,23 C9.86916163,23 9.21291699,22.3819499 9.16539031,21.5898384 L8.53179677,11.0299461 L8.53089919,11 C8.53089919,10.7238576 8.75475682,10.5 9.03089919,10.5 Z M12,12.25 C11.1715729,12.25 10.5,12.9215729 10.5,13.75 L10.5,15.25 C10.5,16.0784271 11.1715729,16.75 12,16.75 C12.8284271,16.75 13.5,16.0784271 13.5,15.25 L13.5,13.75 C13.5,12.9215729 12.8284271,12.25 12,12.25 Z M12,12.75 C12.5522847,12.75 13,13.1977153 13,13.75 L13,14.25 C13,14.8022847 12.5522847,15.25 12,15.25 C11.4477153,15.25 11,14.8022847 11,14.25 L11,13.75 C11,13.1977153 11.4477153,12.75 12,12.75 Z M8.95812551,9.5 L14.9693516,9.5 C15.6239669,9.5 16.2029803,9.07549126 16.399885,8.45119197 L18.1345917,2.95119197 C18.3837781,2.16113019 17.945312,1.31865304 17.1552503,1.0694666 C17.009278,1.02342677 16.857119,1 16.7040583,1 L7.27699634,1 C6.44856922,1 5.77699634,1.67157288 5.77699634,2.5 C5.77699634,2.6485931 5.79907559,2.79636153 5.8425108,2.93846463 L7.52363997,8.43846463 C7.71642907,9.0691955 8.2985885,9.5 8.95812551,9.5 Z" id="path-1"></path>
+        <filter x="-56.3%" y="-22.7%" width="212.7%" height="163.6%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="手电筒已开启态" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Public/Notification/ic_flashlight_filled">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="形状结合">
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

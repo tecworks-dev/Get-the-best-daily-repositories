@@ -1,0 +1,12 @@
+package com.lyihub.privacy_radar.util
+
+
+object PermissionRequestCode {
+    const val REQUEST_CODE_CAMERA_PERMISSION = 123
+    const val REQUEST_CODE_STORAGE_PERMISSION = 124
+    const val REQUEST_CODE_LOCATION_AND_CONTACTS_PERMISSION = 125
+    const val REQUEST_CODE_CONTACTS_PERMISSION = 126
+    const val REQUEST_CODE_READ_CALL_LOG_PERMISSION = 127
+    const val REQUEST_CODE_READ_SMS_PERMISSION = 128
+    const val REQUEST_CODE_READ_PHONE_STATE_PERMISSION = 129
+}
