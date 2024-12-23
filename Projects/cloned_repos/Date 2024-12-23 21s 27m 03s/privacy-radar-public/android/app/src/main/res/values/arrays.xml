@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="permission_titles">
+        <item>相册权限</item>
+        <item>联系人权限</item>
+        <item>文件权限</item>
+        <item>二维码扫描</item>
+        <item>手机信息权限</item>
+        <item>通话记录权限</item>
+        <item>短信权限</item>
+        <item>应用列表</item>
+    </string-array>
+
+</resources>

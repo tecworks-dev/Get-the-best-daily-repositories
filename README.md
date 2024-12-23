@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-20 .. 2024-12-22)
+# Latest Repositories (2024-12-21 .. 2024-12-23)
 
-- [wgpsec/cloudsword](https://github.com/wgpsec/cloudsword) (148)
-- [fabriziosalmi/patterns](https://github.com/fabriziosalmi/patterns) (138)
-- [irthomasthomas/llm-consortium](https://github.com/irthomasthomas/llm-consortium) (53)
-- [cenab/MSTO](https://github.com/cenab/MSTO) (46)
-- [yazilimacademy/abp-raffle-app](https://github.com/yazilimacademy/abp-raffle-app) (28)
+- [nesaorg/Equivariant-Encryption-for-AI](https://github.com/nesaorg/Equivariant-Encryption-for-AI) (395)
+- [Milvoid/SJTU-Annual-Eat](https://github.com/Milvoid/SJTU-Annual-Eat) (110)
+- [SukkaW/Make-Bilibili-Great-Than-Ever-Before](https://github.com/SukkaW/Make-Bilibili-Great-Than-Ever-Before) (94)
+- [LYiHub/privacy-radar-public](https://github.com/LYiHub/privacy-radar-public) (35)
+- [Lumicrownai/Etura-agent](https://github.com/Lumicrownai/Etura-agent) (33)
