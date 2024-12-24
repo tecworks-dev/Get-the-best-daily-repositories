@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mClPermissionCell"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_300"
+    android:layout_margin="@dimen/dp_5"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/color_EAEAEA"
+    android:elevation="@dimen/dp_5"
+    android:outlineAmbientShadowColor="@color/color_1A000000"
+    android:outlineSpotShadowColor="@color/color_1A000000"
+    tools:context=".CameraActivity">
+
+    <ImageView
+        android:id="@+id/mIvStatus"
+        android:layout_width="@dimen/dp_80"
+        android:layout_height="@dimen/dp_80"
+        android:src="@mipmap/ic_unknown"/>
+    <TextView
+        android:id="@+id/mTvPermission"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:textSize="@dimen/dp_32"
+        android:text="相册权限"/>
+    <TextView
+        android:id="@+id/mTvStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="@dimen/dp_20"
+        android:text="有泄漏风险"/>
+
+</LinearLayout>

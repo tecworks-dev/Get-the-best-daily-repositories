@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'kotlin-kapt'
+    id 'kotlin-android-extensions'
+}
+
+android {
+    namespace 'com.lyihub.privacy_radar'
+    compileSdk 33
+
+    signingConfigs {
+        release {
+            def Properties buildProps = getSign()
+            storeFile file(buildProps['STORE_FILE'])
+            keyAlias buildProps['KEY_ALIAS']
+            keyPassword buildProps['KEY_PASSWORD']
+            storePassword buildProps['STORE_PASSWORD']
+        }
+    }
+
+    defaultConfig {
+        applicationId "com.lyihub.privacy_radar"
+        minSdk 24
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.release
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+/**
+ * 读取配置签名
+ * @return
+ */
+def getSign() {
+    def Properties buildProperties = new Properties()
+    buildProperties.load(new FileInputStream(file('../docs/sign.properties')))
+    return buildProperties
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+
+    implementation 'com.github.Victor2018:ScreenMatchLib:v1.5'
+    implementation 'com.github.Victor2018:easypermissions:v1.1.0'
+//    implementation 'com.journeyapps:zxing-android-embedded:4.2.0'
+    implementation 'com.github.Victor2018:ZxingLib:v2.0'
+    implementation 'io.github.lucksiege:pictureselector:v3.11.2'
+
+
+    //glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    kapt 'com.github.bumptech.glide:compiler:4.11.0'
+
+}
