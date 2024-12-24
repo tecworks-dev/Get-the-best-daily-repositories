@@ -1,0 +1,92 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "隐私雷达"
+    },
+    {
+      "name": "album",
+      "value": "相册权限"
+    },
+    {
+      "name": "contact",
+      "value": "联系人权限"
+    },
+    {
+      "name": "file",
+      "value": "文件权限"
+    },
+    {
+      "name": "qr_scan",
+      "value": "二维码扫描"
+    },
+    {
+      "name": "device_info",
+      "value": "手机信息"
+    },
+    {
+      "name": "call_log",
+      "value": "通话记录权限"
+    },
+    {
+      "name": "read_sms",
+      "value": "短信权限"
+    },
+    {
+      "name": "app",
+      "value": "应用列表"
+    },
+    {
+      "name": "riv_avatar_reason",
+      "value": "权限使用"
+    },
+    {
+      "name": "contact_reason",
+      "value": "获取联系人打电话使用"
+    },
+    {
+      "name": "permission_reason_camera",
+      "value": "二维码扫描"
+    },
+    {
+      "name": "permission_reason_udid",
+      "value": "获取手机信息"
+    },
+    {
+      "name": "Scan_diaLog_not_found",
+      "value": "未识别到二维码/条形码。"
+    },
+    {
+      "name": "Scan_barcode",
+      "value": "扫描二维码/条码"
+    },
+    {
+      "name": "Scan_barcode_tips",
+      "value": "对准二维码/条码，即可自动扫描"
+    },
+    {
+      "name": "title_result",
+      "value": "结果"
+    },
+    {
+      "name": "code_format",
+      "value": "码类型"
+    },
+    {
+      "name": "result_content",
+      "value": "码值"
+    },
+    {
+      "name": "code_react",
+      "value": "码位置信息"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>关闭</title>
+    <defs>
+        <filter x="-11.2%" y="-11.2%" width="122.3%" height="122.3%" filterUnits="objectBoundingBox" id="filter-1">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="SourceGraphic"></feMergeNode>
+            </feMerge>
+        </filter>
+        <path d="M1.42258899,13.207702 C1.09715208,13.5331389 0.569514594,13.5331389 0.244077685,13.207702 C-0.0813592251,12.8822651 -0.0813592251,12.3546276 0.244077685,12.0291907 L5.54737854,6.72588984 L0.244077682,1.42258898 C-0.0813592274,1.09715207 -0.0813592274,0.569514592 0.244077682,0.244077682 C0.569514592,-0.0813592274 1.09715207,-0.0813592274 1.42258898,0.244077682 L6.72588984,5.54737854 L12.0291907,0.244077685 C12.3546276,-0.0813592251 12.8822651,-0.0813592251 13.207702,0.244077685 C13.5331389,0.569514594 13.5331389,1.09715208 13.207702,1.42258899 L1.42258899,13.207702 Z M13.207702,12.0291907 C13.5331389,12.3546276 13.5331389,12.8822651 13.207702,13.207702 C12.8822651,13.5331389 12.3546276,13.5331389 12.0291907,13.207702 L7.31514549,8.4936568 L8.4936568,7.31514549 L13.207702,12.0291907 Z" id="path-2"></path>
+    </defs>
+    <g id="关闭" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组">
+            <circle id="椭圆形" fill-opacity="0.05" fill="#FFFFFF" cx="20" cy="20" r="20"></circle>
+            <g id="Public/ic_cancel" filter="url(#filter-1)" transform="translate(13.2741, 13.2741)">
+                <mask id="mask-3" fill="white">
+                    <use xlink:href="#path-2"></use>
+                </mask>
+                <g id="形状" fill-rule="nonzero"></g>
+                <g id="Symbol/color-light/colorPrimary" mask="url(#mask-3)" fill="#FFFFFF" fill-opacity="0.901960784">
+                    <g transform="translate(-3.2741, -3.2741)" id="color/#000000">
+                        <rect x="0" y="0" width="20" height="20"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

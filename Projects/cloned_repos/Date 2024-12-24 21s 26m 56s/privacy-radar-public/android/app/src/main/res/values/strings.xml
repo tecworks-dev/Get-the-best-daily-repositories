@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">隐私雷达</string>
+
+    <string name="returned_from_app_settings_to_activity">
+        Returned from app settings to MainActivity with the following permissions:
+        \n
+        \nCamera: %s
+        \nLocation &amp; Contacts: %s
+        \nSMS: %s
+        \nStorage: %s
+    </string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="permission_camera_text">Camera</string>
+    <string name="permission_camera_rationale_message">This app needs access to your camera so you can take pictures.</string>
+    <string name="permission_read_call_log_rationale_message">This app needs access to your read call log so you can get call log.</string>
+    <string name="permission_read_sms_rationale_message">This app needs access to your read sms so you can get sms.</string>
+    <string name="permission_read_phone_state_rationale_message">This app needs access to your read phone state so you can read phone state.</string>
+    <string name="permission_sms_text">SMS</string>
+    <string name="permission_sms_rationale_message">This app needs access to your sms to read all your great messages.</string>
+    <string name="permission_storage_text">Storage</string>
+    <string name="permission_storage_rationale_message">This app needs access to your storage to save your modified picture on gallery.</string>
+    <string name="permission_location_and_contacts_text">Location and Contacts</string>
+    <string name="permission_location_and_contacts_rationale_message">This app needs access to your location and contacts to know where and who you are.</string>
+    <string name="permission_contacts_rationale_message">This app needs access to your contacts to know where and who you are.</string>
+
+    <!-- Logs -->
+    <string name="log_permissions_granted">onPermissionsGranted:%d:%d</string>
+    <string name="log_permissions_denied">onPermissionsDenied::%d:%d</string>
+    <string name="log_permission_rationale_accepted">onPermissionRationaleAccepted:%d"</string>
+    <string name="log_permission_rationale_denied">onPermissionRationaleDenied:%d"</string>
+
+
+    <string name="loading">努力加载中...</string>
+    <string name="all_presented_for_you">到底啦</string>
+</resources>
