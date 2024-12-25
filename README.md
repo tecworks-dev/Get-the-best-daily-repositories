@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-22 .. 2024-12-24)
+# Latest Repositories (2024-12-23 .. 2024-12-25)
 
-- [veprev/roblox-script](https://github.com/veprev/roblox-script) (122)
-- [Lumicrownai/Etura-agent](https://github.com/Lumicrownai/Etura-agent) (121)
-- [Zoelkunison/Github-Mev-Bot](https://github.com/Zoelkunison/Github-Mev-Bot) (76)
-- [LYiHub/privacy-radar-public](https://github.com/LYiHub/privacy-radar-public) (62)
-- [deanxv/genspark2api](https://github.com/deanxv/genspark2api) (60)
+- [Gianpi11111/Roblox-Blox-Fruits-Script-2024](https://github.com/Gianpi11111/Roblox-Blox-Fruits-Script-2024) (685)
+- [kaosaga60/Nexus-Rob1ox](https://github.com/kaosaga60/Nexus-Rob1ox) (683)
+- [Dragonblan/Ex1tlag-Free-2024](https://github.com/Dragonblan/Ex1tlag-Free-2024) (683)
+- [caicaiwast/FL-Studio](https://github.com/caicaiwast/FL-Studio) (683)
+- [7777rewards/hack-apex-1egend](https://github.com/7777rewards/hack-apex-1egend) (683)
