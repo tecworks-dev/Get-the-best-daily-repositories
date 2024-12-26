@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-23 .. 2024-12-25)
+# Latest Repositories (2024-12-24 .. 2024-12-26)
 
-- [Gianpi11111/Roblox-Blox-Fruits-Script-2024](https://github.com/Gianpi11111/Roblox-Blox-Fruits-Script-2024) (685)
-- [kaosaga60/Nexus-Rob1ox](https://github.com/kaosaga60/Nexus-Rob1ox) (683)
-- [Dragonblan/Ex1tlag-Free-2024](https://github.com/Dragonblan/Ex1tlag-Free-2024) (683)
-- [caicaiwast/FL-Studio](https://github.com/caicaiwast/FL-Studio) (683)
-- [7777rewards/hack-apex-1egend](https://github.com/7777rewards/hack-apex-1egend) (683)
+- [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) (754)
+- [obeylowe95/tron-wallet](https://github.com/obeylowe95/tron-wallet) (149)
+- [llmgenai/LLMInterviewQuestions](https://github.com/llmgenai/LLMInterviewQuestions) (138)
+- [tinytoy-sec/UefiVarMonitor](https://github.com/tinytoy-sec/UefiVarMonitor) (66)
+- [mimic-4750/Executor-Wave-r0bl0x](https://github.com/mimic-4750/Executor-Wave-r0bl0x) (49)
