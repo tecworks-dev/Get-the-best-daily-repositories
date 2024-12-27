@@ -2,31 +2,31 @@
   {
     "name": "deepseek-ai/DeepSeek-V3",
     "clone_url": "https://github.com/deepseek-ai/DeepSeek-V3.git",
-    "stars": 754,
-    "size": 1679
-  },
-  {
-    "name": "obeylowe95/tron-wallet",
-    "clone_url": "https://github.com/obeylowe95/tron-wallet.git",
-    "stars": 149,
-    "size": 566
+    "stars": 3593,
+    "size": 1689
   },
   {
     "name": "llmgenai/LLMInterviewQuestions",
     "clone_url": "https://github.com/llmgenai/LLMInterviewQuestions.git",
-    "stars": 138,
+    "stars": 224,
     "size": 139
   },
   {
-    "name": "tinytoy-sec/UefiVarMonitor",
-    "clone_url": "https://github.com/tinytoy-sec/UefiVarMonitor.git",
-    "stars": 66,
-    "size": 2411
+    "name": "mkniewallner/migrate-to-uv",
+    "clone_url": "https://github.com/mkniewallner/migrate-to-uv.git",
+    "stars": 47,
+    "size": 683
   },
   {
-    "name": "mimic-4750/Executor-Wave-r0bl0x",
-    "clone_url": "https://github.com/mimic-4750/Executor-Wave-r0bl0x.git",
-    "stars": 49,
-    "size": 431
+    "name": "Zackriya-Solutions/meeting-minutes",
+    "clone_url": "https://github.com/Zackriya-Solutions/meeting-minutes.git",
+    "stars": 33,
+    "size": 542
+  },
+  {
+    "name": "levywang/random_web_player",
+    "clone_url": "https://github.com/levywang/random_web_player.git",
+    "stars": 32,
+    "size": 297
   }
 ]

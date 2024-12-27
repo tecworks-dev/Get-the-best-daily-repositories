@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-24 .. 2024-12-26)
+# Latest Repositories (2024-12-25 .. 2024-12-27)
 
-- [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) (754)
-- [obeylowe95/tron-wallet](https://github.com/obeylowe95/tron-wallet) (149)
-- [llmgenai/LLMInterviewQuestions](https://github.com/llmgenai/LLMInterviewQuestions) (138)
-- [tinytoy-sec/UefiVarMonitor](https://github.com/tinytoy-sec/UefiVarMonitor) (66)
-- [mimic-4750/Executor-Wave-r0bl0x](https://github.com/mimic-4750/Executor-Wave-r0bl0x) (49)
+- [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) (3593)
+- [llmgenai/LLMInterviewQuestions](https://github.com/llmgenai/LLMInterviewQuestions) (224)
+- [mkniewallner/migrate-to-uv](https://github.com/mkniewallner/migrate-to-uv) (47)
+- [Zackriya-Solutions/meeting-minutes](https://github.com/Zackriya-Solutions/meeting-minutes) (33)
+- [levywang/random_web_player](https://github.com/levywang/random_web_player) (32)
