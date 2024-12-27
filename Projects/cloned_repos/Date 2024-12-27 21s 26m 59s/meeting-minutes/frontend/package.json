@@ -1,0 +1,47 @@
+{
+  "name": "meeting-minutes-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "NODE_ENV=development concurrently -k \"next dev\" \"wait-on tcp:3000 && electron .\"",
+    "build": "next build && electron-builder",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@remirror/core": "^3.0.1",
+    "@remirror/extension-bold": "^3.0.1",
+    "@remirror/extension-italic": "^3.0.1",
+    "@remirror/extension-list": "^3.0.1",
+    "@remirror/extension-markdown": "^3.0.1",
+    "@remirror/extension-mention": "^3.0.1",
+    "@remirror/extension-underline": "^3.0.1",
+    "@remirror/pm": "^3.0.0",
+    "@remirror/react": "^3.0.1",
+    "@tiptap/pm": "^2.10.4",
+    "@tiptap/react": "^2.10.4",
+    "@tiptap/starter-kit": "^2.10.4",
+    "@types/lodash": "^4.17.13",
+    "electron-serve": "^2.1.1",
+    "lodash": "^4.17.21",
+    "lucide-react": "^0.469.0",
+    "next": "14.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.15",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10.0.1",
+    "concurrently": "^8.2.2",
+    "electron": "^28.1.0",
+    "electron-builder": "^24.9.1",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5",
+    "wait-on": "^7.2.0"
+  }
+}
