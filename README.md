@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-25 .. 2024-12-27)
+# Latest Repositories (2024-12-26 .. 2024-12-28)
 
-- [deepseek-ai/DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3) (3593)
-- [llmgenai/LLMInterviewQuestions](https://github.com/llmgenai/LLMInterviewQuestions) (224)
-- [mkniewallner/migrate-to-uv](https://github.com/mkniewallner/migrate-to-uv) (47)
-- [Zackriya-Solutions/meeting-minutes](https://github.com/Zackriya-Solutions/meeting-minutes) (33)
-- [levywang/random_web_player](https://github.com/levywang/random_web_player) (32)
+- [Germanos21/Roblox-Blox-Fruits-Script](https://github.com/Germanos21/Roblox-Blox-Fruits-Script) (791)
+- [Germanos21/BrtWallet](https://github.com/Germanos21/BrtWallet) (789)
+- [Germanos21/Nexus-Roblox](https://github.com/Germanos21/Nexus-Roblox) (788)
+- [Germanos21/r0blox-synapse-x-free](https://github.com/Germanos21/r0blox-synapse-x-free) (788)
+- [Germanos21/Solara-Executor-Roblox](https://github.com/Germanos21/Solara-Executor-Roblox) (788)
