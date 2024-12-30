@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-27 .. 2024-12-29)
+# Latest Repositories (2024-12-28 .. 2024-12-30)
 
-- [unclebugde/solara-github-download](https://github.com/unclebugde/solara-github-download) (829)
-- [togaevate/roblox-script](https://github.com/togaevate/roblox-script) (828)
-- [tanish0608/counter-str1ke-2-h4ck](https://github.com/tanish0608/counter-str1ke-2-h4ck) (752)
-- [Ronson80/Al-Photoshop-2024](https://github.com/Ronson80/Al-Photoshop-2024) (751)
-- [amn741/AquaDiscord](https://github.com/amn741/AquaDiscord) (751)
+- [voodoojardelvir48/tron-wallet](https://github.com/voodoojardelvir48/tron-wallet) (130)
+- [Windy3f3f3f3f/LLM-FuzzX](https://github.com/Windy3f3f3f3f/LLM-FuzzX) (108)
+- [leerob/nextzy](https://github.com/leerob/nextzy) (59)
+- [nginetechnologies/sceneri-common](https://github.com/nginetechnologies/sceneri-common) (45)
+- [C0NQR0R/Enhanced-OWASP-TestingGuide-v4.2](https://github.com/C0NQR0R/Enhanced-OWASP-TestingGuide-v4.2) (40)
