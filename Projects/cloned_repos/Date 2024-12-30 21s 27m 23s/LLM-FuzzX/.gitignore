@@ -1,0 +1,40 @@
+# Python
+/api_config.py
+*.py[cod]
+__pycache__/
+*/__pycache__/
+*.so
+.Python
+env/
+venv/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 日志文件
+*.log
+/logs/
+
+# 临时文件
+/trash
+/temp
+.DS_Store
+
+# 测试覆盖率
+.coverage
+htmlcov/
+
+# 项目的
+/results
+/third_party
+all_code.txt
+data/seed_history
+
+private/
+*_all_code.txt
