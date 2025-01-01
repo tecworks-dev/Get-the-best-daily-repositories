@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-28 .. 2024-12-30)
+# Latest Repositories (2024-12-30 .. 2025-01-01)
 
-- [voodoojardelvir48/tron-wallet](https://github.com/voodoojardelvir48/tron-wallet) (130)
-- [Windy3f3f3f3f/LLM-FuzzX](https://github.com/Windy3f3f3f3f/LLM-FuzzX) (108)
-- [leerob/nextzy](https://github.com/leerob/nextzy) (59)
-- [nginetechnologies/sceneri-common](https://github.com/nginetechnologies/sceneri-common) (45)
-- [C0NQR0R/Enhanced-OWASP-TestingGuide-v4.2](https://github.com/C0NQR0R/Enhanced-OWASP-TestingGuide-v4.2) (40)
+- [addyosmani/firew0rks](https://github.com/addyosmani/firew0rks) (228)
+- [vojkanrojek-18glam/spoofer-riot](https://github.com/vojkanrojek-18glam/spoofer-riot) (178)
+- [vasilmatuhnosouth/hack-crypto-wallet](https://github.com/vasilmatuhnosouth/hack-crypto-wallet) (176)
+- [wrtfmn7u2009ca/seed](https://github.com/wrtfmn7u2009ca/seed) (176)
+- [term2t/roblox-script](https://github.com/term2t/roblox-script) (170)
