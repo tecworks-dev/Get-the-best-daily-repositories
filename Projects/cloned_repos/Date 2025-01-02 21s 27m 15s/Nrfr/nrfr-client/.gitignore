@@ -1,0 +1,33 @@
+# Binaries
+build/bin
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Wails
+wails.exe
+frontend/dist
+frontend/node_modules
+frontend/.env
+frontend/.env.*
+
+# Resources
+resources/*.apk
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# System
+.DS_Store
+Thumbs.db

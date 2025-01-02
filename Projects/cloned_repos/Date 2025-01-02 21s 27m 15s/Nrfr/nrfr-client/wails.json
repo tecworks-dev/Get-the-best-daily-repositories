@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "nrfr-client",
+  "outputfilename": "Nrfr 快速启动工具",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Antkites"
+  },
+  "info": {
+    "companyName": "Antkites",
+    "productName": "Nrfr Client",
+    "productVersion": "1.0.2",
+    "copyright": "Copyright © 2024 Antkites",
+    "comments": "Nrfr 快速启动工具"
+  }
+}
