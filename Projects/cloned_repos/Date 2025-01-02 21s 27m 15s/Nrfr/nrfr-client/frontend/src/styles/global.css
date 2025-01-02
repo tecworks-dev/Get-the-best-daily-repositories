@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 窗口控制按钮样式 */
+.window-control-button {
+    @apply w-3 h-3 rounded-full transition-colors;
+    cursor: pointer;
+}

@@ -1,32 +1,32 @@
 [
   {
-    "name": "addyosmani/firew0rks",
-    "clone_url": "https://github.com/addyosmani/firew0rks.git",
-    "stars": 228,
-    "size": 1839
-  },
-  {
     "name": "vojkanrojek-18glam/spoofer-riot",
     "clone_url": "https://github.com/vojkanrojek-18glam/spoofer-riot.git",
-    "stars": 178,
+    "stars": 252,
     "size": 88
   },
   {
-    "name": "vasilmatuhnosouth/hack-crypto-wallet",
-    "clone_url": "https://github.com/vasilmatuhnosouth/hack-crypto-wallet.git",
-    "stars": 176,
-    "size": 2196
+    "name": "SafeBreach-Labs/CVE-2024-49113",
+    "clone_url": "https://github.com/SafeBreach-Labs/CVE-2024-49113.git",
+    "stars": 232,
+    "size": 3277
   },
   {
-    "name": "wrtfmn7u2009ca/seed",
-    "clone_url": "https://github.com/wrtfmn7u2009ca/seed.git",
-    "stars": 176,
-    "size": 2258
+    "name": "Ackites/Nrfr",
+    "clone_url": "https://github.com/Ackites/Nrfr.git",
+    "stars": 144,
+    "size": 416
   },
   {
-    "name": "term2t/roblox-script",
-    "clone_url": "https://github.com/term2t/roblox-script.git",
-    "stars": 170,
-    "size": 654
+    "name": "TermoraDev/termora",
+    "clone_url": "https://github.com/TermoraDev/termora.git",
+    "stars": 133,
+    "size": 822
+  },
+  {
+    "name": "caxapok5656/tron-wallet",
+    "clone_url": "https://github.com/caxapok5656/tron-wallet.git",
+    "stars": 105,
+    "size": 249
   }
 ]
