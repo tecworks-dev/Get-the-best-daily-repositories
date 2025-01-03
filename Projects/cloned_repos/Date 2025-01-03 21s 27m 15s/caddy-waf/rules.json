@@ -1,0 +1,122 @@
+[
+    {
+        "id": "whitelist-root",
+        "phase": 1,
+        "pattern": "^/$",
+        "targets": ["PATH"],
+        "severity": "LOW",
+        "action": "pass",
+        "score": 0,
+        "description": "Allow requests to the root path."
+    },
+    {
+        "id": "whitelist-health",
+        "phase": 1,
+        "pattern": "^/(?:about|health|status|ping)$",
+        "targets": ["PATH"],
+        "severity": "LOW",
+        "action": "pass",
+        "score": 0,
+        "description": "Allow requests to common health and status endpoints."
+    },
+    {
+        "id": "scanner-detection",
+        "phase": 1,
+        "pattern": "(?i)(?:sqlmap|acunetix|nikto|nessus|netsparker|nmap|dirbuster|w3af|openvas|burpsuite|webinspect|qualys|commix|zap|arachni|gobuster|hydra|metasploit|zgrab|masscan|wfuzz|crackmapexec)",
+        "targets": ["USER_AGENT"],
+        "severity": "CRITICAL",
+        "action": "block",
+        "score": 10,
+        "description": "Block requests from known security scanners based on User-Agent."
+    },
+    {
+        "id": "sql-injection",
+        "phase": 2,
+        "pattern": "(?i)(?:\\b(?:select|insert|update|delete|drop|alter)\\b[\\s\\S]*?\\b(?:from|into|where|table)\\b|\\bunion\\b[\\s\\S]*?\\bselect\\b|'\\s*(?:and|or)\\s*['\\d]+\\s*(?:=|[<>]=?|!=)\\s*['\\d]+|\\)\\s*(?:and|or)\\s*\\([\\d]+\\s*(?:=|[<>]=?|!=)\\s*[\\d]+\\)|\\b(?:sleep|benchmark|waitfor\\s+delay)\\s*\\()",
+        "targets": ["ARGS", "BODY", "HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block SQL injection attempts in request arguments, body, and headers."
+    },
+    {
+        "id": "xss",
+        "phase": 2,
+        "pattern": "(?i)(?:<script[^>]*>|<img[^>]*\\s+onerror=|javascript:|<svg[^>]*\\s+onload=|alert\\(|document\\.cookie|eval\\(|base64_decode)",
+        "targets": ["ARGS", "BODY", "HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block XSS attempts using HTML tags, event handlers, and javascript: protocol."
+    },
+    {
+        "id": "path-traversal",
+        "phase": 2,
+        "pattern": "(?:\\.\\.[/\\\\]|\\.\\./|\\.\\.\\\\/|%2e%2e[/\\\\]|%2e%2e/|%2e%2e%5c|%252e%252e|\\b(?:etc/passwd|etc/shadow|proc/self/environ)\\b)",
+        "targets": ["PATH", "ARGS", "HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block path traversal attempts and direct access to sensitive files."
+    },
+    {
+        "id": "rce",
+        "phase": 2,
+        "pattern": "(?i)(?:\\b(?:cat|base64|whoami)\\b[\\s\\S]*?\\b(?:/etc/passwd|/etc/shadow)\\b|`[^`]+`|;\\s*[\\w\\-]+\\s*[=\\s]|;\\s*[\\w\\-]+=.*?\\$\\(|;\\s*[\\w\\-]+\\s*\\$\\()",
+        "targets": ["ARGS", "BODY", "HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block remote code execution attempts using command separators, backticks, and base64-encoded commands."
+    },
+    {
+        "id": "log4j-exploit",
+        "phase": 2,
+        "pattern": "(?i)(?:\\$\\{jndi:(?:ldap|rmi|dns|iiop|corba|nds|nis|http)://[^}]+\\}|\\$\\{(?:env|sys|java|lower|upper|logger|ctx|date|threadcontext|marker):[^}]+\\})",
+        "targets": ["ARGS", "BODY", "HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block Log4j exploit attempts using JNDI and environment variables."
+    },
+    {
+        "id": "header-attacks",
+        "phase": 2,
+        "pattern": "(?i)(?:1'\\s+OR\\s+'1'='1|<script[^>]*>|../../etc/passwd|1'\\s+UNION\\s+SELECT\\s+NULL--)",
+        "targets": ["HEADERS"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block SQL injection, XSS, and path traversal attempts in headers."
+    },
+    {
+        "id": "sensitive-files",
+        "phase": 1,
+        "pattern": "(?i)(?:/\\.git/(?:HEAD|index|config|refs)|/\\.env(?:\\.local|\\.dev|\\.prod)?$|/\\.htaccess$|/\\.htpasswd$|/\\.svn/|/\\.DS_Store$)",
+        "targets": ["PATH", "URI"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 5,
+        "description": "Block access to sensitive files and directories."
+    },
+    {
+        "id": "unusual-paths",
+        "phase": 1,
+        "pattern": "(?i)(?:/wp-admin|/phpmyadmin|/admin|/login|/cgi-bin|/shell|/backdoor|/cmd|/exec|/bin/sh|/bin/bash)",
+        "targets": ["PATH"],
+        "severity": "MEDIUM",
+        "action": "block",
+        "score": 3,
+        "description": "Block requests to unusual or suspicious paths."
+    },
+    {
+        "id": "block-bad-bots",
+        "phase": 1,
+        "pattern": "~*(PTST\\/|sentry\\/|sistrix|SISTRIX|007ac9 Crawler|2ip bot|2ip\\.ru|360Spider|A Patent Crawler|A6-Indexer|ADmantX|AHC\\/|AISearchBot|Aboundex|AcademicBotRTU|AddSearchBot|AddThis|Adidxbot|AdsTxtCrawler|AdvBot|Ahrefs(Bot|SiteAudit)|AlexandriaOrgBot|AlphaBot|Amazon CloudFront|Amazonbot|AndersPinkBot|AnyEvent|Apercite|AppInsights|ArchiveBot|AspiegelBot|Atom Feed Robot|Audisto Crawler|AwarioBot|AwarioRssBot|AwarioSmartBot|B2B Bot|BDCbot|BIGLOTRON|BLEXBot\\/|BLP_bbot|BTWebClient|BUbiNG|Baidu-YunGuanCe|Bark[rR]owler|BazQux|BehloolBot|Better Uptime Bot|BingPreview\\/|BitBot|BitSightBot\\/|Blackboard|BlogTraffic\\/\\d\\.\\d+ Feed-Fetcher|BomboraBot|Bot\\.AraTurka\\.com|BoxcarBot|BrandONbot|BrandVerity|BrightEdge Crawler|BublupBot|Buck\\/|Bytespider|CC Metadata Scaper|CISPA Webcrawler|Caliperbot|CapsuleChecker|ChatGPT-User|CheckMarkNetwork\\/|Chrome-Lighthouse|Cincraw|Clickagy|Cliqzbot\\/|CloudFlare-AlwaysOnline|CloudFlare-Prefetch|Cloudflare-Healthchecks|Cloudflare-SSLDetector|Cloudflare-Traffic-Manager|Cocolyzebot|Companybook-Crawler|ContextAd Bot|CookieHubScan|Cookiebot|CrawlyProjectCrawler|CriteoBot|CrunchBot|CrystalSemanticsBot|Cutbot|CyberPatrol|DareBoost|DataForSeoBot|Datafeedwatch|Datanyze|Dataprovider\\.com|DeuSu\\/|Diffbot\\/|Digg Deeper|Digincore bot|Discordbot|Disqus|DnyzBot|Domain Re-Animator Bot|DomainStatsBot|Domains Project\\/|Dragonbot|Dubbotbot|DuckDuckGo-Favicons-Bot|EZID|Embedly|EveryoneSocialBot|Expanse|Experibot|ExtLinksBot|Eyeotabot|FAST Enterprise Crawler|FAST-WebCrawler|FeedValidator|Feedbin|Feedly|Feedspot|FemtosearchBot|Fetch\\/|Fever|FindITAnswersbot|Flamingo_SearchEngine|FlipboardProxy|FreeWebMonitoring SiteChecker|FreshRSS|FreshpingBot|Friendica|Fyrebot|G2 Web Services|GPTBot|GarlikCrawler|GeedoBot|Genieo|Gigablast|Gigabot|GingerCrawler|Gluten Free Crawler\\/|GnowitNewsbot|Go-http-client|Gowikibot|GrapeshotCrawler|Grobbot|GroupHigh\\/|GroupMeBot|Gwene|HTTrack|Hatena|HeadlessChrome|HttpUrlConnection|HubSpot|IAS crawler|ICBot\\/|ICC-Crawler|INETDEX-BOT|Iframely|ImagesiftBot|IndeedBot|InterfaxScanBot|InternetMeasurement|IonCrawl|IstellaBot|James BOT|Jamie's Spider|Jetslide|Jetty|JobboerseBot|Jooblebot|Jugendschutzprogramm-Crawler|K7MLWCBot|KStandBot|Kemvibot|KeybaseBot|KomodiaBot|KosmioBot|Landau-Media-Spider|Laserlikebot|Leikibot|LightspeedSystemsCrawler|Linespider|Linguee Bot|LinkArchiver|LinkedInBot|LinkisBot|Livelap[bB]ot|Luminator-robots|MBCrawler|MJ12bot|MTRobot|MaCoCu|Mail\\.RU_Bot|Mastodon|MauiBot|Mediapartners \\(Googlebot\\)|Mediapartners-Google|Mediatoolkitbot|MegaIndex|MeltwaterNews|MetaInspector|MetaJobBot|MetaURI|Miniflux\\/|MixnodeCache\\/|MojeekBot\\/|Monsidobot|MoodleBot|Moreover|MuckRack|Multiviewbot|NAVER Blog Rssbot|NING\\/|NINJA bot|NIXStatsbot|NTENTbot|Neevabot|NerdByNature\\.Bot|NetSystemsResearch|NetcraftSurveyAgent|Neticle Crawler|Netvibes|NewsBlur|NextCloud|Nicecrawler|Nimbostratus-Bot|Nmap Scripting Engine|Nutch|Nuzzel|OAI-SearchBot|Ocarinabot|OdklBot\\/|OpenGraphCheck|OpenHoseBot|OrangeBot\\/|OutclicksBot|PR-CY\\.RU|PagePeeker\\/|PageThing|Pandalytics|PaperLiBot|Pcore-HTTP|PerplexityBot\\/|PetalBot|PhantomJS|PhxBot|PiplBot|PocketParser|Primalbot|PrivacyAwareBot|Pulsepoint|Python-urllib|Qwantify|RSSingBot|RankActiveLinkBot|Refindbot|RegionStuttgartBot|RetrevoPageAnalyzer|ReverseEngineeringBot|RewriteCond %{HTTP_USER_AGENT} ^$|\\\\&lt;|\\\\&gt;|\\\\&#039;|\\\\%|\\\\_iRc|\\\\_Works|\\\\@\\\\$x|\\\\&lt;\\\\?|\\\\$x0e|\\\\+select\\\\+|\\\\+union\\\\+|1\\\\,\\\\1\\\\,\\\\1\\\\,|2icommerce|3GSE|4all|59\\\\.64\\\\.153\\\\.|88\\\\.0\\\\.106\\\\.|98|85\\\\.17\\\\.|A\\\\_Browser|ABAC|Abont|abot|Accept|Access|Accoo|AceFTP|Acme|ActiveTouristBot|Address|Adopt|adress|adressendeutschland|ADSARobot|agent|ah\\\\-ha|Ahead|AESOP\\\\_com\\\\_SpiderMan|aipbot|Alarm|Albert|Alek|Alexibot|Alligator|AllSubmitter|alma|almaden|ALot|Alpha|aktuelles|Akregat|Amfi|amzn\\\\_assoc|Anal|Anarchie|andit|Anon|AnotherBot|Ansearch|AnswerBus|antivirx|Apexoo|appie|Aqua_Products|Arachmo|archive|arian|ASPSe|ASSORT|aster|Atari|ATHENS|AtHome|Atlocal|Atomic_Email_Hunter|Atomz|Atrop|^attach|attrib|autoemailspider|autohttp|axod|batch|b2w|Back|BackDoorBot|BackStreet|BackWeb|Badass|Baid|Bali|Bandit|Baidu|Barry|BasicHTTP|BatchFTP|bdfetch|beat|Become|Beij|BenchMark|berts|bew|big.brother|Bigfoot|Bilgi|Bison|Bitacle|Biz360|Black|Black.Hole|BlackWidow|bladder.fusion|Blaiz|Blog.Checker|Blogl|BlogPeople|Blogshares.Spiders|Bloodhound|Blow|bmclient|Board|BOI|boitho|Bond|Bookmark.search.tool|boris|Bost|Boston.Project|BotRightHere|Bot.mailto:craftbot@yahoo.com|BotALot|botpaidtoclick|botw|brandwatch|BravoBrian|Brok|Bropwers|Broth|browseabit|BrowseX|Browsezilla|Bruin|bsalsa|Buddy|Build|Built|Bulls|bumblebee|Bunny|Busca|Busi|Buy|bwh3|c\\\\-spider|CafeK|Cafi|camel|Cand|captu|Catch|cd34|Ceg|CFNetwork|cgichk|Cha0s|Chang|chaos|Char|char\\\\(32\\\\,35\\\\)|charlotte|CheeseBot|Chek|CherryPicker|chill|ChinaClaw|CICC|Cisco|Cita|Clam|Claw|Click.Bot|clipping|clshttp|Clush|COAST|ColdFusion|Coll|Comb|commentreader|Compan|contact|Control|contype|Conc|Conv|Copernic|Copi|Copy|Coral|Corn|core-project|cosmos|costa|cr4nk|crank|craft|Crap|Crawler0|Crazy|Cres|cs\\\\-CZ|cuill|Curl|Custo|Cute|CSHttp|Cyber|cyberalert|^DA$|daoBot|DARK|Data|Daten|Daum|dcbot|dcs|Deep|DepS|Detect|Deweb|Diam|Digger|Digimarc|digout4uagent|DIIbot|Dillo|Ding|DISC|discobot|Disp|Ditto|DLC|DnloadMage|DotBot|Doubanbot|Download|Download.Demon|Download.Devil|Download.Wonder|Downloader|drag|DreamPassport|Drec|Drip|dsdl|dsok|DSurf|DTAAgent|DTS|Dual|dumb|DynaWeb|e\\\\-collector|eag|earn|EARTHCOM|EasyDL|ebin|EBM-APPLE|EBrowse|eCatch|echo|ecollector|Edco|edgeio|efp\\\\@gmx\\\\.net|EirGrabber|email|Email.Extractor|EmailCollector|EmailSearch|EmailSiphon|EmailWolf|Emer|empas|Enfi|Enhan|Enterprise\\\\_Search|envolk|erck|EroCr|ESurf|Eval|Evil|Evere|EWH|Exabot|Exact|EXPLOITER|Expre|Extra|ExtractorPro|EyeN|FairAd|Fake|FANG|FAST|fastlwspider|FavOrg|Favorites.Sweeper|Faxo|FDM\\\\_1|FDSE|fetch|FEZhead|Filan|FileHound|find|Firebat|Firefox.2\\\\.0|Firs|Flam|Flash|FlickBot|Flip|fluffy|flunky|focus|Foob|Fooky|Forex|Forum|ForV|Fost|Foto|Foun|Franklin.Locator|freefind|FreshDownload|FrontPage|FSurf|Fuck|Fuer|futile|Fyber|Gais|GalaxyBot|Galbot|Gamespy\\\\_Arcade|GbPl|Gener|geni|Geona|Get|gigabaz|Gira|Ginxbot|gluc|glx.?v|gnome|Go.Zilla|Goldfire|Google.Wireless.Transcoder|Googlebot\\\\-Image|Got\\\\-It|GOFORIT|gonzo|GornKer|GoSearch|^gotit$|gozilla|grab|Grabber|GrabNet|Grub|Grup|Graf|Green.Research|grub|grub\\\\-client|gsa\\\\-cra|GSearch|GT\\\\:\\\\:WWW|GuideBot|guruji|gvfs|Gyps|hack|haha|hailo|Harv|Hatena|Hax|Head|Helm|herit|hgre|hhjhj\\\\@yahoo|Hippo|hloader|HMView|holm|holy|HomePageSearch|HooWWWer|HouxouCrawler|HMSE|HPPrint|htdig|HTTPConnect|httpdown|http.generic|HTTPGet|httplib|HTTPRetriever|HTTrack|human|Huron|hverify|Hybrid|Hyper|ia\\\\_archiver|iaskspi|IBM\\\\_Planetwide|iCCra|ichiro|ID\\\\-Search|IDA|IDBot|IEAuto|IEMPT|iexplore\\\\.exe|iGetter|Ilse|Iltrov|Image|Image.Stripper|Image.Sucker|imagefetch|iimds\\\\_monitor|Incutio|IncyWincy|Indexer|Industry.Program|Indy|InetURL|informant|InfoNav|InfoTekies|Ingelin|Innerpr|Inspect|InstallShield.DigitalWizard|Insuran\\\\.|Intellig|Intelliseek|InterGET|Internet.Ninja|Internet.x|Internet\\\\_Explorer|InternetLinkagent|InternetSeer.com|Intraf|IP2|Ipsel|Iria|IRLbot|Iron33|Irvine|ISC\\\\_Sys|iSilo|ISRCCrawler|ISSpi|IUPUI.Research.Bot|Jady|Jaka|Jam|^Java|java\\/|Java\\(tm\\)|JBH.agent|Jenny|JetB|JetC|jeteye|jiro|JoBo|JOC|jupit|Just|Jyx|Kapere|kash|Kazo|KBee|Kenjin|Kernel|Keywo|KFSW|KKma|Know|kosmix|KRAE|KRetrieve|Krug|ksibot|ksoap|Kum|KWebGet|Lachesis|lanshan|Lapo|larbin|leacher|leech|LeechFTP|LeechGet|leipzig\\\\.de|Lets|Lexi|lftp|Libby|libcrawl|libcurl|libfetch|libghttp|libWeb|libwhisker|libwww|libwww\\\\-FM|libwww\\\\-perl|LightningDownload|likse|Linc|Link|Link.Sleuth|LinkextractorPro|Linkie|LINKS.ARoMATIZED|LinkScan|linktiger|LinkWalker|Lint|List|lmcrawler|LMQ|LNSpiderguy|loader|LocalcomBot|Locu|London|lone|looksmart|loop|Lork|LTH\\\\_|lwp\\\\-request|LWP|lwp-request|lwp-trivial|Mac.Finder|Macintosh\\;.I\\;.PPC|Mac\\\\_F|magi|Mag\\\\-Net|Magnet|Magp|Mail.Sweeper|main|majest|Mam|Mana|MarcoPolo|mark.blonin|MarkWatch|MaSagool|Mass|Mass.Downloader|Mata|mavi|McBot|Mecha|MCspider|mediapartners|^Memo|MEGAUPLOAD|MetaProducts.Download.Express|Metaspin|Mete|Microsoft.Data.Access|Microsoft.URL|Microsoft\\\\_Internet\\\\_Explorer|MIDo|MIIx|miner|Mira|MIRE|Mirror|Miss|Missauga|Missigua.Locator|Missouri.College.Browse|Mist|Mizz|MJ12|mkdb|mlbot|MLM|MMMoCrawl|MnoG|moge|Moje|Monster|Monza.Browser|Mooz|Moreoverbot|MOT\\\\-MPx220|mothra\\\\/netscan|mouse|MovableType|Mozdex|Mozi\\\\!|^Mozilla$|Mozilla\\\\/1\\\\.22|Mozilla\\\\/22|^Mozilla\\\\/3\\\\.0.\\(compatible|Mozilla\\\\/3\\\\.Mozilla\\\\/2\\\\.01|Mozilla\\\\/4\\\\.0\\(compatible|Mozilla\\\\/4\\\\.08|Mozilla\\\\/4\\\\.61.\\(Macintosh|Mozilla\\\\/5\\\\.0|Mozilla\\\\/7\\\\.0|Mozilla\\\\/8|Mozilla\\\\/9|Mozilla\\\\:|Mozilla\\\\/Firefox|^Mozilla.*Indy|^Mozilla.*NEWT|^Mozilla*MSIECrawler|Mp3Bot|MPF|MRA|MS.FrontPage|MS.?Search|MSFrontPage|MSIE\\\\_6\\\\.0|MSIE6|MSIECrawler|msnbot\\\\-media|msnbot\\\\-Products|MSNPTC|MSProxy|MSRBOT|multithreaddb|musc|MVAC|MWM|My\\\\_age|MyApp|MyDog|MyEng|MyFamilyBot|MyGetRight|MyIE2|mysearch|myurl|NAG|NAMEPROTECT|NASA.Search|nationaldirectory|Naver|Navr|Near|NetAnts|netattache|Netcach|NetCarta|Netcraft|NetCrawl|NetMech|netprospector|NetResearchServer|NetSp|Net.Vampire|netX|NetZ|Neut|newLISP|NewsGatorInbox|NEWT|NEWT.ActiveX|Next|^NG|NICE|nikto|Nimb|Ninja|Ninte|NIPGCrawler|Noga|nogo|Noko|Nomad|Norb|noxtrumbot|NPbot|NuSe|Nutch|Nutex|NWSp|Obje|Ocel|Octo|ODI3|oegp|Offline|Offline.Explorer|Offline.Navigator|OK.Mozilla|omg|Omni|Onfo|onyx|OpaL|OpenBot|Openf|OpenTextSiteCrawler|OpenU|Orac|OrangeBot|Orbit|Oreg|osis|Outf|Owl|P3P|PackRat|PageGrabber|PagmIEDownload|pansci|Papa|Pars|Patw|pavu|Pb2Pb|pcBrow|PEAR|PEER|PECL|pepe|Perl|PerMan|PersonaPilot|Persuader|petit|PHP|PHP.vers|PHPot|Phras|PicaLo|Piff|Pige|pigs|^Ping|Pingd|PingALink|Pipe|Plag|Plant|playstarmusic|Pluck|Pockey|POE\\\\-Com|Poirot|Pomp|Port.Huron|Post|powerset|Preload|press|Privoxy|Probe|Program.Shareware|Progressive.Download|ProPowerBot|prospector|Provider.Protocol.Discover|ProWebWalker|Prowl|Proxy|Prozilla|psbot|PSurf|psycheclone|^puf$|Pulse|Pump|PushSite|PussyCat|PuxaRapido|PycURL|Pyth|PyQ|QuepasaCreep|Query|Quest|QRVA|Qweer|radian|Radiation|Rambler|RAMP|RealDownload|Reap|Recorder|RedCarpet|RedKernel|ReGet|relevantnoise|replacer|Repo|requ|Rese|Retrieve|Rip|Rix|RMA|Roboz|Rogue|Rover|RPT\\\\-HTTP|Rsync|RTG30|.ru\\)|ruby|Rufus|Salt|Sample|SAPO|Sauger|savvy|SBIder|SBP|SCAgent|scan|SCEJ\\\\_|Sched|Schizo|Schlong|Schmo|Scout|Scooter|Scorp|ScoutOut|SCrawl|screen|script|SearchExpress|searchhippo|Searchme|searchpreview|searchterms|Second.Street.Research|Security.Kol|Seekbot|Seeker|Sega|Sensis|Sept|Serious|Sezn|Shai|Share|Sharp|Shaz|shell|shelo|Sherl|Shim|Shiretoko|ShopWiki|SickleBot|Simple|Siph|sitecheck|SiteCrawler|SiteSnagger|Site.Sniper|SiteSucker|sitevigil|SiteX|Sleip|Slide|Slurpy.Verifier|Sly|Smag|SmartDownload|Smurf|sna\\\\-|snag|Snake|Snapbot|Snip|Snoop|So\\\\-net|SocSci|sogou|Sohu|solr|sootle|Soso|SpaceBison|Spad|Span|spanner|Speed|Spegla|Sphere|Sphider|spider|SpiderBot|SpiderEngine|SpiderView|Spin|sproose|Spurl|Spyder|Squi|SQ.Webscanner|sqwid|Sqworm|SSM\\\\_Ag|Stack|Stamina|stamp|Stanford|Statbot|State|Steel|Strateg|Stress|Strip|studybot|Style|subot|Suck|Sume|sun4m|Sunrise|SuperBot|SuperBro|Supervi|Surf4Me|SuperHTTP|Surfbot|SurfWalker|Susi|suza|suzu|Sweep|sygol|syncrisis|Systems|Szukacz|Tagger|Tagyu|tAke|Talkro|TALWinHttpClient|tamu|Tandem|Tarantula|tarspider|tBot|TCF|Tcs\\/1|TeamSoft|Tecomi|Teleport|Telesoft|Templeton|Tencent|Terrawiz|Test|TexNut|trivial|Turnitin|The.Intraformant|TheNomad|Thomas|TightTwatBot|Timely|Titan|TMCrawler|TMhtload|toCrawl|Todobr|Tongco|topic|Torrent|Track|translate|Traveler|TREEVIEW|True|Tunnel|turing|Turnitin|TutorGig|TV33\\\\_Mercator|Twat|Tweak|Twice|Twisted.PageGetter|Tygo|ubee|UCmore|UdmSearch|UIowaCrawler|Ultraseek|UMBC|unf|UniversalFeedParser|unknown|UPG1|UtilMind|URLBase|URL.Control|URL\\\\_Spider\\\\_Pro|urldispatcher|URLGetFile|urllib|URLSpiderPro|URLy|User\\\\-Agent|UserAgent|USyd|Vacuum|vagabo|Valet|Valid|Vamp|vayala|VB\\\\_|VCI|VERI\\\\~LI|verif|versus|via|Viewer|virtual|visibilitygap|Visual|vobsub|Void|VoilaBot|voyager|vspider|VSyn|w\\\\:PACBHO60|w0000t|W3C|w3m|w3search|walhello|Walker|Wand|WAOL|WAPT|Watch|Wavefire|wbdbot|Weather|web.by.mail|Web.Data.Extractor|Web.Downloader|Web.Ima|Web.Mole|Web.Sucker|Web2Mal|Web2WAP|WebaltBot|WebAuto|WebBandit|Webbot|WebCapture|WebCat|webcraft\\@bea|Webclip|webcollage|WebCollector|WebCopier|WebCopy|WebCor|webcrawl|WebDat|WebDav|webdevil|webdownloader|Webdup|WebEMail|WebEMailExtrac|WebEnhancer|WebFetch|WebGo|WebHook|Webinator|WebInd|webitpr|WebFilter|WebFountain|WebLea|Webmaster|WebmasterWorldForumBot|WebMin|WebMirror|webmole|webpic|WebPin|WebPix|WebReaper|WebRipper|WebRobot|WebSauger|WebSite|Website.eXtractor|Website.Quester|WebSnake|webspider|Webster|WebStripper|websucker|WebTre|WebVac|webwalk|WebWasher|WebWeasel|WebWhacker|WebZIP|Wells|WEP\\\\_S|WEP.Search.00|WeRelateBot|wget|Whack|Whacker|whiz|WhosTalking|Widow|Win67|window.location|Windows.95\\;|Windows.95\\)|Windows.98\\;|Windows.98\\)|Winodws|Wildsoft.Surfer|WinHT|winhttp|WinHttpRequest|WinHTTrack|Winnie.Poh|wire|WISEbot|wisenutbot|wish|Wizz|WordP|Works|world|WUMPUS|Wweb|WWWC|WWWOFFLE|WWW\\\\-Collector|WWW.Mechanize|www.ranks.nl|wwwster|^x$|X12R1|x\\\\-Tractor|Xaldon|Xenu|XGET|xirq|Y\\\\!OASIS|Y\\\\!Tunnel|yacy|YaDirectBot|Yahoo\\\\-MMAudVid|YahooSeeker|YahooYSMcm|Yamm|Yand|yang|Yeti|Yoono|yori|Yotta|YTunnel|Zade|zagre|ZBot|Zeal|ZeBot|zerx|Zeus|ZIPCode|Zixy|zmao|Zyborg [NC])",
+        "targets": ["HEADER:User-Agent"],
+        "severity": "HIGH",
+        "action": "block",
+        "score": 1,
+        "description": "Block requests from known bad bots."
+    }
+]

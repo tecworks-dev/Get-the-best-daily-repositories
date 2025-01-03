@@ -1,7 +1,7 @@
-# Latest Repositories (2024-12-31 .. 2025-01-02)
+# Latest Repositories (2025-01-01 .. 2025-01-03)
 
-- [vojkanrojek-18glam/spoofer-riot](https://github.com/vojkanrojek-18glam/spoofer-riot) (252)
-- [SafeBreach-Labs/CVE-2024-49113](https://github.com/SafeBreach-Labs/CVE-2024-49113) (232)
-- [Ackites/Nrfr](https://github.com/Ackites/Nrfr) (144)
-- [TermoraDev/termora](https://github.com/TermoraDev/termora) (133)
-- [caxapok5656/tron-wallet](https://github.com/caxapok5656/tron-wallet) (105)
+- [TermoraDev/termora](https://github.com/TermoraDev/termora) (243)
+- [Swung0x48/TriangleBin](https://github.com/Swung0x48/TriangleBin) (156)
+- [fabriziosalmi/caddy-waf](https://github.com/fabriziosalmi/caddy-waf) (142)
+- [nihat99/aligeth](https://github.com/nihat99/aligeth) (107)
+- [guizimo/cover-craft](https://github.com/guizimo/cover-craft) (43)
