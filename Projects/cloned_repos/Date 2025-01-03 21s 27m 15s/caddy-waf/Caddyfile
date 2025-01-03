@@ -1,0 +1,34 @@
+{
+    auto_https off
+    admin off
+    debug   # Enable debug mode for better logging
+}
+
+:8080 {
+    log {
+        output stdout
+        format console
+        level DEBUG
+    }
+
+    route {
+        waf {
+            block_countries GeoLite2-Country.mmdb RU CN NK IT
+            # or whitelist
+            # whitelist_countries GeoLite2-Country.mmdb US
+            rate_limit 1000 1m  
+            rule_file rules.json
+            log_all
+            ip_blacklist_file ip_blacklist.txt
+            dns_blacklist_file dns_blacklist.txt
+
+            # Define actions based on severity
+            severity critical block
+            severity high block
+            severity medium log
+            severity low log
+        }
+
+        respond "Hello, world!" 200
+    }
+}

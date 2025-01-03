@@ -1,32 +1,32 @@
 [
   {
-    "name": "vojkanrojek-18glam/spoofer-riot",
-    "clone_url": "https://github.com/vojkanrojek-18glam/spoofer-riot.git",
-    "stars": 252,
-    "size": 88
-  },
-  {
-    "name": "SafeBreach-Labs/CVE-2024-49113",
-    "clone_url": "https://github.com/SafeBreach-Labs/CVE-2024-49113.git",
-    "stars": 232,
-    "size": 3277
-  },
-  {
-    "name": "Ackites/Nrfr",
-    "clone_url": "https://github.com/Ackites/Nrfr.git",
-    "stars": 144,
-    "size": 416
-  },
-  {
     "name": "TermoraDev/termora",
     "clone_url": "https://github.com/TermoraDev/termora.git",
-    "stars": 133,
-    "size": 822
+    "stars": 243,
+    "size": 834
   },
   {
-    "name": "caxapok5656/tron-wallet",
-    "clone_url": "https://github.com/caxapok5656/tron-wallet.git",
-    "stars": 105,
-    "size": 249
+    "name": "Swung0x48/TriangleBin",
+    "clone_url": "https://github.com/Swung0x48/TriangleBin.git",
+    "stars": 156,
+    "size": 520
+  },
+  {
+    "name": "fabriziosalmi/caddy-waf",
+    "clone_url": "https://github.com/fabriziosalmi/caddy-waf.git",
+    "stars": 142,
+    "size": 232
+  },
+  {
+    "name": "nihat99/aligeth",
+    "clone_url": "https://github.com/nihat99/aligeth.git",
+    "stars": 107,
+    "size": 218
+  },
+  {
+    "name": "guizimo/cover-craft",
+    "clone_url": "https://github.com/guizimo/cover-craft.git",
+    "stars": 43,
+    "size": 500
   }
 ]
