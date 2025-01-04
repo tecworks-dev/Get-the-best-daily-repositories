@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-01 .. 2025-01-03)
+# Latest Repositories (2025-01-02 .. 2025-01-04)
 
-- [TermoraDev/termora](https://github.com/TermoraDev/termora) (243)
-- [Swung0x48/TriangleBin](https://github.com/Swung0x48/TriangleBin) (156)
-- [fabriziosalmi/caddy-waf](https://github.com/fabriziosalmi/caddy-waf) (142)
-- [nihat99/aligeth](https://github.com/nihat99/aligeth) (107)
-- [guizimo/cover-craft](https://github.com/guizimo/cover-craft) (43)
+- [JAMES666-C/Adobe-Acrobat-Pro-2024](https://github.com/JAMES666-C/Adobe-Acrobat-Pro-2024) (148)
+- [victorkzhdkfjf/Adobe-Express-2024](https://github.com/victorkzhdkfjf/Adobe-Express-2024) (147)
+- [kohukeke/Canva-Pro-2024](https://github.com/kohukeke/Canva-Pro-2024) (146)
+- [perra570/Al-Photoshop-2024](https://github.com/perra570/Al-Photoshop-2024) (146)
+- [olvfxd/AquaDiscord](https://github.com/olvfxd/AquaDiscord) (146)
