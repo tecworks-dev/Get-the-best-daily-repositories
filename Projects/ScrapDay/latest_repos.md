@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-02 .. 2025-01-04)
+# Latest Repositories (2025-01-03 .. 2025-01-05)
 
-- [JAMES666-C/Adobe-Acrobat-Pro-2024](https://github.com/JAMES666-C/Adobe-Acrobat-Pro-2024) (148)
-- [victorkzhdkfjf/Adobe-Express-2024](https://github.com/victorkzhdkfjf/Adobe-Express-2024) (147)
-- [kohukeke/Canva-Pro-2024](https://github.com/kohukeke/Canva-Pro-2024) (146)
-- [perra570/Al-Photoshop-2024](https://github.com/perra570/Al-Photoshop-2024) (146)
-- [olvfxd/AquaDiscord](https://github.com/olvfxd/AquaDiscord) (146)
+- [janwilmake/efficient-recorder](https://github.com/janwilmake/efficient-recorder) (119)
+- [primengine/prime](https://github.com/primengine/prime) (74)
+- [pushvampir/sol-volume-bot](https://github.com/pushvampir/sol-volume-bot) (49)
+- [sejjy/hyprrice](https://github.com/sejjy/hyprrice) (44)
+- [Xposed-Modules-Repo/com.xchat](https://github.com/Xposed-Modules-Repo/com.xchat) (33)

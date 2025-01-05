@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "prime-agents-py"
+version = "0.2.0"
+description = "Prime is a powerful, modular, and highly extensible framework designed for developers building applications that require a seamless blend of performance, flexibility, and scalability. With Prime, you can harness the power of modern tools to craft cutting-edge solutions across industries."
+authors = [
+  { name="primengine inc", email="support@primengine.ai" }, { name="Prime Inc"},
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "torch",
+    "torchaudio",
+    "torchvision",
+    "transformers>=4.0.0",
+    "requests>=2.32.3",
+    "rich>=13.9.4",
+    "pandas>=2.2.3",
+    "jinja2>=3.1.4",
+    "pillow>=11.0.0",
+    "markdownify>=0.14.1",
+    "gradio>=5.8.0",
+    "duckduckgo-search>=6.3.7",
+    "python-dotenv>=1.0.1",
+    "e2b-code-interpreter>=1.0.3",
+    "litellm>=1.55.10",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.1.0",
+    "sqlalchemy"
+]
