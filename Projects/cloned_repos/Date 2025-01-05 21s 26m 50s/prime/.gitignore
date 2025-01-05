@@ -1,0 +1,65 @@
+# Logging and temporary files
+logs/
+tmp/
+wandb/
+
+# Data and outputs
+data/
+outputs/
+
+# macOS-specific files
+.DS_Store
+
+# IDE and editor files
+.vscode/
+
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Compiled files
+*.so
+
+# Build and packaging artifacts
+.Python
+build/
+dist/
+*.egg-info/
+.wheels/
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Test and coverage
+.tox/
+.nox/
+.coverage*
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Environment files
+.env
+.venv/
+ENV/
+
+# Documentation builds
+docs/_build/
+
+# Type checkers
+.mypy_cache/
+.pyre/
+.pytype/
+
+# PyCharm
+# .idea/
+
+# Archive and temporary directories
+archive/
+savedir/
+output/
+tool_output/
