@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-03 .. 2025-01-05)
+# Latest Repositories (2025-01-04 .. 2025-01-06)
 
-- [janwilmake/efficient-recorder](https://github.com/janwilmake/efficient-recorder) (119)
-- [primengine/prime](https://github.com/primengine/prime) (74)
-- [pushvampir/sol-volume-bot](https://github.com/pushvampir/sol-volume-bot) (49)
-- [sejjy/hyprrice](https://github.com/sejjy/hyprrice) (44)
-- [Xposed-Modules-Repo/com.xchat](https://github.com/Xposed-Modules-Repo/com.xchat) (33)
+- [MLSys-Learner-Resources/Awesome-MLSys-Blogger](https://github.com/MLSys-Learner-Resources/Awesome-MLSys-Blogger) (88)
+- [zoroyyoo/agcplayer-widgets](https://github.com/zoroyyoo/agcplayer-widgets) (59)
+- [aqilc/chasm](https://github.com/aqilc/chasm) (50)
+- [yoavg/pdf-tab-renamer](https://github.com/yoavg/pdf-tab-renamer) (42)
+- [graniet/rllm](https://github.com/graniet/rllm) (40)
