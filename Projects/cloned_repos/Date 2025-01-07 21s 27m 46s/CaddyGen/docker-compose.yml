@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  app:
+    image: wardy784/caddygen:latest  # Use the Docker Hub image
+    ports:
+      - "8080:80"  # Expose port 80 from the container on port 8080
+    restart: unless-stopped  # Restart the container unless manually stopped

@@ -1,32 +1,32 @@
 [
   {
-    "name": "MLSys-Learner-Resources/Awesome-MLSys-Blogger",
-    "clone_url": "https://github.com/MLSys-Learner-Resources/Awesome-MLSys-Blogger.git",
-    "stars": 88,
-    "size": 963
+    "name": "safedv/RustPotato",
+    "clone_url": "https://github.com/safedv/RustPotato.git",
+    "stars": 118,
+    "size": 63
+  },
+  {
+    "name": "norris61w/astra_ai_framework",
+    "clone_url": "https://github.com/norris61w/astra_ai_framework.git",
+    "stars": 117,
+    "size": 752
   },
   {
     "name": "zoroyyoo/agcplayer-widgets",
     "clone_url": "https://github.com/zoroyyoo/agcplayer-widgets.git",
-    "stars": 59,
-    "size": 1050
+    "stars": 105,
+    "size": 1052
   },
   {
-    "name": "aqilc/chasm",
-    "clone_url": "https://github.com/aqilc/chasm.git",
+    "name": "fenz624/vity-toolkit",
+    "clone_url": "https://github.com/fenz624/vity-toolkit.git",
     "stars": 50,
-    "size": 122
+    "size": 274
   },
   {
-    "name": "yoavg/pdf-tab-renamer",
-    "clone_url": "https://github.com/yoavg/pdf-tab-renamer.git",
-    "stars": 42,
-    "size": 210
-  },
-  {
-    "name": "graniet/rllm",
-    "clone_url": "https://github.com/graniet/rllm.git",
-    "stars": 40,
-    "size": 104
+    "name": "DeanWard/CaddyGen",
+    "clone_url": "https://github.com/DeanWard/CaddyGen.git",
+    "stars": 39,
+    "size": 55
   }
 ]
