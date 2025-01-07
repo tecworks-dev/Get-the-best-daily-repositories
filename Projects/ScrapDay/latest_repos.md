@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-04 .. 2025-01-06)
+# Latest Repositories (2025-01-05 .. 2025-01-07)
 
-- [MLSys-Learner-Resources/Awesome-MLSys-Blogger](https://github.com/MLSys-Learner-Resources/Awesome-MLSys-Blogger) (88)
-- [zoroyyoo/agcplayer-widgets](https://github.com/zoroyyoo/agcplayer-widgets) (59)
-- [aqilc/chasm](https://github.com/aqilc/chasm) (50)
-- [yoavg/pdf-tab-renamer](https://github.com/yoavg/pdf-tab-renamer) (42)
-- [graniet/rllm](https://github.com/graniet/rllm) (40)
+- [safedv/RustPotato](https://github.com/safedv/RustPotato) (118)
+- [norris61w/astra_ai_framework](https://github.com/norris61w/astra_ai_framework) (117)
+- [zoroyyoo/agcplayer-widgets](https://github.com/zoroyyoo/agcplayer-widgets) (105)
+- [fenz624/vity-toolkit](https://github.com/fenz624/vity-toolkit) (50)
+- [DeanWard/CaddyGen](https://github.com/DeanWard/CaddyGen) (39)
