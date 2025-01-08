@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/presets.ts","./src/vite-env.d.ts","./src/types/caddy.ts","./src/app.vue","./src/components/caddyconfig.vue","./src/components/helloworld.vue","./src/components/hostform.vue","./src/components/importmodal.vue","./src/components/presetmodal.vue","./src/components/presetselect.vue"],"errors":true,"version":"5.7.2"}

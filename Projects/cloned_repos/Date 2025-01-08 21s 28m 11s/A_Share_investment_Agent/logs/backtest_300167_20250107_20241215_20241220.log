@@ -1,0 +1,130 @@
+回测开始时间: 2025-01-07 20:10:15
+股票代码: 300167
+回测区间: 2024-12-15 至 2024-12-20
+初始资金: 100,000.00
+
+----------------------------------------------------------------------------------------------------
+
+交易日期: 2024-12-16
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 35%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-17
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 45%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-18
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 9%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-19
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 7%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-20
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 34%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+==================================================
+回测结果汇总
+==================================================
+初始资金: 100,000.00
+最终总值: 100,000.00
+总收益率: 0.00%
+夏普比率: 0.00
+最大回撤: 0.00%

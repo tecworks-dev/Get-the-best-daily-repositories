@@ -1,0 +1,175 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --gradient: #4ecdc4;
+
+    --background: 187 36.400000000000006% 4.48%;
+    --foreground: 187 5.6000000000000005% 97.8%;
+
+    --muted: 187 28.000000000000004% 16.8%;
+    --muted-foreground: 187 5.6000000000000005% 55.6%;
+
+    --popover: 187 53.8% 7.280000000000001%;
+    --popover-foreground: 187 5.6000000000000005% 97.8%;
+
+    --card: 187 53.8% 7.280000000000001%;
+    --card-foreground: 187 5.6000000000000005% 97.8%;
+
+    --border: 187 28.000000000000004% 16.8%;
+    --input: 187 28.000000000000004% 16.8%;
+
+    --primary: 187 56% 56%;
+    --primary-foreground: 187 5.6000000000000005% 5.6000000000000005%;
+
+    --secondary: 187 28.000000000000004% 16.8%;
+    --secondary-foreground: 187 5.6000000000000005% 97.8%;
+
+    --accent: 187 28.000000000000004% 16.8%;
+    --accent-foreground: 187 5.6000000000000005% 97.8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 187 5.6000000000000005% 97.8%;
+
+    --ring: 187 56% 56%;
+
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+code {
+  white-space: pre-wrap !important;
+}
+
+@keyframes subtle-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(var(--primary), 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 6px rgba(var(--primary), 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(var(--primary), 0);
+  }
+}
+
+.animate-pulse-subtle {
+  animation: subtle-pulse 2s infinite;
+}
+
+#close {
+  background-color: #4a4a4a;
+}
+
+.focus-within #close {
+  background-color: #ff6057;
+}
+
+#minimize {
+  background-color: #4a4a4a;
+}
+
+.focus-within #minimize {
+  background-color: #ffbd2e;
+}
+
+#maximize {
+  background-color: #4a4a4a;
+}
+
+.focus-within #maximize {
+  background-color: #27c93f;
+}
+
+#unmaximize {
+  background-color: #4a4a4a;
+}
+
+.focus-within #unmaximize {
+  background-color: #27c93f;
+}
+
+.win-header-button {
+  -webkit-app-region: no-drag;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-family: "Segoe MDL2 Assets", "Segoe UI", sans-serif;
+  font-size: 10px;
+}
+
+.win-header-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.win-header-button.win-close:hover {
+  background: #e81123;
+}
+
+.win-header-button span {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.win-header-button.win-maximize {
+  background: #0078d4;
+}
+
+.win-header-button.win-restore {
+  background: #0078d4;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: left;
+  padding-inline: 2px;
+  box-sizing: border-box;
+  background-color: #181818;
+  -webkit-app-region: drag;
+  z-index: 100;
+}
+
+.header-button {
+  all: unset;
+  border-radius: 50%;
+  width: 0.75rem;
+  height: 0.75rem;
+  margin: 0 0.25rem;
+  -webkit-app-region: no-drag;
+}
+.clickable-header-section {
+  cursor: pointer;
+  -webkit-app-region: no-drag;
+}
+
+.header-button:hover {
+  opacity: 0.8;
+}
+
+.window-controls:hover button span {
+  display: block;
+}

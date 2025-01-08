@@ -1,0 +1,444 @@
+回测开始时间: 2025-01-07 19:48:32
+股票代码: 300167
+回测区间: 2024-12-10 至 2024-12-20
+初始资金: 100,000.00
+
+----------------------------------------------------------------------------------------------------
+
+交易日期: 2024-12-10
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 38%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-11
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 37%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-12
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 63%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: buy, 置信度: 100%
+
+综合决策:
+行动: BUY
+数量: 12500
+
+交易日期: 2024-12-13
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 38%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-16
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 35%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-17
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 45%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-18
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 9%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-19
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 7%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-20
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 34%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+==================================================
+回测结果汇总
+==================================================
+初始资金: 100,000.00
+最终总值: 103,250.00
+总收益率: 3.25%
+夏普比率: 4.20
+最大回撤: -1.92%
+回测开始时间: 2025-01-07 19:54:38
+股票代码: 300167
+回测区间: 2024-12-10 至 2024-12-20
+初始资金: 100,000.00
+
+----------------------------------------------------------------------------------------------------
+
+交易日期: 2024-12-10
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 38%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-11
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 37%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-12
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 63%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: buy, 置信度: 100%
+
+综合决策:
+行动: BUY
+数量: 12500
+
+交易日期: 2024-12-13
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 38%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-16
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 35%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-17
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 45%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-18
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 9%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-19
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: neutral, 置信度: 7%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+交易日期: 2024-12-20
+
+各智能体分析结果:
+
+Technical Analysis:
+- 信号: bullish, 置信度: 34%
+
+Fundamental Analysis:
+- 信号: neutral, 置信度: 25%
+
+Sentiment Analysis:
+- 信号: bullish, 置信度: 50%
+
+Valuation Analysis:
+- 信号: neutral, 置信度: 0%
+
+Risk Management:
+- 信号: neutral, 置信度: 100%
+
+综合决策:
+行动: HOLD
+数量: 0
+
+==================================================
+回测结果汇总
+==================================================
+初始资金: 100,000.00
+最终总值: 103,250.00
+总收益率: 3.25%
+夏普比率: 4.20
+最大回撤: -1.92%

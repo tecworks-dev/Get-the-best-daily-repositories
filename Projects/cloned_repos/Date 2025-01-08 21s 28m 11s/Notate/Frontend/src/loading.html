@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loading</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes writing {
+            0% { transform: translateX(-20px) rotate(-5deg); opacity: 0; }
+            100% { transform: translateX(0) rotate(0deg); opacity: 1; }
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes blink {
+            50% { opacity: 0 }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .pencil {
+            animation: float 3s ease-in-out infinite;
+        }
+        .writing-line {
+            width: 0;
+            overflow: hidden;
+            white-space: nowrap;
+            animation: writing 1s forwards;
+        }
+        .line1 { animation-delay: 0.5s; }
+        .line2 { animation-delay: 1.5s; }
+        .line3 { animation-delay: 2.5s; }
+        .welcome-message {
+            display: none;
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+        body {
+            -webkit-app-region: drag;
+            background: transparent;
+        }
+        .status-container {
+            height: 3em;
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            line-clamp: 2;
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body class="h-screen flex items-center justify-center p-6 bg-gray-900">
+    <div class="bg-gray-800/95 backdrop-blur-sm rounded-xl shadow-lg p-12 w-[480px] text-center">
+        <h2 class="text-3xl font-semibold text-white mb-6">Notate</h2>
+        <div class="flex justify-center mb-6 relative">
+            <!-- Animated Notepad with Lines -->
+            <div class="relative">
+                <svg class="w-16 h-16 text-indigo-400 pencil" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" stroke-linejoin="round" stroke-linecap="round"/>
+                </svg>
+                <div class="absolute top-20 left-1/2 transform -translate-x-1/2 text-left">
+                    <div class="writing-line line1 text-indigo-300">Loading...</div>
+                    <div class="writing-line line2 text-indigo-300">Preparing your notes...</div>
+                    <div class="writing-line line3 text-indigo-300">Almost ready...</div>
+                </div>
+            </div>
+        </div>
+        <div class="status-container text-gray-300 mt-8" id="status">
+            Initializing...
+        </div>
+        <div class="w-full bg-gray-700 rounded-full h-2.5 dark:bg-gray-700 mb-4">
+            <div id="progress-bar" class="bg-indigo-600 h-2.5 rounded-full transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <div id="welcome-message" class="welcome-message text-gray-300 text-lg">
+            Welcome to Notate! Ready to capture your thoughts ✍️
+        </div>
+
+    </div>
+
+    <script>
+        const { ipcRenderer } = require('electron');
+        
+        ipcRenderer.on('update-status', (event, { text, progress }) => {
+            document.getElementById('status').textContent = text;
+            document.getElementById('progress-bar').style.width = `${progress}%`;
+        });
+    </script>
+</body>
+</html>

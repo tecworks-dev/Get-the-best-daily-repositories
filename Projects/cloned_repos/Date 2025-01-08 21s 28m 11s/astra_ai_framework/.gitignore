@@ -1,0 +1,112 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.out
+*.pid
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+# Temporary files written by PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# Translations
+*.mo
+*.pot
+
+# Django-specific files
+*.log
+local_settings.py
+
+# Flask-specific files
+instance/
+.webassets-cache
+
+# Scrapy-specific files
+.scrapy/
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# pyenv
+.python-version
+
+# Celery beat schedule file
+celerybeat-schedule
+
+# SageMath parsed files
+*.sage.py
+
+# dotenv
+.env
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+
+# IDE and project-specific settings
+# Spyder
+.spyderproject
+.spyproject
+
+# Rope
+.ropeproject
+
+# MkDocs documentation
+/site/
+
+# mypy
+.mypy_cache/
+
+# Pyre
+.pyre
+.pyre_configuration_*
+
+# Other temporary or origination files
+*.orig
+.cookie*
+test/config*.json

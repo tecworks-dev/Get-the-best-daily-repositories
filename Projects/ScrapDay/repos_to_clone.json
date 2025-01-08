@@ -1,32 +1,32 @@
 [
   {
-    "name": "safedv/RustPotato",
-    "clone_url": "https://github.com/safedv/RustPotato.git",
-    "stars": 118,
-    "size": 63
-  },
-  {
     "name": "norris61w/astra_ai_framework",
     "clone_url": "https://github.com/norris61w/astra_ai_framework.git",
-    "stars": 117,
-    "size": 752
+    "stars": 355,
+    "size": 771
   },
   {
-    "name": "zoroyyoo/agcplayer-widgets",
-    "clone_url": "https://github.com/zoroyyoo/agcplayer-widgets.git",
-    "stars": 105,
-    "size": 1052
+    "name": "24mlight/A_Share_investment_Agent",
+    "clone_url": "https://github.com/24mlight/A_Share_investment_Agent.git",
+    "stars": 164,
+    "size": 798
   },
   {
-    "name": "fenz624/vity-toolkit",
-    "clone_url": "https://github.com/fenz624/vity-toolkit.git",
-    "stars": 50,
-    "size": 274
+    "name": "CNTRLAI/Notate",
+    "clone_url": "https://github.com/CNTRLAI/Notate.git",
+    "stars": 101,
+    "size": 1623
+  },
+  {
+    "name": "IGL-HKUST/DiffusionAsShader",
+    "clone_url": "https://github.com/IGL-HKUST/DiffusionAsShader.git",
+    "stars": 80,
+    "size": 3397
   },
   {
     "name": "DeanWard/CaddyGen",
     "clone_url": "https://github.com/DeanWard/CaddyGen.git",
-    "stars": 39,
-    "size": 55
+    "stars": 79,
+    "size": 58
   }
 ]

@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  app:
+    image: wardy784/caddygen:latest
+    ports:
+      - "8189:80"
+    restart: unless-stopped
+    container_name: caddygen
