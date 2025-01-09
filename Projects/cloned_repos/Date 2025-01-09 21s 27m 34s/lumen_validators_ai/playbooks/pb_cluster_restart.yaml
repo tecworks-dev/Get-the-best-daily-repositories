@@ -1,0 +1,6 @@
+---
+- name: Restart Solana cluster
+  hosts: "{{ host_hosts | default('remote') }}"  # Define target hosts (default: remote)
+  become: yes                                   # Elevate privileges for task execution
+  roles:
+    - restart_cluster                           # Use the 'restart_cluster' role for operations

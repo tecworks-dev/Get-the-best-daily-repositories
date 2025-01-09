@@ -1,0 +1,6 @@
+---
+- name: Install monitoring tools
+  hosts: all                                  # Apply to all hosts
+  become: yes                                # Elevate privileges for task execution
+  roles:
+    - monitoring                             # Use the 'monitoring' role for setup

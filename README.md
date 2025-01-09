@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-06 .. 2025-01-08)
+# Latest Repositories (2025-01-07 .. 2025-01-09)
 
-- [norris61w/astra_ai_framework](https://github.com/norris61w/astra_ai_framework) (355)
-- [24mlight/A_Share_investment_Agent](https://github.com/24mlight/A_Share_investment_Agent) (164)
-- [CNTRLAI/Notate](https://github.com/CNTRLAI/Notate) (101)
-- [IGL-HKUST/DiffusionAsShader](https://github.com/IGL-HKUST/DiffusionAsShader) (80)
-- [DeanWard/CaddyGen](https://github.com/DeanWard/CaddyGen) (79)
+- [SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) (346)
+- [CoderSJX/AI-Resources-Central](https://github.com/CoderSJX/AI-Resources-Central) (184)
+- [paulreapz/lumen_validators_ai](https://github.com/paulreapz/lumen_validators_ai) (124)
+- [f/fig4ai](https://github.com/f/fig4ai) (95)
+- [ZeroMemoryEx/IObit-EoP](https://github.com/ZeroMemoryEx/IObit-EoP) (80)

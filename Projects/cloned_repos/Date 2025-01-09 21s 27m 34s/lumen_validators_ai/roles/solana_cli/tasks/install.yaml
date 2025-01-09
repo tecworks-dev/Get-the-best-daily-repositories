@@ -1,0 +1,48 @@
+---
+- name: Create directory for Solana installer
+  file:
+    path: /tmp/solana               # Directory to hold the installer
+    state: directory               # Ensure it is a directory
+    owner: "{{ solana_user }}"      # Set ownership to Solana user
+    group: "{{ solana_user }}"      # Set group to Solana user
+  tags:
+    - cli.install                  # Tag for categorizing tasks
+
+- name: Install Solana CLI
+  block:
+    - name: Download the latest Solana release installer
+      get_url:
+        url: "https://release.solana.com/v{{ solana_version | default('stable') }}/install"  # URL for the installer
+        dest: /tmp/solana/          # Destination path for the installer
+        mode: 0755                 # Make the installer executable
+
+    - name: Run Solana installer
+      shell: /tmp/solana/install    # Execute the installer script
+  become: yes                       # Elevate privileges to run as another user
+  become_user: "{{ solana_user }}"  # Run as the Solana user
+  tags:
+    - cli.install                  # Tag for categorizing tasks
+  when: jito is not defined or not jito  # Conditional installation for non-JITO
+
+- name: Install JITO Solana CLI
+  block:
+    - name: Download the latest JITO release installer
+      get_url:
+        url: "https://release.jito.wtf/v{{ jito_version | default('stable') }}-jito/install"  # URL for the JITO installer
+        dest: /tmp/solana/          # Destination path for the installer
+        mode: 0755                 # Make the installer executable
+
+    - name: Run JITO installer
+      shell: /tmp/solana/install    # Execute the JITO installer script
+  become: yes                       # Elevate privileges to run as another user
+  become_user: "{{ solana_user }}"  # Run as the Solana user
+  tags:
+    - cli.install                  # Tag for categorizing tasks
+  when: jito is defined and jito    # Conditional installation for JITO
+
+- name: Clean up installer files
+  file:
+    path: /tmp/solana               # Path to the temporary directory
+    state: absent                  # Ensure the directory is removed
+  tags:
+    - cli.install                  # Tag for categorizing tasks
