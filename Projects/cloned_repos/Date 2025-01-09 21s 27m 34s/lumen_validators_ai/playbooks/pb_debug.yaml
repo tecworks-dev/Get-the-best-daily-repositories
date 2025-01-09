@@ -1,0 +1,21 @@
+---
+- name: Debug Solana validator setup
+  hosts: all                                     # Apply to all hosts
+  become: yes                                   # Elevate privileges for task execution
+
+  tasks:
+    # Example debug tasks for inspecting variables (uncomment as needed):
+    # - name: Show specific variable values
+    #   debug:
+    #     var: "{{ item }}"
+    #   with_items:
+    #     - secrets_path
+    #     - ansible_user
+
+    - name: Show cluster environment for the host
+      debug:
+        msg: "{{ hostvars[inventory_hostname].cluster_environment }}"  # Display the cluster environment
+
+    - name: Show group names for the host
+      debug:
+        msg: "{{ group_names }}"  # Display the group names the host belongs to

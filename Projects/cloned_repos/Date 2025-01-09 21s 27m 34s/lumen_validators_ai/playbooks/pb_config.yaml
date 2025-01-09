@@ -1,0 +1,6 @@
+---
+- name: Install or update Solana configuration file
+  hosts: all                                   # Apply to all hosts
+  become: yes                                 # Elevate privileges for task execution
+  roles:
+    - solana_config                           # Use the 'solana_config' role for operations

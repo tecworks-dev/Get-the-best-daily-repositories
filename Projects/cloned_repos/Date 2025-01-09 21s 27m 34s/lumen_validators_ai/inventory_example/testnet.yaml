@@ -1,0 +1,25 @@
+---
+all:
+  children:
+    testnet_validators:
+      children:
+        remote:
+          hosts:
+            server1:
+              ansible_host: <ip address>             # IP address of server1
+              validator_description: "Bootstrapped with https://sv-manager.thevalidators.io"  # Description
+              validator_homepage: ""               # Homepage URL (if any)
+              validator_keybase: ""                # Keybase (if any)
+            server2:
+              ansible_host: <ip address>             # IP address of server2
+        local:
+          hosts:
+            localhost:
+              validator_description: "Bootstrapped with https://sv-manager.thevalidators.io"  # Description
+              validator_homepage: ""               # Homepage URL (if any)
+              validator_keybase: ""                # Keybase (if any)
+            localhost_rpc:
+              ansible_host: localhost                  # Localhost configuration
+              force: true                              # Force flag for local actions
+              rpc_node: true                           # Specify if this is an RPC node
+              solana_validator_service: started        # Ensure validator service is started

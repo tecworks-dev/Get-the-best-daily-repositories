@@ -1,32 +1,32 @@
 [
   {
-    "name": "norris61w/astra_ai_framework",
-    "clone_url": "https://github.com/norris61w/astra_ai_framework.git",
-    "stars": 355,
-    "size": 771
+    "name": "SamuelSchmidgall/AgentLaboratory",
+    "clone_url": "https://github.com/SamuelSchmidgall/AgentLaboratory.git",
+    "stars": 346,
+    "size": 1021
   },
   {
-    "name": "24mlight/A_Share_investment_Agent",
-    "clone_url": "https://github.com/24mlight/A_Share_investment_Agent.git",
-    "stars": 164,
-    "size": 798
+    "name": "CoderSJX/AI-Resources-Central",
+    "clone_url": "https://github.com/CoderSJX/AI-Resources-Central.git",
+    "stars": 184,
+    "size": 267
   },
   {
-    "name": "CNTRLAI/Notate",
-    "clone_url": "https://github.com/CNTRLAI/Notate.git",
-    "stars": 101,
-    "size": 1623
+    "name": "paulreapz/lumen_validators_ai",
+    "clone_url": "https://github.com/paulreapz/lumen_validators_ai.git",
+    "stars": 124,
+    "size": 1700
   },
   {
-    "name": "IGL-HKUST/DiffusionAsShader",
-    "clone_url": "https://github.com/IGL-HKUST/DiffusionAsShader.git",
+    "name": "f/fig4ai",
+    "clone_url": "https://github.com/f/fig4ai.git",
+    "stars": 95,
+    "size": 682
+  },
+  {
+    "name": "ZeroMemoryEx/IObit-EoP",
+    "clone_url": "https://github.com/ZeroMemoryEx/IObit-EoP.git",
     "stars": 80,
-    "size": 3397
-  },
-  {
-    "name": "DeanWard/CaddyGen",
-    "clone_url": "https://github.com/DeanWard/CaddyGen.git",
-    "stars": 79,
-    "size": 58
+    "size": 305
   }
 ]
