@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-07 .. 2025-01-09)
+# Latest Repositories (2025-01-08 .. 2025-01-10)
 
-- [SamuelSchmidgall/AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) (346)
-- [CoderSJX/AI-Resources-Central](https://github.com/CoderSJX/AI-Resources-Central) (184)
-- [paulreapz/lumen_validators_ai](https://github.com/paulreapz/lumen_validators_ai) (124)
-- [f/fig4ai](https://github.com/f/fig4ai) (95)
-- [ZeroMemoryEx/IObit-EoP](https://github.com/ZeroMemoryEx/IObit-EoP) (80)
+- [PollensAI/Pollens](https://github.com/PollensAI/Pollens) (530)
+- [zhangchenchen/self-consistent-coder](https://github.com/zhangchenchen/self-consistent-coder) (155)
+- [f/fig4ai](https://github.com/f/fig4ai) (122)
+- [Azr43lKn1ght/Rusty-PE-Packer](https://github.com/Azr43lKn1ght/Rusty-PE-Packer) (52)
+- [RhysSullivan/sf-crime-heatmap](https://github.com/RhysSullivan/sf-crime-heatmap) (48)

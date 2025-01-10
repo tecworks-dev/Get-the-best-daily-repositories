@@ -1,32 +1,32 @@
 [
   {
-    "name": "SamuelSchmidgall/AgentLaboratory",
-    "clone_url": "https://github.com/SamuelSchmidgall/AgentLaboratory.git",
-    "stars": 346,
-    "size": 1021
+    "name": "PollensAI/Pollens",
+    "clone_url": "https://github.com/PollensAI/Pollens.git",
+    "stars": 530,
+    "size": 689
   },
   {
-    "name": "CoderSJX/AI-Resources-Central",
-    "clone_url": "https://github.com/CoderSJX/AI-Resources-Central.git",
-    "stars": 184,
-    "size": 267
-  },
-  {
-    "name": "paulreapz/lumen_validators_ai",
-    "clone_url": "https://github.com/paulreapz/lumen_validators_ai.git",
-    "stars": 124,
-    "size": 1700
+    "name": "zhangchenchen/self-consistent-coder",
+    "clone_url": "https://github.com/zhangchenchen/self-consistent-coder.git",
+    "stars": 155,
+    "size": 4928
   },
   {
     "name": "f/fig4ai",
     "clone_url": "https://github.com/f/fig4ai.git",
-    "stars": 95,
+    "stars": 122,
     "size": 682
   },
   {
-    "name": "ZeroMemoryEx/IObit-EoP",
-    "clone_url": "https://github.com/ZeroMemoryEx/IObit-EoP.git",
-    "stars": 80,
-    "size": 305
+    "name": "Azr43lKn1ght/Rusty-PE-Packer",
+    "clone_url": "https://github.com/Azr43lKn1ght/Rusty-PE-Packer.git",
+    "stars": 52,
+    "size": 705
+  },
+  {
+    "name": "RhysSullivan/sf-crime-heatmap",
+    "clone_url": "https://github.com/RhysSullivan/sf-crime-heatmap.git",
+    "stars": 48,
+    "size": 397
   }
 ]
