@@ -1,0 +1,28 @@
+[package]
+author = "Azr43lKn1ght"
+name = "Launcher"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+kernel32-sys = "0.2.2"
+winapi = {version = "0.3.8", features=[
+    "winnt",
+    "winuser",
+    "memoryapi",
+    "errhandlingapi",
+    "processthreadsapi",
+    "synchapi",
+    "winnt",
+    "minwindef",
+    "winbase",
+    "handleapi",
+    "libloaderapi",
+    "wow64apiset",
+    "errhandlingapi"
+]}
+sysinfo = "0.32.0"
+ntapi = "0.4.1"
+windows = { version = "0.58.0", features = ["Win32_Storage_FileSystem","Win32_Foundation", "Win32_System_Diagnostics", "Win32_System_Diagnostics_Debug", "Win32_System_Threading", "Win32_System_Kernel","Win32_System_SystemInformation", "Win32_Foundation", "Win32_System_Registry","Win32_System_Memory", "Win32_Foundation", "Win32_System_Threading", "Win32_Security", "Win32_System_LibraryLoader", "Win32_System_Diagnostics_Debug"] }
