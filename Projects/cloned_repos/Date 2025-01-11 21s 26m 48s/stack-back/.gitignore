@@ -1,0 +1,33 @@
+
+# Project specific
+backup.log
+
+# Environment files (potential secrets)
+*.env
+
+# IDEs
+.vscode
+.idea
+
+# python
+__pycache__
+*.egg-info/
+
+# Virtualenvs
+env
+.venv
+venv
+
+# misc
+/private/
+restic_data/
+restic_cache/
+alerts.env
+
+# build
+build/
+docs/_build
+dist
+
+# tests
+.tox

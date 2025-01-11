@@ -1,0 +1,30 @@
+version: '3.7'
+
+services:
+  mariadb:
+    image: mariadb:10
+    labels:
+      stack-back.mariadb: "true"
+    environment:
+      - MYSQL_ROOT_PASSWORD=my-secret-pw
+      - MYSQL_DATABASE=mydb
+      - MYSQL_USER=myuser
+      - MYSQL_PASSWORD=mypassword
+    networks:
+      - global
+    volumes:
+      - mariadbdata:/var/lib/mysql
+  files:
+    image: nginx:1.17-alpine
+    labels:
+      stack-back.volumes: "true"
+    volumes:
+      - files:/srv/files
+
+volumes:
+  mariadbdata:
+  files:
+
+networks:
+  global:
+    external: true
