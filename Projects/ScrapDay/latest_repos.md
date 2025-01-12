@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-09 .. 2025-01-11)
+# Latest Repositories (2025-01-10 .. 2025-01-12)
 
-- [NiazMorshed2007/shadcn-tour](https://github.com/NiazMorshed2007/shadcn-tour) (67)
-- [UNOAWORLD/unoa-agent](https://github.com/UNOAWORLD/unoa-agent) (50)
-- [nuxtlabs/nuxt-ui3-vue-starter](https://github.com/nuxtlabs/nuxt-ui3-vue-starter) (47)
-- [lawndoc/stack-back](https://github.com/lawndoc/stack-back) (46)
-- [echohive42/AI-Data-Scientist-scores-top-1-percent-on-Kaggle](https://github.com/echohive42/AI-Data-Scientist-scores-top-1-percent-on-Kaggle) (40)
+- [NiazMorshed2007/shadcn-tour](https://github.com/NiazMorshed2007/shadcn-tour) (103)
+- [yeongpin/cursor-free-vip](https://github.com/yeongpin/cursor-free-vip) (75)
+- [echohive42/AI-Data-Scientist-scores-top-1-percent-on-Kaggle](https://github.com/echohive42/AI-Data-Scientist-scores-top-1-percent-on-Kaggle) (62)
+- [UNOAWORLD/unoa-agent](https://github.com/UNOAWORLD/unoa-agent) (51)
+- [FareedKhan-dev/train-llm-from-scratch](https://github.com/FareedKhan-dev/train-llm-from-scratch) (36)
