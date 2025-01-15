@@ -1,0 +1,1 @@
+# This file makes the django_example directory a Python package 

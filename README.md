@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-12 .. 2025-01-14)
+# Latest Repositories (2025-01-13 .. 2025-01-15)
 
-- [Don1255/Al-Photoshop-2024](https://github.com/Don1255/Al-Photoshop-2024) (385)
-- [angel-21104/Adobe-Express-2024](https://github.com/angel-21104/Adobe-Express-2024) (385)
-- [Pyxenity/Adobe-Acrobat-Pro-2024](https://github.com/Pyxenity/Adobe-Acrobat-Pro-2024) (385)
-- [ShawtyU/apex-legends-cheat-download](https://github.com/ShawtyU/apex-legends-cheat-download) (385)
-- [Hsonero4/Canva-Pro-2024](https://github.com/Hsonero4/Canva-Pro-2024) (384)
+- [langchain-ai/executive-ai-assistant](https://github.com/langchain-ai/executive-ai-assistant) (395)
+- [santinic/audiblez](https://github.com/santinic/audiblez) (198)
+- [antfu/are-we-esm](https://github.com/antfu/are-we-esm) (164)
+- [utkusen/baitroute](https://github.com/utkusen/baitroute) (113)
+- [lvgalvao/2025-One-Billion-Row-Challenge](https://github.com/lvgalvao/2025-One-Billion-Row-Challenge) (66)
