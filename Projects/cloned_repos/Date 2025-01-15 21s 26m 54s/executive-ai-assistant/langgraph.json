@@ -1,0 +1,18 @@
+{
+  "python_version": "3.11",
+  "dependencies": [
+    "."
+  ],
+  "graphs": {
+    "main": "./eaia/main/graph.py:graph",
+    "cron": "./eaia/cron_graph.py:graph",
+    "general_reflection_graph": "./eaia/reflection_graphs.py:general_reflection_graph",
+    "multi_reflection_graph": "./eaia/reflection_graphs.py:multi_reflection_graph"
+  },
+  "store": {
+    "index": {
+      "embed": "openai:text-embedding-3-small",
+      "dims": 1536
+    }
+  }
+}

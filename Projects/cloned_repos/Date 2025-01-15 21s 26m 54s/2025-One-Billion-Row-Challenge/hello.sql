@@ -1,0 +1,11 @@
+SELECT 'hello' as message;
+
+
+
+
+
+
+
+
+
+
