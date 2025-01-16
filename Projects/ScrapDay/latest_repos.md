@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-13 .. 2025-01-15)
+# Latest Repositories (2025-01-14 .. 2025-01-16)
 
-- [langchain-ai/executive-ai-assistant](https://github.com/langchain-ai/executive-ai-assistant) (395)
-- [santinic/audiblez](https://github.com/santinic/audiblez) (198)
-- [antfu/are-we-esm](https://github.com/antfu/are-we-esm) (164)
-- [utkusen/baitroute](https://github.com/utkusen/baitroute) (113)
-- [lvgalvao/2025-One-Billion-Row-Challenge](https://github.com/lvgalvao/2025-One-Billion-Row-Challenge) (66)
+- [antfu/are-we-esm](https://github.com/antfu/are-we-esm) (258)
+- [Lakr233/FlowDown-Beta](https://github.com/Lakr233/FlowDown-Beta) (78)
+- [kinopeee/cursorrules](https://github.com/kinopeee/cursorrules) (71)
+- [code100x/latent-booking](https://github.com/code100x/latent-booking) (51)
+- [cyberagiinc/DevDocs](https://github.com/cyberagiinc/DevDocs) (50)
