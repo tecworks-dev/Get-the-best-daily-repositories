@@ -1,32 +1,32 @@
 [
   {
-    "name": "langchain-ai/executive-ai-assistant",
-    "clone_url": "https://github.com/langchain-ai/executive-ai-assistant.git",
-    "stars": 395,
-    "size": 184
-  },
-  {
-    "name": "santinic/audiblez",
-    "clone_url": "https://github.com/santinic/audiblez.git",
-    "stars": 198,
-    "size": 174
-  },
-  {
     "name": "antfu/are-we-esm",
     "clone_url": "https://github.com/antfu/are-we-esm.git",
-    "stars": 164,
-    "size": 206
+    "stars": 258,
+    "size": 369
   },
   {
-    "name": "utkusen/baitroute",
-    "clone_url": "https://github.com/utkusen/baitroute.git",
-    "stars": 113,
-    "size": 862
+    "name": "Lakr233/FlowDown-Beta",
+    "clone_url": "https://github.com/Lakr233/FlowDown-Beta.git",
+    "stars": 78,
+    "size": 145
   },
   {
-    "name": "lvgalvao/2025-One-Billion-Row-Challenge",
-    "clone_url": "https://github.com/lvgalvao/2025-One-Billion-Row-Challenge.git",
-    "stars": 66,
-    "size": 452
+    "name": "kinopeee/cursorrules",
+    "clone_url": "https://github.com/kinopeee/cursorrules.git",
+    "stars": 71,
+    "size": 109
+  },
+  {
+    "name": "code100x/latent-booking",
+    "clone_url": "https://github.com/code100x/latent-booking.git",
+    "stars": 51,
+    "size": 436
+  },
+  {
+    "name": "cyberagiinc/DevDocs",
+    "clone_url": "https://github.com/cyberagiinc/DevDocs.git",
+    "stars": 50,
+    "size": 471
   }
 ]
