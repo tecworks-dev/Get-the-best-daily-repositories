@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-14 .. 2025-01-16)
+# Latest Repositories (2025-01-15 .. 2025-01-17)
 
-- [antfu/are-we-esm](https://github.com/antfu/are-we-esm) (258)
-- [Lakr233/FlowDown-Beta](https://github.com/Lakr233/FlowDown-Beta) (78)
-- [kinopeee/cursorrules](https://github.com/kinopeee/cursorrules) (71)
-- [code100x/latent-booking](https://github.com/code100x/latent-booking) (51)
-- [cyberagiinc/DevDocs](https://github.com/cyberagiinc/DevDocs) (50)
+- [openai/openai-realtime-agents](https://github.com/openai/openai-realtime-agents) (382)
+- [SwoxApp/Swox](https://github.com/SwoxApp/Swox) (287)
+- [kinopeee/cursorrules](https://github.com/kinopeee/cursorrules) (127)
+- [JaredC01/LabStack](https://github.com/JaredC01/LabStack) (111)
+- [karminski/one-small-step](https://github.com/karminski/one-small-step) (91)
