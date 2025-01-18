@@ -1,32 +1,32 @@
 [
   {
-    "name": "openai/openai-realtime-agents",
-    "clone_url": "https://github.com/openai/openai-realtime-agents.git",
-    "stars": 382,
-    "size": 1040
-  },
-  {
-    "name": "SwoxApp/Swox",
-    "clone_url": "https://github.com/SwoxApp/Swox.git",
-    "stars": 287,
-    "size": 672
-  },
-  {
-    "name": "kinopeee/cursorrules",
-    "clone_url": "https://github.com/kinopeee/cursorrules.git",
-    "stars": 127,
-    "size": 132
-  },
-  {
     "name": "JaredC01/LabStack",
     "clone_url": "https://github.com/JaredC01/LabStack.git",
-    "stars": 111,
-    "size": 2302
+    "stars": 257,
+    "size": 2304
   },
   {
-    "name": "karminski/one-small-step",
-    "clone_url": "https://github.com/karminski/one-small-step.git",
-    "stars": 91,
-    "size": 1358
+    "name": "Gourieff/ComfyUI-ReActor",
+    "clone_url": "https://github.com/Gourieff/ComfyUI-ReActor.git",
+    "stars": 65,
+    "size": 423
+  },
+  {
+    "name": "HafizalJohari/lclv",
+    "clone_url": "https://github.com/HafizalJohari/lclv.git",
+    "stars": 44,
+    "size": 279
+  },
+  {
+    "name": "thisisran/nova",
+    "clone_url": "https://github.com/thisisran/nova.git",
+    "stars": 44,
+    "size": 872
+  },
+  {
+    "name": "yeldarby/nycerebro",
+    "clone_url": "https://github.com/yeldarby/nycerebro.git",
+    "stars": 37,
+    "size": 104
   }
 ]

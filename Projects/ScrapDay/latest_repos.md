@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-15 .. 2025-01-17)
+# Latest Repositories (2025-01-16 .. 2025-01-18)
 
-- [openai/openai-realtime-agents](https://github.com/openai/openai-realtime-agents) (382)
-- [SwoxApp/Swox](https://github.com/SwoxApp/Swox) (287)
-- [kinopeee/cursorrules](https://github.com/kinopeee/cursorrules) (127)
-- [JaredC01/LabStack](https://github.com/JaredC01/LabStack) (111)
-- [karminski/one-small-step](https://github.com/karminski/one-small-step) (91)
+- [JaredC01/LabStack](https://github.com/JaredC01/LabStack) (257)
+- [Gourieff/ComfyUI-ReActor](https://github.com/Gourieff/ComfyUI-ReActor) (65)
+- [HafizalJohari/lclv](https://github.com/HafizalJohari/lclv) (44)
+- [thisisran/nova](https://github.com/thisisran/nova) (44)
+- [yeldarby/nycerebro](https://github.com/yeldarby/nycerebro) (37)
