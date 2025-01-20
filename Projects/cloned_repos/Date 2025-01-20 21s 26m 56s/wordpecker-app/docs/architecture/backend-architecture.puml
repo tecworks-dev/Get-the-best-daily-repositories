@@ -1,0 +1,45 @@
+@startuml
+
+!define RECTANGLE class
+
+skinparam componentStyle rectangle
+skinparam monochrome false
+skinparam shadowing false
+
+package "Frontend" {
+    [React.js App]
+}
+
+package "Backend Services" {
+    package "Express Server" {
+        [REST API] as api
+        [Middleware] as middleware
+        [Controllers] as controllers
+        [Rate Limiter] as ratelimit
+    }
+
+    package "Supabase" {
+        [Auth Service] as auth
+        database "PostgreSQL DB" as db
+    }
+    
+    [OpenAI Service] as llm
+}
+
+cloud "External Services" {
+    [OpenAI API] as openai
+    [Google OAuth] as google
+}
+
+[React.js App] --> api : OpenAI requests
+[React.js App] --> auth : Direct auth
+[React.js App] --> db : Direct database access
+api --> middleware : Request processing
+middleware --> controllers : Business logic
+controllers --> llm : Exercise generation
+llm --> openai : API calls
+auth --> google : OAuth flow
+ratelimit --> api : Protect endpoints
+middleware --> auth : Auth verification
+
+@enduml
