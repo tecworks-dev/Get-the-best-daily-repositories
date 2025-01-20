@@ -1,0 +1,11 @@
+# dist
+internal/assets/dist
+
+# binaries
+tinyauth
+
+# test docker compose
+docker-compose.test.yml
+
+# users file
+users.txt

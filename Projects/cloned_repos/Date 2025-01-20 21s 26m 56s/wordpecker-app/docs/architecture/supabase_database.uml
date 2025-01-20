@@ -1,0 +1,74 @@
+@startuml
+
+!define table(x) class x << (T,#FFAAAA) >>
+!define primary_key(x) <u>x</u>
+!define foreign_key(x) #x#
+
+' Styling
+skinparam class {
+    BackgroundColor White
+    BorderColor Black
+    ArrowColor Black
+}
+
+table(auth.users) {
+    primary_key(id): uuid
+    email: text
+    ..other auth fields..
+}
+
+table(word_lists) {
+    primary_key(id): uuid
+    foreign_key(user_id): uuid
+    name: text
+    description: text
+    context: text
+    created_at: timestamptz
+    --
+    Constraints
+    ..
+    name_length: name > 0
+}
+
+table(words) {
+    primary_key(id): uuid
+    foreign_key(list_id): uuid
+    value: text
+    meaning: text
+    created_at: timestamptz
+    --
+    Constraints
+    ..
+    word_length: value > 0
+}
+
+table(sessions) {
+    primary_key(id): uuid
+    foreign_key(list_id): uuid
+    type: text
+    score: integer
+    current_exercise_index: integer
+    created_at: timestamptz
+    completed_at: timestamptz
+    --
+    Constraints
+    ..
+    valid_type: type in ('learn', 'quiz')
+}
+
+' Relationships
+auth.users "1" -- "*" word_lists : owns
+word_lists "1" -- "*" words : contains
+word_lists "1" -- "*" sessions : has
+
+note right of sessions
+  type can only be
+  'learn' or 'quiz'
+end note
+
+note right of word_lists
+  All tables have RLS enabled
+  Users can only access their own data
+end note
+
+@enduml
