@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: black;
+}
+
+/* Infinite intense shaking */
+.shake {
+  animation: shake 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97) infinite;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(2px, 2px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-2px, -4px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-6px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(6px, 4px) rotate(0deg);
+  }
+  40% {
+    transform: translate(2px, -2px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-2px, 4px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-6px, 2px) rotate(0deg);
+  }
+  70% {
+    transform: translate(6px, 2px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-2px, -2px) rotate(1deg);
+  }
+  90% {
+    transform: translate(2px, 4px) rotate(0deg);
+  }
+  100% {
+    transform: translate(2px, -4px) rotate(-1deg);
+  }
+}

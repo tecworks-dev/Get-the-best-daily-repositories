@@ -1,0 +1,81 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+skinparam style strictuml
+
+class User {
+  + id: String
+  + email: String
+  + name: String
+  + wordLists: List<WordList>
+  + createList(name: String, description: String, context: String): WordList
+  + deleteList(listId: String): void
+}
+
+class WordList {
+  + id: String
+  + name: String
+  + description: String
+  + context: String
+  + words: List<Word>
+  + addWord(word: String): Word
+  + removeWord(wordId: String): void
+  + startLearnMode(): LearnSession
+  + startQuizMode(): QuizSession
+}
+
+class Word {
+  + id: String
+  + value: String
+  + meaning: String
+  + createdAt: DateTime
+  + fetchMeaning(): void
+}
+
+class LearnSession {
+  + id: String
+  + wordList: WordList
+  + exercises: List<Exercise>
+  + currentExerciseIndex: int
+  + generateNewExercises(): void
+  + nextExercise(): Exercise
+  + submitAnswer(answer: String): boolean
+}
+
+class QuizSession {
+  + id: String
+  + wordList: WordList
+  + exercises: List<Exercise>
+  + currentExerciseIndex: int
+  + score: int
+  + generateNewExercises(): void
+  + nextExercise(): Exercise
+  + submitAnswer(answer: String): boolean
+  + calculateScore(): int
+}
+
+class Exercise {
+  + id: String
+  + type: String
+  + question: String
+  + correctAnswer: String
+  + options: List<String>
+  + isCorrect(answer: String): boolean
+}
+
+class LLMService {
+  + generateMeaning(word: String, context: String): String
+  + generateExercises(words: List<Word>, type: String, count: int): List<Exercise>
+}
+
+User "1" *-- "*" WordList : owns >
+WordList "1" *-- "*" Word : contains >
+WordList "1" -- "1" LearnSession : creates >
+WordList "1" -- "1" QuizSession : creates >
+LearnSession "1" *-- "*" Exercise : has >
+QuizSession "1" *-- "*" Exercise : has >
+Word -- LLMService : uses >
+LearnSession -- LLMService : uses >
+QuizSession -- LLMService : uses >
+
+@enduml
