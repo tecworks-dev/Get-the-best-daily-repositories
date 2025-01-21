@@ -2,31 +2,31 @@
   {
     "name": "deepseek-ai/DeepSeek-R1",
     "clone_url": "https://github.com/deepseek-ai/DeepSeek-R1.git",
-    "stars": 2289,
-    "size": 1471
+    "stars": 7008,
+    "size": 1472
   },
   {
     "name": "sammwyy/MikuMikuBeam",
     "clone_url": "https://github.com/sammwyy/MikuMikuBeam.git",
-    "stars": 273,
-    "size": 3817
-  },
-  {
-    "name": "MoonshotAI/Kimi-k1.5",
-    "clone_url": "https://github.com/MoonshotAI/Kimi-k1.5.git",
-    "stars": 255,
-    "size": 2087
-  },
-  {
-    "name": "steveiliop56/tinyauth",
-    "clone_url": "https://github.com/steveiliop56/tinyauth.git",
-    "stars": 61,
-    "size": 334
+    "stars": 1246,
+    "size": 3928
   },
   {
     "name": "baturyilmaz/wordpecker-app",
     "clone_url": "https://github.com/baturyilmaz/wordpecker-app.git",
-    "stars": 32,
-    "size": 3288
+    "stars": 238,
+    "size": 3293
+  },
+  {
+    "name": "HarleyCoops/DeepSeek-Manim-Animation-Generator",
+    "clone_url": "https://github.com/HarleyCoops/DeepSeek-Manim-Animation-Generator.git",
+    "stars": 231,
+    "size": 84
+  },
+  {
+    "name": "74Sapphiraqv/Mev-Bot-Solana",
+    "clone_url": "https://github.com/74Sapphiraqv/Mev-Bot-Solana.git",
+    "stars": 129,
+    "size": 63
   }
 ]
