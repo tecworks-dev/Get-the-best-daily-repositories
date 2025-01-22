@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-19 .. 2025-01-21)
+# Latest Repositories (2025-01-20 .. 2025-01-22)
 
-- [deepseek-ai/DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1) (7008)
-- [sammwyy/MikuMikuBeam](https://github.com/sammwyy/MikuMikuBeam) (1246)
-- [baturyilmaz/wordpecker-app](https://github.com/baturyilmaz/wordpecker-app) (238)
-- [HarleyCoops/DeepSeek-Manim-Animation-Generator](https://github.com/HarleyCoops/DeepSeek-Manim-Animation-Generator) (231)
-- [74Sapphiraqv/Mev-Bot-Solana](https://github.com/74Sapphiraqv/Mev-Bot-Solana) (129)
+- [krishnaik06/Roadmap-To-Learn-Agentic-AI](https://github.com/krishnaik06/Roadmap-To-Learn-Agentic-AI) (116)
+- [crazywolf132/evo](https://github.com/crazywolf132/evo) (117)
+- [Department-of-Truth/Departament-of-Truth-Core](https://github.com/Department-of-Truth/Departament-of-Truth-Core) (61)
+- [rbrown101010/yapsearch](https://github.com/rbrown101010/yapsearch) (55)
+- [marcoroth/minitest-difftastic](https://github.com/marcoroth/minitest-difftastic) (55)
