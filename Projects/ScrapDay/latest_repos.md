@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-23 .. 2025-01-25)
+# Latest Repositories (2025-01-24 .. 2025-01-26)
 
-- [huggingface/open-r1](https://github.com/huggingface/open-r1) (1504)
-- [Snydersimple/verbose-memory](https://github.com/Snydersimple/verbose-memory) (319)
-- [Xoconoch/zotifarrr](https://github.com/Xoconoch/zotifarrr) (314)
-- [melodeiavoida/fuzzy-rotary-phone](https://github.com/melodeiavoida/fuzzy-rotary-phone) (313)
-- [candranudmitry/improved-waddle](https://github.com/candranudmitry/improved-waddle) (312)
+- [hdudud383/CraxsRAT-Official](https://github.com/hdudud383/CraxsRAT-Official) (135)
+- [weijunext/image-url-converter](https://github.com/weijunext/image-url-converter) (80)
+- [skydoves/flow-operators](https://github.com/skydoves/flow-operators) (54)
+- [Cere-Labs/maia](https://github.com/Cere-Labs/maia) (48)
+- [amanvirparhar/elara](https://github.com/amanvirparhar/elara) (47)

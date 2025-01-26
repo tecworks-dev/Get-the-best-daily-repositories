@@ -1,0 +1,26 @@
+sveltekit/node_modules
+
+# Output
+sveltekit/.output
+sveltekit/.vercel
+sveltekit/.netlify
+sveltekit/.wrangler
+sveltekit/.svelte-kit
+sveltekit/build
+
+# OS
+sveltekit/.DS_Store
+sveltekit/Thumbs.db
+
+# Env
+sveltekit/.env
+sveltekit/.env.*
+sveltekit/!.env.example
+sveltekit/!.env.test
+
+# Vite
+svelekit/vite.config.js.timestamp-*
+sveltekit/vite.config.ts.timestamp-*
+
+# Python
+python/__pycache__/
