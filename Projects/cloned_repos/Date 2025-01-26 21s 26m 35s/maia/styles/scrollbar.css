@@ -1,0 +1,10 @@
+.os-scrollbar.os-theme-custom {
+  --os-size: 8px;
+  --os-track-bg: #00fff605;
+  --os-track-bg-hover: #00fff610;
+  --os-handle-border-radius: 50px;
+  --os-handle-bg: #00fff650;
+  --os-handle-bg-hover: #00fff650;
+  --os-handle-bg-active: #00fff6;
+  --os-handle-min-size: 33px;
+}

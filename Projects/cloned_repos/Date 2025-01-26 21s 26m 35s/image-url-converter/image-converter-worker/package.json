@@ -1,0 +1,15 @@
+{
+  "name": "image-converter-worker",
+  "version": "1.0.0",
+  "main": "worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "wrangler": "^3.105.1"
+  }
+}

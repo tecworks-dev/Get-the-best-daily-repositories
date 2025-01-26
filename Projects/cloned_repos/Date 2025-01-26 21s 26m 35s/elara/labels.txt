@@ -1,0 +1,40 @@
+person
+organization
+phone number
+address
+email
+ip address
+username
+date of birth
+passport number
+credit card number
+social security number
+health insurance id number
+mobile phone number
+bank account number
+driver's license number
+tax identification number
+identity card number
+national id number
+registration number
+student id number
+insurance number
+serial number
+fax number
+visa number
+identity document number
+transaction number
+credit card brand
+license plate number
+vehicle registration number
+landline phone number
+blood type
+cvv
+cvc
+digital signature
+postal code
+insurance company
+passport expiration date
+medication
+medical condition
+credit card expiration date
