@@ -1,0 +1,93 @@
+[tool.poetry]
+name = "orange-intelligence"
+version = "0.1.0"
+description = "The Orange Intelligence for mac os x"
+authors = ["Pietro"]
+readme = "README.md"
+packages = [
+    { include = "core" },
+    { include = "extensions" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pynput = "1.7.7"
+pyperclip="1.9.0"
+PyQt6="6.8.0"
+ollama="0.4.7"
+pyobjc-framework-Cocoa="11.0"
+openai="1.60.1"
+
+[tool.poetry.dev-dependencies]
+black = "^23.7.0"
+flake8 = "^6.1.0"
+isort = "^5.12.0"
+mypy = "^1.8.0"
+pytest = "^7.4.0"
+pytest-cov = "^4.1.0"
+flake8-eradicate = "^1.5.0"
+flake8-pytest-style = "^1.7.2"
+pep8-naming = "^0.13.3"
+flake8-bugbear = "^24.2.6"
+flake8-annotations = "^3.0.1"
+flake8-simplify = "^0.21.0"
+flake8-print = "^5.0.0"
+bandit = {extras = ["toml"], version = "^1.7.7"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.black]
+line-length = 120
+target-version = ['py312']
+include = '\.pyi?$'
+exclude = '''
+^/(
+  (
+    \.eggs
+    | .venv
+    | \.git
+    | build
+    | dist
+    | notebooks
+  )
+)
+'''
+
+[tool.isort]
+line_length = 120
+profile = "black"
+src_paths = ["core", "tests", "extensions"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
+python_files = ["tests.py", "test_*.py", "*_tests.py"]
+
+[tool.coverage.report]
+exclude_also = [
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    ]
+
+[tool.mypy]
+files = ["core/**/*.py", "extensions/**/*.py", "tests/**/*.py", "utils/**/*.py"]
+follow_imports = "normal"
+strict_optional = "False"
+warn_redundant_casts = "True"
+warn_unused_ignores = "True"
+disallow_any_generics = "False"
+check_untyped_defs = "True"
+no_implicit_reexport = "True"
+no_implicit_optional = "True"
+disallow_untyped_defs = "False"
+ignore_missing_imports = "True"
+namespace_packages = "True"
+disallow_any_unimported = "True"
+exclude = []
+
+[tool.bandit]
+exclude_dirs = ["tests", ".venv", "dist"]
