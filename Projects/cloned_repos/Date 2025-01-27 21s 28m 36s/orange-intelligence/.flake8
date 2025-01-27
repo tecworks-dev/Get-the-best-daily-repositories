@@ -1,0 +1,17 @@
+[flake8]
+max-line-length = 120
+exclude =
+    .git,
+    __pycache__,
+    .venv,
+    build,
+    dist,
+
+# ANN101: Missing type annotation for self in method
+# ANN102: Missing type annotation for cls in method
+# D400: First line should end with a period for a docstring
+# D401: First line should be in imperative mood for a docstring
+# ANN003: Missing type annotation for a kwargs argument
+
+extend-ignore=ANN101,ANN102,D400,D401,ANN003,N802
+suppress-none-returning=true
