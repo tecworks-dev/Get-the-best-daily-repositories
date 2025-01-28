@@ -1,0 +1,53 @@
+name: Submodule Update
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  build:
+    name: Submodule update
+    runs-on: ubuntu-latest
+    env:
+      PARENT_ORG: 'anti-work'
+      PARENT_REPOSITORY: 'iffy-cloud'
+      CHECKOUT_BRANCH: 'main'
+      PR_AGAINST_BRANCH: 'main'
+      TITLE_PREFIX: 'Updates Iffy submodule to version'
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Checkout parent repository and branch
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets._GITHUB_ACCESS_TOKEN }}
+          repository: ${{ env.PARENT_ORG }}/${{ env.PARENT_REPOSITORY }}
+          ref: ${{ env.CHECKOUT_BRANCH }}
+          submodules: true
+          fetch-depth: 0
+
+      - name: Create new branch and push changes
+        shell: bash
+        run: |
+          git config user.name ${{ secrets.GIT_USER_NAME }}
+          git config user.email ${{ secrets.GIT_USER_EMAIL }}
+          git submodule update --remote
+          git checkout -b $GITHUB_RUN_ID
+          git commit -am "updating submodules"
+          git push --set-upstream origin $GITHUB_RUN_ID
+
+      - name: Create pull request against target branch
+        uses: actions/github-script@v5
+        with:
+          github-token: ${{ secrets._GITHUB_ACCESS_TOKEN }}
+          script: |
+            await github.rest.pulls.create({
+              owner: '${{ env.PARENT_ORG }}',
+              repo: '${{ env.PARENT_REPOSITORY }}',
+              head: process.env.GITHUB_RUN_ID,
+              base: '${{ env.PR_AGAINST_BRANCH }}',
+              title: `${process.env.TITLE_PREFIX} ${process.env.GITHUB_RUN_ID}`,
+              body: `${process.env.TITLE_PREFIX} \`${process.env.GITHUB_RUN_ID}\``,
+            });
