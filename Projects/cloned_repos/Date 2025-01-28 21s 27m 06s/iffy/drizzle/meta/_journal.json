@@ -1,0 +1,125 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1733240574706,
+      "tag": "0000_military_vanisher",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1733417313656,
+      "tag": "0001_wet_revanche",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1733418271071,
+      "tag": "0002_icy_killer_shrike",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1733428933321,
+      "tag": "0003_happy_amazoness",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1734039113947,
+      "tag": "0004_little_vulcan",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1734408980620,
+      "tag": "0005_friendly_silver_fox",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1735416330068,
+      "tag": "0006_robust_lyja",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1735421640011,
+      "tag": "0007_condemned_mariko_yashida",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1735437506404,
+      "tag": "0008_pretty_sabretooth",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1736289381171,
+      "tag": "0009_robust_misty_knight",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1736365632298,
+      "tag": "0010_certain_lady_mastermind",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1736539531663,
+      "tag": "0011_lonely_blink",
+      "breakpoints": true
+    },
+    {
+      "idx": 12,
+      "version": "7",
+      "when": 1736551658425,
+      "tag": "0012_dizzy_gladiator",
+      "breakpoints": true
+    },
+    {
+      "idx": 13,
+      "version": "7",
+      "when": 1736895945327,
+      "tag": "0013_ordinary_lilith",
+      "breakpoints": true
+    },
+    {
+      "idx": 14,
+      "version": "7",
+      "when": 1736964996024,
+      "tag": "0014_ambiguous_celestials",
+      "breakpoints": true
+    },
+    {
+      "idx": 15,
+      "version": "7",
+      "when": 1736966139588,
+      "tag": "0015_stale_omega_flight",
+      "breakpoints": true
+    },
+    {
+      "idx": 16,
+      "version": "7",
+      "when": 1737741996412,
+      "tag": "0016_narrow_donald_blake",
+      "breakpoints": true
+    }
+  ]
+}

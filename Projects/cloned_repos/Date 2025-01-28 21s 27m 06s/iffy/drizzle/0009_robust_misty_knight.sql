@@ -1,0 +1,1 @@
+DROP TABLE "custom_email_configurations" CASCADE;

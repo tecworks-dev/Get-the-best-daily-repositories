@@ -1,0 +1,67 @@
+name: "End-to-end tests"
+
+on:
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+jobs:
+  shortest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: package-lock.json
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Vercel CLI
+        run: npm i -g vercel
+
+      - name: Pull and set up .env.local
+        run: |
+          vercel env pull --environment=preview --token=$VERCEL_TOKEN
+          test -f .env.local || (echo ".env.local not created" && exit 1)
+
+      - name: Wait for Vercel preview deployment
+        uses: patrickedqvist/wait-for-vercel-preview@v1.3.2
+        id: waitFor
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          max_timeout: 300
+
+      - name: Install Playwright
+        run: npx playwright install chromium
+
+      - name: Run Shortest tests
+        id: shortest_tests
+        run: |
+          export $(cat .env.local | grep -v '^#' | xargs)
+          npm run shortest -- --headless --debug-ai --target=${{ steps.waitFor.outputs.url }}
+        env:
+          BASE_URL: ${{ steps.waitFor.outputs.url }}
+
+      - name: Upload artifacts
+        if: ${{ failure() && steps.shortest_tests.conclusion == 'failure' }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: artifacts
+          path: .shortest
+          if-no-files-found: error
+          include-hidden-files: true
+          retention-days: 7

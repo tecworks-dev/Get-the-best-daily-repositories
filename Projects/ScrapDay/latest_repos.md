@@ -1,7 +1,7 @@
-# Latest Repositories (2025-01-25 .. 2025-01-27)
+# Latest Repositories (2025-01-26 .. 2025-01-28)
 
-- [defihook/solana-ai-agent](https://github.com/defihook/solana-ai-agent) (318)
-- [getAsterisk/deepclaude](https://github.com/getAsterisk/deepclaude) (248)
-- [solstation/ai-agent-template](https://github.com/solstation/ai-agent-template) (186)
-- [tqventure/JLB-AI-Agent](https://github.com/tqventure/JLB-AI-Agent) (155)
-- [sharingan-no-kakashi/orange-intelligence](https://github.com/sharingan-no-kakashi/orange-intelligence) (95)
+- [anti-work/iffy](https://github.com/anti-work/iffy) (140)
+- [CY-CHENYUE/ComfyUI-Janus-Pro](https://github.com/CY-CHENYUE/ComfyUI-Janus-Pro) (135)
+- [Raskoll2/LLMcalc](https://github.com/Raskoll2/LLMcalc) (129)
+- [open-thoughts/open-thoughts](https://github.com/open-thoughts/open-thoughts) (95)
+- [vxunderground/OCRMe](https://github.com/vxunderground/OCRMe) (83)
