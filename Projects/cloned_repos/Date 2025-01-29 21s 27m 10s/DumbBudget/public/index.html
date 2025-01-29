@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DumbBudget</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/png" href="/assets/logo.png">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <button id="themeToggle" aria-label="Toggle theme">
+                <svg class="moon" viewBox="0 0 24 24">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+                <svg class="sun" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y1="4.22"></line>
+                </svg>
+            </button>
+
+            <header>
+                <h1>DumbBudget</h1>
+            </header>
+
+            <section class="overview">
+                <div class="balance-card">
+                    <h3>Balance</h3>
+                    <div class="amount" id="totalBalance">$0.00</div>
+                </div>
+                <div class="summary-cards">
+                    <div class="card income">
+                        <div class="card-header">
+                            <h3>Income</h3>
+                            <button class="filter-btn" data-filter="income" aria-label="Filter by income">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="amount" id="totalIncome">$0.00</div>
+                    </div>
+                    <div class="card expenses">
+                        <div class="card-header">
+                            <h3>Expenses</h3>
+                            <button class="filter-btn" data-filter="expense" aria-label="Filter by expenses">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="amount" id="totalExpenses">$0.00</div>
+                    </div>
+                </div>
+            </section>
+
+            <button id="addTransactionBtn" class="add-transaction-btn">Add Transaction</button>
+
+            <div class="date-range-selector">
+                <div class="date-input-group">
+                    <input type="date" id="startDate" aria-label="Start date">
+                    <span class="date-separator">to</span>
+                    <input type="date" id="endDate" aria-label="End date">
+                </div>
+            </div>
+
+            <section class="transactions">
+                <div class="transactions-header">
+                    <h3>Transactions</h3>
+                    <div class="sort-controls">
+                        <div class="sort-type-toggle">
+                            <button class="sort-btn active" data-sort="date" aria-label="Sort by date">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                            </button>
+                            <button class="sort-btn" data-sort="amount" aria-label="Sort by amount">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                                </svg>
+                            </button>
+                        </div>
+                        <button id="sortDirection" aria-label="Sort direction" class="sort-direction-btn">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 20V4"/>
+                                <path d="M5 11l7-7 7 7"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div id="transactionsList">
+                    <!-- Transactions will be populated here via JavaScript -->
+                </div>
+            </section>
+
+            <footer>
+                <button id="exportBtn" aria-label="Export CSV">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                        <polyline points="7 10 12 15 17 10"/>
+                        <line x1="12" y1="15" x2="12" y2="3"/>
+                    </svg>
+                </button>
+            </footer>
+        </div>
+    </main>
+
+    <!-- Transaction Modal -->
+    <div id="transactionModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="transaction-type-toggle">
+                    <button class="toggle-btn active" data-type="income">Income</button>
+                    <button class="toggle-btn" data-type="expense">Expense</button>
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="transactionForm">
+                <div id="categoryField" style="display: none;">
+                    <select id="category" required>
+                        <option value="Bills">Bills</option>
+                        <option value="Food">Food</option>
+                        <option value="Transport">Transport</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+                <div class="amount-input-wrapper">
+                    <span class="currency-symbol">$</span>
+                    <input type="number" id="amount" placeholder="0.00" required step="0.01">
+                </div>
+                <input type="text" id="description" placeholder="Description" required>
+                <input type="date" id="transactionDate" required>
+                <button type="submit">Add</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html> 
