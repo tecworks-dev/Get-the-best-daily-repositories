@@ -1,32 +1,32 @@
 [
   {
-    "name": "pulpocaminante/Stuxnet",
-    "clone_url": "https://github.com/pulpocaminante/Stuxnet.git",
-    "stars": 133,
-    "size": 513
+    "name": "sdan/r1-web",
+    "clone_url": "https://github.com/sdan/r1-web.git",
+    "stars": 263,
+    "size": 2037
   },
   {
-    "name": "gtbbeseller/special-potato",
-    "clone_url": "https://github.com/gtbbeseller/special-potato.git",
-    "stars": 72,
-    "size": 3365
+    "name": "7Rhiannonub/MEV-BOT-Ethereum",
+    "clone_url": "https://github.com/7Rhiannonub/MEV-BOT-Ethereum.git",
+    "stars": 155,
+    "size": 247
   },
   {
-    "name": "gtbbeseller/bookish-octo-spoon",
-    "clone_url": "https://github.com/gtbbeseller/bookish-octo-spoon.git",
-    "stars": 72,
-    "size": 3211
+    "name": "armandwegnez/Sobre-Public",
+    "clone_url": "https://github.com/armandwegnez/Sobre-Public.git",
+    "stars": 97,
+    "size": 141
   },
   {
-    "name": "HugoRCD/nuxt-visitors",
-    "clone_url": "https://github.com/HugoRCD/nuxt-visitors.git",
-    "stars": 52,
-    "size": 980
+    "name": "tigerabrodi/react-query-from-scratch",
+    "clone_url": "https://github.com/tigerabrodi/react-query-from-scratch.git",
+    "stars": 90,
+    "size": 97
   },
   {
-    "name": "DumbWareio/DumbBudget",
-    "clone_url": "https://github.com/DumbWareio/DumbBudget.git",
-    "stars": 49,
-    "size": 94
+    "name": "joschi/blueskyfeedbot",
+    "clone_url": "https://github.com/joschi/blueskyfeedbot.git",
+    "stars": 67,
+    "size": 999
   }
 ]
