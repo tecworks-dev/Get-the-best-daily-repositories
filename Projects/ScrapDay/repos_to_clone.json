@@ -1,32 +1,32 @@
 [
   {
-    "name": "Venlorahelio/Mev-Bot-Solana",
-    "clone_url": "https://github.com/Venlorahelio/Mev-Bot-Solana.git",
-    "stars": 123,
-    "size": 238
-  },
-  {
-    "name": "ErlichLiu/DeepClaude",
-    "clone_url": "https://github.com/ErlichLiu/DeepClaude.git",
-    "stars": 96,
-    "size": 106
-  },
-  {
     "name": "vinciop1/Luna-Executor",
     "clone_url": "https://github.com/vinciop1/Luna-Executor.git",
-    "stars": 54,
+    "stars": 111,
     "size": 776
   },
   {
-    "name": "SmokeyHarvey/CITREA-INDIA-TOUR",
-    "clone_url": "https://github.com/SmokeyHarvey/CITREA-INDIA-TOUR.git",
-    "stars": 36,
-    "size": 94
+    "name": "nickscamara/open-deep-research",
+    "clone_url": "https://github.com/nickscamara/open-deep-research.git",
+    "stars": 82,
+    "size": 572
   },
   {
-    "name": "MeguminSama/moonlight-launcher",
-    "clone_url": "https://github.com/MeguminSama/moonlight-launcher.git",
-    "stars": 25,
-    "size": 4323
+    "name": "matsuoka-601/waterball",
+    "clone_url": "https://github.com/matsuoka-601/waterball.git",
+    "stars": 77,
+    "size": 912
+  },
+  {
+    "name": "nizzyabi/mail",
+    "clone_url": "https://github.com/nizzyabi/mail.git",
+    "stars": 58,
+    "size": 165
+  },
+  {
+    "name": "nathannlu/aperture",
+    "clone_url": "https://github.com/nathannlu/aperture.git",
+    "stars": 27,
+    "size": 156
   }
 ]
