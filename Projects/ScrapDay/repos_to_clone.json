@@ -1,32 +1,32 @@
 [
   {
-    "name": "vinciop1/Luna-Executor",
-    "clone_url": "https://github.com/vinciop1/Luna-Executor.git",
-    "stars": 111,
-    "size": 776
-  },
-  {
     "name": "nickscamara/open-deep-research",
     "clone_url": "https://github.com/nickscamara/open-deep-research.git",
-    "stars": 82,
-    "size": 572
+    "stars": 559,
+    "size": 899
   },
   {
-    "name": "matsuoka-601/waterball",
-    "clone_url": "https://github.com/matsuoka-601/waterball.git",
-    "stars": 77,
-    "size": 912
+    "name": "dzhng/deep-research",
+    "clone_url": "https://github.com/dzhng/deep-research.git",
+    "stars": 431,
+    "size": 59
   },
   {
-    "name": "nizzyabi/mail",
-    "clone_url": "https://github.com/nizzyabi/mail.git",
-    "stars": 58,
-    "size": 165
+    "name": "IsaacGemal/wikitok",
+    "clone_url": "https://github.com/IsaacGemal/wikitok.git",
+    "stars": 127,
+    "size": 56
   },
   {
-    "name": "nathannlu/aperture",
-    "clone_url": "https://github.com/nathannlu/aperture.git",
-    "stars": 27,
-    "size": 156
+    "name": "gina55s/freeddit",
+    "clone_url": "https://github.com/gina55s/freeddit.git",
+    "stars": 111,
+    "size": 389
+  },
+  {
+    "name": "hamitmizrak/ibb_ecodation_javacore",
+    "clone_url": "https://github.com/hamitmizrak/ibb_ecodation_javacore.git",
+    "stars": 80,
+    "size": 173
   }
 ]

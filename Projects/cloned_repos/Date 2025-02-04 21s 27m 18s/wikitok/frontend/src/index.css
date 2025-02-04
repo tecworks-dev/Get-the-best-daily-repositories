@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+html, body {
+  overscroll-behavior-y: contain;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
