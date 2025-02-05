@@ -1,32 +1,32 @@
 [
   {
-    "name": "nickscamara/open-deep-research",
-    "clone_url": "https://github.com/nickscamara/open-deep-research.git",
-    "stars": 559,
-    "size": 899
-  },
-  {
     "name": "dzhng/deep-research",
     "clone_url": "https://github.com/dzhng/deep-research.git",
-    "stars": 431,
-    "size": 59
+    "stars": 707,
+    "size": 63
   },
   {
     "name": "IsaacGemal/wikitok",
     "clone_url": "https://github.com/IsaacGemal/wikitok.git",
-    "stars": 127,
-    "size": 56
+    "stars": 439,
+    "size": 96
+  },
+  {
+    "name": "4Garathosc1z/SOLANA-Mev-Trading-Bot",
+    "clone_url": "https://github.com/4Garathosc1z/SOLANA-Mev-Trading-Bot.git",
+    "stars": 128,
+    "size": 263
   },
   {
     "name": "gina55s/freeddit",
     "clone_url": "https://github.com/gina55s/freeddit.git",
-    "stars": 111,
+    "stars": 112,
     "size": 389
   },
   {
     "name": "hamitmizrak/ibb_ecodation_javacore",
     "clone_url": "https://github.com/hamitmizrak/ibb_ecodation_javacore.git",
-    "stars": 80,
+    "stars": 85,
     "size": 173
   }
 ]
