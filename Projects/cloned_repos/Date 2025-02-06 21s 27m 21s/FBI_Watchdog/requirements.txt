@@ -1,0 +1,6 @@
+dnspython
+requests
+python-dotenv
+selenium
+webdriver-manager
+rich
