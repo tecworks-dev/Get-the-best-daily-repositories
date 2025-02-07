@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>GoCook | Rezepte mit Privatsphäre</title>
+    {{ template "head.tmpl" }}
+</head>
+<body>
+
+
+<main class="hero is-chef is-fullheight">
+    <div class="hero-head">
+        <div class="mt-6">{{ template  "header.tmpl" }}</div>
+    </div>
+
+    <div class="hero-body">
+        <div class="container has-text-centered mb-6">
+            {{ template "search.tmpl" }}
+        </div>
+    </div>
+
+    <div class="hero-foot">
+        <div class="container is-fluid mb-6">
+            {{ template "footer.tmpl" }}
+        </div>
+    </div>
+</main>
+
+</body>
+</html>

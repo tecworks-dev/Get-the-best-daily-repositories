@@ -1,0 +1,19 @@
+apiVersion: manta.io/v1alpha1
+kind: Torrent
+metadata:
+  labels:
+    app.kubernetes.io/name: torrent
+    app.kubernetes.io/instance: torrent-sample
+    app.kubernetes.io/part-of: controller
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/created-by: controller
+  name: torrent-sample
+spec:
+  reclaimPolicy: Delete
+  # nodeSelector:
+  #   zone: zone1
+  hub:
+    repoID: Qwen/Qwen2.5-0.5B
+    # With one file.
+    # repoID: Qwen/Qwen2-0.5B-Instruct-GGUF
+    # filename: qwen2-0_5b-instruct-q5_k_m.gguf

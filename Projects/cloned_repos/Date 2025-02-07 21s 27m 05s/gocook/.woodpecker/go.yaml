@@ -1,0 +1,53 @@
+when:
+  - event: pull_request
+  - event: push
+
+variables:
+  - &golang_image "golang:latest"
+  - &golangci_lint "golangci/golangci-lint:latest-alpine"
+
+steps:
+  - name: generate
+    image: *golang_image
+    commands:
+      - go get go.uber.org/mock/mockgen@v0.4.0
+      - go generate ./...
+
+  - name: lint
+    depends_on: generate
+    image: *golangci_lint
+    commands:
+      - golangci-lint run
+
+  - name: build
+    image: *golang_image
+    depends_on: generate
+    commands:
+      - go build -v ./cmd/server
+
+  - name: test
+    image: *golang_image
+    depends_on: generate
+    commands:
+      - go test -race -cover -coverprofile=coverage.txt -covermode=atomic ./...
+
+  - name: upload
+    depends_on: build
+    image: curlimages/curl
+    commands:
+      - 'curl --user NoUmlautsAllowed:$CODEBERG_REGISTRY_TOKEN --upload-file server "https://codeberg.org/api/packages/NoUmlautsAllowed/generic/gocook/${CI_COMMIT_SHA}/server"'
+    environment:
+      CODEBERG_REGISTRY_TOKEN:
+        from_secret: codeberg_registry_token
+    when:
+      event: push
+
+  - name: codecov
+    image: woodpeckerci/plugin-codecov
+    depends_on: test
+    settings:
+      files: coverage.txt
+      token:
+        from_secret: codecov_token
+    when:
+      event: push

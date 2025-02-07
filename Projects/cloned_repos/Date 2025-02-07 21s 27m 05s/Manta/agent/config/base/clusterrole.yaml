@@ -1,0 +1,57 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: manta-agent-role
+rules:
+- apiGroups:
+  - "manta.io"
+  resources:
+  - torrents
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - "manta.io"
+  resources:
+  - replications
+  verbs:
+  - get
+  - list
+  - watch
+  - update
+  - patch
+- apiGroups:
+  - "manta.io"
+  resources:
+  - replications/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - "manta.io"
+  resources:
+  - nodetrackers
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+- apiGroups:
+  - ""
+  resources:
+  - nodes
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - list
+  - watch

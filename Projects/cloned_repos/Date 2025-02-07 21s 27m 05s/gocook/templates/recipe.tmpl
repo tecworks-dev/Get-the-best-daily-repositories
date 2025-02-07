@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>GoCook | Rezept {{ .Title }}</title>
+    {{ template "head.tmpl" }}
+</head>
+<body>
+<header class="section p-0 hero is-chef">
+    <div class="hero-head pb-3 pt-5">
+        {{ template "header.tmpl" }}
+    </div>
+    <div class="hero-body pt-3">
+        {{ template "search.tmpl" . }}
+    </div>
+</header>
+<main class="section">
+    <div class="fixed-grid">
+        <div class="grid" itemscope itemtype="https://schema.org/Recipe">
+            <div class="cell is-col-span-2-mobile">
+                <div class="box is-full-height">
+                    <div class="content">
+                    <h1 itemprop="name">{{ .Title }}</h1>
+                    <p itemprop="description">{{ .Recipe.Subtitle }}</p>
+                    {{ if .HasImage }}
+                    <figure class="image is-4by5">
+                        <img itemprop="image" src="{{ .PreviewImageURLTemplate }}" alt="Vorschau">
+                    </figure>
+                    {{ end }}
+                    </div>
+                </div>
+            </div>
+            <div class="cell is-col-span-2-mobile">
+                <div class="box" style="height: 100%">
+                    <div class="container pb-3">
+                        {{ template "recipeinfo.tmpl" . }}
+                    </div>
+                    {{ range .IngredientGroups }}
+                    <div class="content pt-3">
+                        <p>{{ .Header }}</p>
+                        <ul>
+                            {{ range .Ingredients }}
+                            <li itemprop="recipeIngredient">{{ if .Amount }}{{ .Amount }} {{ .Unit }} {{ end }}{{ .Name }}</li>
+                            {{ end}}
+                        </ul>
+                    </div>
+                    {{ end }}
+                </div>
+            </div>
+            <div itemprop="recipeInstructions" class="cell is-col-span-2">
+                {{ range .Instructions }}
+                <div class="pb-3">
+                    <div class="box">
+                        <p>{{ . }}</p>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+
+    <div id="recipe-links-container" class="container">
+        <div class="px-3">
+            <a class="button" href="/recipes/{{ .ID }}/comments">Kommentare</a>
+            <a class="button" href="{{ .SiteURL }}" target="_blank">
+                <span class="icon">
+                    <i class="mdi mdi-open-in-new"></i>
+                </span>
+                <span>Auf Chefkoch anzeigen</span>
+            </a>
+        </div>
+    </div>
+</main>
+<footer class="section hero is-chef">
+    <div class="hero-foot">
+        {{ template "footer.tmpl" }}
+    </div>
+</footer>
+</body>
+</html>
