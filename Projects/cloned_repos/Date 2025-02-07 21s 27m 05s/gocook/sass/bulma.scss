@@ -1,0 +1,68 @@
+@charset "utf-8";
+@use "bulma/sass/utilities/initial-variables";
+@use "bulma/bulma";
+@use "@mdi/font/scss/materialdesignicons";
+
+$chef-light: rgb(59, 128, 71);
+$chef-dark: #243b27;
+
+.is-chef {
+  background-color: $chef-light;
+  color: initial-variables.$white;
+}
+
+.is-chef-text {
+  color: initial-variables.$white;
+}
+
+.is-full-height {
+  height: 100%;
+}
+
+.is-full-width {
+  width: 100%;
+}
+
+.dropdown-item.is-active {
+  background-color: $chef-dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  .is-chef {
+    background-color: $chef-dark;
+    color: initial-variables.$black;
+  }
+
+  .is-chef-text {
+    color: initial-variables.$black;
+  }
+
+  .dropdown-item.is-active {
+    background-color: $chef-light;
+  }
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  header,
+  footer {
+    display: none !important;
+  }
+
+  div {
+    padding-block: 5px !important;
+  }
+
+  .box {
+    box-shadow: none !important;
+    padding-block: 0px !important;
+  }
+
+  #recipe-links-container {
+    display: none !important;
+  }
+}

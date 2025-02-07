@@ -1,0 +1,6 @@
+coverage:
+  precision: 2
+  round: down
+ignore:
+  - "cmd/stubs/"
+  - "mock_*.go"

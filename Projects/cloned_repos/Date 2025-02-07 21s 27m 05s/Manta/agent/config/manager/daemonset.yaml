@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: manta-agent
+  namespace: manta-system
+  labels:
+    # This is required for manta when fetching peer IP.
+    app: manta-agent
+spec:
+  selector:
+    matchLabels:
+      app: manta-agent
+  template:
+    metadata:
+      labels:
+        app: manta-agent
+    spec:
+      serviceAccountName: manta-agent
+      initContainers:
+      - name: init-permissions
+        image: busybox:1.28
+        command: ['sh', '-c', 'chown -R 1000:3000 /workspace/models && chmod -R 777 /workspace/models']
+        volumeMounts:
+          - name: model-volume
+            mountPath: /workspace/models
+      containers:
+      - name: agent
+        image: controller:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9090
+        resources:
+          limits:
+            cpu: 1
+            memory: 2Gi
+          requests:
+            cpu: 100m
+            memory: 200Mi
+        env:
+        - name: NODE_NAME
+          valueFrom:
+            fieldRef:
+              fieldPath: spec.nodeName
+        # Set the nodeTracker.spec.sizeLimit.
+        # - name: SIZE_LIMIT
+        #   value: "990Mi"
+        # If you have GFW problem in china.
+        # - name: HF_ENDPOINT
+        #   value: https://hf-mirror.com
+        volumeMounts:
+        - name: model-volume
+          mountPath: /workspace/models
+        securityContext:
+          runAsUser: 1000
+          runAsGroup: 3000
+      volumes:
+      - name: model-volume
+        hostPath:
+          path: /mnt/models
+          type: DirectoryOrCreate
