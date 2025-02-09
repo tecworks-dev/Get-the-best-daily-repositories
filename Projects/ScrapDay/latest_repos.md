@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-05 .. 2025-02-07)
+# Latest Repositories (2025-02-07 .. 2025-02-09)
 
-- [usedquit/gocook](https://github.com/usedquit/gocook) (137)
-- [sneakyresiden/Manta](https://github.com/sneakyresiden/Manta) (133)
-- [tubbyelectr/CraneSched-FrontEnd](https://github.com/tubbyelectr/CraneSched-FrontEnd) (132)
-- [tragicsunse/autopilot](https://github.com/tragicsunse/autopilot) (130)
-- [worthwhilei/bq-utilization-alerts](https://github.com/worthwhilei/bq-utilization-alerts) (129)
+- [boku7/StringReaper](https://github.com/boku7/StringReaper) (125)
+- [Genesis-Agentic/Genesis](https://github.com/Genesis-Agentic/Genesis) (77)
+- [nafasebra/iranian-colors](https://github.com/nafasebra/iranian-colors) (69)
+- [developedbyed/react-gradient-glow](https://github.com/developedbyed/react-gradient-glow) (62)
+- [WildBerry67/wildberry](https://github.com/WildBerry67/wildberry) (52)
