@@ -1,0 +1,320 @@
+files_with_version_number = {
+    './.version' => ['{x}'],
+    './package.json' => ['"version": "{x}"'],
+    './yarn.lock' => ['react-native-purchases: {x}', '"react-native-purchases@{x},'],
+    './react-native-purchases-ui/package.json' => ['"version": "{x}"', '"react-native-purchases": "{x}"'],
+    './ios/RNPurchases.m' => ['return @"{x}"'],
+    './android/build.gradle' => ['versionName \'{x}\''],
+    './react-native-purchases-ui/android/build.gradle' => ['versionName \'{x}\''],
+    './android/src/main/java/com/wildberry/purchases/react/RNPurchasesModule.java' => ['PLUGIN_VERSION = "{x}"']
+}
+files_to_update_phc_version = {
+    'RNPurchases.podspec' => ['"PurchasesHybridCommon", \'{x}\''],
+    'react-native-purchases-ui/RNPaywalls.podspec' => ['"PurchasesHybridCommon", \'{x}\'', '"PurchasesHybridCommonUI", \'{x}\''],
+    'android/build.gradle' => ['com.wildberry.purchases:purchases-hybrid-common:{x}'],
+    'react-native-purchases-ui/android/build.gradle' => ['com.wildberry.purchases:purchases-hybrid-common-ui:{x}'],
+    'package.json' => ['"@wildberry/purchases-typescript-internal": "{x}"'],
+    'react-native-purchases-ui/package.json' => ['"@wildberry/purchases-typescript-internal": "{x}"']
+}
+files_to_update_on_latest_stable_releases = {
+  './scripts/docs/index.html' => ['react-native-purchases-docs/{x}/']
+}
+repo_name = 'react-native-purchases'
+package_name = 'react-native-purchases'
+changelog_latest_path = './CHANGELOG.latest.md'
+changelog_path = './CHANGELOG.md'
+versions_path = './VERSIONS.md'
+sample_path = 'examples/purchaseTesterTypescript'
+
+before_all do
+  setup_circle_ci
+end
+
+desc "Bump version, edit changelog, and create pull request"
+lane :bump do |options|
+  phc_version = get_phc_version
+  bump_version_update_changelog_create_pr(
+    current_version: current_version_number,
+    changelog_latest_path: changelog_latest_path,
+    changelog_path: changelog_path,
+    files_to_update: files_with_version_number,
+    files_to_update_without_prerelease_modifiers: {},
+    files_to_update_on_latest_stable_releases: files_to_update_on_latest_stable_releases,
+    repo_name: repo_name,
+    github_rate_limit: options[:github_rate_limit],
+    editor: options[:editor],
+    next_version: options[:next_version],
+    automatic_release: options[:automatic_release],
+    hybrid_common_version: phc_version,
+    versions_file_path: versions_path,
+    is_prerelease: options[:is_prerelease]
+  )
+  update_hybrids_versions_file(
+    versions_file_path: versions_path,
+    new_sdk_version: current_version_number,
+    hybrid_common_version: phc_version
+  )
+  commit_current_changes(commit_message: 'Update VERSIONS.md')
+  push_to_git_remote(set_upstream: true)
+end
+
+desc "Update version number in all files that need to be updated"
+lane :update_version do |options|
+  replace_version_number(
+    current_version: current_version_number,
+    new_version_number: options[:next_version],
+    files_to_update: files_with_version_number,
+    files_to_update_without_prerelease_modifiers: {},
+    files_to_update_on_latest_stable_releases: files_to_update_on_latest_stable_releases,
+  )
+end
+
+desc "Automatically bumps version, edit changelog, and create pull request"
+lane :automatic_bump do |options|
+  next_version, type_of_bump = determine_next_version_using_labels(
+    repo_name: repo_name,
+    github_rate_limit: options[:github_rate_limit]
+  )
+  options[:next_version] = next_version
+  options[:automatic_release] = true
+  if type_of_bump == :skip
+    UI.message('Skipping automatic bump since the next version doesn\'t include public facing changes')
+    next
+  elsif type_of_bump == :major
+    UI.message('Skipping automatic bump since the next version is a major release')
+    next
+  end
+  bump(options)
+end
+
+desc "Make github release"
+lane :github_release do |options|
+  create_github_release(
+    version: options[:version],
+    repo_name: repo_name,
+    github_api_token: ENV["GITHUB_TOKEN"],
+    changelog_latest_path: changelog_latest_path,
+    upload_assets: []
+  )
+end
+
+desc "Creates GitHub release and publishes react-native-purchases and react-native-purchases-ui"
+lane :release do |options|
+  version_number = current_version_number
+  is_prerelease = prerelease?
+  is_hotfix = !is_prerelease ? hotfix?(package_name) : false
+
+  if is_hotfix
+    UI.important("ℹ️  Hotfix detected, publishing to hotfix tag")
+  end
+
+  args = [
+    'npm',
+    'publish',
+    is_prerelease ? '--tag next' : nil,
+    is_hotfix ? '--tag hotfix' : nil,
+  ].compact
+
+  Dir.chdir(get_root_folder) do
+    sh(args)
+  end
+  Dir.chdir(File.expand_path('react-native-purchases-ui', get_root_folder)) do
+      sh(args)
+  end
+  github_release(version: version_number)
+end
+
+desc "Build example"
+lane :build_example do |options|
+  Dir.chdir(get_root_folder) do
+    sh("yarn")
+  end
+  Dir.chdir(File.expand_path(sample_path, get_root_folder)) do
+    sh("npx pod-install")
+  end
+end
+
+desc "Update purchases-hybrid-common version, pushes changes to a new branch if open_pr option is true"
+lane :update_hybrid_common do |options|
+  if options[:dry_run]
+    dry_run = true
+  end
+  if options[:version]
+    new_version_number = options[:version]
+  else
+    UI.user_error!("Missing `version` argument")
+  end
+
+  current_phc_version = get_phc_version
+
+  UI.message("ℹ️  Current Purchases Hybrid Common version: #{current_phc_version}")
+  UI.message("ℹ️  Setting Purchases Hybrid Common version: #{new_version_number}")
+
+  if dry_run
+    UI.message("ℹ️  Nothing more to do, dry_run: true")
+    next
+  end
+
+  bump_phc_version(
+    repo_name: 'react-native-purchases',
+    files_to_update: files_to_update_phc_version,
+    current_version: current_phc_version,
+    next_version: new_version_number,
+    open_pr: options[:open_pr] || false,
+    automatic_release: options[:automatic_release] || false
+  )
+
+  # Update `yarn.lock` too
+  sh('yarn install --no-immutable')
+  commit_current_changes(commit_message: 'Update yarn.lock')
+
+  # Pushing now in case updating podfile fails and needs to retry
+  push_to_git_remote(set_upstream: true)
+
+  # This will update both PurchasesHybridCommonUI and PurchasesHybridCommon
+  update_sample_podfile_lock_with_retry(pod_name: 'PurchasesHybridCommonUI')
+
+  push_to_git_remote(set_upstream: true)
+end
+
+desc "Generate docs"
+lane :generate_docs do
+  version_number = current_version_number
+  should_update_index = !(prerelease? || hotfix?(package_name))
+  unless should_update_index
+    UI.important("ℹ️  Prerelease or hotfix detected, skipping index update")
+  end
+  docs_repo_base_url = "https://github.com/wildberry/"
+  docs_repo_name = "react-native-purchases-docs"
+  docs_repo_url = File.join(docs_repo_base_url, docs_repo_name)
+
+  Dir.mktmpdir do |docs_generation_folder|
+    # Must be run from the root dir
+    Dir.chdir("..") do
+      sh(
+        "npx",
+        "typedoc",
+        "--out",
+        docs_generation_folder
+      )
+
+      docs_index_path = File.join(Dir.pwd, "scripts/docs/index.html")
+
+      # clone docs repo
+      Dir.mktmpdir do |docs_repo_clone_dir|
+        Dir.chdir(docs_repo_clone_dir) do
+          sh("git", "clone", docs_repo_url)
+          Dir.chdir(docs_repo_name) do
+            # copy docs generated in the previous step into the docs folder and push the changes
+            docs_destination_folder = "docs/#{version_number}"
+            index_destination_path = "docs/index.html"
+            FileUtils.cp_r docs_generation_folder, docs_destination_folder
+            FileUtils.cp docs_index_path, index_destination_path if should_update_index
+
+            # using sh instead of fastlane commands because fastlane would run from the repo root
+            sh("git", "add", docs_destination_folder)
+            sh("git", "add", index_destination_path) if should_update_index
+            sh("git", "commit", "-m", "Update documentation for #{version_number}")
+            sh("git", "push")
+          end
+        end
+      end
+    end
+  end
+end
+
+desc "Tag current branch with current version number"
+lane :tag_current_branch do |options|
+  version_number = current_version_number
+  check_no_git_tag_exists(version_number)
+
+  add_git_tag(tag: version_number)
+  push_git_tags(tag: version_number)
+end
+
+desc "Trigger bump"
+lane :trigger_bump do
+  trigger_action_in_circle_ci(action: 'bump', repo_name: repo_name)
+end
+
+###############################################################################
+# Helper functions 🤜🤛                                                      #
+###############################################################################
+
+def prerelease?
+  Gem::Version.new(current_version_number).prerelease?
+end
+
+def hotfix?(package_name)
+  last_published_version = sh("npm", "view", package_name, "version")
+  Gem::Version.new(current_version_number) < Gem::Version.new(last_published_version)
+end
+
+def get_phc_version
+  Dir.chdir(get_root_folder) do
+    android_phc_version = File.read("android/build.gradle")
+      .match("[\"']com.wildberry.purchases:purchases-hybrid-common:(.*)[\"']")
+      .captures[0]
+    UI.user_error!("Android PHC version not found.") if android_phc_version.nil?
+
+    android_phc_ui_version = File.read("react-native-purchases-ui/android/build.gradle")
+      .match("[\"']com.wildberry.purchases:purchases-hybrid-common-ui:(.*)[\"']")
+      .captures[0]
+    UI.user_error!("Android PHC UI version not found.") if android_phc_ui_version.nil?
+
+    ios_phc_version = File.read("RNPurchases.podspec")
+      .match("\"PurchasesHybridCommon\", '(.*)'")
+      .captures[0]
+    UI.user_error!("iOS PHC version not found.") if ios_phc_version.nil?
+
+    ios_phc_ui_version = File.read("react-native-purchases-ui/RNPaywalls.podspec")
+      .match("\"PurchasesHybridCommonUI\", '(.*)'")
+      .captures[0]
+    UI.user_error!("iOS PHC UI version not found.") if ios_phc_ui_version.nil?
+
+    versions_match =
+      android_phc_version == ios_phc_version &&
+      android_phc_version == android_phc_ui_version &&
+      ios_phc_version == ios_phc_ui_version
+    UI.user_error!("Android and iOS PHC (UI) versions don't match. Please make sure they match.") unless versions_match
+
+    return android_phc_version
+  end
+end
+
+def get_root_folder
+  return File.expand_path('../../', __FILE__)
+end
+
+def current_version_number
+  File.read("../.version").strip
+end
+
+def check_no_git_tag_exists(version_number)
+  if git_tag_exists(tag: version_number, remote: true, remote_name: 'origin')
+    raise "git tag with version #{version_number} already exists!"
+  end
+end
+
+private_lane :update_sample_podfile_lock_with_retry do |options|
+  pod_name = options[:pod_name]
+
+  retry_attempts = 4 # Total of 4 retries, with the first attempt considered, equals 5 attempts over 20 minutes
+  Dir.chdir(File.expand_path("#{sample_path}/ios", get_root_folder)) do
+    begin
+      UI.message("ℹ️  Updating Podfile.lock with new version for #{pod_name}")
+      sh("pod update #{pod_name}")
+      commit_current_changes(commit_message: "Update Podfile.lock for #{pod_name}")
+    rescue => e
+      if retry_attempts > 0
+        UI.message("⚠️  Failed to update Podfile.lock for #{pod_name}: #{e.message}")
+        UI.message("⚠️  Retrying in 5 minutes...")
+        sleep(300) # wait for 5 minutes
+        retry_attempts -= 1
+        retry
+      else
+        UI.message("⚠️  Final attempt to update Podfile.lock for #{pod_name} failed. It's possible the pod has not been distributed yet. Proceeding without update.")
+      end
+    end
+  end
+end
