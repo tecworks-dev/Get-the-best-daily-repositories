@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-07 .. 2025-02-09)
+# Latest Repositories (2025-02-08 .. 2025-02-10)
 
-- [boku7/StringReaper](https://github.com/boku7/StringReaper) (125)
-- [Genesis-Agentic/Genesis](https://github.com/Genesis-Agentic/Genesis) (77)
-- [nafasebra/iranian-colors](https://github.com/nafasebra/iranian-colors) (69)
-- [developedbyed/react-gradient-glow](https://github.com/developedbyed/react-gradient-glow) (62)
-- [WildBerry67/wildberry](https://github.com/WildBerry67/wildberry) (52)
+- [masterFoad/NanoSage](https://github.com/masterFoad/NanoSage) (146)
+- [welllitwilde/freee-go](https://github.com/welllitwilde/freee-go) (121)
+- [silverselli/ptt](https://github.com/silverselli/ptt) (120)
+- [priceynutriti/idemix](https://github.com/priceynutriti/idemix) (115)
+- [unwelcomeexoc/masque](https://github.com/unwelcomeexoc/masque) (114)
