@@ -1,0 +1,17 @@
+services:
+  ubs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: usb
+    ports:
+      - "127.0.0.1:${USB_PORT}:${USB_PORT}"
+    env_file:
+      - .env
+    user: appuser:appgroup # Change with your username if needed or id
+
+    volumes:
+      - uploads-data:/app/uploads
+
+volumes:
+  uploads-data:
