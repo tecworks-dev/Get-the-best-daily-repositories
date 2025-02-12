@@ -1,0 +1,6 @@
+# config.toml
+network = "Ethereum"
+order_amount = 150000       # Order amount in USD
+max_slippage = 1.0          # Maximum slippage (%) for fee calculation
+splits = 5                  # Number of parts to split the order
+aggregator_api = "https://api.dexaggregator.com/liquidity"  # API URL to fetch liquidity data

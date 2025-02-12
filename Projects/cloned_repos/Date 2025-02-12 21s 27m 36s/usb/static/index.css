@@ -1,0 +1,26 @@
+body {
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1, h2, p, span {
+  margin: 45px 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: medium;
+    max-height: 100vh;
+    margin: 0 10px;
+  }
+
+  h1, h2, p, span {
+    margin: 50px 0;
+  }
+}
