@@ -1,0 +1,75 @@
+{# templates/pipe.py.jinja2 #}
+from eclipse.agent import Agent
+from eclipse.eclipsepipe import EclipsePipe
+from eclipse.engine import Engine
+from eclipse.llm import LLMClient
+from eclipse.memory import Memory
+from eclipse.prompt import PromptTemplate
+
+# Import handlers
+
+# Example
+# -------
+#################################################
+# Uncomment below lines to enable ecom handlers #
+#################################################
+# from eclipse_handlers import AmazonHandler
+# from eclipse_handlers.ecommerce.walmart import WalmartHandler
+
+
+async def get_{{ pipe_name }}_pipe() -> EclipsePipe:
+    # LLM Configuration
+    llm_config = {
+        'llm_type': 'openai'
+    }
+    llm_client = LLMClient(llm_config=llm_config)
+
+    # Enable Memory
+    memory = Memory(memory_config={"llm_client": llm_client})
+
+    # Example
+    # -------
+    # amazon_ecom_handler = AmazonHandler()
+    # walmart_ecom_handler = WalmartHandler()
+
+    # Prompt Template
+    prompt_template = PromptTemplate()
+
+    # Example - Engine(s)
+    # -------------------
+    # amazon_engine = Engine(
+    #     handler=amazon_ecom_handler,
+    #     llm=llm_client,
+    #     prompt_template=prompt_template
+    # )
+    # walmart_engine = Engine(
+    #     handler=walmart_ecom_handler,
+    #     llm=llm_client,
+    #     prompt_template=prompt_template
+    # )
+
+    # Create Agents
+
+    # Example - Agent(s)
+    # ------------------
+    # Create Agent with Amazon, Walmart Engines execute in Parallel - Search Products from user prompts
+    # ecom_agent = Agent(
+    #     name='Ecom Agent',
+    #     goal="Get me the best search results",
+    #     role="You are the best product searcher",
+    #     llm=llm_client,
+    #     prompt_template=prompt_template,
+    #     engines=[[amazon_engine, walmart_engine]]
+    # )
+
+    # Create Pipe - Interface
+
+    # Pipe Interface to send it to public accessible interface (Cli Console / WebSocket / Restful API)
+    pipe = EclipsePipe(
+        ###############################################
+        # Uncomment below lines to enable ecom agents #
+        ###############################################
+        # agents=[ecom_agent],
+        memory=memory
+    )
+    return pipe{{'\n'}}
