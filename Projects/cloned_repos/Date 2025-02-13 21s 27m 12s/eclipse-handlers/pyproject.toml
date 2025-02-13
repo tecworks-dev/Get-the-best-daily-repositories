@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "eclipse-handlers"
+version = "1.0.0"
+description = "T"
+license = "MIT"
+authors = [
+    "eclipse AI <support@eclipsehub.io>",
+]
+maintainers = [
+    "eclipse AI <support@eclipsehub.io>",
+]
+readme = "README.md"
+homepage = "https://eclipsehub.io/"
+repository = "https://github.com/Eclipse-Hub/eclipse"
+documentation = "https://docs.eclipsehub.io/"
+keywords = ["eclipse", "AGI", "Agentic AI", "ASI", "eclipse", "agent", "LLM", "cli"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+aiohttp = "^3.10.10"
+atlassian-python-api = "^3.41.16"
+hubspot-api-client = "^10.0.0"
+openai = "^1.52.0"
+google-auth-oauthlib = "^1.2.1"
+google-api-python-client = "^2.149.0"
+wikipedia-api = "^0.7.1"
+crawl4ai = "0.3.731"
+sqlalchemy = {extras = ["asyncio"], version = "^2.0.36"}
+psycopg2-binary = "^2.9.10"
+oracledb = "^2.4.1"
+pymssql = "^2.3.1"
+asyncpg = "^0.30.0"
+aiomysql = "^0.2.0"
+aioodbc = "^0.5.0"
+jira = "^3.8.0"
+pypdf = "^5.0.1"
+tweepy = {extras = ["async"], version = "^4.14.0"}
+requests-html = "^0.10.0"
+pyshorteners = "^1.0.1"
+lxml-html-clean = "^0.4.1"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+pytest-asyncio = "^0.24.0"
+
+[tool.poetry.group.dev.dependencies]
+eclipse = "^0.0.1"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

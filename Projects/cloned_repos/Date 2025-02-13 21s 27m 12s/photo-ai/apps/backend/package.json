@@ -1,0 +1,27 @@
+{
+  "name": "backend",
+  "module": "index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "bun run index.ts",
+    "dev": "bun run index.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@clerk/nextjs": "^6.11.2",
+    "@fal-ai/client": "^1.2.3",
+    "@neondatabase/serverless": "^0.10.4",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "common": "*",
+    "cors": "^2.8.5",
+    "db": "*",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
