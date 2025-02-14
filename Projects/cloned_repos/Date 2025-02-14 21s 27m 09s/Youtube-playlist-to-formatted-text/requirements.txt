@@ -1,0 +1,4 @@
+PyQt5
+pytube
+youtube-transcript-api
+google-generativeai

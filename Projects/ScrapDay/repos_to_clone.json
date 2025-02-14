@@ -1,32 +1,32 @@
 [
   {
-    "name": "Eclipse-Hub/eclipse",
-    "clone_url": "https://github.com/Eclipse-Hub/eclipse.git",
-    "stars": 64,
-    "size": 221
+    "name": "Ebrizzzz/Youtube-playlist-to-formatted-text",
+    "clone_url": "https://github.com/Ebrizzzz/Youtube-playlist-to-formatted-text.git",
+    "stars": 121,
+    "size": 551
   },
   {
     "name": "raysan5/custom_game_engines",
     "clone_url": "https://github.com/raysan5/custom_game_engines.git",
-    "stars": 59,
+    "stars": 99,
     "size": 110
   },
   {
-    "name": "code100x/photo-ai",
-    "clone_url": "https://github.com/code100x/photo-ai.git",
-    "stars": 45,
-    "size": 378
+    "name": "TideDra/lmm-r1",
+    "clone_url": "https://github.com/TideDra/lmm-r1.git",
+    "stars": 86,
+    "size": 2841
   },
   {
-    "name": "Ebrizzzz/Youtube-playlist-to-formatted-text",
-    "clone_url": "https://github.com/Ebrizzzz/Youtube-playlist-to-formatted-text.git",
-    "stars": 44,
-    "size": 543
-  },
-  {
-    "name": "Eclipse-Hub/eclipse-handlers",
-    "clone_url": "https://github.com/Eclipse-Hub/eclipse-handlers.git",
+    "name": "Bald0Wang/DeepSeek-Oracle",
+    "clone_url": "https://github.com/Bald0Wang/DeepSeek-Oracle.git",
     "stars": 43,
-    "size": 219
+    "size": 2635
+  },
+  {
+    "name": "MattBlackOnly/SpotSpot",
+    "clone_url": "https://github.com/MattBlackOnly/SpotSpot.git",
+    "stars": 37,
+    "size": 1050
   }
 ]
