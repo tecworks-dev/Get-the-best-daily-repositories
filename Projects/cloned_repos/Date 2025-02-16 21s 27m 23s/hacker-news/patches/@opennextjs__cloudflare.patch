@@ -1,0 +1,23 @@
+diff --git a/dist/cli/templates/worker.js b/dist/cli/templates/worker.js
+index 823c28a2306d4da78d85c01c89249c0472ff58cd..d3ae2af428b0b3ad4a71f0e2372b000d1c4c1be7 100644
+--- a/dist/cli/templates/worker.js
++++ b/dist/cli/templates/worker.js
+@@ -5,6 +5,10 @@ import * as nextEnvVars from "./env/next-env.mjs";
+ import { handler as middlewareHandler } from "./middleware/handler.mjs";
+ // @ts-expect-error: resolved by wrangler build
+ import { handler as serverHandler } from "./server-functions/default/handler.mjs";
++
++import worker from "../worker";
++export * from "../workflow";
++
+ const cloudflareContextALS = new AsyncLocalStorage();
+ // Note: this symbol needs to be kept in sync with the one defined in `src/api/get-cloudflare-context.ts`
+ // eslint-disable-next-line @typescript-eslint/no-explicit-any
+@@ -17,6 +21,7 @@ globalThis[Symbol.for("__cloudflare-context__")] = new Proxy({}, {
+ // Populate process.env on the first request
+ let processEnvPopulated = false;
+ export default {
++  ...worker,
+     async fetch(request, env, ctx) {
+         return cloudflareContextALS.run({ env, ctx, cf: request.cf }, async () => {
+             const url = new URL(request.url);
