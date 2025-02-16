@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .form-input {
+    @apply rounded-lg border-gray-300 w-full focus:border-tunnel-bear focus:ring focus:ring-tunnel-bear focus:ring-opacity-50;
+  }
+}
