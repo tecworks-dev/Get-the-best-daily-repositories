@@ -1,0 +1,230 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model ConnectedAccount {
+  id           String         @id @default(cuid())
+  provider     String // "GOOGLE" | "OUTLOOK"
+  email        String
+  accessToken  String
+  refreshToken String?
+  expiresAt    DateTime
+  createdAt    DateTime       @default(now())
+  updatedAt    DateTime       @updatedAt
+  calendars    CalendarFeed[]
+
+  @@unique([provider, email])
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model User {
+  id                   String                @id @default(cuid())
+  name                 String?
+  email                String?               @unique
+  emailVerified        DateTime?
+  image                String?
+  accounts             Account[]
+  sessions             Session[]
+  calendars            CalendarFeed[]
+  autoScheduleSettings AutoScheduleSettings?
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model CalendarFeed {
+  id                String            @id @default(uuid())
+  name              String
+  url               String? // Optional for local calendars
+  type              String // "LOCAL", "GOOGLE", "OUTLOOK"
+  color             String? // Add back color field
+  enabled           Boolean           @default(true)
+  createdAt         DateTime          @default(now())
+  updatedAt         DateTime          @updatedAt
+  lastSync          DateTime?
+  error             String?
+  channelId         String? // Google Calendar webhook channel ID
+  resourceId        String? // Google Calendar webhook resource ID
+  channelExpiration DateTime? // When the webhook expires
+  events            CalendarEvent[]
+  userId            String?
+  user              User?             @relation(fields: [userId], references: [id])
+  accountId         String?
+  account           ConnectedAccount? @relation(fields: [accountId], references: [id])
+
+  @@index([accountId])
+}
+
+model CalendarEvent {
+  id             String       @id @default(uuid())
+  feedId         String
+  feed           CalendarFeed @relation(fields: [feedId], references: [id], onDelete: Cascade)
+  googleEventId  String? // Google Calendar Event ID
+  title          String
+  description    String?
+  start          DateTime
+  end            DateTime
+  location       String?
+  isRecurring    Boolean      @default(false)
+  recurrenceRule String?
+  allDay         Boolean      @default(false)
+  status         String?
+  sequence       Int?
+  created        DateTime?
+  lastModified   DateTime?
+  organizer      Json? // Stored as JSON { name?: string, email: string }
+  attendees      Json? // Stored as JSON array of { name?: string, email: string, status?: string }
+  createdAt      DateTime     @default(now())
+  updatedAt      DateTime     @updatedAt
+
+  // New fields for hybrid approach
+  isMaster         Boolean         @default(false) // True if this is a master event
+  masterEventId    String? // Reference to the master event for instances
+  masterEvent      CalendarEvent?  @relation("EventInstances", fields: [masterEventId], references: [id], onDelete: Cascade)
+  instances        CalendarEvent[] @relation("EventInstances")
+  recurringEventId String? // Google Calendar's recurring event ID
+
+  @@index([feedId])
+  @@index([start, end])
+  @@index([googleEventId])
+  @@index([masterEventId])
+  @@index([recurringEventId])
+}
+
+model Project {
+  id          String  @id @default(cuid())
+  name        String
+  description String?
+  color       String?
+  status      String  @default("active") // enum: 'active', 'archived'
+  tasks       Task[]
+
+  // Metadata
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([status])
+}
+
+model Task {
+  id          String  @id @default(cuid())
+  title       String
+  description String?
+  status      String // enum: 'todo', 'in_progress', 'completed'
+
+  // Time Management
+  dueDate       DateTime?
+  duration      Int? // estimated duration in minutes
+  energyLevel   String? // enum: 'high', 'medium', 'low'
+  preferredTime String? // enum: 'morning', 'afternoon', 'evening'
+
+  // Auto-scheduling
+  isAutoScheduled Boolean   @default(false)
+  scheduleLocked  Boolean   @default(false)
+  scheduledStart  DateTime?
+  scheduledEnd    DateTime?
+  scheduleScore   Float?
+  lastScheduled   DateTime?
+
+  // Organization
+  tags Tag[]
+
+  // Recurrence
+  isRecurring       Boolean   @default(false)
+  recurrenceRule    String?
+  lastCompletedDate DateTime?
+
+  // Metadata
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  projectId String?
+  project   Project? @relation(fields: [projectId], references: [id])
+
+  @@index([status])
+  @@index([dueDate])
+  @@index([projectId])
+  @@index([isRecurring])
+  @@index([isAutoScheduled])
+  @@index([scheduledStart, scheduledEnd])
+}
+
+model Tag {
+  id    String  @id @default(cuid())
+  name  String  @unique
+  color String?
+  tasks Task[]
+
+  @@index([name])
+}
+
+model AutoScheduleSettings {
+  id     String @id @default(cuid())
+  userId String @unique
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  // Work Hours
+  workDays      String @default("[]") // JSON string of numbers 0-6
+  workHourStart Int // 0-23
+  workHourEnd   Int // 0-23
+
+  // Preferences
+  selectedCalendars String @default("[]") // JSON string of calendar IDs
+  bufferMinutes     Int    @default(15)
+
+  // Energy Level Mappings
+  highEnergyStart   Int? // 0-23
+  highEnergyEnd     Int? // 0-23
+  mediumEnergyStart Int? // 0-23
+  mediumEnergyEnd   Int? // 0-23
+  lowEnergyStart    Int? // 0-23
+  lowEnergyEnd      Int? // 0-23
+
+  // Project Settings
+  groupByProject Boolean @default(false)
+
+  // Metadata
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+}
