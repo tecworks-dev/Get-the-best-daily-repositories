@@ -1,32 +1,32 @@
 [
   {
-    "name": "ccbikai/hacker-news",
-    "clone_url": "https://github.com/ccbikai/hacker-news.git",
-    "stars": 462,
-    "size": 230
-  },
-  {
-    "name": "4Tyroneth6Xs/Solana-Mev_Bot",
-    "clone_url": "https://github.com/4Tyroneth6Xs/Solana-Mev_Bot.git",
-    "stars": 266,
-    "size": 430
-  },
-  {
     "name": "addyosmani/tunnel-bear-login",
     "clone_url": "https://github.com/addyosmani/tunnel-bear-login.git",
-    "stars": 182,
-    "size": 218
+    "stars": 246,
+    "size": 280
   },
   {
-    "name": "t3dotgg/unduck",
-    "clone_url": "https://github.com/t3dotgg/unduck.git",
-    "stars": 110,
-    "size": 1159
+    "name": "antfu/shiki-stream",
+    "clone_url": "https://github.com/antfu/shiki-stream.git",
+    "stars": 190,
+    "size": 212
   },
   {
-    "name": "37tt/tang-love",
-    "clone_url": "https://github.com/37tt/tang-love.git",
-    "stars": 60,
-    "size": 192
+    "name": "dotnetfactory/fluid-calendar",
+    "clone_url": "https://github.com/dotnetfactory/fluid-calendar.git",
+    "stars": 99,
+    "size": 227
+  },
+  {
+    "name": "6Inarisec/Mev-Bot_SOLANA",
+    "clone_url": "https://github.com/6Inarisec/Mev-Bot_SOLANA.git",
+    "stars": 97,
+    "size": 71
+  },
+  {
+    "name": "coleam00/local-ai-packaged",
+    "clone_url": "https://github.com/coleam00/local-ai-packaged.git",
+    "stars": 83,
+    "size": 3996
   }
 ]
