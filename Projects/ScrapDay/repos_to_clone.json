@@ -1,32 +1,32 @@
 [
   {
-    "name": "addyosmani/tunnel-bear-login",
-    "clone_url": "https://github.com/addyosmani/tunnel-bear-login.git",
-    "stars": 246,
-    "size": 280
-  },
-  {
     "name": "antfu/shiki-stream",
     "clone_url": "https://github.com/antfu/shiki-stream.git",
-    "stars": 190,
-    "size": 212
+    "stars": 329,
+    "size": 404
+  },
+  {
+    "name": "MoonshotAI/MoBA",
+    "clone_url": "https://github.com/MoonshotAI/MoBA.git",
+    "stars": 225,
+    "size": 2270
+  },
+  {
+    "name": "Norinthkm/Mev-Bot_SOLANA",
+    "clone_url": "https://github.com/Norinthkm/Mev-Bot_SOLANA.git",
+    "stars": 204,
+    "size": 179
   },
   {
     "name": "dotnetfactory/fluid-calendar",
     "clone_url": "https://github.com/dotnetfactory/fluid-calendar.git",
-    "stars": 99,
-    "size": 227
+    "stars": 165,
+    "size": 316
   },
   {
-    "name": "6Inarisec/Mev-Bot_SOLANA",
-    "clone_url": "https://github.com/6Inarisec/Mev-Bot_SOLANA.git",
-    "stars": 97,
-    "size": 71
-  },
-  {
-    "name": "coleam00/local-ai-packaged",
-    "clone_url": "https://github.com/coleam00/local-ai-packaged.git",
-    "stars": 83,
-    "size": 3996
+    "name": "angelicmuklu/saf",
+    "clone_url": "https://github.com/angelicmuklu/saf.git",
+    "stars": 134,
+    "size": 54
   }
 ]

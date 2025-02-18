@@ -1,0 +1,8 @@
+[logger]
+level = "info"
+
+[channels.configurations]
+printer = {}
+
+[channels.configurations.mqtt]
+url = "tcp://127.0.0.1:1883"
