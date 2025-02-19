@@ -1,32 +1,32 @@
 [
   {
-    "name": "antfu/shiki-stream",
-    "clone_url": "https://github.com/antfu/shiki-stream.git",
-    "stars": 329,
-    "size": 404
-  },
-  {
-    "name": "MoonshotAI/MoBA",
-    "clone_url": "https://github.com/MoonshotAI/MoBA.git",
-    "stars": 225,
-    "size": 2270
-  },
-  {
     "name": "Norinthkm/Mev-Bot_SOLANA",
     "clone_url": "https://github.com/Norinthkm/Mev-Bot_SOLANA.git",
-    "stars": 204,
-    "size": 179
+    "stars": 295,
+    "size": 373
   },
   {
-    "name": "dotnetfactory/fluid-calendar",
-    "clone_url": "https://github.com/dotnetfactory/fluid-calendar.git",
-    "stars": 165,
-    "size": 316
+    "name": "HiveNexus/HiveChat",
+    "clone_url": "https://github.com/HiveNexus/HiveChat.git",
+    "stars": 293,
+    "size": 496
   },
   {
-    "name": "angelicmuklu/saf",
-    "clone_url": "https://github.com/angelicmuklu/saf.git",
-    "stars": 134,
-    "size": 54
+    "name": "Kyle-Ye/ScreenShieldKit",
+    "clone_url": "https://github.com/Kyle-Ye/ScreenShieldKit.git",
+    "stars": 81,
+    "size": 52
+  },
+  {
+    "name": "Hurley-AI/Hurley-AI",
+    "clone_url": "https://github.com/Hurley-AI/Hurley-AI.git",
+    "stars": 58,
+    "size": 1027
+  },
+  {
+    "name": "setube/vue-idle-xiuxian",
+    "clone_url": "https://github.com/setube/vue-idle-xiuxian.git",
+    "stars": 45,
+    "size": 770
   }
 ]
