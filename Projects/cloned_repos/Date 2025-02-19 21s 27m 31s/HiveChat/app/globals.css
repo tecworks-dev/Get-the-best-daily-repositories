@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.markdown-body {
+  box-sizing: border-box;
+  min-width: 200px;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.markdown-body h1 {
+  font-size: 1.2em !important;
+}
+
+.markdown-body h2 {
+  font-size: 1.1em !important;
+}
+
+.markdown-body h3 {
+  font-size: 1.05em !important;
+}
+
+.markdown-body hr {
+  height: 1px !important;
+}
+
+@media (max-width: 767px) {
+  .markdown-body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.markdown-body menu,
+ol {
+  list-style: decimal;
+}
+
+.markdown-body ul {
+  list-style: disc;
+}
+
+.answer-content ol,
+.answer-content ul {
+  padding-left: 1.2em !important;
+}
+
+.hljs {
+  background-color: transparent !important;
+}
+
+.new-chat-button {
+  cursor: pointer;
+  color: #0057ff;
+  background-color: rgba(0, 87, 255, 0.06);
+  border: .5px solid rgba(0, 102, 255, .15);
+  font-weight: 500;
+}
+
+.new-chat-button:hover {
+  background-color: rgba(0, 87, 255, 0.1);
+}
+
+.max-h-82 {
+  max-height: 20.5rem;
+}
+
+.text-13 {
+  font-size: 13px;
+}
+
+/* loading start */
+
+.dots {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dots div {
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 50%;
+  background-color: #333;
+  animation: fade 0.8s ease-in-out alternate infinite;
+}
+
+.dots div:nth-of-type(1) {
+  animation-delay: -0.4s;
+}
+
+.dots div:nth-of-type(2) {
+  animation-delay: -0.2s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.balls {
+  width: 1.5em;
+  height: 1.5em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balls div {
+  width: 0.4em;
+  height: 0.4em;
+  border-radius: 0.2em;
+  background-color: #333;
+  transform: translateY(-100%);
+  animation: wave 0.8s ease-in-out alternate infinite;
+}
+
+.balls div:nth-of-type(1) {
+  animation-delay: -0.4s;
+}
+
+.balls div:nth-of-type(2) {
+  animation-delay: -0.2s;
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(-100%);
+  }
+
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.spin-loading {
+  border: 3px solid #ddd;
+  border-top-color: #666;
+  border-radius: 50%;
+  width: 1.3em;
+  height: 1.3em;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* loading end */
+
+/* 添加 CSS 动画效果 */
+.transition-transform {
+  transition: transform 0.3s ease-in-out;
+}
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.-translate-x-full {
+  transform: translateX(-100%);
+}
