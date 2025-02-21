@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-18 .. 2025-02-20)
+# Latest Repositories (2025-02-19 .. 2025-02-21)
 
-- [HiveNexus/HiveChat](https://github.com/HiveNexus/HiveChat) (485)
-- [Dhravya/apple-mcp](https://github.com/Dhravya/apple-mcp) (158)
-- [jarrodnorwell/rpcs3droid](https://github.com/jarrodnorwell/rpcs3droid) (63)
-- [fal-ai-community/NativeSparseAttention](https://github.com/fal-ai-community/NativeSparseAttention) (41)
-- [OpenSparseLLMs/MoM](https://github.com/OpenSparseLLMs/MoM) (39)
+- [jackfriks/expo-app-boilerplate](https://github.com/jackfriks/expo-app-boilerplate) (128)
+- [zzzdajb/DickHelper](https://github.com/zzzdajb/DickHelper) (83)
+- [HumanAIGC-Engineering/OpenAvatarChat](https://github.com/HumanAIGC-Engineering/OpenAvatarChat) (57)
+- [cbh34680/WinCse](https://github.com/cbh34680/WinCse) (49)
+- [FradSer/qa-generator](https://github.com/FradSer/qa-generator) (40)

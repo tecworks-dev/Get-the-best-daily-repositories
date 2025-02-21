@@ -1,0 +1,36 @@
+{
+  "cli": {
+    "version": ">= 15.0.10",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "env": {
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_IOS": "your_ios_api_key",
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_ANDROID": "your_android_key_here"
+      }
+    },
+    "preview": {
+      "distribution": "internal",
+      "env": {
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_IOS": "your_ios_api_key",
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_ANDROID": "your_android_key_here"
+      }
+    },
+    "production": {
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_IOS": "your_ios_api_key",
+        "EXPO_PUBLIC_SUPERWALL_API_KEY_ANDROID": "your_android_key_here"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
