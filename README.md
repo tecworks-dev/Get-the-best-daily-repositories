@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-19 .. 2025-02-21)
+# Latest Repositories (2025-02-20 .. 2025-02-22)
 
-- [jackfriks/expo-app-boilerplate](https://github.com/jackfriks/expo-app-boilerplate) (128)
-- [zzzdajb/DickHelper](https://github.com/zzzdajb/DickHelper) (83)
-- [HumanAIGC-Engineering/OpenAvatarChat](https://github.com/HumanAIGC-Engineering/OpenAvatarChat) (57)
-- [cbh34680/WinCse](https://github.com/cbh34680/WinCse) (49)
-- [FradSer/qa-generator](https://github.com/FradSer/qa-generator) (40)
+- [Zalithorbp/BNB-Smart-Mev-Bot](https://github.com/Zalithorbp/BNB-Smart-Mev-Bot) (134)
+- [lucasjinreal/Namo-R1](https://github.com/lucasjinreal/Namo-R1) (54)
+- [blickrbdev/blox-fruits-script](https://github.com/blickrbdev/blox-fruits-script) (42)
+- [orange-framework/orange-boards](https://github.com/orange-framework/orange-boards) (40)
+- [tediousdent/CasaOS-AppManagement](https://github.com/tediousdent/CasaOS-AppManagement) (39)
