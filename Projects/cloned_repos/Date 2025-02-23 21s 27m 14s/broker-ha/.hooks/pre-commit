@@ -1,0 +1,45 @@
+#!/bin/bash
+GO_FILES=$(find . -type f -iname '*.go')
+PASS=true
+
+for FILE in ${GO_FILES}
+do
+
+    UNFORMATTED=$(gofmt -l -s ${FILE})
+    if [ ! -z "${UNFORMATTED}" ]; then
+        echo "go files must be formated, run 'gofmt -d -s ${FILE}'"
+        PASS=false
+    fi
+
+done
+
+go vet ./... 2> /dev/null
+RC=$?
+if [ ${RC} -ne 0 ]; then
+    echo "please run, 'go vet ./...'"
+    PASS=false
+fi
+
+TEST_DIRS=$(find . -type d -not -path '*/.*')
+
+for TEST_DIR in ${TEST_DIRS}
+do
+    pushd ${TEST_DIR} >> /dev/null
+    TEST_NUMBER=$(find . -maxdepth 1 -type f -iname '*_test.go'|wc -l)
+    if [ "${TEST_NUMBER}" -gt 0 ]; then
+        go test -cover -covermode atomic . 2> /dev/null
+        RC=$?
+        if [ ${RC} -ne 0 ]; then
+            echo "test for ${TEST_DIR} is failing"
+            PASS=false
+        fi
+    else 
+        echo "skipping ${TEST_DIR}, no test found"
+    fi
+    popd >> /dev/null
+done
+
+if [ "${PASS}" = false ]; then
+    echo "pre-commit hook failed"
+    exit 1
+fi
