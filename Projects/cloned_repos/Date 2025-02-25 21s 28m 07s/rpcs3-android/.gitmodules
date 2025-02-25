@@ -1,0 +1,6 @@
+[submodule "app/src/main/cpp/rpcs3"]
+	path = app/src/main/cpp/rpcs3
+	url = ../../RPCS3/rpcs3.git
+[submodule "app/src/main/cpp/FFmpeg"]
+	path = app/src/main/cpp/FFmpeg
+	url = ../../FFmpeg/FFmpeg.git

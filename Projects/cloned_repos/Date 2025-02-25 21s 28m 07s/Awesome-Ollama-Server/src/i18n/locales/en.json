@@ -1,0 +1,70 @@
+{
+  "title": "Ollama Available Services",
+  "header": {
+    "refresh": "Refresh Data",
+    "refreshing": "Refreshing...",
+    "refreshCountdown": "Refresh in {countdown}s",
+    "detect": "Detect Services",
+    "detecting": "Detecting...",
+    "detectCountdown": "Detect in {countdown}s"
+  },
+  "detect": {
+    "title": "Detect Ollama Services",
+    "description": "Please enter the Ollama service URLs to detect, one per line.\nExample: http://localhost:11434",
+    "placeholder": "http://localhost:11434\nhttp://192.168.1.100:11434",
+    "cancel": "Cancel",
+    "confirm": "Start Detection",
+    "newDetection": "New Detection",
+    "downloading": "Downloading data...",
+    "download": "Download Results",
+    "error": "Detection Failed",
+    "success": "Detection Success",
+    "unavailable": "Service Unavailable"
+  },
+  "filter": {
+    "title": "Model Filter",
+    "search": "Search models...",
+    "selectedModels": "Selected Models:",
+    "clearSelection": "Clear Selection",
+    "sort": {
+      "tps": "Sort by TPS",
+      "lastUpdate": "Sort by Update Time"
+    }
+  },
+  "service": {
+    "server": "Server",
+    "models": "Available Models",
+    "tps": "{value} TPS",
+    "lastUpdate": "Last Update",
+    "lastUpdateValue": "Updated: {value}",
+    "noServices": "No services available",
+    "total": "{count} Services Total",
+    "filtered": "Filtered Models: {models}",
+    "availableModels": "Available Models:"
+  },
+  "pagination": {
+    "perPage": "Per page:",
+    "showing": "Showing {from} - {to} of {total}",
+    "first": "First",
+    "prev": "Previous",
+    "next": "Next",
+    "last": "Last"
+  },
+  "footer": {
+    "about": {
+      "title": "About Author",
+      "author": "Author:",
+      "license": "This project is open source under the MIT License. Contributions are welcome."
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "items": [
+        "1. This website is for security research and educational purposes only. All service information is from public data.",
+        "2. If you find your service listed here, it's recommended to enhance your network security measures.",
+        "3. We are not responsible for any direct or indirect losses caused by using the information on this site.",
+        "4. Please comply with local laws and regulations. Do not use this information for any illegal activities."
+      ]
+    },
+    "copyright": "© {year} Ollama Monitor Service. All rights reserved."
+  }
+} 

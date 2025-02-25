@@ -1,0 +1,38 @@
+name: Update Services Monitor
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # 每小时执行一次
+  workflow_dispatch:  # 允许手动触发
+
+jobs:
+  update-services:
+    runs-on: ubuntu-latest
+    
+    env:
+      UPSTASH_REDIS_URL: ${{ secrets.UPSTASH_REDIS_URL }}
+      UPSTASH_REDIS_TOKEN: ${{ secrets.UPSTASH_REDIS_TOKEN }}
+      COUNTRYS: US,CN,RU
+    
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          
+      - name: Install dependencies
+        run: npm install
+        
+      - name: Run update Services
+        run: npm run monitor
+        
+      - name: Commit and push if changed
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add public/data.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update services data" && git push)
