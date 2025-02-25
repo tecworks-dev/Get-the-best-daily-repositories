@@ -1,0 +1,10 @@
+{
+    "functions": {
+      "src/app/api/detect/route.ts": {
+        "maxDuration": 50
+      },
+      "src/app/api/update-servers/route.ts": {
+        "maxDuration": 50
+      }
+    }
+  }

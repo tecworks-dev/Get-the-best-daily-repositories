@@ -1,0 +1,70 @@
+{
+  "title": "Ollama 可用服务",
+  "header": {
+    "refresh": "刷新数据",
+    "refreshing": "刷新中...",
+    "refreshCountdown": "{countdown}秒后可刷新",
+    "detect": "检测服务",
+    "detecting": "检测中...",
+    "detectCountdown": "{countdown}秒后可检测"
+  },
+  "detect": {
+    "title": "检测 Ollama 服务",
+    "description": "请输入要检测的 Ollama 服务地址，每行一个地址。\n例如：http://localhost:11434",
+    "placeholder": "http://localhost:11434\nhttp://192.168.1.100:11434",
+    "cancel": "取消",
+    "confirm": "开始检测",
+    "newDetection": "新的检测",
+    "downloading": "正在下载数据...",
+    "download": "下载检测结果",
+    "error": "检测失败",
+    "success": "检测成功",
+    "unavailable": "服务不可用"
+  },
+  "filter": {
+    "title": "模型过滤",
+    "search": "搜索模型...",
+    "selectedModels": "已选模型：",
+    "clearSelection": "清空选择",
+    "sort": {
+      "tps": "TPS 排序",
+      "lastUpdate": "更新时间排序"
+    }
+  },
+  "service": {
+    "server": "服务地址",
+    "models": "可用模型",
+    "tps": "{value} TPS",
+    "lastUpdate": "更新时间",
+    "lastUpdateValue": "更新于：{value}",
+    "noServices": "暂无可用服务",
+    "total": "共 {count} 个服务",
+    "filtered": "已过滤模型: {models}",
+    "availableModels": "可用模型："
+  },
+  "pagination": {
+    "perPage": "每页显示：",
+    "showing": "显示 {from} - {to} 条，共 {total} 条",
+    "first": "首页",
+    "prev": "上一页",
+    "next": "下一页",
+    "last": "末页"
+  },
+  "footer": {
+    "about": {
+      "title": "关于作者",
+      "author": "作者：",
+      "license": "本项目基于 MIT 协议开源，欢迎贡献和使用。"
+    },
+    "disclaimer": {
+      "title": "免责声明",
+      "items": [
+        "1. 本网站仅用于安全研究和教育目的，展示的所有服务信息均来自互联网公开数据。",
+        "2. 如果您发现自己的服务出现在列表中，建议及时加强网络安全防护措施。",
+        "3. 本站不对任何因使用本站信息而导致的直接或间接损失负责。",
+        "4. 请遵守当地法律法规，不得利用本站信息从事任何违法活动。"
+      ]
+    },
+    "copyright": "© {year} Ollama Monitor Service. All rights reserved."
+  }
+} 
