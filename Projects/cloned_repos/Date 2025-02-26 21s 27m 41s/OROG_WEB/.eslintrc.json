@@ -1,0 +1,4 @@
+{
+  "extends": ["next/core-web-vitals", "next/typescript"],
+  "no-unused-expressions": ["error", { "allowTernary": true }]
+}

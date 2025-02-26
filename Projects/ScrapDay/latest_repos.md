@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-23 .. 2025-02-25)
+# Latest Repositories (2025-02-24 .. 2025-02-26)
 
-- [yangleicms/DeepVanDoc](https://github.com/yangleicms/DeepVanDoc) (111)
-- [forrany/Awesome-Ollama-Server](https://github.com/forrany/Awesome-Ollama-Server) (106)
+- [melancholytron/MatrixQtt](https://github.com/melancholytron/MatrixQtt) (178)
+- [FCY316/OROG_WEB](https://github.com/FCY316/OROG_WEB) (102)
 - [Myriandusibr/Arbitrage-Mev-Bot](https://github.com/Myriandusibr/Arbitrage-Mev-Bot) (92)
-- [DHrpcs3/rpcs3-android](https://github.com/DHrpcs3/rpcs3-android) (83)
-- [lowrisk75/proxmox-maintenance-security](https://github.com/lowrisk75/proxmox-maintenance-security) (57)
+- [defprogram/Games-panel](https://github.com/defprogram/Games-panel) (53)
+- [dnakov/claude-code](https://github.com/dnakov/claude-code) (50)
