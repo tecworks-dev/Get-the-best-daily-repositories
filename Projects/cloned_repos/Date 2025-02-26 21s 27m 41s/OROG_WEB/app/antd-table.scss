@@ -1,0 +1,59 @@
+.ant-table-tbody {
+  background-color: transparent !important;
+  .ant-table-row {
+    background-color: var(--antd-table-tr2n);
+    .ant-table-cell-fix-left {
+      background-color: var(--antd-table-tr2n);
+    }
+    &:nth-child(even) {
+      /* 选择双数元素的样式 */
+      background-color: var(--antd-table-trn);
+      .ant-table-cell-fix-left {
+        background-color: var(--antd-table-trn);
+      }
+    }
+  }
+  .ant-table-row:hover {
+    background-color: var(--antd-table-tr2nHover);
+    .ant-table-cell-fix-left {
+      background-color: var(--antd-table-tr2nHover);
+    }
+    &:nth-child(even) {
+      background-color: var(--antd-table-trnHover);
+      .ant-table-cell-fix-left {
+        background-color: var(--antd-table-trnHover);
+      }
+    }
+  }
+}
+.ant-table-wrapper .ant-table-tbody > tr > th,
+.ant-table-wrapper .ant-table-tbody > tr > td {
+  transition: none !important;
+}
+.ant-table-wrapper .ant-table-thead > tr > th,
+.ant-table-wrapper .ant-table-thead > tr > td {
+  transition: none !important;
+}
+
+.ant-table-body {
+  scrollbar-width: none; /* 针对 Firefox */
+  -ms-overflow-style: none; /* 针对旧版 IE */
+}
+.ant-table-body::-webkit-scrollbar {
+  display: none; /* 隐藏滚动条 */
+}
+.ant-table-cell::before {
+  display: none;
+}
+.ant-table-cell {
+  border: none !important;
+}
+.ant-table-row .ant-table-cell {
+  height: 3.9375rem;
+}
+.ant-table-thead .ant-table-cell {
+  padding: 0.625rem 0 !important;
+}
+.ant-modal .ant-modal-content {
+  padding: 0 !important;
+}
