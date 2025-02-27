@@ -1,0 +1,12 @@
+#include <windows.h>
+
+#include <ntverp.h>
+
+#define VER_FILETYPE                VFT_DRV
+#define VER_FILESUBTYPE             VFT2_DRV_SYSTEM
+#define VER_FILEDESCRIPTION_STR     "Vegas USB (via IOS) HID and Mass Storage Driver"
+#define VER_INTERNALNAME_STR        "iosusb.sys"
+#define VER_ORIGINALFILENAME_STR    "iosusb.sys"
+
+#include "common.ver"
+

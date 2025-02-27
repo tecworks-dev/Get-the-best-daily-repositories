@@ -1,0 +1,23 @@
+{
+  "name": "autodelve",
+  "module": "index.ts",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/turndown": "^5.0.5",
+    "cheerio": "^1.0.0",
+    "discord.js": "^14.18.0",
+    "dom-serializer": "^2.0.0",
+    "endent": "^2.1.0",
+    "openai": "^4.85.4",
+    "turndown": "^7.2.0",
+    "turndown-plugin-gfm": "^1.0.2",
+    "url": "^0.11.4",
+    "zod": "^3.24.2"
+  }
+}
