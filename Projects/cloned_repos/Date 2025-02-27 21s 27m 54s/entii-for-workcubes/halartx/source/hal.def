@@ -1,0 +1,127 @@
+LIBRARY HAL
+
+DESCRIPTION 'HAL DLL'
+
+EXPORTS
+    HalAcquireDisplayOwnership
+    HalAdjustResourceList
+    HalAllocateAdapterChannel
+    HalAllocateCommonBuffer
+    HalAllocateCrashDumpRegisters
+    HalAllProcessorsStarted
+    HalAssignSlotResources
+    HalCalibratePerformanceCounter
+    HalDisableSystemInterrupt
+    HalDisplayString
+    HalEnableSystemInterrupt
+    HalFlushCommonBuffer
+    HalFreeCommonBuffer
+    HalGetAdapter
+    HalGetBusData
+    HalGetBusDataByOffset
+    HalGetEnvironmentVariable
+    HalGetInterruptVector
+    HalInitializeProcessor
+    HalInitSystem
+    HalMakeBeep
+    HalProcessorIdle
+    HalQueryDisplayParameters
+    HalQueryRealTimeClock
+    HalReadDmaCounter
+    HalReportResourceUsage
+    HalRequestIpi
+    HalReturnToFirmware
+    HalSetBusData
+    HalSetBusDataByOffset
+    HalSetDisplayParameters
+    HalSetEnvironmentVariable
+    HalSetProfileInterval
+    HalSetRealTimeClock
+    HalSetTimeIncrement
+    HalStartNextProcessor
+    HalStartProfileInterrupt
+    HalStopProfileInterrupt
+    HalTranslateBusAddress
+
+    IoAssignDriveLetters
+    IoFlushAdapterBuffers
+    IoFreeAdapterChannel
+    IoFreeMapRegisters
+    IoMapTransfer
+    IoReadPartitionTable
+    IoSetPartitionInformation
+    IoWritePartitionTable
+
+    KdPortGetByte
+    KdPortInitialize
+    KdPortPollByte
+    KdPortPutByte
+    KdPortRestore
+    KdPortSave
+
+    KeFlushWriteBuffer
+    KeQueryPerformanceCounter
+    KeStallExecutionProcessor
+
+    KdComPortInUse CONSTANT
+
+    KeRaiseIrql
+    KeLowerIrql
+
+    HalCallBios
+
+    HalSweepDcache
+    HalSweepDcacheRange
+    HalSweepIcache
+    HalSweepIcacheRange
+
+    HalGetDmaAlignmentRequirement
+    HalFlushIoBuffers
+
+    HalInitializeHPT
+
+    HalIopAlloc
+    HalIopFree
+
+    HalIopOpen
+    HalIopClose
+    HalIopRead
+    HalIopWrite
+    HalIopSeek
+    HalIopIoctl
+    HalIopIoctlv
+
+    HalIopOpenAsync
+    HalIopCloseAsync
+    HalIopReadAsync
+    HalIopWriteAsync
+    HalIopSeekAsync
+    HalIopIoctlAsync
+    HalIopIoctlvAsync
+
+    HalIopOpenAsyncDpc
+    HalIopCloseAsyncDpc
+    HalIopReadAsyncDpc
+    HalIopWriteAsyncDpc
+    HalIopSeekAsyncDpc
+    HalIopIoctlAsyncDpc
+    HalIopIoctlvAsyncDpc
+
+    HalExiIsDevicePresent
+    HalExiLock
+    HalExiUnlock
+    HalExiLockNonpaged
+    HalExiUnlockNonpaged
+    HalExiSelectDevice
+    HalExiUnselectDevice
+    HalExiRefreshDevice
+    HalExiTransferImmediate
+    HalExiTransferImmediateBuffer
+    HalExiReadWriteImmediateOutBuffer
+    HalExiTransferDma
+    HalExiTransferImmediateAsync
+    HalExiTransferImmediateBufferAsync
+    HalExiReadWriteImmediateOutBufferAsync
+    HalExiTransferDmaAsync
+    HalExiGetDeviceIdentifier
+    HalExiToggleInterrupt

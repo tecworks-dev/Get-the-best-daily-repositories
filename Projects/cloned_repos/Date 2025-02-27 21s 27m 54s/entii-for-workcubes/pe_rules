@@ -1,0 +1,187 @@
+ifeq ($(strip $(PEPPC)),)
+$(error "Please set PEPPC in your environment. export PEPPC=<path to>pePPCGCC")
+endif
+
+REPO_DIR = $(CURRENT_DIRECTORY)/..
+
+#---------------------------------------------------------------------------------
+# path to tools
+#---------------------------------------------------------------------------------
+PEPPCPATH=$(shell echo "$(PEPPC)" | sed -e 's/^\([a-zA-Z]\):/\/\1/')
+export PATH	:=	$(PEPPCPATH):$(REPO_DIR)/msvc-ppc/bin:$(REPO_DIR)/lib:$(PATH)
+
+#---------------------------------------------------------------------------------
+# the prefix on the compiler executables
+#---------------------------------------------------------------------------------
+PREFIX	:=	powerpcle-pe-winnt-
+
+export AS	:=	pasm.exe
+export CC	:=	$(PREFIX)gcc
+export CPP	:=	clppc.exe
+export GCPP	:=	$(PREFIX)cpp
+export CXX	:=	$(PREFIX)g++
+export AR	:=	lib.exe
+export OBJCOPY	:=	$(PREFIX)objcopy
+export STRIP	:=	$(PREFIX)strip
+export NM	:=	$(PREFIX)gcc-nm
+export RANLIB	:=	$(PREFIX)gcc-ranlib
+export LD	:=	link.exe
+export RC	:=	rc.exe
+export SPLITSYM :=	splitsym.exe
+
+ISVC=$(or $(VCBUILDHELPER_COMMAND),$(MSBUILDEXTENSIONSPATH32),$(MSBUILDEXTENSIONSPATH))
+
+ifneq (,$(ISVC))
+	ERROR_FILTER	:=	2>&1 | sed -e 's/\(.[a-zA-Z]\+\):\([0-9]\+\):/\1(\2):/g'
+endif
+
+
+ifdef WSL_DISTRO_NAME
+    detected_OS := WSL
+else ifeq '$(findstring ;,$(PATH))' ';'
+    detected_OS := Windows
+else
+    detected_OS := $(shell uname 2>/dev/null || echo Unknown)
+    detected_OS := $(patsubst CYGWIN%,Cygwin,$(detected_OS))
+    detected_OS := $(patsubst MSYS%,MSYS,$(detected_OS))
+    detected_OS := $(patsubst MINGW%,MSYS,$(detected_OS))
+endif
+
+
+
+ifeq ($(detected_OS), WSL)
+    export PATH_CONVERT := wslpath -w
+    export WIN_PREFIX := 
+    export SUBST_PATH := 1
+else ifeq ($(detected_OS), Windows)
+    export PATH_CONVERT := echo
+    export WIN_PREFIX :=
+    export SUBST_PATH := 0
+else ifeq ($(detected_OS), Cygwin)
+    export PATH_CONVERT := cygpath -w
+    export WIN_PREFIX :=
+    export SUBST_PATH := 0
+else ifeq ($(detected_OS), MSYS)
+    export PATH_CONVERT := cygpath -w
+    export WIN_PREFIX :=
+    export SUBST_PATH := 0
+else
+    export PATH_CONVERT := winepath -w
+    export WIN_PREFIX := wine cmd.exe /c 
+    export SUBST_PATH := 1
+endif
+
+
+#---------------------------------------------------------------------------------
+# allow seeing compiler command lines with make V=1 (similar to autotools' silent)
+#---------------------------------------------------------------------------------
+ifeq ($(V),1)
+    SILENTMSG := @true
+    SILENTCMD :=
+else
+    SILENTMSG := @echo
+    SILENTCMD := @
+endif
+
+
+#---------------------------------------------------------------------------------
+%.lib:
+#---------------------------------------------------------------------------------
+	$(SILENTMSG) $(notdir $@)
+	$(SILENTCMD)rm -f $@
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(AR) /out $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) /out $(subst \,\\,$(shell $(PATH_CONVERT) $^))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(AR) /out $(shell $(PATH_CONVERT) $@) /out $(shell $(PATH_CONVERT) $^)
+endif
+
+
+#---------------------------------------------------------------------------------
+%.obj: %.asm
+	$(SILENTMSG) $(notdir $<)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(AS) -o $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) $(subst \,\\,$(shell $(PATH_CONVERT) $^))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(AS) -o $(shell $(PATH_CONVERT) $@) $(shell $(PATH_CONVERT) $^)
+endif
+
+%.res: %.rc
+	$(SILENTMSG) $(notdir $<)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(RC) -fo $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) -i $(subst \,\\,$(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk)) -i $(subst \,\\,$(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk/crt)) -i $(subst \,\\,$(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/ddk)) $(subst \,\\,$(shell $(PATH_CONVERT) $^))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(RC) -fo $(shell $(PATH_CONVERT) $@) -i $(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk) -i $(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk/crt) -i $(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/ddk) $(shell $(PATH_CONVERT) $^)
+endif
+
+#---------------------------------------------------------------------------------
+%.i: %.s
+	$(SILENTMSG) $(notdir $<)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(CPP) -P -EP -I$(subst \,\\,$(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk)) $(subst \,\\,$(shell $(PATH_CONVERT) $^))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(CPP) -P -EP -I$(shell $(PATH_CONVERT) $(REPO_DIR)/nt4/sdk) $(shell $(PATH_CONVERT) $^)
+endif
+
+%.asm: %.i
+	$(SILENTCMD)cp $< $@
+
+#---------------------------------------------------------------------------------
+%.asm: %.cpp
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CXX) -MMD -MP -MF $(DEPSDIR)/$*.d $(CPPFLAGS) $(CXXFLAGS) -S $< -o - $(ERROR_FILTER) | $(GCPP) - -P -w -o $@
+
+#---------------------------------------------------------------------------------
+%.asm: %.c
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CPPFLAGS) $(CFLAGS) -S $< -o - $(ERROR_FILTER) | $(GCPP) - -P -w -o $@
+
+#---------------------------------------------------------------------------------
+%.asm: %.m
+	$(SILENTMSG) $(notdir $<)
+	$(SILENTCMD)$(CC) -MMD -MP -MF $(DEPSDIR)/$*.d $(CPPFLAGS) $(OBJCFLAGS) -S $< -o - $(ERROR_FILTER) | $(GCPP) - -P -w -o $@
+
+MACHDEP =  -D_WIN32_WINNT=0x0400 -mcpu=603 -mhard-float -Wno-builtin-declaration-mismatch -D"__int64=long long" -D_M_PPC -D_PPC_ -D_WIN32 -D__unaligned= -D_DLL=1 -D__STDC__=0 -D_MSC_VER=0 -D__cdecl= -D__stdcall= -fno-builtin
+
+INCLUDE = -I $(REPO_DIR)/nt4/sdk -I $(REPO_DIR)/nt4/crt -I $(REPO_DIR)/inc -I $(REPO_DIR)/nt4/ddk -I $(REPO_DIR)/nt4/hal
+
+
+#---------------------------------------------------------------------------------
+%.exe:
+	$(SILENTMSG) linking ... $(notdir $@)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(subst \,\\,$(shell $(PATH_CONVERT) $(lib)))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(shell $(PATH_CONVERT) $@) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(shell $(PATH_CONVERT) $(lib))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(shell $(PATH_CONVERT) $@)
+endif
+
+%.dll:
+	$(SILENTMSG) linking ... $(notdir $@)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(subst \,\\,$(shell $(PATH_CONVERT) $(lib)))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(shell $(PATH_CONVERT) $@) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(shell $(PATH_CONVERT) $(lib))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(shell $(PATH_CONVERT) $@)
+endif
+
+%.sys:
+	$(SILENTMSG) linking ... $(notdir $@)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(subst \,\\,$(shell $(PATH_CONVERT) $(lib)))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(shell $(PATH_CONVERT) $@) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(shell $(PATH_CONVERT) $(lib))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(shell $(PATH_CONVERT) $@)
+endif
+
+%.scr:
+	$(SILENTMSG) linking ... $(notdir $@)
+ifeq ($(SUBST_PATH), 1)
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@)) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(subst \,\\,$(shell $(PATH_CONVERT) $(lib)))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(subst \,\\,$(shell $(PATH_CONVERT) $(dir $@))\$(notdir $@))
+else
+	$(SILENTCMD)$(WIN_PREFIX)$(LD) -DEBUG -DEBUGTYPE:COFF /OUT:$(shell $(PATH_CONVERT) $@) $(LDFLAGS) $^ $(foreach lib,$(LIBS),$(shell $(PATH_CONVERT) $(lib))) 
+	$(SILENTCMD)$(WIN_PREFIX)$(SPLITSYM) -a $(shell $(PATH_CONVERT) $@)
+endif
