@@ -1,0 +1,37 @@
+/* MISCELLANEOUS */
+
+
+/* GLANCE BUTTONS TO RIGHT */
+
+#zen-glance-sidebar-container {
+  left: unset !important;
+  right: 2% !important;
+}
+
+
+
+
+
+
+
+
+
+
+/* hide sidebar scrollbar */
+
+#zen-browser-tabs-wrapper {
+    scrollbar-width: none !important;
+}
+
+
+
+
+
+
+
+/* TAB PREVIEW TEXT DISABLED */
+
+#tab-preview-panel{
+  display: none !important;
+}
+

@@ -1,0 +1,8 @@
+---
+services:
+  storage-planner:
+    image: ghcr.io/buildthehomelab/storage-planner:main
+    container_name: storage-planner
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
