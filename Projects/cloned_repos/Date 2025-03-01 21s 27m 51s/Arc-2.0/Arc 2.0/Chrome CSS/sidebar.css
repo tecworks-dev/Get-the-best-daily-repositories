@@ -1,0 +1,16 @@
+/* Cleaned & Transparent Sidebar */
+#sidebar-box {
+  background-color: light-dark(
+    rgba(255, 255, 255, 0.11),
+    rgba(0, 0, 0, 0.2)
+  ) !important;
+  border: none !important;
+
+  & #sidebar-header {
+    border-bottom: none !important;
+
+    & #sidebar-close {
+      display: none !important;
+    }
+  }
+}

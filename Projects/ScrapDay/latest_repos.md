@@ -1,7 +1,7 @@
-# Latest Repositories (2025-02-26 .. 2025-02-28)
+# Latest Repositories (2025-02-27 .. 2025-03-01)
 
-- [ShenSeanChen/yt-stripe-nextjs-supabase](https://github.com/ShenSeanChen/yt-stripe-nextjs-supabase) (264)
-- [Jiang-Yidi/UniCodec](https://github.com/Jiang-Yidi/UniCodec) (55)
-- [DEEP-IOS/cosmos-ai](https://github.com/DEEP-IOS/cosmos-ai) (49)
-- [MrAle98/CVE-2025-21333-POC](https://github.com/MrAle98/CVE-2025-21333-POC) (38)
-- [hanxunyu/Inst3D-LMM](https://github.com/hanxunyu/Inst3D-LMM) (34)
+- [PeterGriffinJin/Search-R1](https://github.com/PeterGriffinJin/Search-R1) (418)
+- [torvalds/1590A](https://github.com/torvalds/1590A) (98)
+- [Xalyndarjg/Mev-Bot_SOLANA](https://github.com/Xalyndarjg/Mev-Bot_SOLANA) (95)
+- [YashjitPal/Arc-2.0](https://github.com/YashjitPal/Arc-2.0) (63)
+- [buildthehomelab/storage-planner](https://github.com/buildthehomelab/storage-planner) (54)
