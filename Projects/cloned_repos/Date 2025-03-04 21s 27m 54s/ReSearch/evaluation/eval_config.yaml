@@ -1,0 +1,35 @@
+# ------------------------------------------------Environment Settings------------------------------------------------#
+# Directory paths for data and outputs
+data_dir: "your/path/to/data"  # data can be downloaded from https://huggingface.co/datasets/RUC-NLPIR/FlashRAG_datasets
+save_dir: "output/"
+
+# Seed for reproducibility
+seed: 2024
+
+# Whether save intermediate data
+save_intermediate_data: True
+
+# -------------------------------------------------Retrieval Settings------------------------------------------------#
+# If set the remote url, the retriever will be a remote retriever and ignore following settings
+use_remote_retriever: True
+remote_retriever_url: "url/of/your/remote/retriever"
+
+# -------------------------------------------------Generator Settings------------------------------------------------#
+framework: sgl_remote
+sgl_remote_url: "url/of/your/remote/generator"
+generator_model: "path/to/your/generator/model"  # for loading tokenizer
+generator_max_input_len: 8192
+generation_params:
+  do_sample: False
+  max_tokens: 8192
+
+# -------------------------------------------------Evaluation Settings------------------------------------------------#
+# Metrics to evaluate the result
+metrics: [ 'em','f1','acc','precision','recall']
+# Specify setting for metric, will be called within certain metrics
+metric_setting:
+  retrieval_recall_topk: 5
+save_metric_score: True #　whether to save the metric score into txt file
+
+
+

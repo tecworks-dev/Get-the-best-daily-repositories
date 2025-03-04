@@ -1,0 +1,79 @@
+{
+  "name": "anon-kode",
+  "version": "0.0.15",
+  "bin": {
+    "kode": "cli.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "type": "module",
+  "author": "Anon Kode <anon@kode.com>",
+  "license": "",
+  "description": "Use Anon Kode, Anon's AI assistant, right from your terminal. Anon Kode can understand your codebase, edit files, run terminal commands, and handle entire workflows for you.",
+  "homepage": "https://github.com/dnakov/anon-kode",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dnakov/anon-kode.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dnakov/anon-kode/issues"
+  },
+  "files": [
+    "cli.mjs",
+    "yoga.wasm"
+  ],
+  "scripts": {
+    "dev": "tsx ./src/entrypoints/cli.tsx --verbose",
+    "build": "bun build src/entrypoints/cli.tsx --minify --outfile cli.mjs --target=node"
+  },
+  "optionalDependencies": {
+    "@img/sharp-darwin-arm64": "^0.33.5",
+    "@img/sharp-linux-arm": "^0.33.5",
+    "@img/sharp-linux-x64": "^0.33.5",
+    "@img/sharp-win32-x64": "^0.33.5"
+  },
+  "dependencies": {
+    "@anthropic-ai/bedrock-sdk": "^0.12.4",
+    "@anthropic-ai/claude-code": "^0.2.29",
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@anthropic-ai/vertex-sdk": "^0.7.0",
+    "@commander-js/extra-typings": "^13.1.0",
+    "@inkjs/ui": "^2.0.0",
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "@sentry/node": "^9.3.0",
+    "@statsig/js-client": "^3.12.2",
+    "@types/lodash-es": "^4.17.12",
+    "@types/react": "^19.0.10",
+    "ansi-escapes": "^7.0.0",
+    "chalk": "^4.1.2",
+    "cli-highlight": "^2.1.11",
+    "cli-table3": "^0.6.5",
+    "commander": "^13.1.0",
+    "debug": "^4.4.0",
+    "diff": "^7.0.0",
+    "dotenv": "^16.4.7",
+    "env-paths": "^3.0.0",
+    "figures": "^6.1.0",
+    "glob": "^11.0.1",
+    "highlight.js": "^11.11.1",
+    "ink": "^5.1.1",
+    "ink-link": "^4.1.0",
+    "lodash-es": "^4.17.21",
+    "lru-cache": "^11.0.2",
+    "marked": "^15.0.7",
+    "nanoid": "^5.1.2",
+    "openai": "^4.86.1",
+    "react": "18.3.1",
+    "semver": "^7.7.1",
+    "shell-quote": "^1.8.2",
+    "spawn-rx": "^5.1.2",
+    "wrap-ansi": "^9.0.0",
+    "zod": "^3.24.2",
+    "zod-to-json-schema": "^3.24.3"
+  },
+  "devDependencies": {
+    "react-devtools-core": "^6.1.1",
+    "tsx": "^4.19.3"
+  }
+}
