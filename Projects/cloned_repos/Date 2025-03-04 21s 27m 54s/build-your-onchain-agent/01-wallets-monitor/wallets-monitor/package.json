@@ -1,0 +1,29 @@
+{
+  "name": "wallets-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.49.1",
+    "axios": "^1.7.9",
+    "axios-retry": "^4.5.0",
+    "bignumber.js": "^9.1.2",
+    "dotenv": "^16.4.7",
+    "openai": "^4.85.4",
+    "helius-sdk": "^1.4.2",
+    "next": "15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.0"
+  }
+}

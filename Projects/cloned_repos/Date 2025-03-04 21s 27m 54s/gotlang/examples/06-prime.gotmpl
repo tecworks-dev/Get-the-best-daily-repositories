@@ -1,0 +1,42 @@
+{{/* 狗头语 版权 @2019 柴树杉 */}}}
+
+{{/* 打印30以内的素数 */}}}
+
+{{template "main" 30}}
+
+{{define "main"}}
+	{{/* 测试从 2 开始到 $ 范围的数 */}}
+	{{range $_, $x := (xrange 2 $)}}
+		{{if (template_call "isPrime" $x)}}
+			{{println $x}}
+		{{end}}
+	{{end}}
+{{end}}
+
+{{define "isPrime"}}
+	{{$n := .}}
+	{{$flag := true}}
+
+	{{/* for i := 2; i < (n/2)+1; i++ */}}
+	{{range $_, $i := (xrange 2 (add (div $n 2) 1))}}
+		{{if (eq (mod $n $i) 0)}}
+			{{$flag = false}}
+		{{end}}
+	{{end}}
+
+	{{template_ret $flag}}
+{{end}}
+
+{{/*
+Output:
+2
+3
+5
+7
+11
+13
+17
+19
+23
+29
+*/}}
