@@ -1,0 +1,22 @@
+httpAddr: ":10080"
+tlsAddr: ":10443"
+
+backends:
+  - serverNames:
+    - photos.example.com
+    mode: http
+    backendProto: h2
+    addresses:
+    - c2fmzq-server:8080
+
+  - serverNames:
+    - www.example.com
+    mode: http
+    addresses:
+    - nginx:80
+
+  - serverNames:
+    - www2.example.com
+    mode: http
+    addresses:
+    - apache:80
