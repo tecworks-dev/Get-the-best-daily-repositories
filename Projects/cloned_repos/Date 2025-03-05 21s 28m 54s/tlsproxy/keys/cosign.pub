@@ -1,0 +1,7 @@
+Use this key to verify the signature of docker images, e.g.
+cosign verify --key cosign.pub c2fmzq/tlsproxy:latest
+
+-----BEGIN PUBLIC KEY-----
+MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAENOMc2145GZLcdfUTN8FtnWOOGB2a
+N+qfS9n6KJ0N+FudPBn+E/m0EfzsrDK8lCAFwxqSqzZEElhKaGcR0xwMpg==
+-----END PUBLIC KEY-----
