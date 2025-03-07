@@ -1,32 +1,32 @@
 [
   {
-    "name": "x1xhlol/v0-system-prompts-and-models",
-    "clone_url": "https://github.com/x1xhlol/v0-system-prompts-and-models.git",
-    "stars": 882,
-    "size": 246
-  },
-  {
-    "name": "toolbeam/opencontrol",
-    "clone_url": "https://github.com/toolbeam/opencontrol.git",
-    "stars": 265,
-    "size": 100
-  },
-  {
-    "name": "ln-dev7/circle",
-    "clone_url": "https://github.com/ln-dev7/circle.git",
-    "stars": 187,
-    "size": 149
+    "name": "mannaandpoem/OpenManus",
+    "clone_url": "https://github.com/mannaandpoem/OpenManus.git",
+    "stars": 10908,
+    "size": 1766
   },
   {
     "name": "PioSol7/Solana_Dex_Toolkit",
     "clone_url": "https://github.com/PioSol7/Solana_Dex_Toolkit.git",
-    "stars": 167,
+    "stars": 206,
     "size": 101
   },
   {
-    "name": "Zenobrinav/Solana-Trading-MEV-BOT",
-    "clone_url": "https://github.com/Zenobrinav/Solana-Trading-MEV-BOT.git",
-    "stars": 135,
-    "size": 64
+    "name": "Valyssiagmd/MEV-BOT-SOLANA",
+    "clone_url": "https://github.com/Valyssiagmd/MEV-BOT-SOLANA.git",
+    "stars": 144,
+    "size": 108
+  },
+  {
+    "name": "adysec/POC",
+    "clone_url": "https://github.com/adysec/POC.git",
+    "stars": 130,
+    "size": 2123
+  },
+  {
+    "name": "vatsi2/DeFi-Cross-Chain-RWA-Bot-with-MEV-Protection",
+    "clone_url": "https://github.com/vatsi2/DeFi-Cross-Chain-RWA-Bot-with-MEV-Protection.git",
+    "stars": 101,
+    "size": 123
   }
 ]

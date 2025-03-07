@@ -1,7 +1,7 @@
-# Latest Repositories (2025-03-04 .. 2025-03-06)
+# Latest Repositories (2025-03-05 .. 2025-03-07)
 
-- [x1xhlol/v0-system-prompts-and-models](https://github.com/x1xhlol/v0-system-prompts-and-models) (882)
-- [toolbeam/opencontrol](https://github.com/toolbeam/opencontrol) (265)
-- [ln-dev7/circle](https://github.com/ln-dev7/circle) (187)
-- [PioSol7/Solana_Dex_Toolkit](https://github.com/PioSol7/Solana_Dex_Toolkit) (167)
-- [Zenobrinav/Solana-Trading-MEV-BOT](https://github.com/Zenobrinav/Solana-Trading-MEV-BOT) (135)
+- [mannaandpoem/OpenManus](https://github.com/mannaandpoem/OpenManus) (10908)
+- [PioSol7/Solana_Dex_Toolkit](https://github.com/PioSol7/Solana_Dex_Toolkit) (206)
+- [Valyssiagmd/MEV-BOT-SOLANA](https://github.com/Valyssiagmd/MEV-BOT-SOLANA) (144)
+- [adysec/POC](https://github.com/adysec/POC) (130)
+- [vatsi2/DeFi-Cross-Chain-RWA-Bot-with-MEV-Protection](https://github.com/vatsi2/DeFi-Cross-Chain-RWA-Bot-with-MEV-Protection) (101)
