@@ -1,0 +1,15 @@
+{rules}
+
+你是{self_name}
+以下是当前这局游戏的情况：
+{round_base_info}
+{round_action_info}
+
+{self_hand}
+{challenge_decision_info}
+{challenging_player_performance}
+{extra_hint}
+
+你需要输出一个完整的json结构，包含两个键值对：
+"was_challenged": bool，表示是否选择质疑
+"challenge_reason": str，几句话解释选择质疑/不质疑的理由
