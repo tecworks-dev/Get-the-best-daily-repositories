@@ -1,0 +1,2294 @@
+----------------------
+README.MD
+----------------------
+# SLOP: Simple Language Open Protocol
+
+> **Because AI shouldn't be complicated**
+
+### 🎯 WHAT SLOP IS:
+- A pattern for AI APIs with 5 basic endpoints
+- Regular HTTP(S) requests with JSON data
+- A standard way to talk to any AI service
+- Based on REST: GET and POST what you need
+
+### 🚫 WHAT SLOP IS NOT:
+- A framework or library you install
+- A new technology or language
+- A specific company's product
+- An additional abstraction in any way
+
+> 💡 **SLOP simply says:** "AI services should work through plain web requests using patterns we've used for decades."
+
+That's it. Just a pattern. ✨
+
+---
+
+## 1. CORE BELIEFS
+- Everything is an HTTP request
+- Every tool is an API endpoint
+- Every AI is accessible
+- Every developer is welcome
+
+## 2. MINIMUM VIABLE ENDPOINTS
+- `POST /chat` // Talk to AI
+- `POST /tools` // Use tools
+- `POST /memory` // Remember stuff
+- `GET /resources` // Get knowledge/files/data
+- `POST /pay` // Handle money
+
+## 3. CONNECTION TYPES
+- Standard HTTP/REST Interface For Most Things
+  - Simple GET/POST requests with JSON payloads
+  - Standard HTTP status codes and headers
+  - Familiar request/response patterns
+  - Works with any HTTP client or server
+
+- WebSocket Support for Persistent Real-Time Connections
+  - Perfect for streaming responses from AI
+  - Enables continuous monitoring and events
+  - Supports complex multi-turn interactions
+
+- Server-Sent Events (SSE) for One-Way Real-Time Streaming
+  - Ideal for token-by-token AI responses
+  - Efficient for monitoring status changes
+  - Lower overhead than full WebSocket connections
+
+## 4. MULTI-AGENT CAPABILITIES
+- Route Queries to Specialized Agents Based on Content
+
+- Create Agent Networks with Different Skills and Roles
+
+- Support for Multiple Execution Patterns:
+  - Sequential (Chain agents in series)
+  - Parallel (Multiple agents working simultaneously)
+  - Branching (Dynamic routing based on query content)
+
+- Persistent Memory Allows Seamless Agent Collaboration
+
+- Works for Simple to Complex Use Cases:
+  - Customer Service Bots with Specialist Routing
+  - Research Assistants with Domain-Specific Agents
+  - Creative Workflows with Multiple AI Collaborators
+
+---
+
+## 🤝 THE SLOP PROMISE:
+
+### 1. OPEN
+- Free to use
+- Open source
+- No vendor lock
+- Community driven
+- Use any LLM model
+
+### 2. SIMPLE
+- REST based
+- JSON only
+- Standard HTTP
+- Zero dependencies
+
+### 3. FLEXIBLE
+- Any AI model
+- Any tool
+- Any platform
+
+---
+
+## 📖 ENDPOINT OPERATIONS (v0.0.1)
+
+### 💬 CHAT
+- `POST /chat` - Send messages to AI
+- `POST /chat` - Create or continue a thread (with thread_id)
+- `GET /chat/:id` - Get a specific chat
+- `GET /chat/thread_:id` - Get all messages in a thread
+- `GET /chat` - List recent chats
+- `GET /chat?type=threads` - List all threads
+
+### 🛠️ TOOLS
+- `GET /tools` - List available tools
+- `POST /tools/:tool_id` - Use a specific tool
+- `GET /tools/:tool_id` - Get tool details
+
+### 🧠 MEMORY
+- `POST /memory` - Store a key-value pair
+- `GET /memory/:key` - Get value by key
+- `GET /memory` - List all keys
+- `PUT /memory/:key` - Update existing value
+- `DELETE /memory/:key` - Delete a key-value pair
+- `POST /memory/query` - Search with semantic query
+
+### 📚 RESOURCES
+- `GET /resources` - List available resources
+- `GET /resources/:id` - Get a specific resource
+- `GET /resources/search?q=query` - Search resources
+
+### 💳 PAY
+- `POST /pay` - Create a payment
+- `GET /pay/:id` - Get payment status
+
+---
+
+## 🚀 API EXAMPLES - ALL ENDPOINTS
+
+### 💬 CHAT ENDPOINTS
+
+#### POST /chat
+```json
+// REQUEST
+POST /chat
+{
+  "messages": [
+    {"role": "user", "content": "Hello, what's the weather like?"}
+  ],
+  "model": "any-model-id"
+}
+
+// RESPONSE
+{
+  "id": "chat_123",
+  "message": {
+    "role": "assistant", 
+    "content": "I don't have real-time weather data. You could check a weather service for current conditions."
+  }
+}
+```
+
+#### GET /chat/:id
+```json
+// REQUEST
+GET /chat/chat_123
+
+// RESPONSE
+{
+  "id": "chat_123",
+  "messages": [
+    {"role": "user", "content": "Hello, what's the weather like?"},
+    {"role": "assistant", "content": "I don't have real-time weather data. You could check a weather service for current conditions."}
+  ],
+  "model": "any-model-id",
+  "created_at": "2023-05-15T10:30:00Z"
+}
+```
+
+#### Creating a Thread
+```json
+// REQUEST
+POST /chat
+{
+  "thread_id": "thread_12345",  // Thread identifier
+  "messages": [
+    {"role": "user", "content": "Let's discuss project planning"}
+  ],
+  "model": "any-model-id"
+}
+
+// RESPONSE
+{
+  "thread_id": "thread_12345",
+  "message": {
+    "role": "assistant", 
+    "content": "Sure, I'd be happy to discuss project planning. What aspects would you like to focus on?"
+  }
+}
+```
+
+#### Adding to a Thread
+```json
+// REQUEST
+POST /chat
+{
+  "thread_id": "thread_12345",
+  "messages": [
+    {"role": "user", "content": "What's our next milestone?"}
+  ],
+  "model": "any-model-id"
+}
+
+// RESPONSE
+{
+  "thread_id": "thread_12345",
+  "message": {
+    "role": "assistant", 
+    "content": "To determine the next milestone, we should review your project timeline and priorities. What's the current state of your project?"
+  }
+}
+```
+
+#### Listing All Threads
+```json
+// REQUEST
+GET /chat?type=threads
+
+// RESPONSE
+{
+  "threads": [
+    {
+      "id": "thread_12345",
+      "title": "Project Planning",
+      "last_message": "What's our next milestone?",
+      "created_at": "2023-05-15T10:30:00Z",
+      "updated_at": "2023-05-15T11:45:00Z"
+    },
+    {
+      "id": "thread_67890",
+      "title": "Bug Fixes",
+      "last_message": "Let's prioritize the login issue",
+      "created_at": "2023-05-14T14:20:00Z",
+      "updated_at": "2023-05-14T16:30:00Z"
+    }
+  ]
+}
+```
+
+#### Getting Thread Messages
+```json
+// REQUEST
+GET /chat/thread_12345
+
+// RESPONSE
+{
+  "thread_id": "thread_12345",
+  "title": "Project Planning",
+  "messages": [
+    {
+      "id": "msg_001",
+      "role": "user", 
+      "content": "Let's discuss project planning",
+      "created_at": "2023-05-15T10:30:00Z"
+    },
+    {
+      "id": "msg_002",
+      "role": "assistant", 
+      "content": "Sure, what aspects of the project would you like to plan?",
+      "created_at": "2023-05-15T10:30:05Z"
+    },
+    {
+      "id": "msg_003",
+      "role": "user", 
+      "content": "What's our next milestone?",
+      "created_at": "2023-05-15T11:45:00Z"
+    }
+  ],
+  "model": "any-model-id",
+  "created_at": "2023-05-15T10:30:00Z",
+  "updated_at": "2023-05-15T11:45:00Z"
+}
+```
+
+#### Storing Thread Metadata
+```json
+// REQUEST
+POST /memory
+{
+  "key": "thread:thread_12345",
+  "value": {
+    "title": "Project Planning",
+    "participants": ["user_1", "user_2"],
+    "tags": ["project", "planning", "roadmap"],
+    "status": "active"
+  }
+}
+
+// RESPONSE
+{
+  "status": "stored"
+}
+```
+
+#### Searching for Threads
+```json
+// REQUEST
+POST /memory/query
+{
+  "query": "project planning threads with user_1",
+  "filter": {
+    "key_prefix": "thread:"
+  }
+}
+
+// RESPONSE
+{
+  "results": [
+    {
+      "key": "thread:thread_12345",
+      "value": {
+        "title": "Project Planning",
+        "participants": ["user_1", "user_2"],
+        "tags": ["project", "planning", "roadmap"],
+        "status": "active"
+      },
+      "score": 0.95
+    }
+  ]
+}
+```
+
+#### Updating Thread Metadata
+```json
+// REQUEST
+PUT /memory/thread:thread_12345
+{
+  "value": {
+    "title": "Project Planning",
+    "participants": ["user_1", "user_2", "user_3"],  // Added new participant
+    "tags": ["project", "planning", "roadmap", "active"],
+    "status": "in_progress"  // Updated status
+  }
+}
+
+// RESPONSE
+{
+  "status": "updated",
+  "previous_value": {
+    "title": "Project Planning",
+    "participants": ["user_1", "user_2"],
+    "tags": ["project", "planning", "roadmap"],
+    "status": "active"
+  }
+}
+```
+
+#### GET /chat
+```json
+// REQUEST
+GET /chat
+
+// RESPONSE
+{
+  "chats": [
+    {
+      "id": "chat_123",
+      "snippet": "Hello, what's the weather like?",
+      "created_at": "2023-05-15T10:30:00Z"
+    },
+    {
+      "id": "chat_456",
+      "snippet": "Tell me about Mars",
+      "created_at": "2023-05-14T14:20:00Z"
+    }
+  ]
+}
+```
+
+### 🛠️ TOOLS ENDPOINTS
+
+#### GET /tools
+```json
+// REQUEST
+GET /tools
+
+// RESPONSE
+{
+  "tools": [
+    {
+      "id": "calculator",
+      "description": "Performs mathematical calculations",
+      "parameters": {
+        "expression": "string"
+      }
+    },
+    {
+      "id": "weather",
+      "description": "Gets current weather",
+      "parameters": {
+        "location": "string"
+      }
+    }
+  ]
+}
+```
+
+#### POST /tools/:tool_id
+```json
+// REQUEST
+POST /tools/calculator
+{
+  "expression": "15 * 7"
+}
+
+// RESPONSE
+{
+  "result": 105
+}
+```
+
+#### GET /tools/:tool_id
+```json
+// REQUEST
+GET /tools/calculator
+
+// RESPONSE
+{
+  "id": "calculator",
+  "description": "Performs mathematical calculations",
+  "parameters": {
+    "expression": {
+      "type": "string",
+      "description": "Mathematical expression to evaluate"
+    }
+  },
+  "example": "15 * 7"
+}
+```
+
+### 🧠 MEMORY ENDPOINTS
+
+#### POST /memory
+```json
+// REQUEST
+POST /memory
+{
+  "key": "user_preference",
+  "value": {
+    "theme": "dark",
+    "language": "en"
+  }
+}
+
+// RESPONSE
+{
+  "status": "stored"
+}
+```
+
+#### GET /memory/:key
+```json
+// REQUEST
+GET /memory/user_preference
+
+// RESPONSE
+{
+  "key": "user_preference",
+  "value": {
+    "theme": "dark",
+    "language": "en"
+  },
+  "created_at": "2023-05-15T10:30:00Z"
+}
+```
+
+#### GET /memory
+```json
+// REQUEST
+GET /memory
+
+// RESPONSE
+{
+  "keys": [
+    {
+      "key": "user_preference",
+      "created_at": "2023-05-15T10:30:00Z"
+    },
+    {
+      "key": "search_history",
+      "created_at": "2023-05-14T14:20:00Z"
+    }
+  ]
+}
+```
+
+#### PUT /memory/:key
+```json
+// REQUEST
+PUT /memory/user_preference
+{
+  "value": {
+    "theme": "light",
+    "language": "en"
+  }
+}
+
+// RESPONSE
+{
+  "status": "updated",
+  "previous_value": {
+    "theme": "dark",
+    "language": "en"
+  }
+}
+```
+
+#### DELETE /memory/:key
+```json
+// REQUEST
+DELETE /memory/user_preference
+
+// RESPONSE
+{
+  "status": "deleted"
+}
+```
+
+#### POST /memory/query
+```json
+// REQUEST
+POST /memory/query
+{
+  "query": "What theme settings do I have?",
+  "limit": 1
+}
+
+// RESPONSE
+{
+  "results": [
+    {
+      "key": "user_preference",
+      "value": {
+        "theme": "dark",
+        "language": "en"
+      },
+      "score": 0.92
+    }
+  ]
+}
+```
+
+### 📚 RESOURCES ENDPOINTS
+
+#### GET /resources
+```json
+// REQUEST
+GET /resources
+
+// RESPONSE
+{
+  "resources": [
+    {
+      "id": "mars-101",
+      "title": "Mars: The Red Planet",
+      "type": "article"
+    },
+    {
+      "id": "document-123",
+      "name": "project_plan.pdf",
+      "type": "file"
+    }
+  ]
+}
+```
+
+#### GET /resources/:id
+```json
+// REQUEST
+GET /resources/mars-101
+
+// RESPONSE
+{
+  "id": "mars-101",
+  "title": "Mars: The Red Planet",
+  "type": "article",
+  "content": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System...",
+  "metadata": {
+    "source": "astronomy-db",
+    "last_updated": "2023-05-10"
+  }
+}
+```
+
+#### GET /resources/search
+```json
+// REQUEST
+GET /resources/search?q=mars
+
+// RESPONSE
+{
+  "results": [
+    {
+      "id": "mars-101",
+      "title": "Mars: The Red Planet",
+      "type": "article",
+      "score": 0.98
+    },
+    {
+      "id": "solar-system",
+      "title": "Our Solar System",
+      "type": "article",
+      "score": 0.75
+    }
+  ]
+}
+```
+
+### 💳 PAY ENDPOINTS
+
+#### POST /pay
+```json
+// REQUEST
+POST /pay
+{
+  "amount": 5.00,
+  "currency": "USD",
+  "description": "API usage - 1000 tokens",
+  "payment_method": "card_token_123"
+}
+
+// RESPONSE
+{
+  "transaction_id": "tx_987654",
+  "status": "success",
+  "receipt_url": "https://api.example.com/receipts/tx_987654"
+}
+```
+
+#### GET /pay/:id
+```json
+// REQUEST
+GET /pay/tx_987654
+
+// RESPONSE
+{
+  "transaction_id": "tx_987654",
+  "amount": 5.00,
+  "currency": "USD",
+  "description": "API usage - 1000 tokens",
+  "status": "success",
+  "created_at": "2023-05-15T10:30:00Z",
+  "receipt_url": "https://api.example.com/receipts/tx_987654"
+}
+```
+
+### 🔐 AUTH EXAMPLES
+
+Authentication in SLOP uses standard HTTP headers. Here are examples in both JavaScript and Python:
+
+#### JavaScript Example
+```javascript
+// Using fetch
+const callSlop = async (endpoint, data) => {
+  const response = await fetch(`https://api.example.com${endpoint}`, {
+    method: 'POST',
+    headers: {
+      'Authorization': 'Bearer your-token-here',
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  });
+  return response.json();
+};
+
+// Using axios
+const axios = require('axios');
+const api = axios.create({
+  baseURL: 'https://api.example.com',
+  headers: {
+    'Authorization': 'Bearer your-token-here'
+  }
+});
+
+// Make authenticated requests
+await api.post('/chat', {
+  messages: [{ content: 'Hello!' }]
+});
+```
+
+#### Python Example
+```python
+import requests
+
+# Using requests
+headers = {
+    'Authorization': 'Bearer your-token-here',
+    'Content-Type': 'application/json'
+}
+
+# Function to make authenticated requests
+def call_slop(endpoint, data=None):
+    base_url = 'https://api.example.com'
+    method = 'GET' if data is None else 'POST'
+    response = requests.request(
+        method=method,
+        url=f'{base_url}{endpoint}',
+        headers=headers,
+        json=data
+    )
+    return response.json()
+
+# Make authenticated requests
+chat_response = call_slop('/chat', {
+    'messages': [{'content': 'Hello!'}]
+})
+```
+
+Remember: SLOP uses standard HTTP auth - no special endpoints needed! 🔑
+
+### 🛡️ SCOPE HEADERS FOR LIMITING AI SCOPE
+
+SLOP uses standard HTTP headers to control AI safety and permissions:
+
+```http
+X-SLOP-Scope: chat.read,tools.calculator,memory.user.read
+```
+
+#### Common Scopes
+
+chat.read # Read chat history
+chat.write # Send messages
+tools.* # Access all tools
+tools.safe.* # Access only safe tools
+memory.user.* # Full user memory access
+memory..read # Read-only memory access
+
+
+#### Examples
+
+```http
+# Safe: Calculator within scope
+POST /tools/calculator
+X-SLOP-Scope: tools.calculator.execute
+{
+    "expression": "2 + 2"
+}
+
+# Blocked: No execute permission
+POST /tools/system-cmd
+X-SLOP-Scope: tools.calculator.execute
+{
+    "cmd": "rm -rf /"
+}
+
+// RESPONSE
+{
+    "error": "Scope violation: tools.execute-code requires explicit permission",
+    "permitted": false
+}
+```
+
+Remember: Security through simplicity! 🔒
+
+---
+
+
+## 🔄 SSE STREAMING IN SLOP
+
+SLOP supports streaming responses through Server-Sent Events (SSE) - perfect for token-by-token AI outputs:
+
+### Adding SSE to Your SLOP Implementation
+
+#### JavaScript Example
+```javascript
+// Add this streaming endpoint to your SLOP implementation
+app.post('/chat/stream', async (req, res) => {
+  const { messages } = req.body;
+  const userQuery = messages[0].content;
+  
+  // Set SSE headers
+  res.setHeader('Content-Type', 'text/event-stream');
+  res.setHeader('Cache-Control', 'no-cache');
+  res.setHeader('Connection', 'keep-alive');
+  
+  // Create streaming response
+  const stream = await openai.chat.completions.create({
+    model: "gpt-4",
+    messages: [
+      { role: "system", content: "You are a helpful assistant." },
+      { role: "user", content: userQuery }
+    ],
+    stream: true
+  });
+  
+  // Send tokens as they arrive
+  for await (const chunk of stream) {
+    const content = chunk.choices[0]?.delta?.content || '';
+    if (content) {
+      res.write(`data: ${JSON.stringify({ content })}\n\n`);
+    }
+  }
+  res.write('data: [DONE]\n\n');
+  res.end();
+});
+```
+
+#### Python Example
+```python
+@app.route('/chat/stream', methods=['POST'])
+def chat_stream():
+    data = request.json
+    user_query = data['messages'][0]['content']
+    
+    def generate():
+        stream = openai.chat.completions.create(
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": "You are a helpful assistant."},
+                {"role": "user", "content": user_query}
+            ],
+            stream=True
+        )
+        for chunk in stream:
+            content = chunk.choices[0].delta.content or ''
+            if content:
+                yield f"data: {json.dumps({'content': content})}\n\n"
+        yield "data: [DONE]\n\n"
+    
+    return Response(generate(), content_type='text/event-stream')
+```
+
+#### Client Consumption
+```javascript
+// Browser JavaScript to consume the stream
+const eventSource = new EventSource('/chat/stream');
+eventSource.onmessage = (event) => {
+  if (event.data === '[DONE]') {
+    eventSource.close();
+    return;
+  }
+  const data = JSON.parse(event.data);
+  // Append incoming token to UI
+  document.getElementById('response').innerHTML += data.content;
+};
+```
+
+### Why SSE is SLOP-Friendly:
+- Uses standard HTTP - no new protocols
+- Works with existing authentication
+- Simple implementation - minimal code
+- Compatible with all HTTP clients
+- Lower overhead than WebSockets
+
+Remember: Add `/stream` suffix to endpoints that support streaming! 🚿
+
+## 🔌 WEBSOCKET STREAMING IN SLOP
+
+SLOP also supports WebSocket for bidirectional streaming - ideal for real-time AI interactions:
+
+### Adding WebSocket to Your SLOP Implementation
+
+#### JavaScript Example (Node.js with ws)
+```javascript
+// Server-side WebSocket implementation
+const WebSocket = require('ws');
+const wss = new WebSocket.Server({ port: 8080 });
+
+wss.on('connection', (ws) => {
+  ws.on('message', async (message) => {
+    try {
+      const data = JSON.parse(message);
+      const { messages } = data;
+      const userQuery = messages[0].content;
+      
+      // Create streaming response
+      const stream = await openai.chat.completions.create({
+        model: "gpt-4",
+        messages: [
+          { role: "system", content: "You are a helpful assistant." },
+          { role: "user", content: userQuery }
+        ],
+        stream: true
+      });
+      
+      // Send tokens as they arrive
+      for await (const chunk of stream) {
+        const content = chunk.choices[0]?.delta?.content || '';
+        if (content && ws.readyState === WebSocket.OPEN) {
+          ws.send(JSON.stringify({ content }));
+        }
+      }
+      
+      if (ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ status: "complete" }));
+      }
+    } catch (error) {
+      if (ws.readyState === WebSocket.OPEN) {
+        ws.send(JSON.stringify({ error: error.message }));
+      }
+    }
+  });
+});
+```
+
+#### Python Example (with FastAPI and websockets)
+```python
+from fastapi import FastAPI, WebSocket
+import json
+import openai
+
+app = FastAPI()
+
+@app.websocket("/chat/ws")
+async def websocket_endpoint(websocket: WebSocket):
+    await websocket.accept()
+    
+    try:
+        while True:
+            data = await websocket.receive_text()
+            data_json = json.loads(data)
+            user_query = data_json['messages'][0]['content']
+            
+            stream = openai.chat.completions.create(
+                model="gpt-4",
+                messages=[
+                    {"role": "system", "content": "You are a helpful assistant."},
+                    {"role": "user", "content": user_query}
+                ],
+                stream=True
+            )
+            
+            for chunk in stream:
+                content = chunk.choices[0].delta.content or ''
+                if content:
+                    await websocket.send_text(json.dumps({"content": content}))
+            
+            await websocket.send_text(json.dumps({"status": "complete"}))
+    
+    except Exception as e:
+        await websocket.send_text(json.dumps({"error": str(e)}))
+```
+
+#### Client Consumption
+```javascript
+// Browser JavaScript to connect to WebSocket
+const socket = new WebSocket('ws://localhost:8080');
+let responseText = '';
+
+// Send a message when connection is open
+socket.onopen = function(event) {
+  socket.send(JSON.stringify({
+    messages: [{ role: 'user', content: 'Tell me about SLOP protocol' }]
+  }));
+};
+
+// Listen for messages
+socket.onmessage = function(event) {
+  const data = JSON.parse(event.data);
+  
+  if (data.content) {
+    responseText += data.content;
+    document.getElementById('response').innerText = responseText;
+  }
+  
+  if (data.status === 'complete') {
+    console.log('Response complete');
+  }
+  
+  if (data.error) {
+    console.error('Error:', data.error);
+  }
+};
+
+// Handle errors
+socket.onerror = function(error) {
+  console.error('WebSocket Error:', error);
+};
+
+// Clean up on close
+socket.onclose = function(event) {
+  console.log('Connection closed');
+};
+```
+
+### Why WebSockets for SLOP:
+- Bidirectional communication for complex interactions
+- Persistent connection for multiple exchanges
+- Real-time feedback and typing indicators
+- Supports advanced features like user interruptions
+- Ideal for chat applications and interactive AI assistants
+
+Remember: Use `/ws` suffix to indicate WebSocket endpoints in your SLOP implementation! 🔌
+
+---
+
+Let's collab! SLOP Discord: https://discord.com/invite/nwXJMnHmXP
+
+🎉 **Enjoy using SLOP!** 🎉 
+
+SLOP is an open sourced protocol launched under the MIT license by [@NathanWilbanks](https://discord.com/invite/nwXJMnHmXP) of the AGNT.gg open source agent building platform.
+
+---
+
+Directory Structure:
++ examples
+  + javascript
+    + advanced-examples
+      - multi-agent.js
+    - README.md
+    - slop.js
+  + python
+    + advanced-examples
+      - multi-agent.py
+    - README.md
+    - requirements.txt
+    - slop.py
+  + replit
+    - README.md
+- LICENSE
+- README.md
+
+File Contents:
+----------------------
+EXAMPLES\JAVASCRIPT\ADVANCED-EXAMPLES\MULTI-AGENT.JS
+----------------------
+import { OpenAI } from "openai";
+import express from "express";
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const app = express();
+app.use(express.json());
+const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+
+// Memory storage
+const memory = {};
+
+// ======= SIMPLE AGENT SYSTEM =======
+
+// Router Agent - decides which specialized agent to use
+async function routerAgent(query) {
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4",
+    messages: [
+      { role: "system", content: "You are a router that categorizes queries and selects the best specialized agent to handle them." },
+      { role: "user", content: `Classify this query and select ONE agent: "${query}"` }
+    ],
+    functions: [{
+      name: "route_query",
+      description: "Route the query to the appropriate agent",
+      parameters: {
+        type: "object",
+        properties: {
+          agent: {
+            type: "string",
+            enum: ["researcher", "creative", "technical", "summarizer"],
+            description: "The agent best suited to handle this query"
+          },
+          reason: {
+            type: "string",
+            description: "Brief reason for this routing decision"
+          }
+        },
+        required: ["agent", "reason"]
+      }
+    }],
+    function_call: { name: "route_query" }
+  });
+  
+  const args = JSON.parse(completion.choices[0].message.function_call.arguments);
+  console.log(`🔀 Routing to: ${args.agent} (${args.reason})`);
+  return args;
+}
+
+// Create agent factory
+const createAgent = (role, temperature = 0.7) => async (query) => {
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4",
+    messages: [
+      { role: "system", content: role },
+      { role: "user", content: query }
+    ],
+    temperature
+  });
+  return completion.choices[0].message.content;
+};
+
+// Specialized Agents
+const agents = {
+  researcher: createAgent("You are a research agent providing factual information with sources.", 0.3),
+  creative: createAgent("You are a creative agent generating imaginative content.", 0.9),
+  technical: createAgent("You are a technical agent providing precise, detailed explanations.", 0.2),
+  summarizer: createAgent("You are a summarization agent that creates concise summaries.", 0.3)
+};
+
+// ======= SLOP API IMPLEMENTATION =======
+
+// 1. CHAT endpoint - main entry point
+app.post('/chat', async (req, res) => {
+  try {
+    const { messages, pattern } = req.body;
+    const userQuery = messages[0].content;
+    let response;
+
+    if (pattern) {
+      switch (pattern) {
+        case 'sequential':
+          // Research → Summarize pattern
+          const research = await agents.researcher(userQuery);
+          response = await agents.summarizer(research);
+          break;
+
+        case 'parallel':
+          // Get multiple perspectives simultaneously
+          const [researchView, creativeView] = await Promise.all([
+            agents.researcher(userQuery),
+            agents.creative(userQuery)
+          ]);
+          response = `Research perspective:\n${researchView}\n\nCreative perspective:\n${creativeView}`;
+          break;
+
+        case 'branching':
+          // Use router to select best agent
+          const route = await routerAgent(userQuery);
+          response = await agents[route.agent](userQuery);
+          break;
+
+        default:
+          // Default to router behavior
+          const defaultRoute = await routerAgent(userQuery);
+          response = await agents[defaultRoute.agent](userQuery);
+      }
+    } else {
+      // Default to router behavior
+      const route = await routerAgent(userQuery);
+      response = await agents[route.agent](userQuery);
+    }
+
+    // Store in memory
+    const sessionId = `session_${Date.now()}`;
+    memory[sessionId] = {
+      query: userQuery,
+      pattern: pattern || 'router',
+      response
+    };
+
+    res.json({
+      message: {
+        role: "assistant",
+        content: response,
+        metadata: {
+          session_id: sessionId,
+          pattern: pattern || 'router'
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error:", error);
+    res.status(500).json({ error: error.message });
+  }
+});
+
+// 2. TOOLS endpoint
+app.get('/tools', (req, res) => {
+  res.json({
+    tools: [
+      { id: "researcher", description: "Finds factual information" },
+      { id: "creative", description: "Generates imaginative content" },
+      { id: "technical", description: "Provides technical explanations" },
+      { id: "summarizer", description: "Creates concise summaries" }
+    ],
+    patterns: [
+      { id: "sequential", description: "Research then summarize" },
+      { id: "parallel", description: "Multiple perspectives at once" },
+      { id: "branching", description: "Route to best agent (default)" }
+    ]
+  });
+});
+
+// 3. MEMORY endpoints
+app.post('/memory', (req, res) => {
+  const { key, value } = req.body;
+  memory[key] = value;
+  res.json({ status: 'stored' });
+});
+
+app.get('/memory/:key', (req, res) => {
+  const { key } = req.params;
+  res.json({ value: memory[key] || null });
+});
+
+// 4. RESOURCES endpoint
+app.get('/resources', (req, res) => {
+  res.json({
+    patterns: {
+      sequential: "Chain agents: Research → Summarize",
+      parallel: "Multiple agents work simultaneously",
+      branching: "Route to specialized agents"
+    },
+    examples: {
+      sequential: {
+        description: "Research a topic and create a summary",
+        request: {
+          messages: [{ content: "Explain quantum computing" }],
+          pattern: "sequential"
+        }
+      },
+      parallel: {
+        description: "Get multiple perspectives on a topic",
+        request: {
+          messages: [{ content: "Benefits of meditation" }],
+          pattern: "parallel"
+        }
+      },
+      branching: {
+        description: "Route to the most appropriate agent",
+        request: {
+          messages: [{ content: "How do I write a React component?" }],
+          pattern: "branching"
+        }
+      }
+    }
+  });
+});
+
+// 5. PAY endpoint (simple mock)
+app.post('/pay', (req, res) => {
+  const { amount } = req.body;
+  const txId = `tx_${Date.now()}`;
+  memory[txId] = { amount, status: 'completed' };
+  res.json({ transaction_id: txId });
+});
+
+// Start server
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`🤖 SLOP Multi-Agent API running on port ${PORT}`);
+});
+
+/* Example usage:
+
+1. Basic query (uses router):
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+  "messages": [{ "content": "What are black holes?" }]
+}'
+
+2. Sequential pattern:
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+  "messages": [{ "content": "Explain quantum computing" }],
+  "pattern": "sequential"
+}'
+
+3. Parallel pattern:
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+  "messages": [{ "content": "Benefits of meditation" }],
+  "pattern": "parallel"
+}'
+
+4. Store in memory:
+curl -X POST http://localhost:3000/memory \
+-H "Content-Type: application/json" \
+-d '{
+  "key": "test",
+  "value": "hello world"
+}'
+
+5. Get from memory:
+curl -X GET http://localhost:3000/memory/test
+
+6. List tools:
+curl -X GET http://localhost:3000/tools
+
+7. Get resources:
+curl -X GET http://localhost:3000/resources
+
+8. Process payment:
+curl -X POST http://localhost:3000/pay \
+-H "Content-Type: application/json" \
+-d '{
+  "amount": 10
+}'
+*/
+----------------------
+EXAMPLES\JAVASCRIPT\README.MD
+----------------------
+# SLOP JavaScript Example
+
+A simple implementation of the [SLOP](https://github.com/agnt-gg/slop) pattern in JavaScript.
+
+## JavaScript Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/agnt-gg/slop
+cd slop/javascript
+
+# Install dependencies
+npm install
+
+# Run it
+npm start
+```
+
+## Endpoints
+
+```javascript
+// CHAT - Talk to AI
+POST /chat
+{
+  "messages": [{ "content": "Hello SLOP!" }]
+}
+
+// TOOLS - Use tools
+GET /tools
+POST /tools/calculator { "expression": "2 + 2" }
+POST /tools/greet { "name": "SLOP" }
+
+// MEMORY - Store data
+POST /memory { "key": "test", "value": "hello" }
+GET /memory/test
+
+// RESOURCES - Get knowledge
+GET /resources
+GET /resources/hello
+
+// PAY - Handle payments
+POST /pay { "amount": 10 }
+```
+
+## Structure
+
+- `slop.js` - The entire implementation
+- `package.json` - Dependencies and scripts
+
+That's it. Just two files.
+
+## Dependencies
+
+- `express` - For clean routing
+- `axios` - For clean HTTP requests
+
+## Try It
+
+After starting the server, it automatically runs tests for all endpoints. Watch the magic happen!
+
+```bash
+npm start
+
+# Output:
+✨ SLOP running on http://localhost:3000
+
+📝 Testing chat...
+You said: Hello SLOP!
+
+🔧 Testing tools...
+2 + 2 = 4
+Hello, SLOP!
+
+💾 Testing memory...
+Stored value: hello world
+
+📚 Testing resources...
+Resource content: Hello, SLOP!
+
+💰 Testing pay...
+Transaction: tx_1234567890
+
+✅ All tests passed!
+```
+
+## Learn More
+
+Check out the [main SLOP repository](https://github.com/agnt-gg/slop) for:
+- Full specification
+- Other language examples
+- Core concepts
+- Best practices
+
+Remember: SLOP is just a pattern. This is a simple implementation example to show how it works.
+----------------------
+EXAMPLES\JAVASCRIPT\SLOP.JS
+----------------------
+// JavaScript implementation of the SLOP pattern
+import express from 'express';
+import axios from 'axios';
+
+// Available tools and resources
+const tools = {
+  calculator: {
+    id: 'calculator',
+    description: 'Basic math',
+    execute: params => ({ result: eval(params.expression) })
+  },
+  greet: {
+    id: 'greet',
+    description: 'Says hello',
+    execute: params => ({ result: `Hello, ${params.name}!` })
+  }
+};
+
+const resources = {
+  hello: { id: 'hello', content: 'Hello, SLOP!' }
+};
+
+// Setup server
+const app = express();
+app.use(express.json());
+
+// In-memory storage
+const memory = new Map();
+
+// CHAT
+app.post('/chat', (req, res) => {
+  const message = req.body.messages?.[0]?.content || 'nothing';
+  res.json({
+    message: {
+      role: 'assistant',
+      content: `You said: ${message}`
+    }
+  });
+});
+
+// TOOLS
+app.get('/tools', (_, res) => res.json({ tools: Object.values(tools) }));
+app.post('/tools/:id', (req, res) => {
+  const tool = tools[req.params.id];
+  if (!tool) return res.status(404).json({ error: 'Tool not found' });
+  res.json(tool.execute(req.body));
+});
+
+// MEMORY
+app.post('/memory', (req, res) => {
+  const { key, value } = req.body;
+  memory.set(key, value);
+  res.json({ status: 'stored' });
+});
+
+app.get('/memory/:key', (req, res) => {
+  res.json({ value: memory.get(req.params.key) });
+});
+
+// RESOURCES
+app.get('/resources', (_, res) => res.json({ resources: Object.values(resources) }));
+app.get('/resources/:id', (req, res) => {
+  const resource = resources[req.params.id];
+  if (!resource) return res.status(404).json({ error: 'Resource not found' });
+  res.json(resource);
+});
+
+// PAY
+app.post('/pay', (_, res) => {
+  res.json({
+    transaction_id: 'tx_' + Date.now(),
+    status: 'success'
+  });
+});
+
+// Start server and run tests
+app.listen(3000, async () => {
+  console.log('✨ SLOP running on http://localhost:3000\n');
+  
+  const api = axios.create({ baseURL: 'http://localhost:3000' });
+  
+  try {
+    // Test chat
+    console.log('📝 Testing chat...');
+    const chat = await api.post('/chat', {
+      messages: [{ content: 'Hello SLOP!' }]
+    });
+    console.log(chat.data.message.content, '\n');
+
+    // Test tools
+    console.log('🔧 Testing tools...');
+    const calc = await api.post('/tools/calculator', {
+      expression: '2 + 2'
+    });
+    console.log('2 + 2 =', calc.data.result);
+
+    const greet = await api.post('/tools/greet', {
+      name: 'SLOP'
+    });
+    console.log(greet.data.result, '\n');
+
+    // Test memory
+    console.log('💾 Testing memory...');
+    await api.post('/memory', {
+      key: 'test',
+      value: 'hello world'
+    });
+    const memory = await api.get('/memory/test');
+    console.log('Stored value:', memory.data.value, '\n');
+
+    // Test resources
+    console.log('📚 Testing resources...');
+    const hello = await api.get('/resources/hello');
+    console.log('Resource content:', hello.data.content, '\n');
+
+    // Test pay
+    console.log('💰 Testing pay...');
+    const pay = await api.post('/pay', {
+      amount: 10
+    });
+    console.log('Transaction:', pay.data.transaction_id, '\n');
+
+    console.log('✅ All tests passed!');
+  } catch (error) {
+    console.error('❌ Test failed:', error.response?.data || error.message);
+  }
+});
+----------------------
+EXAMPLES\PYTHON\ADVANCED-EXAMPLES\MULTI-AGENT.PY
+----------------------
+import os
+import json
+import time
+from flask import Flask, request, jsonify
+from openai import OpenAI
+from dotenv import load_dotenv
+from typing import List, Dict, Any
+import asyncio
+
+# Load environment variables
+load_dotenv()
+
+# Initialize Flask app
+app = Flask(__name__)
+
+# Initialize OpenAI client
+openai = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+
+# Memory storage
+memory = {}
+
+# ======= SIMPLE AGENT SYSTEM =======
+
+# Router Agent - decides which specialized agent to use
+def router_agent(query: str) -> Dict[str, str]:
+    completion = openai.chat.completions.create(
+        model="gpt-4",
+        messages=[
+            {"role": "system", "content": "You are a router that categorizes queries and selects the best specialized agent to handle them."},
+            {"role": "user", "content": f'Classify this query and select ONE agent: "{query}"'}
+        ],
+        tools=[{
+            "type": "function",
+            "function": {
+                "name": "route_query",
+                "description": "Route the query to the appropriate agent",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "agent": {
+                            "type": "string",
+                            "enum": ["researcher", "creative", "technical", "summarizer"],
+                            "description": "The agent best suited to handle this query"
+                        },
+                        "reason": {
+                            "type": "string",
+                            "description": "Brief reason for this routing decision"
+                        }
+                    },
+                    "required": ["agent", "reason"]
+                }
+            }
+        }],
+        tool_choice={"type": "function", "function": {"name": "route_query"}}
+    )
+    
+    tool_call = completion.choices[0].message.tool_calls[0]
+    args = json.loads(tool_call.function.arguments)
+    print(f"🔀 Routing to: {args['agent']} ({args['reason']})")
+    return args
+
+# Create agent factory
+def create_agent(role: str, temperature: float = 0.7):
+    async def agent(query: str) -> str:
+        completion = await asyncio.to_thread(
+            openai.chat.completions.create,
+            model="gpt-4",
+            messages=[
+                {"role": "system", "content": role},
+                {"role": "user", "content": query}
+            ],
+            temperature=temperature
+        )
+        return completion.choices[0].message.content
+    return agent
+
+# Specialized Agents
+agents = {
+    "researcher": create_agent("You are a research agent providing factual information with sources.", 0.3),
+    "creative": create_agent("You are a creative agent generating imaginative content.", 0.9),
+    "technical": create_agent("You are a technical agent providing precise, detailed explanations.", 0.2),
+    "summarizer": create_agent("You are a summarization agent that creates concise summaries.", 0.3)
+}
+
+# ======= SLOP API IMPLEMENTATION =======
+
+# 1. CHAT endpoint - main entry point
+@app.route('/chat', methods=['POST'])
+async def chat():
+    try:
+        data = request.json
+        messages = data.get('messages', [])
+        pattern = data.get('pattern')
+        user_query = messages[0]['content'] if messages else ""
+        
+        response = None
+
+        if pattern:
+            if pattern == 'sequential':
+                # Research then summarize
+                research = await agents["researcher"](user_query)
+                response = await agents["summarizer"](research)
+            
+            elif pattern == 'parallel':
+                # Get multiple perspectives simultaneously
+                research_task = agents["researcher"](user_query)
+                creative_task = agents["creative"](user_query)
+                results = await asyncio.gather(research_task, creative_task)
+                response = f"Research perspective:\n{results[0]}\n\nCreative perspective:\n{results[1]}"
+            
+            elif pattern == 'branching':
+                route = router_agent(user_query)
+                response = await agents[route['agent']](user_query)
+            
+            else:
+                # Default to router behavior
+                route = router_agent(user_query)
+                response = await agents[route['agent']](user_query)
+        else:
+            # Default to router behavior
+            route = router_agent(user_query)
+            response = await agents[route['agent']](user_query)
+        
+        # Store in memory
+        session_id = f"session_{int(time.time())}"
+        memory[session_id] = {
+            "query": user_query,
+            "pattern": pattern or "router",
+            "response": response
+        }
+        
+        return jsonify({
+            "message": {
+                "role": "assistant",
+                "content": response,
+                "metadata": {
+                    "session_id": session_id,
+                    "pattern": pattern or "router"
+                }
+            }
+        })
+    except Exception as e:
+        print(f"Error: {str(e)}")
+        return jsonify({"error": str(e)}), 500
+
+# 2. TOOLS endpoint
+@app.route('/tools', methods=['GET'])
+def list_tools():
+    return jsonify({
+        "tools": [
+            {"id": "researcher", "description": "Finds factual information"},
+            {"id": "creative", "description": "Generates imaginative content"},
+            {"id": "technical", "description": "Provides technical explanations"},
+            {"id": "summarizer", "description": "Creates concise summaries"}
+        ],
+        "patterns": [
+            {"id": "sequential", "description": "Research then summarize"},
+            {"id": "parallel", "description": "Multiple perspectives at once"},
+            {"id": "branching", "description": "Route to best agent (default)"}
+        ]
+    })
+
+# 3. MEMORY endpoints
+@app.route('/memory', methods=['POST'])
+def store_memory():
+    data = request.json
+    key = data.get('key')
+    value = data.get('value')
+    memory[key] = value
+    return jsonify({"status": "stored"})
+
+@app.route('/memory/<key>', methods=['GET'])
+def get_memory(key):
+    return jsonify({"value": memory.get(key)})
+
+# 4. RESOURCES endpoint
+@app.route('/resources', methods=['GET'])
+def get_resources():
+    return jsonify({
+        "patterns": {
+            "sequential": "Chain agents: Research → Summarize",
+            "parallel": "Multiple agents work simultaneously",
+            "branching": "Route to specialized agents"
+        },
+        "examples": {
+            "sequential": {
+                "description": "Research a topic and create a summary",
+                "request": {
+                    "messages": [{"content": "Explain quantum computing"}],
+                    "pattern": "sequential"
+                }
+            },
+            "parallel": {
+                "description": "Get multiple perspectives on a topic",
+                "request": {
+                    "messages": [{"content": "Benefits of meditation"}],
+                    "pattern": "parallel"
+                }
+            },
+            "branching": {
+                "description": "Route to the most appropriate agent",
+                "request": {
+                    "messages": [{"content": "How do I write a Python class?"}],
+                    "pattern": "branching"
+                }
+            }
+        }
+    })
+
+# 5. PAY endpoint (simple mock)
+@app.route('/pay', methods=['POST'])
+def process_payment():
+    data = request.json
+    tx_id = f"tx_{int(time.time())}"
+    memory[tx_id] = {"amount": data.get('amount'), "status": "completed"}
+    return jsonify({"transaction_id": tx_id})
+
+if __name__ == "__main__":
+    port = int(os.getenv("PORT", 3000))
+    print(f"🤖 SLOP Multi-Agent API running on port {port}")
+    app.run(host="0.0.0.0", port=port, debug=True)
+
+"""
+Example usage:
+
+1. Basic query (uses router):
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+    "messages": [{"content": "What are black holes?"}]
+}'
+
+2. Sequential pattern:
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+    "messages": [{"content": "Explain quantum computing"}],
+    "pattern": "sequential"
+}'
+
+3. Parallel pattern:
+curl -X POST http://localhost:3000/chat \
+-H "Content-Type: application/json" \
+-d '{
+    "messages": [{"content": "Benefits of meditation"}],
+    "pattern": "parallel"
+}'
+
+4. Store in memory:
+curl -X POST http://localhost:3000/memory \
+-H "Content-Type: application/json" \
+-d '{
+    "key": "test",
+    "value": "hello world"
+}'
+
+5. Get from memory:
+curl -X GET http://localhost:3000/memory/test
+
+6. List tools:
+curl -X GET http://localhost:3000/tools
+
+7. Get resources:
+curl -X GET http://localhost:3000/resources
+
+8. Process payment:
+curl -X POST http://localhost:3000/pay \
+-H "Content-Type: application/json" \
+-d '{
+    "amount": 10
+}'
+"""
+----------------------
+EXAMPLES\PYTHON\README.MD
+----------------------
+# SLOP Python Example
+
+A simple implementation of the [SLOP](https://github.com/agnt-gg/slop) pattern in Python.
+
+## Python Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/agnt-gg/slop
+cd slop/python
+
+# Create virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run it
+python slop.py
+```
+
+## Endpoints
+
+```python
+# CHAT - Talk to AI
+POST /chat
+{
+  "messages": [{ "content": "Hello SLOP!" }]
+}
+
+# TOOLS - Use tools
+GET /tools
+POST /tools/calculator { "expression": "2 + 2" }
+POST /tools/greet { "name": "SLOP" }
+
+# MEMORY - Store data
+POST /memory { "key": "test", "value": "hello" }
+GET /memory/test
+
+# RESOURCES - Get knowledge
+GET /resources
+GET /resources/hello
+
+# PAY - Handle payments
+POST /pay { "amount": 10 }
+```
+
+## Structure
+
+- `slop.py` - The entire implementation
+- `requirements.txt` - Dependencies
+
+That's it. Just two files.
+
+## Dependencies
+
+- `flask` - For clean routing
+- `requests` - For testing endpoints
+
+## Try It
+
+After starting the server, it automatically runs tests for all endpoints:
+
+```bash
+python slop.py
+
+# Output:
+✨ SLOP running on http://localhost:5000
+🚀 Running tests...
+
+📝 Testing chat...
+You said: Hello SLOP!
+
+🔧 Testing tools...
+2 + 2 = 4
+Hello, SLOP!
+
+💾 Testing memory...
+Stored value: hello world
+
+📚 Testing resources...
+Resource content: Hello, SLOP!
+
+💰 Testing pay...
+Transaction: tx_1234567890
+
+✅ All tests passed!
+```
+
+## Learn More
+
+Check out the [main SLOP repository](https://github.com/agnt-gg/slop) for:
+- Full specification
+- Other language examples
+- Core concepts
+- Best practices
+
+Remember: SLOP is just a pattern. This is a simple implementation example to show how it works.
+----------------------
+EXAMPLES\PYTHON\REQUIREMENTS.TXT
+----------------------
+flask==3.0.2
+requests==2.31.0
+----------------------
+EXAMPLES\PYTHON\SLOP.PY
+----------------------
+# Python implementation of the SLOP pattern
+
+from flask import Flask, request, jsonify
+import requests
+from datetime import datetime
+
+# Initialize Flask app
+app = Flask(__name__)
+
+# Available tools and resources
+tools = {
+    'calculator': {
+        'id': 'calculator',
+        'description': 'Basic math',
+        'execute': lambda params: {'result': eval(params['expression'])}
+    },
+    'greet': {
+        'id': 'greet',
+        'description': 'Says hello',
+        'execute': lambda params: {'result': f"Hello, {params['name']}!"}
+    }
+}
+
+resources = {
+    'hello': {'id': 'hello', 'content': 'Hello, SLOP!'}
+}
+
+# In-memory storage
+memory = {}
+
+# CHAT
+@app.route('/chat', methods=['POST'])
+def chat():
+    data = request.json
+    message = data.get('messages', [{}])[0].get('content', 'nothing')
+    return jsonify({
+        'message': {
+            'role': 'assistant',
+            'content': f'You said: {message}'
+        }
+    })
+
+# TOOLS
+@app.route('/tools', methods=['GET'])
+def list_tools():
+    return jsonify({'tools': list(tools.values())})
+
+@app.route('/tools/<tool_id>', methods=['POST'])
+def use_tool(tool_id):
+    if tool_id not in tools:
+        return jsonify({'error': 'Tool not found'}), 404
+    return jsonify(tools[tool_id]['execute'](request.json))
+
+# MEMORY
+@app.route('/memory', methods=['POST'])
+def store_memory():
+    data = request.json
+    memory[data['key']] = data['value']
+    return jsonify({'status': 'stored'})
+
+@app.route('/memory/<key>', methods=['GET'])
+def get_memory(key):
+    return jsonify({'value': memory.get(key)})
+
+# RESOURCES
+@app.route('/resources', methods=['GET'])
+def list_resources():
+    return jsonify({'resources': list(resources.values())})
+
+@app.route('/resources/<resource_id>', methods=['GET'])
+def get_resource(resource_id):
+    if resource_id not in resources:
+        return jsonify({'error': 'Resource not found'}), 404
+    return jsonify(resources[resource_id])
+
+# PAY
+@app.route('/pay', methods=['POST'])
+def pay():
+    return jsonify({
+        'transaction_id': f'tx_{int(datetime.now().timestamp())}',
+        'status': 'success'
+    })
+
+def test_endpoints():
+    """Test all SLOP endpoints"""
+    base = 'http://localhost:5000'
+    
+    try:
+        # Test chat
+        print('📝 Testing chat...')
+        chat = requests.post(f'{base}/chat', json={
+            'messages': [{'content': 'Hello SLOP!'}]
+        }).json()
+        print(chat['message']['content'], '\n')
+
+        # Test tools
+        print('🔧 Testing tools...')
+        calc = requests.post(f'{base}/tools/calculator', json={
+            'expression': '2 + 2'
+        }).json()
+        print('2 + 2 =', calc['result'])
+
+        greet = requests.post(f'{base}/tools/greet', json={
+            'name': 'SLOP'
+        }).json()
+        print(greet['result'], '\n')
+
+        # Test memory
+        print('💾 Testing memory...')
+        requests.post(f'{base}/memory', json={
+            'key': 'test',
+            'value': 'hello world'
+        })
+        memory = requests.get(f'{base}/memory/test').json()
+        print('Stored value:', memory['value'], '\n')
+
+        # Test resources
+        print('📚 Testing resources...')
+        hello = requests.get(f'{base}/resources/hello').json()
+        print('Resource content:', hello['content'], '\n')
+
+        # Test pay
+        print('💰 Testing pay...')
+        pay = requests.post(f'{base}/pay', json={
+            'amount': 10
+        }).json()
+        print('Transaction:', pay['transaction_id'], '\n')
+
+        print('✅ All tests passed!')
+    except Exception as e:
+        print('❌ Test failed:', str(e))
+
+if __name__ == '__main__':
+    import threading
+    import time
+    
+    # Start server in a thread
+    threading.Thread(target=app.run, daemon=True).start()
+    
+    # Wait for server to start
+    print('✨ SLOP running on http://localhost:5000')
+    time.sleep(1)
+    print('🚀 Running tests...\n')
+    
+    # Run tests
+    test_endpoints()
+----------------------
+EXAMPLES\REPLIT\README.MD
+----------------------
+# 2 Minute SLOP Server Implementation in Replit 🚀
+
+This guide helps non-developers create and run a SLOP (Simple Language Open Protocol) server with a public URL in less than 5 minutes using Replit - no coding experience required!
+
+## What is SLOP?
+
+SLOP (Simple Language Open Protocol) is a pattern for AI APIs with 5 basic endpoints:
+- `POST /chat` - Talk to AI
+- `POST /tools` - Use tools
+- `POST /memory` - Remember stuff
+- `GET /resources` - Get knowledge/files/data
+- `POST /pay` - Handle money
+
+It's designed to make AI services work through plain web requests using patterns we've used for decades.
+
+## Step 1: Create a Replit Account
+
+1. Go to [replit.com](https://replit.com) and sign up for a free account
+
+## Step 2: Create a New Repl
+
+1. Click the "+ Create" button in the top-left corner
+2. Select "Template" and search for "Node.js"
+3. Name your project something like "my-slop-server"
+4. Click "Create Repl"
+
+## Step 3: Copy the SLOP Server Code
+
+1. Delete any existing code in the main file (usually `index.js`)
+2. Paste this minimal SLOP server code:
+
+```javascript
+const express = require('express');
+const app = express();
+app.use(express.json());
+
+// Serve static files from the 'public' directory
+app.use(express.static('public'));
+
+// Minimum viable SLOP endpoints
+app.post('/chat', (req, res) => {
+  // Get the message from the request
+  const message = req.body.messages?.[0]?.content || '';
+  
+  // Simple response - you can make this more interactive!
+  const response = `You said: "${message}". This is your SLOP server responding!`;
+  
+  res.json({ message: { role: 'assistant', content: response } });
+});
+
+app.get('/tools', (req, res) => {
+  res.json({ tools: [{ id: 'greeter', description: 'Says hello' }] });
+});
+
+app.post('/memory', (req, res) => {
+  res.json({ status: 'stored' });
+});
+
+app.get('/resources', (req, res) => {
+  res.json({ resources: [{ id: 'greeting', content: 'Hello, world!' }] });
+});
+
+app.post('/pay', (req, res) => {
+  res.json({ transaction_id: 'tx_hello_world' });
+});
+
+app.listen(3000, () => console.log('✨ SLOP running on port 3000'));
+```
+
+## Step 4: Install Required Package
+
+1. In the Shell (console at the bottom), type this command and hit Enter:
+```
+npm install express
+```
+
+## Step 5: Create a Simple HTML Interface
+
+1. In your Replit project, click the "Files" panel (left side)
+2. Click the "+" button to create a new file
+3. Name it `public/index.html` (Replit will create the public folder automatically)
+4. Paste this code into your new `index.html` file:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My SLOP Chat</title>
+  <style>
+    body { font-family: Arial; max-width: 600px; margin: 0 auto; padding: 20px; }
+    #chat-container { border: 1px solid #ccc; height: 300px; overflow-y: auto; padding: 10px; margin-bottom: 10px; }
+    #user-input { width: 80%; padding: 8px; }
+    button { padding: 8px 16px; background: #4CAF50; color: white; border: none; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <h1>SLOP Chat</h1>
+  <div id="chat-container"></div>
+  <input type="text" id="user-input" placeholder="Type your message...">
+  <button onclick="sendMessage()">Send</button>
+
+  <script>
+    function addMessage(role, content) {
+      const chatContainer = document.getElementById('chat-container');
+      const messageDiv = document.createElement('div');
+      messageDiv.innerHTML = `<strong>${role}:</strong> ${content}`;
+      chatContainer.appendChild(messageDiv);
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+
+    async function sendMessage() {
+      const input = document.getElementById('user-input');
+      const message = input.value.trim();
+      
+      if (!message) return;
+      
+      // Display user message
+      addMessage('You', message);
+      input.value = '';
+      
+      try {
+        // Send to chat endpoint
+        const response = await fetch('/chat', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            messages: [{ role: 'user', content: message }]
+          })
+        });
+        
+        const data = await response.json();
+        
+        // Display assistant message
+        addMessage('Assistant', data.message.content);
+      } catch (error) {
+        addMessage('Error', 'Failed to get response');
+        console.error(error);
+      }
+    }
+
+    // Allow sending with Enter key
+    document.getElementById('user-input').addEventListener('keypress', function(e) {
+      if (e.key === 'Enter') sendMessage();
+    });
+  </script>
+</body>
+</html>
+```
+
+## Step 6: Run Your Server
+
+1. Click the "Run" button at the top of Replit
+2. Wait for the server to start (you'll see "✨ SLOP running on port 3000")
+
+## Step 7: Access Your Public URL
+
+1. Look at the top-right side of the Replit interface for the "Webview" tab
+2. Click on it to see your running app with the chat interface
+3. The URL in the browser tab is your public SLOP server address!
+
+## Testing Your SLOP Server
+
+You can test your server in several ways:
+
+1. Use the web interface to chat with your server
+2. Add `/tools` to the end of your public URL to see the available tools:
+   - Your URL will look like: `https://my-slop-server.yourusername.repl.co/tools`
+
+## Using the Replit Console to Test Endpoints
+
+You can use the built-in Replit console to test your other endpoints:
+
+```bash
+# In the Replit Shell, test your chat endpoint
+curl -X POST https://my-slop-server.yourusername.repl.co/chat -H "Content-Type: application/json" -d '{"messages":[{"content":"Hello SLOP!"}]}'
+
+# Test tools endpoint
+curl https://my-slop-server.yourusername.repl.co/tools
+
+# Test memory endpoint
+curl -X POST https://my-slop-server.yourusername.repl.co/memory -H "Content-Type: application/json" -d '{"key":"test","value":"hello world"}'
+
+# Test resources endpoint
+curl https://my-slop-server.yourusername.repl.co/resources
+
+# Test pay endpoint
+curl -X POST https://my-slop-server.yourusername.repl.co/pay -H "Content-Type: application/json" -d '{}'
+```
+
+## Making It More Interesting
+
+To make your SLOP server more interesting, you can modify the response in the `/chat` endpoint to do different things:
+
+```javascript
+app.post('/chat', (req, res) => {
+  const message = req.body.messages?.[0]?.content || '';
+  
+  // Simple keyword response system
+  let response = '';
+  
+  if (message.toLowerCase().includes('hello')) {
+    response = "Hello there! How can I help you today?";
+  } else if (message.toLowerCase().includes('weather')) {
+    response = "I don't have real-time weather data, but I hope it's sunny where you are!";
+  } else if (message.toLowerCase().includes('name')) {
+    response = "I'm a simple SLOP server. Nice to meet you!";
+  } else {
+    response = `You said: "${message}". What else would you like to talk about?`;
+  }
+  
+  res.json({ message: { role: 'assistant', content: response } });
+});
+```
+
+Just update this part of your code, click "Run" again, and you'll have a slightly smarter chat interface!
+
+## Congratulations!
+
+You now have a working SLOP server with a public URL and a web interface that anyone can access! The URL is persistent as long as you keep your Replit account.
+
+Replit automatically gives you a public URL for your server, making it incredibly easy to share your SLOP implementation with others without needing to understand deployment, hosting, or server management!
+
+## Learn More About SLOP
+
+To learn more about the SLOP protocol, visit the [SLOP GitHub repository](https://github.com/agnt-gg/slop).
+
+----------------------
+LICENSE
+----------------------
+MIT License
+
+Copyright (c) 2025 agnt.gg
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
