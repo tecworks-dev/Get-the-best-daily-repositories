@@ -1,32 +1,32 @@
 [
   {
-    "name": "agnt-gg/slop",
-    "clone_url": "https://github.com/agnt-gg/slop.git",
-    "stars": 312,
+    "name": "nikmcfly/ANUS",
+    "clone_url": "https://github.com/nikmcfly/ANUS.git",
+    "stars": 1180,
+    "size": 329
+  },
+  {
+    "name": "adysec/Ollama_Load_Balancer",
+    "clone_url": "https://github.com/adysec/Ollama_Load_Balancer.git",
+    "stars": 128,
+    "size": 1556
+  },
+  {
+    "name": "ganeshnikhil/J.A.R.V.I.S.2.0",
+    "clone_url": "https://github.com/ganeshnikhil/J.A.R.V.I.S.2.0.git",
+    "stars": 87,
+    "size": 595
+  },
+  {
+    "name": "z80dev/cryo-mcp",
+    "clone_url": "https://github.com/z80dev/cryo-mcp.git",
+    "stars": 63,
     "size": 174
   },
   {
-    "name": "zaidmukaddam/youtube-transcripts-machine",
-    "clone_url": "https://github.com/zaidmukaddam/youtube-transcripts-machine.git",
-    "stars": 220,
-    "size": 119
-  },
-  {
-    "name": "themanojdesai/genai-llm-ml-case-studies",
-    "clone_url": "https://github.com/themanojdesai/genai-llm-ml-case-studies.git",
-    "stars": 111,
-    "size": 279
-  },
-  {
-    "name": "cyb3rfortr3ss/Phone",
-    "clone_url": "https://github.com/cyb3rfortr3ss/Phone.git",
-    "stars": 92,
-    "size": 55
-  },
-  {
-    "name": "WildByDesign/ACLViewer",
-    "clone_url": "https://github.com/WildByDesign/ACLViewer.git",
-    "stars": 52,
-    "size": 106
+    "name": "willccbb/mcp-client-server",
+    "clone_url": "https://github.com/willccbb/mcp-client-server.git",
+    "stars": 59,
+    "size": 141
   }
 ]

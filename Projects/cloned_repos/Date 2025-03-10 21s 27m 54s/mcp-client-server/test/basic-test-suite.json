@@ -1,0 +1,26 @@
+{
+  "name": "Basic Server Tests",
+  "description": "Tests basic functionality of any MCP server",
+  "tests": [
+    {
+      "name": "Server Connection",
+      "description": "Test that server can be connected to and lists tools",
+      "tool": "list_tools",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": []
+      }
+    },
+    {
+      "name": "Tool Schema Validation",
+      "description": "Test that tools have proper schemas",
+      "tool": "tool_details",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": { "tools": [] }
+      }
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+    "type": "function",
+    "functions": [
+        {
+        "name": "get_stock_fundamentals",
+        "description": "get_stock_fundamentals(symbol: str) -> dict - Get fundamental data for a given stock symbol using yfinance API.\n\n    Args:\n    symbol (str): The stock symbol.\n\n    Returns:\n    dict: A dictionary containing fundamental data.",
+        "parameters": {
+            "type": "object",
+            "properties": {
+            "symbol": {
+                "type": "string",
+                "description": "The stock ticker symbol (e.g., AAPL, TSLA) for which fundamental data is requested."
+            }
+        },
+            "required": ["symbol"]
+        }
+        },
+        {
+            "name": "weather_report",
+            "description": "Get the current weather for a location.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "location": {"type": "string", "description": "The name of the city or location to get the weather for."}
+            },
+            "required": ["location"]
+        }
+        },
+        {
+            "name": "get_stock_data",
+            "description": "Fetch stock market data for an exchange.",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                "exchange": {"type": "string", "description": "The stock exchange symbol (e.g., NASDAQ, NYSE) to fetch data for."}
+            },
+            "required": ["exchange"]
+        }
+        },
+        {
+            "name": "search_youtube",
+            "description": "Search YouTube for a specific topic.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "topic": {"type": "string", "description": "The topic or keywords to search for on YouTube."}
+            },
+            "required": ["topic"]
+        }
+        },
+        {
+            "name": "news_headlines",
+            "description": "Fetch top news headlines.",
+            "parameters": {"type": "object", "properties": {}}
+        },
+        {
+            "name": "yt_download",
+            "description": "Download a YouTube video.",
+            "parameters": {"type": "object", "properties": {}}
+        },
+        {
+            "name": "send_to_ai",
+            "description": "Handle creative prompts like jokes or stories.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "prompt": {"type": "string", "description": "The creative prompt for the AI, such as a joke, story, or poem."}
+            },
+            "required": ["prompt"]
+        }
+        },
+        {
+            "name": "app_runner",
+            "description": "Open the specified application by name.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "app_name": {"type": "string", "description": "The name of the application to open."}
+            },
+            "required": ["app_name"]
+        }
+        },
+        {
+            "name": "open_github",
+            "description": "Open GitHub in a web browser.",
+            "parameters": {"type": "object", "properties": {}}
+        },
+        {
+            "name": "open_instagram",
+            "description": "Open Instagram in a web browser.",
+            "parameters": {"type": "object", "properties": {}}
+        },
+        {
+            "name": "open_youtube",
+            "description": "Open YouTube in a web browser.",
+            "parameters": {"type": "object", "properties": {}}
+        },
+        {
+            "name": "private_mode",
+            "description": "Search in the incognito or private mode for a specific topic.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "topic": {"type": "string", "description": "The topic to search for in incognito mode."}
+            },
+            "required": ["topic"]
+        }
+        },
+        {
+            "name": "make_a_call",
+            "description": "Make a phone call to the provided contact name.",
+            "parameters": {
+            "type": "object",
+            "properties": {
+                "name": {"type": "string", "description": "The name of the contact to call."}
+            },
+            "required": ["name"]
+        }
+        },
+        {
+            "name": "send_email",
+            "description": "Send an email on Gmail.",
+            "parameters": {"type": "object", "properties": {}}
+        }
+    ]
+}
