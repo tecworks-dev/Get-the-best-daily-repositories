@@ -1,0 +1,75 @@
+{
+  "name": "Claude Chat MCP Server Tests",
+  "description": "Tests for the Claude Chat MCP server",
+  "tests": [
+    {
+      "name": "Server Connection",
+      "description": "Test that server can be connected to and lists tools",
+      "tool": "list_tools",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": ["claude_send_message", "claude_chat_completion"]
+      }
+    },
+    {
+      "name": "Simple Message",
+      "description": "Test sending a simple message to Claude",
+      "tool": "claude_send_message",
+      "input": {
+        "prompt": "Tell me a fun fact about AI in exactly one short sentence.",
+        "temperature": 0.7
+      },
+      "expected": {
+        "type": "nonEmpty",
+        "value": true
+      }
+    },
+    {
+      "name": "Chat Completion",
+      "description": "Test chat completion functionality",
+      "tool": "claude_chat_completion",
+      "input": {
+        "messages": [
+          { "role": "user", "content": "Write a haiku about artificial intelligence." }
+        ],
+        "temperature": 0.7
+      },
+      "expected": {
+        "type": "nonEmpty",
+        "value": true
+      }
+    },
+    {
+      "name": "Multi-turn Conversation",
+      "description": "Test multi-turn conversation with history",
+      "tool": "claude_chat_completion",
+      "input": {
+        "messages": [
+          { "role": "user", "content": "Let's play a game. I'll provide the first line of a story, and you continue it with one more sentence." },
+          { "role": "assistant", "content": "That sounds like a fun game! I'm ready when you are. What's the first line of the story?" },
+          { "role": "user", "content": "The old clock struck midnight, and the door creaked open by itself." }
+        ],
+        "temperature": 0.8
+      },
+      "expected": {
+        "type": "nonEmpty",
+        "value": true
+      }
+    },
+    {
+      "name": "System Prompt",
+      "description": "Test including a system prompt",
+      "tool": "claude_send_message",
+      "input": {
+        "prompt": "What are you designed to do?",
+        "system": "You are a specialized AI assistant for weather forecasting. You only talk about weather.",
+        "temperature": 0.7
+      },
+      "expected": {
+        "type": "contains",
+        "value": "weather"
+      }
+    }
+  ]
+}

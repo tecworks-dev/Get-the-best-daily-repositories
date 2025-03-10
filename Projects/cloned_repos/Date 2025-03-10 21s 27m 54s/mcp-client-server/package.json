@@ -1,0 +1,35 @@
+{
+  "name": "mcp-test-client",
+  "version": "0.1.0",
+  "description": "MCP Test Client for testing MCP servers during development",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node --esm src/index.ts",
+    "test": "ts-node --esm src/test-runner.ts"
+  },
+  "keywords": [
+    "mcp",
+    "test",
+    "client",
+    "development"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.6.1",
+    "dockerode": "^3.3.5",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/dockerode": "^3.3.35",
+    "@types/node": "^22.13.9",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
