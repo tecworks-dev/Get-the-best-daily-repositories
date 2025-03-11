@@ -1,0 +1,79 @@
+{
+  "name": "Docker Production Test",
+  "description": "Tests for the Docker MCP server in production",
+  "tests": [
+    {
+      "name": "Server Connection",
+      "description": "Test that server can be connected to and lists tools",
+      "tool": "list_tools",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": ["docker_run_code", "docker_register_template", "docker_list_templates"]
+      }
+    },
+    {
+      "name": "Run Python Code",
+      "description": "Test running Python code with network access",
+      "tool": "docker_run_code",
+      "input": {
+        "language": "python",
+        "code": "import os\nprint('Hello from Production Docker MCP!')\nprint(f'Python version: {os.sys.version}')",
+        "timeout": 5000
+      },
+      "expected": {
+        "type": "contains",
+        "value": "Hello from Production Docker MCP!"
+      }
+    },
+    {
+      "name": "Register Custom Template",
+      "description": "Test registering a custom template",
+      "tool": "docker_register_template",
+      "input": {
+        "name": "production-test",
+        "image": "python:3.11-slim",
+        "description": "Production test template created during testing"
+      },
+      "expected": {
+        "type": "contains",
+        "value": "success"
+      }
+    },
+    {
+      "name": "Verify Template",
+      "description": "Test that the new template is available",
+      "tool": "docker_list_templates",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": "production-test"
+      }
+    },
+    {
+      "name": "Create Server",
+      "description": "Test creating a server from the new template",
+      "tool": "docker_create_server",
+      "input": {
+        "server_type": "production-test",
+        "server_name": "prod-test-server"
+      },
+      "expected": {
+        "type": "contains",
+        "value": "prod-test-server"
+      }
+    },
+    {
+      "name": "Stop Server",
+      "description": "Test stopping the server",
+      "tool": "docker_stop_server",
+      "input": {
+        "server_name": "prod-test-server"
+      },
+      "expected": {
+        "type": "contains",
+        "value": "stopped"
+      }
+    }
+  ]
+}
