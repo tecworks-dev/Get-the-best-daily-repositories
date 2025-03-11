@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Person=Donald, Skin Tone=White, Posture=1 Happy.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

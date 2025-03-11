@@ -1,0 +1,94 @@
+{
+  "name": "Docker MCP Server Tests",
+  "description": "Tests for the Docker MCP server",
+  "tests": [
+    {
+      "name": "Server Connection",
+      "description": "Test that server can be connected to and lists tools",
+      "tool": "list_tools",
+      "input": {},
+      "expected": {
+        "type": "contains",
+        "value": [
+          "docker_run_code", 
+          "docker_build_image", 
+          "docker_list_templates", 
+          "docker_create_server",
+          "docker_list_servers"
+        ]
+      }
+    },
+    {
+      "name": "List Templates",
+      "description": "Test listing available Docker templates",
+      "tool": "docker_list_templates",
+      "input": {},
+      "expected": {
+        "type": "nonEmpty",
+        "value": true
+      }
+    },
+    {
+      "name": "Run Python Code",
+      "description": "Test running Python code in an ephemeral container",
+      "tool": "docker_run_code",
+      "input": {
+        "language": "python",
+        "code": "print('Hello, Docker MCP!')\nprint(2 + 2)",
+        "timeout": 5000
+      },
+      "expected": {
+        "type": "contains",
+        "value": "Hello, Docker MCP!"
+      }
+    },
+    {
+      "name": "Run JavaScript Code",
+      "description": "Test running JavaScript code in an ephemeral container",
+      "tool": "docker_run_code",
+      "input": {
+        "language": "javascript",
+        "code": "console.log('Hello from JavaScript!');\nconsole.log(2 + 2);",
+        "timeout": 5000
+      },
+      "expected": {
+        "type": "contains",
+        "value": "Hello from JavaScript!"
+      }
+    },
+    {
+      "name": "Run Code with Dependencies",
+      "description": "Test running code with dependencies",
+      "tool": "docker_run_code",
+      "input": {
+        "language": "python",
+        "code": "import requests\nresponse = requests.get('https://httpbin.org/get')\nprint(response.status_code)",
+        "dependencies": ["requests"],
+        "timeout": 10000
+      },
+      "expected": {
+        "type": "contains",
+        "value": "200"
+      }
+    },
+    {
+      "name": "Create and List Servers",
+      "description": "Test creating a server and listing it",
+      "tool": "docker_create_server",
+      "input": {
+        "server_type": "python-test",
+        "server_name": "test-server-1"
+      },
+      "expected": {
+        "type": "contains",
+        "value": "test-server-1"
+      },
+      "cleanup": {
+        "tool": "docker_stop_server",
+        "input": {
+          "server_name": "test-server-1"
+        }
+      }
+    }
+  ]
+}
