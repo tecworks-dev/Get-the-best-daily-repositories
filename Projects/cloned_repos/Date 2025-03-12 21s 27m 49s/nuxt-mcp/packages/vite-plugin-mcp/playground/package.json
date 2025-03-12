@@ -1,0 +1,11 @@
+{
+  "name": "playground",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "DEBUG=vite:mcp:server vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  }
+}

@@ -1,7 +1,7 @@
-# Latest Repositories (2025-03-09 .. 2025-03-11)
+# Latest Repositories (2025-03-10 .. 2025-03-12)
 
-- [openai/openai-agents-python](https://github.com/openai/openai-agents-python) (532)
-- [adysec/Ollama_Load_Balancer](https://github.com/adysec/Ollama_Load_Balancer) (131)
-- [Sedlacek-Solutions/RatingsKit](https://github.com/Sedlacek-Solutions/RatingsKit) (81)
-- [willccbb/mcp-client-server](https://github.com/willccbb/mcp-client-server) (79)
-- [skydoves/compose-effects](https://github.com/skydoves/compose-effects) (71)
+- [openai/openai-agents-python](https://github.com/openai/openai-agents-python) (2999)
+- [lumalabs/imm](https://github.com/lumalabs/imm) (274)
+- [DesertScripts/Monad-TestnetBot](https://github.com/DesertScripts/Monad-TestnetBot) (106)
+- [niconielsen32/opencv-python-tutorials](https://github.com/niconielsen32/opencv-python-tutorials) (89)
+- [antfu/nuxt-mcp](https://github.com/antfu/nuxt-mcp) (82)
