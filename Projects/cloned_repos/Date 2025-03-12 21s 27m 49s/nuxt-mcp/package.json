@@ -1,0 +1,46 @@
+{
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@10.6.2",
+  "scripts": {
+    "build": "pnpm -r run build",
+    "dev": "pnpm -r run dev",
+    "play": "pnpm -C packages/nuxt-mcp play",
+    "lint": "eslint",
+    "release": "bumpp -r && pnpm -r publish",
+    "test": "vitest",
+    "inspect": "npx @modelcontextprotocol/inspector",
+    "typecheck": "tsc --noEmit",
+    "prepare": "simple-git-hooks && nr -r dev:prepare"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:cli",
+    "@antfu/ni": "catalog:cli",
+    "@antfu/utils": "catalog:utils",
+    "@modelcontextprotocol/inspector": "catalog:cli",
+    "@modelcontextprotocol/sdk": "catalog:prod",
+    "@types/node": "catalog:types",
+    "bumpp": "catalog:cli",
+    "eslint": "catalog:cli",
+    "h3": "catalog:prod",
+    "lint-staged": "catalog:cli",
+    "nodemon": "catalog:cli",
+    "simple-git-hooks": "catalog:cli",
+    "tinyexec": "catalog:utils",
+    "tsx": "catalog:cli",
+    "typescript": "catalog:cli",
+    "unbuild": "catalog:cli",
+    "vite": "catalog:cli",
+    "vitest": "catalog:testing",
+    "vitest-package-exports": "catalog:testing",
+    "yaml": "catalog:testing",
+    "zod": "catalog:prod"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
