@@ -1,0 +1,42 @@
+[package]
+name = "mcpr"
+version = "0.2.0"
+edition = "2021"
+description = "Rust implementation of Anthropic's Model Context Protocol"
+authors = ["Chetan Conikee"]
+license = "MIT"
+repository = "https://github.com/conikeec/mcpr"
+readme = "README.md"
+keywords = ["mcp", "anthropic", "claude", "ai", "llm"]
+categories = ["api-bindings", "command-line-utilities"]
+
+[lib]
+name = "mcpr"
+path = "src/lib.rs"
+
+[[bin]]
+name = "mcpr"
+path = "src/main.rs"
+
+# Core dependencies for the mcpr library
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+thiserror = "1.0"
+anyhow = "1.0"
+log = "0.4"
+clap = { version = "4.4", features = ["derive"] }
+tokio = { version = "1.35", features = ["full"], optional = true }
+url = "2.2.2"                                                      # Using 2.2.2 for compatibility with examples
+tiny_http = "0.12"
+reqwest = { version = "0.12", features = ["json"] }
+
+# Optional dependencies that are only used by specific features
+[dev-dependencies]
+tokio = { version = "1.35", features = ["full", "test-util"] }
+
+[features]
+default = []
+async = ["tokio"]
+
+# Examples are now in their own separate crates with their own Cargo.toml files

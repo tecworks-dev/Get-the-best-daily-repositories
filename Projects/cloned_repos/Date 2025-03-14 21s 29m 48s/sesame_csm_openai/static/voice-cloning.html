@@ -1,0 +1,437 @@
+<!-- Add to static/voice-cloning.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Cloning</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .card {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin-bottom: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 16px;
+        }
+        label {
+            display: block;
+            margin-bottom: 4px;
+            font-weight: 500;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4f46e5;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 8px 16px;
+            cursor: pointer;
+            font-weight: 500;
+        }
+        button:hover {
+            background-color: #4338ca;
+        }
+        .voice-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
+        }
+        .voice-card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px;
+            background-color: #f9fafb;
+        }
+        .controls {
+            display: flex;
+            gap: 8px;
+            margin-top: 8px;
+        }
+        .voice-name {
+            font-weight: 600;
+            font-size: 18px;
+            margin: 0 0 8px 0;
+        }
+        .btn-danger {
+            background-color: #ef4444;
+        }
+        .btn-danger:hover {
+            background-color: #dc2626;
+        }
+        .btn-secondary {
+            background-color: #6b7280;
+        }
+        .btn-secondary:hover {
+            background-color: #4b5563;
+        }
+        #audio-preview {
+            margin-top: 16px;
+            width: 100%;
+        }
+        .tabs {
+            display: flex;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .tabs button {
+            background-color: transparent;
+            color: #4b5563;
+            border: none;
+            padding: 8px 16px;
+            margin-right: 8px;
+            cursor: pointer;
+            position: relative;
+            font-weight: 500;
+            border-radius: 0;
+        }
+        .tabs button.active {
+            color: #4f46e5;
+        }
+        .tabs button.active::after {
+            content: '';
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: #4f46e5;
+        }
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+        #generate-form .form-group + .form-group {
+            margin-top: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Voice Cloning</h1>
+    
+    <div class="tabs">
+        <button id="tab-clone" class="active">Clone Voice</button>
+        <button id="tab-voices">My Voices</button>
+        <button id="tab-generate">Generate Speech</button>
+    </div>
+    
+    <div id="clone-tab" class="tab-content active">
+        <div class="card">
+            <h2>Clone a New Voice</h2>
+            <form id="clone-form">
+                <div class="form-group">
+                    <label for="voice-name">Voice Name</label>
+                    <input type="text" id="voice-name" name="name" required placeholder="e.g. My Voice">
+                </div>
+                <div class="form-group">
+                    <label for="audio-file">Voice Sample (2-3 minute audio recording)</label>
+                    <input type="file" id="audio-file" name="audio_file" required accept="audio/*">
+                </div>
+                <div class="form-group">
+                    <label for="transcript">Transcript (Optional)</label>
+                    <textarea id="transcript" name="transcript" rows="4" placeholder="Exact transcript of your audio sample..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description (Optional)</label>
+                    <input type="text" id="description" name="description" placeholder="A description of this voice">
+                </div>
+                <button type="submit">Clone Voice</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="voices-tab" class="tab-content">
+        <h2>My Cloned Voices</h2>
+        <div id="voice-list" class="voice-list">
+            <!-- Voice cards will be added here -->
+        </div>
+    </div>
+    
+    <div id="generate-tab" class="tab-content">
+        <div class="card">
+            <h2>Generate Speech with Cloned Voice</h2>
+            <form id="generate-form">
+                <div class="form-group">
+                    <label for="voice-select">Select Voice</label>
+                    <select id="voice-select" name="voice" required>
+                        <option value="">Select a voice</option>
+                        <!-- Voice options will be added here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="generate-text">Text to Speak</label>
+                    <textarea id="generate-text" name="text" rows="4" required placeholder="Enter text to synthesize with the selected voice..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="temperature">Temperature (0.5-1.0)</label>
+                    <input type="range" id="temperature" name="temperature" min="0.5" max="1.0" step="0.05" value="0.7">
+                    <span id="temperature-value">0.7</span>
+                </div>
+                <button type="submit">Generate Speech</button>
+            </form>
+            <audio id="audio-preview" controls style="display: none;"></audio>
+        </div>
+    </div>
+
+    <script>
+        // Tab functionality
+        const tabs = document.querySelectorAll('.tabs button');
+        const tabContents = document.querySelectorAll('.tab-content');
+        
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs
+                tabs.forEach(t => t.classList.remove('active'));
+                tabContents.forEach(tc => tc.classList.remove('active'));
+                
+                // Add active class to clicked tab
+                tab.classList.add('active');
+                
+                // Show corresponding tab content
+                const tabId = tab.id.replace('tab-', '');
+                document.getElementById(`${tabId}-tab`).classList.add('active');
+            });
+        });
+        
+        // Temperature slider
+        const temperatureSlider = document.getElementById('temperature');
+        const temperatureValue = document.getElementById('temperature-value');
+        
+        temperatureSlider.addEventListener('input', () => {
+            temperatureValue.textContent = temperatureSlider.value;
+        });
+        
+        // Load voices
+        async function loadVoices() {
+            try {
+                const response = await fetch('/v1/voice-cloning/voices');
+                const data = await response.json();
+                
+                const voiceList = document.getElementById('voice-list');
+                const voiceSelect = document.getElementById('voice-select');
+                
+                // Clear existing content
+                voiceList.innerHTML = '';
+                
+                // Clear voice select options but keep the first one
+                while (voiceSelect.options.length > 1) {
+                    voiceSelect.remove(1);
+                }
+                
+                if (data.voices && data.voices.length > 0) {
+                    data.voices.forEach(voice => {
+                        // Add to voice list
+                        const voiceCard = document.createElement('div');
+                        voiceCard.className = 'voice-card';
+                        voiceCard.innerHTML = `
+                            <h3 class="voice-name">${voice.name}</h3>
+                            <p>${voice.description || 'No description'}</p>
+                            <p>Created: ${new Date(voice.created_at * 1000).toLocaleString()}</p>
+                            <div class="controls">
+                                <button class="btn-secondary preview-voice" data-id="${voice.id}">Preview</button>
+                                <button class="btn-danger delete-voice" data-id="${voice.id}">Delete</button>
+                            </div>
+                        `;
+                        voiceList.appendChild(voiceCard);
+                        
+                        // Add to voice select
+                        const option = document.createElement('option');
+                        option.value = voice.id;
+                        option.textContent = voice.name;
+                        voiceSelect.appendChild(option);
+                    });
+                    
+                    // Add event listeners for preview and delete buttons
+                    document.querySelectorAll('.preview-voice').forEach(button => {
+                        button.addEventListener('click', previewVoice);
+                    });
+                    
+                    document.querySelectorAll('.delete-voice').forEach(button => {
+                        button.addEventListener('click', deleteVoice);
+                    });
+                } else {
+                    voiceList.innerHTML = '<p>No cloned voices yet. Create one in the "Clone Voice" tab.</p>';
+                }
+            } catch (error) {
+                console.error('Error loading voices:', error);
+            }
+        }
+        
+        // Preview voice
+        async function previewVoice(event) {
+            const voiceId = event.target.dataset.id;
+            const audioPreview = document.getElementById('audio-preview');
+            
+            try {
+                const response = await fetch(`/v1/voice-cloning/voices/${voiceId}/preview`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        text: "This is a preview of my cloned voice. I hope you like how it sounds!"
+                    })
+                });
+                
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = URL.createObjectURL(blob);
+                    audioPreview.src = url;
+                    audioPreview.style.display = 'block';
+                    
+                    // Switch to the generate tab
+                    document.getElementById('tab-generate').click();
+                    
+                    // Set the voice in the select
+                    document.getElementById('voice-select').value = voiceId;
+                    
+                    audioPreview.play();
+                } else {
+                    alert('Failed to preview voice');
+                }
+            } catch (error) {
+                console.error('Error previewing voice:', error);
+                alert('Error previewing voice');
+            }
+        }
+        
+        // Delete voice
+        async function deleteVoice(event) {
+            if (!confirm('Are you sure you want to delete this voice? This cannot be undone.')) {
+                return;
+            }
+            
+            const voiceId = event.target.dataset.id;
+            
+            try {
+                const response = await fetch(`/v1/voice-cloning/voices/${voiceId}`, {
+                    method: 'DELETE'
+                });
+                
+                if (response.ok) {
+                    alert('Voice deleted successfully');
+                    loadVoices();
+                } else {
+                    alert('Failed to delete voice');
+                }
+            } catch (error) {
+                console.error('Error deleting voice:', error);
+                alert('Error deleting voice');
+            }
+        }
+        
+        // Clone voice form submission
+        document.getElementById('clone-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            
+            try {
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+                submitButton.textContent = 'Cloning Voice...';
+                
+                const response = await fetch('/v1/voice-cloning/clone', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    const result = await response.json();
+                    alert('Voice cloned successfully!');
+                    event.target.reset();
+                    
+                    // Switch to the voices tab
+                    document.getElementById('tab-voices').click();
+                    loadVoices();
+                } else {
+                    const error = await response.json();
+                    alert(`Failed to clone voice: ${error.detail}`);
+                }
+            } catch (error) {
+                console.error('Error cloning voice:', error);
+                alert('Error cloning voice');
+            } finally {
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = false;
+                submitButton.textContent = 'Clone Voice';
+            }
+        });
+        
+        // Generate speech form submission
+        document.getElementById('generate-form').addEventListener('submit', async (event) => {
+            event.preventDefault();
+            
+            const formData = new FormData(event.target);
+            const voiceId = formData.get('voice');
+            const text = formData.get('text');
+            const temperature = formData.get('temperature');
+            
+            if (!voiceId) {
+                alert('Please select a voice');
+                return;
+            }
+            
+            try {
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = true;
+                submitButton.textContent = 'Generating...';
+                
+                const response = await fetch('/v1/voice-cloning/generate', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        voice_id: voiceId,
+                        text: text,
+                        temperature: parseFloat(temperature)
+                    })
+                });
+                
+                if (response.ok) {
+                    const blob = await response.blob();
+                    const url = URL.createObjectURL(blob);
+                    
+                    const audioPreview = document.getElementById('audio-preview');
+                    audioPreview.src = url;
+                    audioPreview.style.display = 'block';
+                    audioPreview.play();
+                } else {
+                    const error = await response.json();
+                    alert(`Failed to generate speech: ${error.detail}`);
+                }
+            } catch (error) {
+                console.error('Error generating speech:', error);
+                alert('Error generating speech');
+            } finally {
+                const submitButton = event.target.querySelector('button[type="submit"]');
+                submitButton.disabled = false;
+                submitButton.textContent = 'Generate Speech';
+            }
+        });
+        
+        // Load voices on page load
+        loadVoices();
+    </script>
+</body>
+</html>
