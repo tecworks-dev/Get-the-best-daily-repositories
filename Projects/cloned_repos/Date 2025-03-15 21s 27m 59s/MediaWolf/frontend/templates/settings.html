@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Settings</h1>
+<div class="container mt-5">
+    <form id="settings-form">
+        <h4>General</h4>
+        <div class="mb-3">
+            <label class="form-label">Log Level</label>
+            <input type="text" class="form-control" id="log_level" value="{{ settings_data['log_level'] }}">
+        </div>
+
+        <h4>LastFM</h4>
+        <div class="mb-3">
+            <label class="form-label">API Key</label>
+            <input type="text" class="form-control" id="lastfm_api_key" value="{{ settings_data['lastfm_api_key'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">API Secret</label>
+            <input type="text" class="form-control" id="lastfm_api_secret"
+                value="{{ settings_data['lastfm_api_secret'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Rate Limit</label>
+            <input type="number" step="0.1" class="form-control" id="lastfm_sleep_interval"
+                value="{{ settings_data['lastfm_sleep_interval'] }}">
+        </div>
+
+        <h4>Lidarr</h4>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" id="lidarr_address" value="{{ settings_data['lidarr_address'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">API Key</label>
+            <input type="text" class="form-control" id="lidarr_api_key" value="{{ settings_data['lidarr_api_key'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Timeout</label>
+            <input type="number" step="0.1" class="form-control" id="lidarr_api_timeout"
+                value="{{ settings_data['lidarr_api_timeout'] }}">
+        </div>
+
+        <h4>Readarr</h4>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" id="readarr_address" value="{{ settings_data['readarr_address'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">API Key</label>
+            <input type="text" class="form-control" id="readarr_api_key" value="{{ settings_data['readarr_api_key'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Timeout</label>
+            <input type="number" step="0.1" class="form-control" id="readarr_api_timeout"
+                value="{{ settings_data['readarr_api_timeout'] }}">
+        </div>
+
+        <h4>Radarr</h4>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" id="radarr_address" value="{{ settings_data['radarr_address'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">API Key</label>
+            <input type="text" class="form-control" id="radarr_api_key" value="{{ settings_data['radarr_api_key'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Timeout</label>
+            <input type="number" step="0.1" class="form-control" id="radarr_api_timeout"
+                value="{{ settings_data['radarr_api_timeout'] }}">
+        </div>
+
+        <h4>Sonarr</h4>
+        <div class="mb-3">
+            <label class="form-label">Address</label>
+            <input type="text" class="form-control" id="sonarr_address" value="{{ settings_data['sonarr_address'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">API Key</label>
+            <input type="text" class="form-control" id="sonarr_api_key" value="{{ settings_data['sonarr_api_key'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Timeout</label>
+            <input type="number" step="0.1" class="form-control" id="sonarr_api_timeout"
+                value="{{ settings_data['sonarr_api_timeout'] }}">
+        </div>
+
+        <h4>Spotify</h4>
+        <div class="mb-3">
+            <label class="form-label">Client ID</label>
+            <input type="text" class="form-control" id="spotify_client_id"
+                value="{{ settings_data['spotify_client_id'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Client Secret</label>
+            <input type="text" class="form-control" id="spotify_client_secret"
+                value="{{ settings_data['spotify_client_secret'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Search Limit</label>
+            <input type="text" class="form-control" id="spotify_search_limit"
+                value="{{ settings_data['spotify_search_limit'] }}">
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Sleep Interval</label>
+            <input type="number" step="0.5" class="form-control" id="spotify_sleep_interval"
+                value="{{ settings_data['spotify_sleep_interval'] }}">
+        </div>
+
+        <button id="save-settings-button" type="submit" class="btn btn-primary">Save Settings</button>
+    </form>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='settings_script.js') }}" defer></script>
+{% endblock %}

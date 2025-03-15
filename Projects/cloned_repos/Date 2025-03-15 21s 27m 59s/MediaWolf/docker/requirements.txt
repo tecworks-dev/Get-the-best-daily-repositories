@@ -1,0 +1,6 @@
+loguru
+pylast
+sqlalchemy
+musicbrainzngs
+thefuzz
+spotipy

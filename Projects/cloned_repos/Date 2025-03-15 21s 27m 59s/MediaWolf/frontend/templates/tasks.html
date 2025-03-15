@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<header class="my-4">
+    <h1 class="text-center">Tasks</h1>
+</header>
+
+<div class="row">
+    <div class="col-12">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Task Name</th>
+                    <th>Cron Expression</th>
+                    <th>Status</th>
+                    <th>Controls</th>
+                </tr>
+            </thead>
+            <tbody id="tasks-table">
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<template id="task-template">
+    <tr id="task-row-{{id}}">
+        <td class="task-name"></td>
+        <td class="task-cron"></td>
+        <td class="task-status"></td>
+        <td class="task-controls">
+            <button class="btn btn-primary" data-bs-toggle="tooltip" title="Manual Start">
+                <i class="bi bi-play-circle"></i>
+            </button>
+            <button class="btn btn-warning" data-bs-toggle="tooltip" title="Pause">
+                <i class="bi bi-pause-circle"></i>
+            </button>
+            <button class="btn btn-danger" data-bs-toggle="tooltip" title="Stop">
+                <i class="bi bi-stop-circle"></i>
+            </button>
+            <button class="btn btn-secondary" data-bs-toggle="tooltip" title="Cancel">
+                <i class="bi bi-x-circle"></i>
+            </button>
+            <button class="btn btn-info" data-bs-toggle="tooltip" title="Disable">
+                <i class="bi bi-slash-circle"></i>
+            </button>
+        </td>
+    </tr>
+</template>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='tasks_script.js') }}" defer></script>
+{% endblock %}

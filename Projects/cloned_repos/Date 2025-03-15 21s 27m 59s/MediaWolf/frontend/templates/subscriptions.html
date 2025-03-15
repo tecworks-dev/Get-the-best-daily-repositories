@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Subscriptions</h1>
+<p id="page-description">
+    Manage your subscriptions, including <strong>YouTube Channels</strong>, <strong>YouTube Playlists</strong> and
+    <strong>Spotify Playlists</strong>.
+</p>
+
+<div id="subscription-table" class="container px-1 mt-4">
+    <table class="table">
+        <thead class="sticky-top top-0">
+            <tr>
+                <th>Subscription Name</th>
+                <th>Last Sync</th>
+                <th class="col text-center">Items</th>
+                <th class="col text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody id="subscription-list">
+        </tbody>
+    </table>
+</div>
+<div class="container mt-2">
+    <button id="add-subscription" class="btn btn-primary">Add Subscription</button>
+</div>
+
+<template id="subscription-row-template">
+    <tr>
+        <td class="subscription-name"></td>
+        <td class="subscription-last-synced"></td>
+        <td class="text-center subscription-item-count"></td>
+        <td class="text-center">
+            <button class="btn btn-sm btn-primary custom-button-width edit-button">Edit</button>
+            <button class="btn btn-sm btn-secondary custom-button-width remove-button">Remove</button>
+        </td>
+    </tr>
+</template>
+
+<template id="modal-subscription-template">
+    <div class="modal fade" id="modal-subscription-config" tabindex="-1" aria-labelledby="edit-subscription-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header p-2 m-1">
+                    <h5 class="modal-title" id="edit-subscription-modal-label">Edit Subscription</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body py-1">
+                    <form>
+                        <div class="form-group">
+                            <label for="subscription-name">Subscription Name:</label>
+                            <input type="text" class="form-control border-secondary-subtle" id="subscription-name"
+                                value="">
+                        </div>
+                        <div class="form-group my-3">
+                            <label for="subscription-link">Subscription Link:</label>
+                            <input type="text" class="form-control border-secondary-subtle" id="subscription-link"
+                                value="">
+                        </div>
+                        <fieldset class="form-group mt-3">
+                            <legend class="m-0 p-0 col-form-label">Media Type:</legend>
+                            <div class="row">
+                                <div class="d-flex align-items-center mt-1">
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="media-type-selector"
+                                            id="video-option" value="Video">
+                                        <label class="form-check-label" for="video-option">Audio & Video</label>
+                                    </div>
+                                    <div class="form-check me-3">
+                                        <input class="form-check-input" type="radio" name="media-type-selector"
+                                            id="audio-option" value="Audio">
+                                        <label class="form-check-label" for="audio-option">Audio Only</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                        <div class="form-group my-3">
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="sync-days">Days to Sync:</label>
+                                    <input type="number" class="form-control border-secondary-subtle" min="0"
+                                        id="sync-days" value="">
+                                </div>
+                                <div class="col-6">
+                                    <label for="keep-days">Days to Keep:</label>
+                                    <input type="number" class="form-control border-secondary-subtle" min="-1"
+                                        id="keep-days" placeholder="Use -1 for Indefinite" value="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group my-3">
+                            <div class="row">
+                                <div class="col-4">
+                                    <label for="search-limit">Search Limit:</label>
+                                    <input type="number" class="form-control border-secondary-subtle" id="search-limit"
+                                        value="">
+                                </div>
+                                <fieldset class="col-8">
+                                    <legend class="col-form-label p-0">Rule for Live Content:</legend>
+                                    <div class="d-flex align-items-center pt-1 mt-1">
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="live-rule-selector"
+                                                id="ignore-rule" value="Ignore">
+                                            <label class="form-check-label" for="ignore-rule">Ignore</label>
+                                        </div>
+                                        <div class="form-check me-3">
+                                            <input class="form-check-input" type="radio" name="live-rule-selector"
+                                                id="allow-rule" value="Allow">
+                                            <label class="form-check-label" for="allow-rule">Allow</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="live-rule-selector"
+                                                id="only-rule" value="Only">
+                                            <label class="form-check-label" for="only-rule">Only</label>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="title-filter-text" class="me-2 mb-0">Title Filter Text:</label>
+                            <div class="form-group d-flex align-items-center">
+                                <input type="text" class="form-control me-2" id="title-filter-text" value="">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="negate-filter">
+                                    <label class="form-check-label" for="negate-filter">Negate</label>
+                                </div>
+                            </div>
+                            <p id="filter-text-description" class="m-0 text-secondary">
+                                Only get items with this text in the title.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer pb-1">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="save-subscription-changes-button">Save
+                        Changes</button>
+                </div>
+                <div id="save-subscription-message" style="display: none;" class="alert alert-success mx-3 mb-2 p-2">
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='subscriptions_script.js') }}"></script>
+{% endblock %}
