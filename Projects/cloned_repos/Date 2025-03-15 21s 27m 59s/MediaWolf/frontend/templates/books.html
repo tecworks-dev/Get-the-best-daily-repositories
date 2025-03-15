@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Books</h1>
+
+<!-- Pills for Search and Recommendations -->
+<div class="btn-group mb-3" role="tablist" id="pills-tab" aria-label="Books Tabs">
+    <a class="btn btn-outline-secondary active" id="pills-books-search-tab" data-bs-toggle="pill"
+        href="#pills-books-search" role="tab" aria-controls="pills-books-search" aria-selected="true">Search</a>
+    <a class="btn btn-outline-secondary" id="pills-books-recommendations-tab" data-bs-toggle="pill"
+        href="#pills-books-recommendations" role="tab" aria-controls="pills-books-recommendations"
+        aria-selected="false">Recommendations</a>
+    <a class="btn btn-outline-secondary" id="pills-lidarr-wanted-tab" data-bs-toggle="pill" href="#pills-lidarr-wanted"
+        role="tab" aria-controls="pills-lidarr-wanted" aria-selected="false">Readarr Wanted</a>
+</div>
+
+<div class="tab-content" id="pills-tab-content">
+    <!-- Search Pill -->
+    <div class="tab-pane fade show active" id="pills-books-search" role="tabpanel">
+        <div class="col-md-10">
+            <div class="input-group mb-3">
+                <input id="books-search-input" type="text" class="form-control" placeholder="Enter search text..."
+                    aria-label="Search..." aria-describedby="books-search-input">
+                <button id="books-search-button" type="button" class="btn btn-primary">
+                    Search
+                    <span id="books-spinner-border" class="spinner-border spinner-border-sm ms-2" role="status"
+                        aria-hidden="true" style="display: none;"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Results Section -->
+        <section id="results-section" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        </section>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='book_script.js') }}" defer></script>
+{% endblock %}

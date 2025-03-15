@@ -1,32 +1,32 @@
 [
   {
+    "name": "giacomo-b/rust-stakeholder",
+    "clone_url": "https://github.com/giacomo-b/rust-stakeholder.git",
+    "stars": 263,
+    "size": 255
+  },
+  {
     "name": "Esmirialqqh/Mev-bot-BNB-ARBITRAGE",
     "clone_url": "https://github.com/Esmirialqqh/Mev-bot-BNB-ARBITRAGE.git",
-    "stars": 93,
-    "size": 98
+    "stars": 204,
+    "size": 226
   },
   {
     "name": "32Arveliondy/MEV-BOT-SOLANA",
     "clone_url": "https://github.com/32Arveliondy/MEV-BOT-SOLANA.git",
-    "stars": 93,
-    "size": 50
-  },
-  {
-    "name": "aigc3d/LHM",
-    "clone_url": "https://github.com/aigc3d/LHM.git",
-    "stars": 88,
-    "size": 4829
-  },
-  {
-    "name": "conikeec/mcpr",
-    "clone_url": "https://github.com/conikeec/mcpr.git",
-    "stars": 55,
-    "size": 68
+    "stars": 140,
+    "size": 253
   },
   {
     "name": "phildougherty/sesame_csm_openai",
     "clone_url": "https://github.com/phildougherty/sesame_csm_openai.git",
-    "stars": 53,
-    "size": 106
+    "stars": 79,
+    "size": 123
+  },
+  {
+    "name": "MediaWolfOrg/MediaWolf",
+    "clone_url": "https://github.com/MediaWolfOrg/MediaWolf.git",
+    "stars": 63,
+    "size": 509
   }
 ]

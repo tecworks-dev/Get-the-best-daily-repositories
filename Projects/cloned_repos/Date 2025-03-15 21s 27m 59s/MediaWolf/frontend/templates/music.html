@@ -1,0 +1,323 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Music</h1>
+
+<!-- Pills for Search and Recommendations -->
+<div class="btn-group mb-3" role="tablist" id="pills-tab" aria-label="Music Tabs">
+    <a class="btn btn-outline-secondary active" id="pills-music-search-tab" data-bs-toggle="pill"
+        href="#pills-music-search" role="tab" aria-controls="pills-music-search" aria-selected="true">Search</a>
+    <a class="btn btn-outline-secondary" id="pills-music-recommendations-tab" data-bs-toggle="pill"
+        href="#pills-music-recommendations" role="tab" aria-controls="pills-music-recommendations"
+        aria-selected="false">Recommendations</a>
+    <a class="btn btn-outline-secondary" id="pills-lidarr-wanted-tab" data-bs-toggle="pill" href="#pills-lidarr-wanted"
+        role="tab" aria-controls="pills-lidarr-wanted" aria-selected="false">Lidarr Wanted</a>
+</div>
+
+<div class="tab-content d-flex flex-column flex-grow-1" id="pills-tab-content">
+    <!-- Search Pill -->
+    <div class="tab-pane fade show active" id="pills-music-search" role="tabpanel">
+        <div class="col-md-10">
+            <div class="input-group mb-3">
+                <input id="music-search-input" type="text" class="form-control" placeholder="Enter search text..."
+                    aria-label="Search..." aria-describedby="music-search-input">
+                <button id="music-search-button" type="button" class="btn btn-primary">
+                    Search for Track
+                    <span id="music-spinner-border" class="spinner-border spinner-border-sm ms-2" role="status"
+                        aria-hidden="true" style="display: none;"></span>
+                </button>
+                <button id="music-search-dropdown"
+                    class="btn btn-primary dropdown-toggle dropdown-toggle-split rounded-end" type="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="visually-hidden">Toggle Dropdown</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#" onclick="updateSearchSelection('Track')">Track</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="updateSearchSelection('Album')">Album</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="updateSearchSelection('Playlist')">Playlist</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#" onclick="updateSearchSelection('Artist')">Artist</a></li>
+                    <li><a class="dropdown-item" href="#" onclick="updateSearchSelection('All')">All</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- Results Section -->
+        <section id="results-section" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <!-- Dynamically populated cards will appear here -->
+        </section>
+    </div>
+
+    <!-- Recommendations Pill -->
+    <div class="tab-pane fade" id="pills-music-recommendations" role="tabpanel">
+        <h5>Sort & Filters</h5>
+        <div class="row mb-3">
+            <div class="col-md-2">
+                <label for="min-listeners" class="form-label">Min Listeners</label>
+                <input type="number" class="form-control" id="min-listeners" placeholder="Min Listeners">
+            </div>
+            <div class="col-md-2">
+                <label for="min-play-count" class="form-label">Min Play Count</label>
+                <input type="number" class="form-control" id="min-play-count" placeholder="Min Play Count">
+            </div>
+            <div class="col-md-2">
+                <label for="artist-select" class="form-label">Select Artist</label>
+                <select class="form-select" id="artist-select">
+                    <option value="all">All</option>
+                    {% for artist in artists %}
+                    <option value="{{ artist }}">{{ artist }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+
+            <div class="col-md-2">
+                <label for="sort-select" class="form-label">Sort By</label>
+                <select class="form-select" id="sort-select">
+                    <option value="random">Random</option>
+                    <option value="plays-desc">Play Count Desc</option>
+                    <option value="plays-asc">Play Count Asc</option>
+                    <option value="listeners-desc">Listeners Desc</option>
+                    <option value="listeners-asc">Listeners Asc</option>
+                </select>
+            </div>
+
+            <div class="col-md-2 align-self-end">
+                <button id="get-recommendations-button" class="btn btn-secondary">Refresh</button>
+            </div>
+        </div>
+        <hr>
+        <div id="recommendations-results" class="list-group mt-3">
+            <!-- Artits Cards -->
+            <div class="container-fluid" id="artist-container">
+                <div class="row" id="artist-row">
+                </div>
+            </div>
+            <div id="scroll-sentinel"></div>
+        </div>
+    </div>
+
+    <!-- Lidarr Wanted -->
+    <div class="tab-pane fade" id="pills-lidarr-wanted" role="tabpanel">
+        <div class="container-fluid mt-2 lidarr-card-container">
+            <div class="row cards-row h-100">
+                <div class="col-md-6 col-12 mb-3">
+                    <div class="card bg-secondary-subtle h-100" id="lidarr-card">
+                        <div class="card-body d-flex flex-column">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="{{url_for('static', filename='lidarr.svg')}}" alt="Logo"
+                                        class="logo img-fluid" style="width: 50px; height: auto;">
+                                </div>
+                                <div class="col-auto d-flex align-items-center justify-content-start p-0">
+                                    <h2 class="panel-title mb-0">Lidarr</h2>
+                                </div>
+                            </div>
+                            <div class="btn-group mt-1">
+                                <button class="btn btn-primary w-100" id="get-lidarr-wanted-btn">
+                                    <span class="spinner-border spinner-border-sm d-none" id="lidarr-spinner"
+                                        role="status" aria-hidden="true"></span>
+                                    Refresh
+                                </button>
+                            </div>
+                            <div class="container non-scrollable my-1 p-0" id="select-all">
+                                <div id="lidarr-progress-status-bar" class="progress">
+                                    <div class="progress-bar-striped bg-success" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="container scrollable p-0">
+                                <div class="table">
+                                    <table class="table table-striped" id="lidarr-table">
+                                        <thead class="thead-sticky">
+                                            <tr>
+                                                <th>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="select-all-checkbox">
+                                                    </div>
+                                                </th>
+                                                <th>Album Name</th>
+                                                <th class="text-center">Wanted</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Data will be populated dynamically using JavaScript -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 mb-3">
+                    <div class="card bg-secondary-subtle h-100" id="ytdlp-card">
+                        <div class="card-body d-flex flex-column">
+                            <div class="row">
+                                <div class="col-auto">
+                                    <img src="{{url_for('static', filename='yt_dlp.png')}}" alt="Logo"
+                                        class="logo img-fluid" style="width: 50px; height: auto;">
+                                </div>
+                                <div class="col-auto d-flex align-items-center justify-content-start p-0">
+                                    <h2 class="panel-title mb-0">yt_dlp</h2>
+                                </div>
+                            </div>
+                            <div class="btn-group mt-1">
+                                <button class="btn btn-primary w-100 " id="start-ytdlp-btn">
+                                    <span class="spinner-border spinner-border-sm d-none" id="ytdlp-spinner"
+                                        role="status" aria-hidden="true"></span>
+                                    Download</button>
+                                <button class="btn btn-warning w-100 " id="stop-ytdlp-btn">Stop</button>
+                                <button class="btn btn-danger w-100 " id="reset-ytdlp-btn">Reset</button>
+                            </div>
+                            <div class="container non-scrollable my-1 p-0" id="progress-bar">
+                                <div id="ytdlp-progress-status-bar" class="progress">
+                                    <div class="progress-bar-striped bg-success" role="progressbar" aria-valuenow="100"
+                                        aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="container scrollable p-0">
+                                <div class="table">
+                                    <table class="table table-striped" id="ytdlp-table">
+                                        <thead class="thead-sticky">
+                                            <tr>
+                                                <th>Search Item</th>
+                                                <th class="text-center">Status</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Data will be populated dynamically using JavaScript -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Track Item Template -->
+<template id="spotify-track-item-template">
+    <div class="col">
+        <div class="card">
+            <img src="" alt="track image" class="card-img-top track-img">
+            <div class="card-body">
+                <h5 class="card-title">
+                    <span class="artist"></span> - <span class="name"></span>
+                </h5>
+                <h6 class="card-subtitle mb-2 text-muted">Type: <span class="type">Track</span></h6>
+                <a href="" class="btn btn-primary download w-100" data-url="">Download</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Album Item Template -->
+<template id="spotify-album-item-template">
+    <div class="col">
+        <div class="card">
+            <img src="" alt="album image" class="card-img-top album-img">
+            <div class="card-body">
+                <h5 class="card-title name"></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Artist: <span class="artist"></span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Type: <span class="type">Album</span></h6>
+                <a href="" class="btn btn-primary download w-100" data-url="">Download</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Artist Item Template -->
+<template id="spotify-artist-item-template">
+    <div class="col">
+        <div class="card">
+            <img src="" alt="artist image" class="card-img-top artist-img">
+            <div class="card-body">
+                <h5 class="card-title name"></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Followers: <span class="followers"></span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Type: <span class="type">Artist</span></h6>
+                <a href="" class="btn btn-primary download w-100" data-url="">Download</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Playlist Item Template -->
+<template id="spotify-playlist-item-template">
+    <div class="col">
+        <div class="card">
+            <img src="" alt="playlist image" class="card-img-top playlist-img">
+            <div class="card-body">
+                <h5 class="card-title name"></h5>
+                <h6 class="card-subtitle mb-2 text-muted">Owner: <span class="owner"></span></h6>
+                <h6 class="card-subtitle mb-2 text-muted">Type: <span class="type">Playlist</span></h6>
+                <a href="" class="btn btn-primary download w-100" data-url="">Download</a>
+            </div>
+        </div>
+    </div>
+</template>
+
+<template id="artist-template">
+    <div class="col-12 col-md-4 col-xxl-2 mb-3" id="artist-column">
+        <div class="card">
+            <div class="card-body">
+                <div class="status-indicator">
+                    <div class="led"></div>
+                </div>
+                <h5 class="card-title"></h5>
+                <p class="card-text genre"></p>
+                <div class="artist-img-container">
+                    <img src="" class="card-img-top" alt="">
+                    <div class="artist-img-overlay"></div>
+                    <div class="button-container">
+                        <button class="btn btn-primary add-to-lidarr-btn">Add to Lidarr</button>
+                        <button class="btn btn-success get-overview-btn">Overview</button>
+                        <button class="btn btn-warning dismiss-artist-btn">Dismiss</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col d-flex justify-content-between">
+                        <p class="card-text listeners mb-0"></p>
+                        <p class="card-text play-count mb-0 text-end"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>
+
+<!-- Bio Modal -->
+<div class="modal fade" id="bio-modal-modal" tabindex="-1" aria-labelledby="bio-modal-title" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="bio-modal-title">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Toast -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="toast-template" class="toast d-none" role="alert" aria-live="assertive" aria-atomic="true"
+        data-bs-delay="5000">
+        <div class="toast-header">
+            <strong class="me-auto"></strong>
+            <small class="text-muted"></small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='music_script.js') }}" defer></script>
+{% endblock %}

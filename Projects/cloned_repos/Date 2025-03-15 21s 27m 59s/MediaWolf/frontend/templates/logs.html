@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="mb-4">Logs</h1>
+
+<div class="card p-3 bg-light">
+    <pre id="logContent" class="text-dark">{{ logs }}</pre>
+</div>
+
+<button id="refreshLogs" class="btn btn-primary mt-3"><i class="bi bi-arrow-clockwise"></i> Refresh Logs</button>
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='logs_script.js') }}" defer></script>
+{% endblock %}

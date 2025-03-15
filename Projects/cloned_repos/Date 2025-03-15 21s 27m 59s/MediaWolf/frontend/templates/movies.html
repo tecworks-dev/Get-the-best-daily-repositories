@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Movies</h1>
+
+<!-- Pills for Search and Recommendations -->
+<div class="btn-group mb-3" role="tablist" id="pills-tab" aria-label="Movies Tabs">
+    <a class="btn btn-outline-secondary active" id="pills-movies-search-tab" data-bs-toggle="pill"
+        href="#pills-movies-search" role="tab" aria-controls="pills-movies-search" aria-selected="true">Search</a>
+    <a class="btn btn-outline-secondary" id="pills-movies-recommendations-tab" data-bs-toggle="pill"
+        href="#pills-movies-recommendations" role="tab" aria-controls="pills-movies-recommendations"
+        aria-selected="false">Recommendations</a>
+</div>
+
+<div class="tab-content" id="pills-tab-content">
+    <!-- Search Pill -->
+    <div class="tab-pane fade show active" id="pills-movie-search" role="tabpanel">
+        <div class="col-md-10">
+            <div class="input-group mb-3">
+                <input id="movie-search-input" type="text" class="form-control" placeholder="Enter search text..."
+                    aria-label="Search..." aria-describedby="movie-search-input">
+                <button id="movie-search-button" type="button" class="btn btn-primary">
+                    Search
+                    <span id="movie-spinner-border" class="spinner-border spinner-border-sm ms-2" role="status"
+                        aria-hidden="true" style="display: none;"></span>
+                </button>
+            </div>
+        </div>
+        <!-- Results Section -->
+        <section id="results-section" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        </section>
+    </div>
+</div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{{ url_for('static', filename='movies_script.js') }}" defer></script>
+{% endblock %}
