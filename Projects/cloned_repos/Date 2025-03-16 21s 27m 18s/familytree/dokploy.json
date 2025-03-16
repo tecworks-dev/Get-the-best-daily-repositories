@@ -1,0 +1,5 @@
+{
+  "port": 3001,
+  "buildCommand": "npm run build",
+  "startCommand": "npm run start"
+} 
