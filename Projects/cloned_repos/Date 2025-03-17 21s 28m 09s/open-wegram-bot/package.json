@@ -1,0 +1,16 @@
+{
+  "name": "open-wegram-bot",
+  "version": "0.2.4",
+  "type": "module",
+  "description": "A two-way private messaging Telegram bot using Cloudflare Workers or Vercel",
+  "main": "src/worker.js",
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "author": "wozulong",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "vercel": "^41.4.1",
+    "wrangler": "^4.0.0"
+  }
+}
