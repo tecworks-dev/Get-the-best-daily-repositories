@@ -1,0 +1,11 @@
+# OS General
+Thumbs.db
+.DS_Store
+
+# Develop tools
+node_modules/
+.wrangler/
+.vercel/
+.vscode/
+.idea/
+*.swp
