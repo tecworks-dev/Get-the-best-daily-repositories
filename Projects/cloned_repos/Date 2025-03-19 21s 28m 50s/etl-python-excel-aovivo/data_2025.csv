@@ -1,0 +1,420 @@
+Organizador,Ano_Mes,Dia_da_Semana,Tipo_Dia,Objetivo,Date,AdSet_name,Amount_spent,Link_clicks,Impressions,Conversions,Tipo_de_Anúncio,Fase
+3533,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,331.16,222,25359,81,Video,12º Lançamento | Leads
+3534,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,midfunnel_full_dados_video_cara_voce_ja_utilizou_python_pra_criar_uma_etl_pipeline,0.00,,0,2,Video,12º Lançamento | Leads
+3535,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,255.66,197,13961,69,Video,12º Lançamento | Leads
+3536,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,333.13,324,34670,123,Video,12º Lançamento | Leads
+3537,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,101.71,63,9816,27,Video,12º Lançamento | Leads
+3538,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,154.57,81,10331,23,Video,12º Lançamento | Leads
+3539,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,168.60,124,21865,38,Video,12º Lançamento | Leads
+3540,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,topfunnel_LAL1_compradores_video_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,141.76,40,5860,15,Video,12º Lançamento | Leads
+3541,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,60.73,37,5635,14,Video,12º Lançamento | Leads
+3542,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-01,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,3.23,1,456,,Video,12º Lançamento | Leads
+3543,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,316.75,220,24795,76,Video,12º Lançamento | Leads
+3544,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,midfunnel_full_dados_video_cara_voce_ja_utilizou_python_pra_criar_uma_etl_pipeline,0.00,,0,,Video,12º Lançamento | Leads
+3545,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,280.37,182,14359,69,Video,12º Lançamento | Leads
+3546,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,366.90,349,38101,134,Video,12º Lançamento | Leads
+3547,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,143.38,103,13911,21,Video,12º Lançamento | Leads
+3548,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,152.28,100,11134,36,Video,12º Lançamento | Leads
+3549,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,197.02,137,28188,46,Video,12º Lançamento | Leads
+3550,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,topfunnel_LAL1_compradores_video_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,24.78,13,1018,3,Video,12º Lançamento | Leads
+3552,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-02,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,2.85,2,287,1,Video,12º Lançamento | Leads
+3553,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,302.00,201,24543,57,Video,12º Lançamento | Leads
+3554,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,279.48,198,16827,60,Video,12º Lançamento | Leads
+3556,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,142.43,86,15555,20,Video,12º Lançamento | Leads
+3557,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,136.87,107,11659,26,Video,12º Lançamento | Leads
+3558,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,188.55,152,27606,42,Video,12º Lançamento | Leads
+3559,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,28.38,18,2304,7,Video,12º Lançamento | Leads
+3560,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-03,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,0.77,2,94,1,Video,12º Lançamento | Leads
+3561,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,317.93,184,21733,70,Video,12º Lançamento | Leads
+3562,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,midfunnel_full_dados_video_cara_voce_ja_utilizou_python_pra_criar_uma_etl_pipeline,0.00,,0,1,Video,12º Lançamento | Leads
+3563,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,265.88,217,13997,71,Video,12º Lançamento | Leads
+3564,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,336.04,246,38289,84,Video,12º Lançamento | Leads
+3565,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,144.89,69,11732,22,Video,12º Lançamento | Leads
+3566,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,137.12,105,9306,36,Video,12º Lançamento | Leads
+3567,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,185.92,124,26617,33,Video,12º Lançamento | Leads
+3568,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,49.04,35,3543,15,Video,12º Lançamento | Leads
+3569,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-04,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,2.54,1,237,,Video,12º Lançamento | Leads
+3570,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,334.61,181,20218,62,Video,12º Lançamento | Leads
+3571,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,302.85,190,12160,64,Video,12º Lançamento | Leads
+3572,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,369.70,230,38722,91,Video,12º Lançamento | Leads
+3573,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,160.26,83,10449,36,Video,12º Lançamento | Leads
+3574,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,161.32,87,8267,44,Video,12º Lançamento | Leads
+3575,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,211.45,135,28916,50,Video,12º Lançamento | Leads
+3576,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,37.68,19,3140,10,Video,12º Lançamento | Leads
+3577,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-05,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,0.79,1,55,2,Video,12º Lançamento | Leads
+3578,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,309.25,157,22218,57,Video,12º Lançamento | Leads
+3579,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,midfunnel_full_dados_video_cara_voce_ja_utilizou_python_pra_criar_uma_etl_pipeline,0.00,,0,1,Video,12º Lançamento | Leads
+3580,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,257.38,145,12530,44,Video,12º Lançamento | Leads
+3582,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,85.12,48,6861,17,Video,12º Lançamento | Leads
+3583,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,190.40,120,11053,38,Video,12º Lançamento | Leads
+3584,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,244.85,149,34480,37,Video,12º Lançamento | Leads
+3585,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,53.35,26,4674,7,Video,12º Lançamento | Leads
+3586,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-06,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,12.02,5,1285,3,Video,12º Lançamento | Leads
+3587,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,320.32,167,22100,66,Video,12º Lançamento | Leads
+3588,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,278.83,134,13107,60,Video,12º Lançamento | Leads
+3589,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,448.96,221,43600,82,Video,12º Lançamento | Leads
+3590,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,49.92,30,4476,8,Video,12º Lançamento | Leads
+3591,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,221.40,118,13597,38,Video,12º Lançamento | Leads
+3592,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,283.45,148,37115,44,Video,12º Lançamento | Leads
+3593,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,36.74,21,3014,9,Video,12º Lançamento | Leads
+3594,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-07,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,8.46,9,905,2,Video,12º Lançamento | Leads
+3595,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,334.14,149,18184,49,Video,12º Lançamento | Leads
+3597,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,435.36,245,38512,84,Video,12º Lançamento | Leads
+3598,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,53.22,40,3628,12,Video,12º Lançamento | Leads
+3599,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,80.36,41,3738,24,Video,12º Lançamento | Leads
+3600,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,453.15,240,52047,74,Video,12º Lançamento | Leads
+3601,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,9.56,3,693,2,Video,12º Lançamento | Leads
+3602,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-08,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,1.79,1,165,,Video,12º Lançamento | Leads
+3603,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,310.26,122,18832,48,Video,12º Lançamento | Leads
+3604,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,0.00,,0,2,Video,12º Lançamento | Leads
+3605,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,383.25,179,34734,54,Video,12º Lançamento | Leads
+3606,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,48.53,23,3082,12,Video,12º Lançamento | Leads
+3607,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,topfunnel_LAL1_compradores_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade,500.00,,0,,Video,12º Lançamento | Leads
+3608,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-09,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,394.24,213,46007,66,Video,12º Lançamento | Leads
+3609,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-10,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,313.52,146,19939,50,Video,12º Lançamento | Leads
+3610,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-10,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,0.00,,0,2,Video,12º Lançamento | Leads
+3611,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-10,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,374.03,188,31834,76,Video,12º Lançamento | Leads
+3612,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-10,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,47.87,24,3285,7,Video,12º Lançamento | Leads
+3613,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-10,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,371.76,167,40021,46,Video,12º Lançamento | Leads
+3614,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-11,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,317.85,171,17663,64,Video,12º Lançamento | Leads
+3615,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-11,midfunnel_full_dados_video_se_voce_quer_aprender_python_etl_engenharia_de_dados_de_verdade_michele,0.00,,0,2,Video,12º Lançamento | Leads
+3616,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-11,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,371.96,172,26678,58,Video,12º Lançamento | Leads
+3617,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-11,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,45.91,19,2659,8,Video,12º Lançamento | Leads
+3618,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-11,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,355.87,148,31831,39,Video,12º Lançamento | Leads
+3620,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-12,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,330.70,146,19407,40,Video,12º Lançamento | Leads
+3621,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-12,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,423.54,211,32165,77,Video,12º Lançamento | Leads
+3622,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-12,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,53.85,5000000,3334,10,Video,12º Lançamento | Leads
+3623,2025 | Janeiro,Domingo,194,Leads,2025-01-12,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,451.52,,41730,59,Video,12º Lançamento | Leads
+3624,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-13,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,323.33,125,18437,48,Video,12º Lançamento | Leads
+3625,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-13,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,410.42,144,30467,63,Video,12º Lançamento | Leads
+3626,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-13,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,51.15,16,3721,7,Video,12º Lançamento | Leads
+3627,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-13,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,427.83,176,39766,58,Video,12º Lançamento | Leads
+3630,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-14,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,37.43,23,2102,10,Video,12º Lançamento | Live
+3631,2025 | Janeiro,Terça-Feira,Dia útil,Leads,2025-01-14,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,317.39,116,23269,46,Video,12º Lançamento | Live
+3636,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-15,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3638,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-15,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3639,2025 | Janeiro,Quarta-Feira,Dia útil,Leads,2025-01-15,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3644,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-16,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3645,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-16,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,1,Video,12º Lançamento | Vendas
+3646,2025 | Janeiro,Quinta-Feira,Dia útil,Leads,2025-01-16,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3651,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-17,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3652,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-17,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3653,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-17,topfunnel_LAL1_compradores_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3654,2025 | Janeiro,Sexta-Feira,Dia útil,Leads,2025-01-17,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3659,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-18,midfunnel_full_dados_video_cara_meu_chefe_acabou_de_mandar_um_arquivo_com_1_bilhao_de_linhas,0.00,,0,,Video,12º Lançamento | Vendas
+3660,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-18,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3661,2025 | Janeiro,Sábado,Final de Semana,Leads,2025-01-18,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,1,Video,12º Lançamento | Vendas
+3665,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-19,midfunnel_full_dados_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3666,2025 | Janeiro,Domingo,Final de Semana,Leads,2025-01-19,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3671,2025 | Janeiro,Segunda-Feira,Dia útil,Leads,2025-01-20,topfunnel_LAL1_compradores_video_todo_mundo_fala_que_databricks_spark_sao_as_melhores_ferramentas,0.00,,0,,Video,12º Lançamento | Vendas
+3683,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,48.99,55,3562,25,Video,13º Lançamento | Leads
+3684,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,46.19,62,3284,30,Video,13º Lançamento | Leads
+3685,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,29.62,8,1931,1,Video,13º Lançamento | Leads
+3686,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,29.66,17,2103,7,Video,13º Lançamento | Leads
+3687,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,39.18,31,2090,14,Video,13º Lançamento | Leads
+3688,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,38.15,14,1464,6,Video,13º Lançamento | Leads
+3689,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,38.54,33,2329,13,Video,13º Lançamento | Leads
+3690,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,37.52,31,2730,18,Video,13º Lançamento | Leads
+3691,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,16.39,19,1425,8,Video,13º Lançamento | Leads
+3692,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,16.66,5,1302,2,Video,13º Lançamento | Leads
+3693,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,16.70,5,1008,2,Video,13º Lançamento | Leads
+3694,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-03,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,16.57,6,1084,1,Video,13º Lançamento | Leads
+3695,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,124.27,99,7495,59,Video,13º Lançamento | Leads
+3696,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,120.14,95,7000,44,Video,13º Lançamento | Leads
+3697,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,63.62,23,4036,7,Video,13º Lançamento | Leads
+3698,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,59.60,21,3999,8,Video,13º Lançamento | Leads
+3699,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,96.74,50,5134,19,Video,13º Lançamento | Leads
+3700,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,96.87,46,3603,26,Video,13º Lançamento | Leads
+3701,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,123.66,90,6452,53,Video,13º Lançamento | Leads
+3702,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,125.03,109,7988,55,Video,13º Lançamento | Leads
+3703,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,43.83,17,3164,7,Video,13º Lançamento | Leads
+3704,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,45.20,12,3047,2,Video,13º Lançamento | Leads
+3705,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,43.08,16,2397,6,Video,13º Lançamento | Leads
+3706,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-04,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,42.02,19,2103,10,Video,13º Lançamento | Leads
+3707,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,145.68,112,9893,48,Video,13º Lançamento | Leads
+3708,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,149.31,112,9956,54,Video,13º Lançamento | Leads
+3709,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,27.83,23,1906,11,Video,13º Lançamento | Leads
+3710,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,29.57,17,2130,9,Video,13º Lançamento | Leads
+3711,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,102.21,54,5337,25,Video,13º Lançamento | Leads
+3712,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,102.36,42,3663,10,Video,13º Lançamento | Leads
+3713,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,149.68,90,8370,44,Video,13º Lançamento | Leads
+3714,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,150.61,93,10158,35,Video,13º Lançamento | Leads
+3715,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,38.71,14,3273,5,Video,13º Lançamento | Leads
+3716,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,37.97,29,3245,9,Video,13º Lançamento | Leads
+3717,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,39.58,15,2038,6,Video,13º Lançamento | Leads
+3718,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-05,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,39.19,15,2051,4,Video,13º Lançamento | Leads
+3719,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,193.07,138,13258,66,Video,13º Lançamento | Leads
+3720,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,191.09,116,12874,50,Video,13º Lançamento | Leads
+3721,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,46.24,43,3451,19,Video,13º Lançamento | Leads
+3722,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,45.09,27,3500,15,Video,13º Lançamento | Leads
+3723,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,24.16,20,1482,5,Video,13º Lançamento | Leads
+3724,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,25.19,7,920,6,Video,13º Lançamento | Leads
+3725,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,189.29,95,11733,40,Video,13º Lançamento | Leads
+3726,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,189.07,126,13955,47,Video,13º Lançamento | Leads
+3727,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,47.21,22,5074,9,Video,13º Lançamento | Leads
+3728,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,47.05,23,4591,6,Video,13º Lançamento | Leads
+3729,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,47.02,20,2606,8,Video,13º Lançamento | Leads
+3730,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-06,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,46.51,16,2783,6,Video,13º Lançamento | Leads
+3731,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,202.03,125,12297,66,Video,13º Lançamento | Leads
+3732,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,202.03,129,12449,56,Video,13º Lançamento | Leads
+3733,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,56.02,39,3754,19,Video,13º Lançamento | Leads
+3734,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,58.30,29,3812,10,Video,13º Lançamento | Leads
+3735,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,201.83,115,12021,42,Video,13º Lançamento | Leads
+3736,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,202.12,127,14547,35,Video,13º Lançamento | Leads
+3737,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,51.39,30,5266,9,Video,13º Lançamento | Leads
+3738,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,52.00,32,5005,10,Video,13º Lançamento | Leads
+3739,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,46.08,11,2279,7,Video,13º Lançamento | Leads
+3740,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,topfunnel_LAL1_compradores_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,46.21,21,2527,9,Video,13º Lançamento | Leads
+3741,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_original,8.25,1,381,1,Video,13º Lançamento | Leads
+3742,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-07,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_teste,7.82,,369,,Video,13º Lançamento | Leads
+3743,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,199.25,123,13108,54,Video,13º Lançamento | Leads
+3744,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,199.95,100,12703,43,Video,13º Lançamento | Leads
+3745,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,83.21,49,5422,23,Video,13º Lançamento | Leads
+3746,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,83.16,57,5144,30,Video,13º Lançamento | Leads
+3747,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,198.63,115,11289,48,Video,13º Lançamento | Leads
+3748,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,198.44,97,14347,30,Video,13º Lançamento | Leads
+3749,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,66.97,39,5897,14,Video,13º Lançamento | Leads
+3750,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,46.66,25,3935,6,Video,13º Lançamento | Leads
+3751,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_original,97.20,21,3719,8,Video,13º Lançamento | Leads
+3752,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_teste,98.03,49,5020,10,Video,13º Lançamento | Leads
+3753,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_teste,103.45,38,4032,9,Video,13º Lançamento | Leads
+3754,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-08,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_original,103.73,32,4633,14,Video,13º Lançamento | Leads
+3755,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,214.08,135,15111,50,Video,13º Lançamento | Leads
+3756,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,214.90,100,14207,37,Video,13º Lançamento | Leads
+3757,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,88.09,56,5696,28,Video,13º Lançamento | Leads
+3758,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,89.55,57,5372,34,Video,13º Lançamento | Leads
+3759,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,217.08,86,11254,36,Video,13º Lançamento | Leads
+3760,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,214.73,109,13948,41,Video,13º Lançamento | Leads
+3761,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,71.69,43,5371,13,Video,13º Lançamento | Leads
+3762,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,54.79,29,3831,14,Video,13º Lançamento | Leads
+3763,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_original,101.55,42,3621,13,Video,13º Lançamento | Leads
+3764,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_teste,99.24,28,5208,5,Video,13º Lançamento | Leads
+3765,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-09,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_teste,100.04,32,4348,13,Video,13º Lançamento | Leads
+3767,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,242.61,133,19997,47,Video,13º Lançamento | Leads
+3768,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,241.78,116,17498,49,Video,13º Lançamento | Leads
+3769,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,98.49,45,7064,18,Video,13º Lançamento | Leads
+3770,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,98.44,54,6737,22,Video,13º Lançamento | Leads
+3771,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_original,0.00,,0,1,Video,13º Lançamento | Leads
+3772,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,252.31,96,14494,35,Video,13º Lançamento | Leads
+3773,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,250.10,112,18635,41,Video,13º Lançamento | Leads
+3774,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,82.69,34,6739,13,Video,13º Lançamento | Leads
+3775,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,62.01,32,4945,8,Video,13º Lançamento | Leads
+3777,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_teste,26.41,6,1301,3,Video,13º Lançamento | Leads
+3778,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_teste,23.81,8,1039,3,Video,13º Lançamento | Leads
+3779,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-10,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_original,25.03,15,1359,5,Video,13º Lançamento | Leads
+3780,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,289.74,116,18541,47,Video,13º Lançamento | Leads
+3781,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,290.11,147,16846,56,Video,13º Lançamento | Leads
+3782,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,114.17,62,6995,28,Video,13º Lançamento | Leads
+3783,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,114.58,73,7400,38,Video,13º Lançamento | Leads
+3784,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_se_vc_acha_que_o_excel_resolve_todos_os_seus_problemas_LP_teste,0.00,,0,,Video,13º Lançamento | Leads
+3785,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,275.37,126,14556,52,Video,13º Lançamento | Leads
+3786,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,274.40,142,17242,53,Video,13º Lançamento | Leads
+3787,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,93.84,56,6728,22,Video,13º Lançamento | Leads
+3788,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,72.08,36,4950,17,Video,13º Lançamento | Leads
+3789,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-11,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_original,0.00,,0,,Video,13º Lançamento | Leads
+3790,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,244.59,111,14867,41,Video,13º Lançamento | Leads
+3791,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,245.87,115,13626,52,Video,13º Lançamento | Leads
+3792,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,123.51,66,7392,35,Video,13º Lançamento | Leads
+3793,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,124.16,71,7545,32,Video,13º Lançamento | Leads
+3794,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,258.92,135,14671,45,Video,13º Lançamento | Leads
+3795,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,256.46,105,17292,33,Video,13º Lançamento | Leads
+3796,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,99.05,57,7407,19,Video,13º Lançamento | Leads
+3797,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,76.61,32,5947,13,Video,13º Lançamento | Leads
+3798,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-12,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_teste,0.00,,0,,Video,13º Lançamento | Leads
+3799,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,241.74,136,16678,49,Video,13º Lançamento | Leads
+3801,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,145.68,88,8501,44,Video,13º Lançamento | Leads
+3802,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,145.63,82,9305,30,Video,13º Lançamento | Leads
+3803,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,58.07,29,3656,16,Video,13º Lançamento | Leads
+3804,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,59.62,32,4094,8,Video,13º Lançamento | Leads
+3805,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,99.94,43,8525,14,Video,13º Lançamento | Leads
+3806,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-13,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,77.87,36,6022,15,Video,13º Lançamento | Leads
+3807,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,227.72,111,15237,38,Video,13º Lançamento | Leads
+3808,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,223.04,112,14486,54,Video,13º Lançamento | Leads
+3809,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,152.54,87,8849,43,Video,13º Lançamento | Leads
+3810,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,152.03,81,9325,39,Video,13º Lançamento | Leads
+3811,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,0.00,,0,1,Video,13º Lançamento | Leads
+3812,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,97.84,50,7552,20,Video,13º Lançamento | Leads
+3813,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,75.82,45,5915,15,Video,13º Lançamento | Leads
+3814,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-14,midfunnel_full_dados_video_que_bagunca_esse_escritorio_parece_os_dados_da_tua_empresa_LP_original,0.00,,0,1,Video,13º Lançamento | Leads
+3815,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,216.84,119,15030,48,Video,13º Lançamento | Leads
+3816,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,221.29,127,15812,37,Video,13º Lançamento | Leads
+3817,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,147.48,73,8831,36,Video,13º Lançamento | Leads
+3818,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,148.04,88,9281,42,Video,13º Lançamento | Leads
+3819,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,0.00,,0,,Video,13º Lançamento | Leads
+3820,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,94.04,47,7624,17,Video,13º Lançamento | Leads
+3821,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,70.91,36,5917,11,Video,13º Lançamento | Leads
+3822,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-15,midfunnel_full_dados_video_aposto_que_voce_ja_passou_raiva_com_erro_de_excel_LP_original,0.00,,0,,Video,13º Lançamento | Leads
+3823,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,248.60,146,19617,50,Video,13º Lançamento | Leads
+3824,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,248.76,132,19624,43,Video,13º Lançamento | Leads
+3825,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,166.60,92,11892,44,Video,13º Lançamento | Leads
+3826,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,166.38,91,11795,36,Video,13º Lançamento | Leads
+3827,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,0.00,,0,1,Video,13º Lançamento | Leads
+3828,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,106.55,66,10503,15,Video,13º Lançamento | Leads
+3829,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-16,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,82.66,38,8149,8,Video,13º Lançamento | Leads
+3830,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,238.02,111,19554,36,Video,13º Lançamento | Leads
+3831,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,238.96,132,19699,50,Video,13º Lançamento | Leads
+3832,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,162.56,90,12379,41,Video,13º Lançamento | Leads
+3833,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,162.92,93,12443,39,Video,13º Lançamento | Leads
+3834,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,0.00,,0,,Video,13º Lançamento | Leads
+3835,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,104.05,48,9455,10,Video,13º Lançamento | Leads
+3836,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-17,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,79.96,44,7298,10,Video,13º Lançamento | Leads
+3837,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,166.83,81,12291,27,Video,13º Lançamento | Live
+3838,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,166.31,80,12430,37,Video,13º Lançamento | Live
+3839,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,113.91,61,8023,27,Video,13º Lançamento | Live
+3840,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,113.10,57,7731,30,Video,13º Lançamento | Live
+3841,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,midfunnel_full_dados_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,0.00,,0,,Video,13º Lançamento | Live
+3842,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,72.46,37,6037,7,Video,13º Lançamento | Live
+3843,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-18,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_teste,54.76,26,4679,8,Video,13º Lançamento | Live
+3847,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-19,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3848,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-19,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,0.00,,0,,Video,13º Lançamento | Vendas
+3849,2025 | Fevereiro,Quarta-Feira,Dia útil,Leads,2025-02-19,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,0.00,,0,,Video,13º Lançamento | Vendas
+3854,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-20,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,0.00,,0,2,Video,13º Lançamento | Vendas
+3855,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-20,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3856,2025 | Fevereiro,Quinta-Feira,Dia útil,Leads,2025-02-20,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3861,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-21,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_original,0.00,,0,,Video,13º Lançamento | Vendas
+3862,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-21,midfunnel_full_dados_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3863,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-21,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3864,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-21,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_original,0.00,,0,,Video,13º Lançamento | Vendas
+3870,2025 | Fevereiro,Sábado,Final de Semana,Leads,2025-02-22,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3873,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-23,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,1,Video,13º Lançamento | Vendas
+3874,2025 | Fevereiro,Domingo,Final de Semana,Leads,2025-02-23,topfunnel_LAL1_compradores_video_as_pessoas_falam_que_databricks_eh_uma_das_melhores_ferramentas_LP_original,0.00,,0,,Video,13º Lançamento | Vendas
+3878,2025 | Fevereiro,Segunda-Feira,Dia útil,Leads,2025-02-24,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3883,2025 | Fevereiro,Terça-Feira,Dia útil,Leads,2025-02-25,topfunnel_LAL1_compradores_video_voce_acha_que_python_eh_dificil_LP_teste,0.00,,0,,Video,13º Lançamento | Vendas
+3889,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-28,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,3.80,,212,,Video,13º Lançamento | Vendas
+3890,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-28,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,2.97,4,189,,Video,13º Lançamento | Vendas
+3891,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-28,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,1.95,1,130,,Video,13º Lançamento | Vendas
+3892,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-28,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,2.24,1,127,,Video,13º Lançamento | Vendas
+3893,2025 | Fevereiro,Sexta-Feira,Dia útil,Leads,2025-02-28,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,3.54,2,325,,Video,13º Lançamento | Vendas
+3894,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,89.76,50,5421,20,Video,14º Lançamento | Leads
+3895,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,90.97,85,6437,25,Video,14º Lançamento | Leads
+3896,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,91.98,40,5983,9,Video,14º Lançamento | Leads
+3897,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,91.70,54,7070,17,Video,14º Lançamento | Leads
+3898,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,88.67,46,7043,17,Video,14º Lançamento | Leads
+3899,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,50.42,26,1776,10,Video,14º Lançamento | Leads
+3900,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,50.87,37,3956,15,Video,14º Lançamento | Leads
+3901,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,51.03,13,2607,5,Video,14º Lançamento | Leads
+3902,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,51.36,21,2875,12,Video,14º Lançamento | Leads
+3903,2025 | Março,Sábado,Final de Semana,Leads,2025-03-01,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,51.35,26,2859,7,Video,14º Lançamento | Leads
+3904,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,98.78,40,5101,17,Video,14º Lançamento | Leads
+3905,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,101.49,76,7603,34,Video,14º Lançamento | Leads
+3907,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,100.42,35,6238,11,Video,14º Lançamento | Leads
+3908,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,97.77,44,5746,14,Video,14º Lançamento | Leads
+3909,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,56.00,27,2008,12,Video,14º Lançamento | Leads
+3910,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,56.40,27,4804,9,Video,14º Lançamento | Leads
+3911,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,63.82,17,2478,8,Video,14º Lançamento | Leads
+3912,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,55.86,17,2306,4,Video,14º Lançamento | Leads
+3913,2025 | Março,Domingo,Final de Semana,Leads,2025-03-02,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,56.53,19,2083,10,Video,14º Lançamento | Leads
+3914,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,91.47,40,4682,18,Video,14º Lançamento | Leads
+3915,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,94.71,85,7501,31,Video,14º Lançamento | Leads
+3916,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,83.44,35,6319,9,Video,14º Lançamento | Leads
+3917,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,89.88,29,4888,8,Video,14º Lançamento | Leads
+3918,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,92.30,34,5888,8,Video,14º Lançamento | Leads
+3919,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,50.40,13,1837,7,Video,14º Lançamento | Leads
+3920,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,51.55,35,4373,18,Video,14º Lançamento | Leads
+3921,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,47.61,9,2477,3,Video,14º Lançamento | Leads
+3922,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,50.30,10,1893,4,Video,14º Lançamento | Leads
+3923,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-03,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,48.06,16,1718,6,Video,14º Lançamento | Leads
+3924,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,92.85,41,3950,17,Video,14º Lançamento | Leads
+3925,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,84.72,77,8050,32,Video,14º Lançamento | Leads
+3926,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,82.09,38,6833,9,Video,14º Lançamento | Leads
+3927,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,90.04,37,2794,15,Video,14º Lançamento | Leads
+3928,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,89.06,49,6405,13,Video,14º Lançamento | Leads
+3929,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,51.95,23,2142,13,Video,14º Lançamento | Leads
+3930,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,48.30,22,4565,14,Video,14º Lançamento | Leads
+3931,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,47.25,16,3192,7,Video,14º Lançamento | Leads
+3932,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,48.99,15,1309,8,Video,14º Lançamento | Leads
+3933,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-04,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,51.72,11,1436,3,Video,14º Lançamento | Leads
+3934,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,85.94,51,5355,20,Video,14º Lançamento | Leads
+3935,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,84.29,69,7676,31,Video,14º Lançamento | Leads
+3936,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,85.53,55,6549,10,Video,14º Lançamento | Leads
+3937,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,85.95,28,3988,9,Video,14º Lançamento | Leads
+3938,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,82.60,50,5956,16,Video,14º Lançamento | Leads
+3939,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,48.64,27,2769,12,Video,14º Lançamento | Leads
+3940,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,47.61,30,4959,6,Video,14º Lançamento | Leads
+3941,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,48.77,16,3639,3,Video,14º Lançamento | Leads
+3942,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,49.08,24,1910,8,Video,14º Lançamento | Leads
+3943,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-05,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,49.60,10,1544,4,Video,14º Lançamento | Leads
+3944,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,150.69,72,8763,21,Video,14º Lançamento | Leads
+3945,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,159.66,120,15351,35,Video,14º Lançamento | Leads
+3946,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,22.35,10,1669,5,Video,14º Lançamento | Leads
+3947,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,29.85,11,1649,5,Video,14º Lançamento | Leads
+3948,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,153.01,69,9898,25,Video,14º Lançamento | Leads
+3949,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,84.23,34,4998,11,Video,14º Lançamento | Leads
+3950,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,98.15,72,10346,17,Video,14º Lançamento | Leads
+3951,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,topfunnel_LAL1_compradores_video_eu_tenho_2_certezas_na_vida,12.40,2,949,1,Video,14º Lançamento | Leads
+3952,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,84.01,32,4148,14,Video,14º Lançamento | Leads
+3953,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-06,topfunnel_LAL1_compradores_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,14.54,8,578,4,Video,14º Lançamento | Leads
+3954,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,171.62,76,9899,27,Video,14º Lançamento | Leads
+3955,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,164.69,117,18186,34,Video,14º Lançamento | Leads
+3956,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,171.14,52,9466,8,Video,14º Lançamento | Leads
+3957,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,95.21,42,5473,13,Video,14º Lançamento | Leads
+3958,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,86.31,66,11147,21,Video,14º Lançamento | Leads
+3959,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-07,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,100.11,40,4299,9,Video,14º Lançamento | Leads
+3960,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,171.24,89,9948,23,Video,14º Lançamento | Leads
+3961,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,167.06,132,19774,21,Video,14º Lançamento | Leads
+3962,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,170.96,71,8528,19,Video,14º Lançamento | Leads
+3963,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,92.83,47,5923,13,Video,14º Lançamento | Leads
+3964,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,87.34,51,11883,7,Video,14º Lançamento | Leads
+3965,2025 | Março,Sábado,Final de Semana,Leads,2025-03-08,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,90.59,23,4214,5,Video,14º Lançamento | Leads
+3966,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,191.09,95,12308,31,Video,14º Lançamento | Leads
+3967,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,189.57,123,21824,19,Video,14º Lançamento | Leads
+3968,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,midfunnel_full_dados_video_eu_tenho_2_certezas_na_vida,0.00,,0,,Video,14º Lançamento | Leads
+3970,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,107.91,48,7540,14,Video,14º Lançamento | Leads
+3971,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,107.03,59,13505,13,Video,14º Lançamento | Leads
+3972,2025 | Março,Domingo,Final de Semana,Leads,2025-03-09,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,108.23,52,6232,11,Video,14º Lançamento | Leads
+3973,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,63.35,36,4501,6,Video,14º Lançamento | Leads
+3974,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,59.38,33,6401,6,Video,14º Lançamento | Leads
+3975,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,67.33,24,3849,4,Video,14º Lançamento | Leads
+3976,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,22.94,7,1665,2,Video,14º Lançamento | Leads
+3977,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,23.79,14,3316,3,Video,14º Lançamento | Leads
+3978,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-10,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,28.54,7,2097,1,Video,14º Lançamento | Leads
+3979,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,167.53,64,10804,29,Video,14º Lançamento | Leads
+3980,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,168.77,90,16288,29,Video,14º Lançamento | Leads
+3981,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,midfunnel_full_dados_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,0.00,,0,1,Video,14º Lançamento | Leads
+3982,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,163.10,61,9606,12,Video,14º Lançamento | Leads
+3983,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,14.74,3,954,1,Video,14º Lançamento | Leads
+3984,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,20.56,8,2080,1,Video,14º Lançamento | Leads
+3985,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,14.60,1,990,1,Video,14º Lançamento | Leads
+3986,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,71.42,29,4208,10,Video,14º Lançamento | Leads
+3987,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,76.56,39,7868,13,Video,14º Lançamento | Leads
+3988,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-11,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,61.00,11,3250,3,Video,14º Lançamento | Leads
+3989,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,202.68,88,12178,40,Video,14º Lançamento | Leads
+3990,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,201.45,98,19390,45,Video,14º Lançamento | Leads
+3991,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,200.60,64,10711,19,Video,14º Lançamento | Leads
+3992,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,0.00,,0,,Video,14º Lançamento | Leads
+3993,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,0.00,,0,,Video,14º Lançamento | Leads
+3994,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,98.23,40,6681,25,Video,14º Lançamento | Leads
+3995,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,96.37,60,11128,18,Video,14º Lançamento | Leads
+3996,2025 | Março,Quarta-Feira,Dia útil,Leads,2025-03-12,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,102.69,37,5230,11,Video,14º Lançamento | Leads
+3997,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,272.84,118,17147,54,Video,14º Lançamento | Leads
+3998,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,270.07,141,22910,46,Video,14º Lançamento | Leads
+4000,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,142.31,56,10862,24,Video,14º Lançamento | Leads
+4001,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,135.42,67,13642,28,Video,14º Lançamento | Leads
+4002,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,62.26,19,2760,10,Video,14º Lançamento | Leads
+4003,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,59.02,17,2871,7,Video,14º Lançamento | Leads
+4004,2025 | Março,Quinta-Feira,Dia útil,Leads,2025-03-13,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,69.06,32,4038,7,Video,14º Lançamento | Leads
+4005,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,481.15,165,26934,64,Video,14º Lançamento | Leads
+4006,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,484.99,215,34550,65,Video,14º Lançamento | Leads
+4007,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,0.00,,0,2,Video,14º Lançamento | Leads
+4008,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,246.90,90,18197,34,Video,14º Lançamento | Leads
+4009,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,244.14,110,25179,24,Video,14º Lançamento | Leads
+4010,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,topfunnel_LAL1_compradores_video_voce_trabalha_com_planilhas_power_bi_sua_rotina_eh_o_caos,0.00,,0,1,Video,14º Lançamento | Leads
+4011,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,0.00,,0,1,Video,14º Lançamento | Leads
+4012,2025 | Março,Sexta-Feira,Dia útil,Leads,2025-03-14,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,0.00,,0,1,Video,14º Lançamento | Leads
+4013,2025 | Março,Sábado,Final de Semana,Leads,2025-03-15,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,484.79,162,23298,70,Video,14º Lançamento | Leads
+4015,2025 | Março,Sábado,Final de Semana,Leads,2025-03-15,midfunnel_full_dados_video_se_a_sua_rotina_tem_muito_trabalho_manual_eu_quero_te_fazer_um_convite,0.00,,0,,Video,14º Lançamento | Leads
+4016,2025 | Março,Sábado,Final de Semana,Leads,2025-03-15,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,237.08,98,15211,37,Video,14º Lançamento | Leads
+4017,2025 | Março,Sábado,Final de Semana,Leads,2025-03-15,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,240.06,119,23046,36,Video,14º Lançamento | Leads
+4018,2025 | Março,Sábado,Final de Semana,Leads,2025-03-15,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,0.00,,0,,Video,14º Lançamento | Leads
+4019,2025 | Março,Domingo,Final de Semana,Leads,2025-03-16,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,471.82,145,19649,63,Video,14º Lançamento | Leads
+4020,2025 | Março,Domingo,Final de Semana,Leads,2025-03-16,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,462.86,211,31620,67,Video,14º Lançamento | Leads
+4021,2025 | Março,Domingo,Final de Semana,Leads,2025-03-16,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,271.05,90,14745,40,Video,14º Lançamento | Leads
+4022,2025 | Março,Domingo,Final de Semana,Leads,2025-03-16,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,266.15,123,22308,49,Video,14º Lançamento | Leads
+4023,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-17,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,301.48,108,15966,40,Video,14º Lançamento | Leads
+4024,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-17,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,287.03,125,19670,50,Video,14º Lançamento | Leads
+4025,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-17,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,204.20,66,12284,25,Video,14º Lançamento | Leads
+4026,2025 | Março,Segunda-Feira,Dia útil,Leads,2025-03-17,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,202.68,75,17931,20,Video,14º Lançamento | Leads
+4027,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-18,midfunnel_full_dados_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,47.06,15,2500,5,Video,14º Lançamento | Live
+4028,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-18,midfunnel_full_dados_video_ta_vendo_esse_dashboard_bonitao_ai,41.88,11,2502,7,Video,14º Lançamento | Live
+4029,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-18,topfunnel_LAL1_compradores_video_vou_te_dar_3_motivos_pra_vc_aprender_python_e_sql,26.37,10,1602,4,Video,14º Lançamento | Live
+4030,2025 | Março,Terça-Feira,Dia útil,Leads,2025-03-18,topfunnel_LAL1_compradores_video_ta_vendo_esse_dashboard_bonitao_ai,26.07,13,2209,4,Video,14º Lançamento | Live
