@@ -1,7 +1,7 @@
-# Latest Repositories (2025-03-17 .. 2025-03-19)
+# Latest Repositories (2025-03-18 .. 2025-03-20)
 
-- [justinpbarnett/unity-mcp](https://github.com/justinpbarnett/unity-mcp) (417)
-- [Orynthilo31/Solana_Trading_Mev-Bot](https://github.com/Orynthilo31/Solana_Trading_Mev-Bot) (140)
-- [abeltorinop/Mev-bot-BNB-ARBITRAGE](https://github.com/abeltorinop/Mev-bot-BNB-ARBITRAGE) (95)
-- [lvgalvao/etl-python-excel-aovivo](https://github.com/lvgalvao/etl-python-excel-aovivo) (94)
-- [Tencent/FlashVDM](https://github.com/Tencent/FlashVDM) (69)
+- [vj013il/abyss-trader-pro](https://github.com/vj013il/abyss-trader-pro) (219)
+- [isaiahbjork/orpheus-tts-local](https://github.com/isaiahbjork/orpheus-tts-local) (164)
+- [ahujasid/ableton-mcp](https://github.com/ahujasid/ableton-mcp) (150)
+- [1rgs/claude-code-openai](https://github.com/1rgs/claude-code-openai) (103)
+- [jae-jae/fetcher-mcp](https://github.com/jae-jae/fetcher-mcp) (100)
