@@ -1,0 +1,17 @@
+a/b/aa -> retrofit2/http/HTTP:
+a/b/ab -> retrofit2/http/HEAD:
+a/b/ac -> retrofit2/http/GET:
+a/b/ad -> retrofit2/http/POST:
+a/b/ae -> retrofit2/http/PUT:
+a/b/af -> retrofit2/http/DELETE:
+a/b/ag -> retrofit2/http/PATCH:
+a/b/ah -> retrofit2/http/OPTIONS:
+a/b/ai -> retrofit2/http/Headers:
+a/b/aj -> retrofit2/http/Multipart:
+a/b/ak -> retrofit2/http/FormUrlEncoded:
+a/b/al -> retrofit2/http/Header:
+a/b/am -> retrofit2/http/Part:
+a/b/an -> retrofit2/http/Field:
+a/b/ao -> retrofit2/http/Body:
+a/b/ap -> retrofit2/http/Query:
+a/b/aq -> retrofit2/http/Path:
