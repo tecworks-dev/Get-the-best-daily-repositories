@@ -1,32 +1,32 @@
 [
   {
-    "name": "vj013il/abyss-trader-pro",
-    "clone_url": "https://github.com/vj013il/abyss-trader-pro.git",
-    "stars": 219,
-    "size": 97
-  },
-  {
     "name": "isaiahbjork/orpheus-tts-local",
     "clone_url": "https://github.com/isaiahbjork/orpheus-tts-local.git",
-    "stars": 164,
+    "stars": 207,
     "size": 317
   },
   {
-    "name": "ahujasid/ableton-mcp",
-    "clone_url": "https://github.com/ahujasid/ableton-mcp.git",
-    "stars": 150,
-    "size": 65
+    "name": "yvalnaxrs/MeV-BoT_SOLANA",
+    "clone_url": "https://github.com/yvalnaxrs/MeV-BoT_SOLANA.git",
+    "stars": 183,
+    "size": 203
   },
   {
-    "name": "1rgs/claude-code-openai",
-    "clone_url": "https://github.com/1rgs/claude-code-openai.git",
-    "stars": 103,
-    "size": 856
+    "name": "vercel/ai-chatbot-svelte",
+    "clone_url": "https://github.com/vercel/ai-chatbot-svelte.git",
+    "stars": 136,
+    "size": 399
   },
   {
-    "name": "jae-jae/fetcher-mcp",
-    "clone_url": "https://github.com/jae-jae/fetcher-mcp.git",
-    "stars": 100,
-    "size": 66
+    "name": "AabyssZG/NavicatPwn",
+    "clone_url": "https://github.com/AabyssZG/NavicatPwn.git",
+    "stars": 118,
+    "size": 1500
+  },
+  {
+    "name": "BlackFan/BFScan",
+    "clone_url": "https://github.com/BlackFan/BFScan.git",
+    "stars": 97,
+    "size": 105
   }
 ]
